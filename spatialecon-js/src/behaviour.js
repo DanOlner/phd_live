@@ -197,8 +197,9 @@ function evaluate(bundle, person, world, optimiser) {
   if (bundle.budget <= 0) return; // unaffordable; leave it non-viable
 
   for (const firm of world.firms) {
-    // In the von Thünen scenarios a Person may only trade with their assigned Firm.
-    if (person.assignedFirm && firm !== person.assignedFirm) continue;
+    // In the von Thünen scenarios a Person may only buy from their assigned Firm — unless
+    // the tie covers the job alone, as in H1, where everyone buys from everyone.
+    if (person.assignedFirm && config.tie !== 'work' && firm !== person.assignedFirm) continue;
     bundle.addSeller(firm, firm.priceAtDistance(world.distance(bundle.location, firm)));
   }
   if (!bundle.hasSellers()) return;
@@ -256,7 +257,8 @@ function findBestWage(bundle, person, world) {
   bundle.workTime = 0;
 
   for (const firm of world.firms) {
-    if (person.assignedFirm && firm !== person.assignedFirm) continue;
+    // The labour half of the von Thünen tie, open when the tie covers goods alone.
+    if (person.assignedFirm && config.tie !== 'goods' && firm !== person.assignedFirm) continue;
 
     const d = world.distance(bundle.location, firm);
     const timeLeft = TIME_PER_DAY - roundTrip * d * firm.commuteCost;

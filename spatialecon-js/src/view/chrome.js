@@ -119,10 +119,50 @@ export function mount({
    * @type {(() => void)[]} */
   let sliderRefreshers = [];
 
+  /** The parameters a drag can move. A drag is a nudge along a range, which a toggle or a
+   * list of choices does not have. @type {import('../config.js').Parameter[]} */
+  let draggable = [];
+
   function renderControls() {
     controls.innerHTML = '';
     sliderRefreshers = [];
+    draggable = params.filter((p) => p.kind === 'number');
     for (const p of params) {
+      // Toggles and choices through the same seam as the sliders (Parameter's `kind`). The
+      // value underneath is still a number — 0/1, or an index into `choices` — so sweeps,
+      // `setParameter` and the headless runner need not know the difference.
+      if (p.kind === 'boolean') {
+        const row = el('label', 'se-check');
+        const box = /** @type {HTMLInputElement} */ (el('input', 'se-checkbox'));
+        box.type = 'checkbox';
+        box.checked = p.get() >= 0.5;
+        box.addEventListener('change', () => p.set(box.checked ? 1 : 0));
+        const name = el('span', 'se-control-name');
+        name.textContent = p.label;
+        row.append(box, name);
+        controls.append(row);
+        sliderRefreshers.push(() => { box.checked = p.get() >= 0.5; });
+        continue;
+      }
+      if (p.kind === 'choice' && p.choices) {
+        const row = el('label', 'se-control');
+        const name = el('span', 'se-control-name');
+        name.textContent = p.label;
+        const select = /** @type {HTMLSelectElement} */ (el('select', 'se-select'));
+        p.choices.forEach((choice, i) => {
+          const o = document.createElement('option');
+          o.value = String(i);
+          o.textContent = choice;
+          select.append(o);
+        });
+        select.value = String(Math.round(p.get()));
+        select.addEventListener('change', () => p.set(Number(select.value)));
+        row.append(name, select);
+        controls.append(row);
+        sliderRefreshers.push(() => { select.value = String(Math.round(p.get())); });
+        continue;
+      }
+
       const row = el('label', 'se-control');
       const name = el('span', 'se-control-name');
       name.textContent = p.label;
@@ -146,8 +186,8 @@ export function mount({
         value.textContent = fmt(p.get());
       });
     }
-    dragHint.textContent = params.length > 0
-      ? `drag on the model: left = ${params[0].label}${params[1] ? `, right = ${params[1].label}` : ''} · ←/→ sensitivity`
+    dragHint.textContent = draggable.length > 0
+      ? `drag on the model: left = ${draggable[0].label}${draggable[1] ? `, right = ${draggable[1].label}` : ''} · ←/→ sensitivity`
       : '';
   }
 
@@ -238,8 +278,8 @@ export function mount({
     canvas.setPointerCapture(e.pointerId);
   });
   canvas.addEventListener('pointermove', (e) => {
-    if (dragging < 0 || !params[dragging]) return;
-    const p = params[dragging];
+    if (dragging < 0 || !draggable[dragging]) return;
+    const p = draggable[dragging];
     const dx = e.clientX - lastX;
     lastX = e.clientX;
     // Normalised drag scaled by the power-of-two multiplier, so one binding covers a coarse

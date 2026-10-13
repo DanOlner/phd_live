@@ -61,16 +61,18 @@ const GROUP_SHAPES = ['square', 'circle', 'triangle', 'pentagon'];
  * @param {boolean} [options.colour] hue for Firm identity only; quantities stay greyscale
  * @param {boolean} [options.showBuyLines] the trades themselves — `buylines.js`
  * @param {boolean} [options.showEqualisingLine] C1's cutoff ring — `equalise.js`
+ * @param {boolean} [options.showMeanPoint] the 2011 renderer's ring at the mean of every actor — H1
  */
 export function planeView(canvas, options = {}) {
   const ctx = /** @type {CanvasRenderingContext2D} */ (canvas.getContext('2d'));
   let shadeBy = options.shadeBy ?? 'auto';
   let showDensityCircles = options.showDensityCircles ?? true;
   let colour = options.colour ?? false;
-  // Both default off. They answer specific questions, and left on they compete for ink with
+  // All default off. They answer specific questions, and left on they compete for ink with
   // the density picture, which is the default reading of these figures.
   let showBuyLines = options.showBuyLines ?? false;
   let showEqualisingLine = options.showEqualisingLine ?? false;
+  let showMeanPoint = options.showMeanPoint ?? false;
 
   return {
     get shadeBy() { return shadeBy; },
@@ -83,6 +85,8 @@ export function planeView(canvas, options = {}) {
     set showBuyLines(v) { showBuyLines = v; },
     get showEqualisingLine() { return showEqualisingLine; },
     set showEqualisingLine(v) { showEqualisingLine = v; },
+    get showMeanPoint() { return showMeanPoint; },
+    set showMeanPoint(v) { showMeanPoint = v; },
 
     /** @param {import('../world.js').World} world */
     draw(world) {
@@ -184,6 +188,9 @@ export function planeView(canvas, options = {}) {
       // 4. The equalising cutoff, over everything: it is a claim *about* the settlement, so
       //    it should read as annotation rather than as part of the picture.
       if (showEqualisingLine) drawEqualisingLine(ctx, world, s, dpr);
+
+      // 4b. The 2011 ring, annotation for the same reason.
+      if (showMeanPoint) drawMeanPoint(ctx, world, s, dpr);
 
       // 5. The von Thünen legend: shape, then the cost that defines the group.
       if (useGroups) drawGroupLegend(ctx, world, px);
@@ -303,6 +310,37 @@ export function plusGlyph(ctx, x, y, u) {
     else ctx.lineTo(px, py);
   });
   ctx.closePath();
+}
+
+/**
+ * The ring from the August 2011 video (H1): the mean position of every actor, People and
+ * Firms alike, as `SpaceTools.drawMeanCentrePoint` drew it — a filled circle inside a ring,
+ * white on that renderer's dark ground and so black on white here.
+ *
+ * It is not an agent. Between two settlements of equal size the mean falls in the gap, which
+ * is what made it look like one, and in the video it vanished whenever the settlements
+ * overlapped because People's raised utility squares covered it.
+ *
+ * @param {CanvasRenderingContext2D} ctx @param {import('../world.js').World} world
+ * @param {(v: number) => number} s model units -> device pixels @param {number} dpr
+ */
+function drawMeanPoint(ctx, world, s, dpr) {
+  const actors = [...world.people, ...world.firms];
+  if (actors.length === 0) return;
+  const x = s(actors.reduce((a, p) => a + p.position.x, 0) / actors.length);
+  const y = s(actors.reduce((a, p) => a + p.position.y, 0) / actors.length);
+  // The original's 15-pixel ring on a window about 500 pixels across, scaled to this one.
+  const r = Math.max(s(world.space.width * 0.015), 4 * dpr);
+  ctx.lineWidth = Math.max(1.5 * dpr, 1);
+  ctx.strokeStyle = '#000';
+  ctx.fillStyle = '#fff';
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(x, y, r * 0.55, 0, Math.PI * 2);
+  ctx.stroke();
 }
 
 /**

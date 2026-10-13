@@ -35,6 +35,8 @@
  * `d1`, `e6` reads `e5`), and a model with no entry simply shows its own `notes`.
  */
 
+import { settlements } from './scenarios/h1.js';
+
 /**
  * @typedef {object} Entry
  * @property {string} [economics]
@@ -910,6 +912,111 @@ what keeps this framework away from winner-takes-all pricing.`,
         caption: `Crosses are Bundles that were discarded rather than scored: the density cost
 there exceeded the whole wage. Every one of those density terms was computed from where the
 other People are standing right now — which is the entire coordinating mechanism.`,
+      },
+    ],
+  },
+
+  // --- Group H: curiosities -------------------------------------------------------------
+
+  h1: {
+    economics: `Not a model from the thesis. A run recorded as a video in August 2011, while the
+framework was being built, and reconstructed here from the frames. Two Firms that grope for
+revenue as in D1, each with its own workforce tied to it — but for work only. Everyone buys
+from both, and pays a density cost to live anywhere crowded. Firm 1 pays twice Firm 0's wage.
+
+Every force in it comes from an earlier model. Love of variety pulls the two settlements
+together, as in C7: everyone wants some of both goods, and goods cost something to ship. The
+density cost pushes them apart, as in C1. And the wage gap makes the pull one-sided. The
+better-paid are the better customers, so Firm 0's crawl finds its revenue rising as it moves
+towards them, and its commuters follow it.
+
+When the two meet they sort exactly as C6 does: the better-paid take the centre and the others
+wrap round them. That crowding is what drives them apart again. It raises the better-paid's
+density cost, Firm 1's revenue falls, and its crawl breaks away. A von Thünen ring forms and is
+broken, over and over, and nothing settles.
+
+The video's own caption: "Green blob likes red blob. A lot. In a slightly smothering way. Red
+blob is far from sure about this." The circles are the red blob, the squares the green.`,
+    hood: `The video was drawn by a renderer the thesis never used, and almost nothing in it
+means what it appears to.
+
+The colours are not the two workforces. Each Person was coloured on a ramp from green, the
+lowest utility in the population that frame, to red, the highest — `+"`stroke(colVal, 255 - colVal, 0)`"+`
+in `+"`SpaceTools.draw3D`"+`. The settlements show as two solid colours only because one workforce is
+better off throughout. The proof is in the first three frames, where both are red: the range
+starts at 0/0, is updated only once every Person's utility is positive, and a few stragglers
+were still at zero.
+
+The white ring between the settlements is not an agent either. It is `+"`drawMeanCentrePoint()`"+`,
+the mean position of every actor, which is why it always sat in the gap and vanished whenever
+the two overlapped. The Firms were drawn, as 5-pixel squares indistinguishable from People.
+
+Here the workforces are shapes and greys, the site's rule for identity: colour may identify but
+never measures. Set "shade People by" to utility for the video's encoding in grey, and turn on
+the 2011 ring to see the mean point.
+
+Two engine additions make the model possible. `+"`config.tie`"+` says which channels an assigned
+Firm closes: both, as in C6; work only, here; goods only, the runner-up. The 2013 snapshot
+could not express a work-only tie from a properties file — any tie flag switched on
+`+"`vonThunenMode`"+`, which also tied goods — though the separate `+"`vonThunenWage`"+` and
+`+"`vonThunenGoods`"+` flags suggest the 2011 code could. And `+"`rangeStep`"+` spaces the ranged
+wages, so the gap can be a live dial; at 1 it is the original's ×1, ×2.`,
+    found: `A reconstruction, not a recovery: the code that made the video is gone. It was
+tested by scoring runs with the same statistics measured on the video's 993 frames.
+
+The video: red moving away from green 73% of the time and green moving towards red 75%; far
+apart 35%, engulfed 11%, 20 changes of state; green 1.3 times as spread out as red. This model
+at its defaults, over six seeds: a chase of 58–70% each way, far apart 18–36%, engulfed 6–15%,
+16–27 changes, at about one model day per video frame. What it does not reproduce is the pace.
+It cycles about half as often as the video.
+
+Take away any one ingredient and the chase stops. Equal wages: no leader and no chase. Firms
+fixed: nothing moves. Both channels tied: the settlements repel. A wage premium attached to the
+Person rather than the Firm — the form the 2011 source has commented out — leaves the poorer
+workforce no reason to seek out the richer one.
+
+rho is the dial. Below about 0.55 the two spend long spells merged; above about 0.65 they part
+for good. The video sits in between.
+
+The runner-up reconstruction — goods tied, work open, the wiring of the one 2011 preset that
+survives — chases harder than anything here, but its settlements stay glued edge to edge and
+never part or engulf. The tie dial switches to it.
+
+Left to run, the pair spends most of its time against a wall: 77–94% of days with one
+settlement near an edge, against 5% of the video's frames. That is not a different dynamic. A
+breakaway accelerates for as long as moving pays, so sooner or later one runs into a wall,
+which stops it, and the chaser pins it there. The video's pair drifted at the same rate as this
+one, 0.42 of the window over its 33 seconds, from the middle of the field; it would have
+reached an edge a few thousand days later. A wider space only delays it, and slowing the
+breakaways to avoid it stops the settlements ever coming apart.`,
+    steps: [
+      {
+        when: () => true,
+        caption: `Two workforces, each tied to its own Firm for work and free to buy from both:
+squares work for Firm 0 at wage 1, circles for Firm 1 at wage 2. Both Firms crawl for revenue,
+knowing nothing but whether it rose.`,
+      },
+      {
+        when: (w) => hasRun(w) && settlements(w).separation > 1.5,
+        caption: `Two settlements, one round each Firm. The circles are better off — the video's
+red blob — so they are also the better customers, for both Firms.`,
+      },
+      {
+        when: (w) => settlements(w).separation < 0.35,
+        caption: `Caught. Firm 0 crawled towards the richer customers and its commuters came with
+it. The circles hold the centre and the squares wrap round them: C6's sorting, the better-paid
+buying proximity.`,
+      },
+      {
+        when: (w) => settlements(w).separation > 1.5,
+        caption: `And away. The squares' crowding raised the circles' density cost, Firm 1's
+revenue fell, and its crawl broke out, accelerating for as long as moving paid.`,
+      },
+      {
+        when: (w) => settlements(w).separation < 0.35,
+        caption: `Caught again. There is no end state: a von Thünen ring forms and breaks for as
+long as the run lasts. Try the dials. With rho above 0.65 they part for good; with a wage gap
+of 1 the chase stops.`,
       },
     ],
   },

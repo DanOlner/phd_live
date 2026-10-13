@@ -71,7 +71,8 @@ export class Person extends Actor {
     this.neighboursInDensityRadius = 0;
     /**
      * Firm this Person is tied to in the von Thünen scenarios (§5.4.5), where each Person
-     * is permanently assigned to one Firm and may neither work nor buy elsewhere.
+     * is permanently assigned to one Firm and may neither work nor buy elsewhere. Which of
+     * those two the tie covers is `config.tie`: both in C6, the job alone in H1.
      * Null in every other model.
      * @type {Firm | null}
      */

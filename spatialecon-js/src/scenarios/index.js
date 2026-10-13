@@ -8,6 +8,10 @@
  * process demonstrations, and G1 is Krugman's Core Model, a separate program in the original.
  * They are scenarios anyway, so that every model in the thesis is a page with the same
  * controls, notes and chart machinery.
+ *
+ * Then group H, the curiosities: runs from the years of building the framework that never
+ * made it into the thesis, reconstructed from what survives. H1 is a 2011 video
+ * (GREEN_BLOB_RED_BLOB.md).
  */
 
 import { register } from '../scenario.js';
@@ -40,6 +44,7 @@ import { f2 } from './f2.js';
 import { f3 } from './f3.js';
 import { f4 } from './f4.js';
 import { g1 } from './g1.js';
+import { h1 } from './h1.js';
 
 register(
   a1, a2, a3, a4,
@@ -50,6 +55,7 @@ register(
   e1, e1raw, e1many, e2, e3, e4, e5, e6, e7, e8,
   f1, f2, f3, f4,
   g1,
+  h1,
 );
 
 export {
@@ -61,4 +67,5 @@ export {
   e1, e1raw, e1many, e2, e3, e4, e5, e6, e7, e8,
   f1, f2, f3, f4,
   g1,
+  h1,
 };

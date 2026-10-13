@@ -31,6 +31,7 @@ import { e7 } from '../src/scenarios/e7.js';
 import { e8 } from '../src/scenarios/e8.js';
 import { monocentric } from '../src/scenarios/monocentric.js';
 import { c6, c6c } from '../src/scenarios/c6.js';
+import { h1 } from '../src/scenarios/h1.js';
 import { assertEqual, assertTrue, report, suite, test } from './tiny.js';
 
 /** A 2-D context that records what was asked of it. */
@@ -603,6 +604,71 @@ test('and it converges on what the algebra gives', () => {
   const exact = constrained().optimise([1, 1], 1, ces(0.5), rng);
   assertTrue(`hill-climb ${climbed[0]} vs constrained ${exact[0]}`,
     Math.abs(climbed[0] - exact[0]) < 0.01);
+});
+
+suite('H1 — the 2011 ring and the separation trace');
+
+/** H1 a few days in, workforces tied. */
+function h1World(days = 20) {
+  const w = new World(h1.config());
+  h1.setUp?.(w);
+  for (let d = 0; d < days; d++) w.timeline.nextDay();
+  return w;
+}
+
+test('the 2011 ring sits at the mean of every actor, People and Firms alike', () => {
+  // `drawMeanCentrePoint` in the 2011 renderer: not an agent, which is the point of drawing it.
+  const { canvas, calls } = fakeCanvas(600);
+  const w = h1World();
+  planeView(canvas, { showMeanPoint: true, showDensityCircles: false }).draw(w);
+
+  const actors = [...w.people, ...w.firms];
+  const px = canvas.width / w.space.width;
+  const mx = (px * actors.reduce((a, p) => a + p.position.x, 0)) / actors.length;
+  const my = (px * actors.reduce((a, p) => a + p.position.y, 0)) / actors.length;
+  const rings = calls.filter((c) => c.op === 'arc'
+    && Math.abs(c.args[0] - mx) < 1e-6 && Math.abs(c.args[1] - my) < 1e-6);
+  assertEqual('a filled circle inside a ring, at the mean point', 2, rings.length);
+});
+
+test('and it is off unless asked for, and offered only on H1', () => {
+  const { canvas, calls } = fakeCanvas(600);
+  const w = h1World();
+  planeView(canvas, { showDensityCircles: false }).draw(w);
+  const actors = [...w.people, ...w.firms];
+  const px = canvas.width / w.space.width;
+  const mx = (px * actors.reduce((a, p) => a + p.position.x, 0)) / actors.length;
+  assertEqual('nothing drawn at the mean by default', 0,
+    calls.filter((c) => c.op === 'arc' && Math.abs(c.args[0] - mx) < 1e-6).length);
+
+  const offered = chooseView(h1, w).overlays ?? [];
+  assertTrue('h1 offers the ring', offered.some((o) => o.key === 'showMeanPoint'));
+  const probe = new World(c6.config());
+  c6.setUp?.(probe);
+  assertTrue('c6 does not', !(chooseView(c6, probe).overlays ?? []).some((o) => o.key === 'showMeanPoint'));
+});
+
+test('the second panel traces the separation against touching', () => {
+  // The rhythm of meeting and parting is the behaviour, and a single frame cannot show it.
+  const w = new World(h1.config());
+  h1.setUp?.(w);
+  const aux = chooseView(h1, w).aux;
+  assertTrue('h1 has a second panel', Boolean(aux));
+  if (!aux) return;
+  const { canvas, text } = fakeCanvas();
+  const view = aux.make(canvas);
+  for (let d = 0; d < 60; d++) { w.timeline.nextDay(); view.draw(w); }
+  assertTrue(`the reference is labelled, got: ${text.join(' | ')}`,
+    text.some((t) => t.includes('touching')));
+  assertTrue('and the series with its latest value', text.some((t) => t.startsWith('separation ')));
+});
+
+test('the workforces get group shapes, and the legend names the wage', () => {
+  // Identity by shape and grey, as C6 — never a colour ramp for a quantity (BUILD_PLANNER §4.2).
+  const { canvas, text } = fakeCanvas();
+  planeView(canvas).draw(h1World());
+  assertTrue(`legend names the wage, got: ${text.join(' | ')}`, text.some((t) => t.includes('wage')));
+  assertTrue('and shows both levels', ['1', '2'].every((v) => text.some((t) => t === `= ${v}`)));
 });
 
 suite('Plane view — edge cases');

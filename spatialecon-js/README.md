@@ -16,7 +16,7 @@ No install, no build step, no dependencies.
 
 ```sh
 python3 -m http.server 8000           # then open localhost:8000 — the models, live
-npm test                              # 142 assertions, ~4min
+npm test                              # 154 assertions, ~5min
 node tools/run.mjs --list             # what models exist
 node tools/run.mjs --info c1          # one model's setup
 node tools/run.mjs c1 --out data      # run headless, write CSV
@@ -66,9 +66,9 @@ src/
   coremodel.js   Krugman's Core Model — solved, not simulated (G1)
   scenarios/     one file per model family
   view/
-    plane.js     People and Firms in 2-D               (B3 C1 C2 C6 C8 E8)
+    plane.js     People and Firms in 2-D               (B3 C1 C2 C6 C8 E8 H1)
     line.js      mirrored profiles either side of a rule  (D1 D2 E7)
-    timeseries.js  auto-scaling series vs a deduced value (E1 E3 E5 E6)
+    timeseries.js  auto-scaling series vs a deduced value (E1 E3 E5 E6; H1's 2nd panel)
     curve.js     a quantity against a swept parameter    (A1 A2 A3 A4)
     correlate.js two quantities against each other, joined in time order (E8)
     sampler.js   one Person's decision, drawn                       (F4)
@@ -130,8 +130,9 @@ the evidence this split is the right one — none of those claims depended on th
 
 ## Status
 
-**All eight stages done.** Forty-two models — the whole catalogue, all seven groups — and
-142 tests pass. Every model has a view, pop-outs in three kinds, and a place in the index.
+**All eight stages done.** Forty-two models — the whole catalogue, all seven groups — plus
+one curiosity, and 154 tests pass. Every model has a view, pop-outs in three kinds, and a
+place in the index.
 
 Seven precomputed sweeps, rendered through the same chart code as the live models; two of
 them are clickable and set the model above. Walkthroughs fire on model state rather than day
@@ -152,6 +153,7 @@ demonstrations, and G1 is Krugman's Core Model — solved, not simulated.
 | group E (e1, e1raw, e1many, e3, e5, e6, e7, e8) | **by arithmetic** — see below |
 | group F (f1, f2, f3, f4) | the framework's own machinery, made visible |
 | group G (g1) | the Core Model, ported from its own program |
+| group H (h1) | a curiosity: a 2011 video, reconstructed; by claim, against statistics measured on the video ([`../GREEN_BLOB_RED_BLOB.md`](../GREEN_BLOB_RED_BLOB.md)) |
 
 
 Tier-2 results, against the independently-built Java:

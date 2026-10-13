@@ -162,6 +162,8 @@ export function parameter({ name, get, set, label, kind = 'number', min = 0, max
  * @property {boolean} rangeGoodCost
  * @property {boolean} rangeWage
  * @property {boolean} rangeCommute
+ * @property {number} rangeStep
+ * @property {'both' | 'work' | 'goods'} tie
  * @property {[number, number] | null} initialPriceRange
  * @property {() => number} totalActors
  * @property {() => number} densityDivisor
@@ -215,6 +217,25 @@ export function defineModel(spec) {
     rangeCommute: false,
 
     /**
+     * How far apart the ranged levels are. Firm i's ranged cost is base × (1 + i × step), so
+     * the default of 1 is the original's ×1, ×2, ×3 and 0 collapses every Firm onto the base.
+     * Only H1 moves it, to make the wage gap between two Firms a live control.
+     */
+    rangeStep: 1,
+
+    /**
+     * Which channels an assigned Firm closes off, for People who have one.
+     *
+     * 'both' is C6's von Thünen tie: work and buy only there. 'work' ties the job and leaves
+     * People free to buy from every Firm; 'goods' the reverse. The 2013 snapshot could only
+     * express 'both' from a properties file — any tie flag switched on `vonThunenMode`,
+     * which restricted goods (`gl.java:704`) — but the separate `vonThunenWage` and
+     * `vonThunenGoods` flags suggest the channels were independent in 2011, and H1 needs
+     * them to be.
+     */
+    tie: 'both',
+
+    /**
      * Range for randomising each Firm's starting price, or null for `baseGoodCost`.
      *
      * Not cosmetic. The transmission belt is sensitive to where prices start: from a
@@ -243,7 +264,9 @@ export function defineModel(spec) {
         `person=${this.personBehaviour?.describe?.() ?? 'none'}  firm=${this.firmBehaviour?.describe?.() ?? 'none'}`,
         `delivery=${n(this.deliveryCost)}  commute=${n(this.commuteCost)}  goodCost=${n(this.baseGoodCost)}  wage=${n(this.wage)}`,
         `density=${n(this.densityCost)} (radius ${this.densityRadius.toFixed(5)}, divisor ${this.densityDivisor()})  noise=${n(this.demandNoise)}`,
-        `mobile: people=${this.peopleMobile} firms=${this.firmsMobile}   seed=${this.seed}`,
+        `mobile: people=${this.peopleMobile} firms=${this.firmsMobile}   seed=${this.seed}`
+          + (this.tie !== 'both' ? `   tie=${this.tie}` : '')
+          + (this.rangeStep !== 1 ? `   rangeStep=${n(this.rangeStep)}` : ''),
         `quirks: ${describeQuirks(this.quirks)}`,
       ].join('\n');
     },

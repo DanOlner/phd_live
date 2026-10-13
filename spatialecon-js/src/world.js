@@ -201,11 +201,14 @@ export class World {
    * single base of 2, and how the four wage bands of §5.4.5 come from a base of 1. Easy to
    * miss, and it means the headline parameter is a base, not the value any Firm sees.
    *
-   * @param {Firm} f @param {number} index position in the Firm list; ranging multiplies by index+1
+   * The multiplier is 1 + index × `rangeStep`. The original's step was always 1, giving
+   * ×1, ×2, ×3…; H1 varies it to make the gap between two Firms' wages a live control.
+   *
+   * @param {Firm} f @param {number} index position in the Firm list
    */
   _applyCosts(f, index) {
     const c = this.config;
-    const m = index + 1;
+    const m = 1 + index * c.rangeStep;
     // Leave prices alone when they were randomised at setup, or when a Firm is setting its
     // own price dynamically -- clobbering those would undo the whole mechanism.
     if (!c.initialPriceRange) {
@@ -244,6 +247,8 @@ export class World {
   setBaseGoodCost(v) { this.config.baseGoodCost = v; this.refreshFirmCosts(); }
   /** @param {number} v */
   setWage(v) { this.config.wage = v; this.refreshFirmCosts(); }
+  /** Spacing of the ranged levels: Firm i gets base × (1 + i × v). @param {number} v */
+  setRangeStep(v) { this.config.rangeStep = v; this.refreshFirmCosts(); }
 
   // --- Ready-made parameter bindings, bound so changes actually reach the Firms ---
 

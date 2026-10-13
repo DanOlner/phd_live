@@ -8,6 +8,7 @@
  * phase ordering of the day loop (§4.7.4).
  */
 
+import { personBundle } from '../src/behaviour.js';
 import { AS_THESIS_STATES, ORIGINAL, defineModel, parameter } from '../src/config.js';
 import { ces, smoothEoS } from '../src/econ.js';
 import { MEAN_SD, MIN_MAX, PER_ACTOR, RATIO_GTE_ONE, Recorder } from '../src/record.js';
@@ -169,6 +170,53 @@ test('the bound Parameter goes through the choke point too', () => {
   const w = new World(config({ firmCount: 2, deliveryCost: 1, rangeDelivery: true }));
   w.deliveryCostParam().set(3);
   assertClose('firm 1 ranged from the parameter', 6, w.firm(1).deliveryCost, EPS);
+});
+
+test('the ranging step spaces the levels, and its default is the original', () => {
+  // H1's wage-gap dial. The original only ever stepped by one — ×1, ×2, ×3 — so a step of 1
+  // must reproduce every existing ranged model exactly.
+  const original = new World(config({ firmCount: 3, wage: 1, rangeWage: true }));
+  assertClose('step 1, firm 2 at ×3', 3, original.firm(2).wage, EPS);
+
+  const half = new World(config({ firmCount: 3, wage: 1, rangeWage: true, rangeStep: 0.5 }));
+  assertClose('step 0.5, firm 1 at ×1.5', 1.5, half.firm(1).wage, EPS);
+  assertClose('step 0.5, firm 2 at ×2', 2, half.firm(2).wage, EPS);
+
+  half.setRangeStep(0); // through the choke point, like every other live cost change
+  assertTrue('step 0 puts every Firm on the base', half.firms.every((f) => Math.abs(f.wage - 1) < EPS));
+});
+
+test('the tie closes the channels it names, and only those', () => {
+  // One Person midway between two Firms, the second paying twice as much. Which Firm employs
+  // them shows whether the labour channel is open; how many they buy from shows the goods one.
+  /** @param {'both' | 'work' | 'goods'} tie */
+  const oneDay = (tie) => {
+    const w = new World(config({
+      firmCount: 2, peopleCount: 1, tie,
+      placeFirms: twoPointsApart(0.4),
+      placePeople: (/** @type {any[]} */ actors) => { for (const a of actors) a.placeAt(pt(0.5, 0.5)); },
+      wage: 1, rangeWage: true, commuteCost: 0.1, deliveryCost: 0.1,
+      personBehaviour: personBundle(),
+    }));
+    w.person(0).assignedFirm = w.firm(0);
+    w.timeline.nextDay();
+    return {
+      sellers: w.person(0).lastSellers.length,
+      employer: w.firms.findIndex((f) => f.contributedTime > 0),
+    };
+  };
+
+  const both = oneDay('both');
+  assertEqual("'both' (C6): works for its own Firm", 0, both.employer);
+  assertEqual("'both': buys only from it", 1, both.sellers);
+
+  const work = oneDay('work');
+  assertEqual("'work' (H1): still works for its own Firm, though the other pays double", 0, work.employer);
+  assertEqual("'work': buys from both", 2, work.sellers);
+
+  const goods = oneDay('goods');
+  assertEqual("'goods': free to take the better wage", 1, goods.employer);
+  assertEqual("'goods': buys only from its own Firm", 1, goods.sellers);
 });
 
 test('randomised initial prices land in range and differ', () => {

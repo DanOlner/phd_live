@@ -70,9 +70,10 @@
   <div id="groups"></div>
   <footer>
     <p>
-      Forty-two models: the whole catalogue, all seven groups. Several are not agent models at
-      all — two are closed forms you could do on paper, one is a difference equation, and the
-      last is Krugman's Core Model, which is what everything else is measured against.
+      Forty-two models from the thesis — the whole catalogue, all seven groups — and a
+      curiosity from the years of building it. Several are not agent models at all — two are
+      closed forms you could do on paper, one is a difference equation, and one is Krugman's
+      Core Model, which is what everything else is measured against.
     </p>
     <p>
       No dependencies, no build step, nothing to install. The stills are rendered by the same
@@ -111,6 +112,9 @@ const GROUPS = [
     + 'be assumed to do.'],
   ['G · the comparator', /^g/,
     "Krugman's Core Model, the benchmark everything else is measured against."],
+  ['H · curiosities', /^h/,
+    'Not in the thesis. Runs from the years of building the framework that survive only as a '
+    + 'picture or a video, reconstructed from what is left and tested against it.'],
 ];
 
 const container = document.getElementById('groups');

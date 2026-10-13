@@ -200,6 +200,33 @@ The site went live at [danolner.github.io/phd_live](https://danolner.github.io/p
 
 ---
 
+## Stage 9 — a curiosity: H1, green blob, red blob *(13 October 2026)*
+
+A new group, **H · curiosities**, for runs from the years of building the framework that never reached the thesis. Its first entry reconstructs a 33-second video Dan recorded on 13 August 2011 and uploaded as "Green blob red blob". [GREEN_BLOB_RED_BLOB.md](GREEN_BLOB_RED_BLOB.md) has the full case: the frames measured, the 2011 drawing code read, figures from the same fortnight, and the variants tested.
+
+**The video's colours were not its two cities.** The 2011 renderer, still dormant in `SpaceTools.draw3D`, stroked every Person on a min–max utility ramp: red for the highest utility in the population that frame, green for the lowest. The proof is in the first three frames, which are all red. The range starts at 0/0 and is updated only once every Person's utility is positive. The white ring between the settlements is `drawMeanCentrePoint()`, the mean position of every actor. → GREEN_BLOB_RED_BLOB.md §2.
+
+**The reconstruction: work tied, goods open.** Two crawling Firms, each with a workforce tied to it for work only. Everyone buys both goods (ρ 0.6), everyone pays a density cost, and Firm 1 pays twice the wage. Scored with the statistics measured on the video, it matches four things at about one model day per frame: the chase direction, the share of time apart, the share of time engulfed, and the cloud scale. Each ingredient is necessary. Equal wages, fixed Firms, both channels tied, or a premium attached to the Person rather than the Firm each stop the chase. The runner-up has goods tied and work open, which is the wiring of the one surviving 2011 preset. It chases harder but never parts or engulfs. → GREEN_BLOB_RED_BLOB.md §4–5.
+
+**Two engine additions, and a UI seam promised since stage 2:**
+
+- **`config.tie`** closes the work and goods channels independently, and C6 is unchanged at `'both'`. The 2013 snapshot could not express a work-only tie from a properties file, because any tie flag switched on `vonThunenMode`, which tied goods. Its separate per-channel flags suggest the 2011 code could.
+- **`config.rangeStep`** spaces the ranged costs; a step of 1 is the original's.
+- **`chrome.js` now draws boolean and choice Parameters** as a checkbox and a select. `Parameter.kind` had carried the distinction since stage 2 without the page using it, and F2's toggle became a checkbox as a side effect.
+
+**An error caught: walls read as speed.** Left to run, at least one settlement sits near a wall on 77–94% of days, against 5% of the video's frames. The first reading was that the model wandered about three times faster than the video, which was wrong. Measured properly, as net drift rather than displacement between snapshots, the rates agree: 0.42 of the window over the video's 33 seconds, and 0.25–0.43 per 1,000 days here. The video is a clip from mid-field. Walls are where any long run of this dynamic ends up, because an accelerating breakaway keeps going until something stops it, and the original's space was bounded the same way. Two alternatives were tried and rejected:
+
+- a wider space, which only delays the walls;
+- removing the crawl's acceleration, which stops the settlements ever coming apart.
+
+So the walls are kept, and the page says so.
+
+**The catalogue still is chosen, not settled.** Nothing in H1 settles, so `defaultDays` is set to 2,555, where the default seed's frame is a mid-field engulfment. All five walkthrough captions fire by day 544.
+
+Not reproduced: the pace. The model cycles about half as often as the video. → *Still open*.
+
+---
+
 ## Corrections to the record
 
 Places where building something changed a claim in an existing document. Listed together because each is the kind of thing that gets silently re-derived otherwise.
@@ -226,6 +253,7 @@ Not resolved by anything built so far, and none of it blocks the site:
 - **D2's ρ dependence.** The thesis reports low ρ making the DMR game harder under noise; both independent rebuilds show the opposite, each with a coherent mechanism for its own result. Noise amplitude, distance cost and noise character all ruled out. CODE_ANATOMY §7.12. It is on the site, in D2's *what we found* panel, because a rebuild that quietly reproduced everything would be less informative than one that does not.
 - **The commute round-trip factor of 2** (in the thesis equation, not the code) and **noise amplitude** (±half what the thesis text implies). Both switchable behind `Quirks`; neither has been shown to change a published result.
 - **C3 and C7 configs are lost.** They are reconstructed from the thesis text on C1's population and space, with the `*Range` conventions, and every published direction reproduces (stage 8). The exact configs are still not recoverable.
+- **H1's 2011 configuration is lost too.** The reconstruction reproduces the chase, the shares of time apart and engulfed, and the cloud scale, but it cycles at about half the video's rate. Three things are not recoverable: which Firm crawl was live on 13 August 2011, the wage ratio, and the People count. GREEN_BLOB_RED_BLOB.md §6 and §8 list the candidates, and the questions only Dan can answer.
 
 Two content errors on the live site, found on 13 October 2026 while writing up stage 8. In both, a pop-out still carries a claim that stage 8 corrected everywhere else:
 
@@ -236,7 +264,7 @@ Two content errors on the live site, found on 13 October 2026 while writing up s
 
 ## Where it stands
 
-**All eight stages of BUILD_PLANNER §8 are done, and the site is live.** There are forty-two models covering the whole catalogue and all seven groups, and every one has a view and a page. 142 tests pass, and tier 1 is exact on six deterministic models. The site has:
+**All eight stages of BUILD_PLANNER §8 are done, and the site is live.** There are forty-two models covering the whole catalogue and all seven groups, plus one curiosity in group H, and every one has a view and a page. 154 tests pass, and tier 1 is exact on six deterministic models. The site has:
 
 - a catalogue with a still per model;
 - per-model pop-outs in three kinds;

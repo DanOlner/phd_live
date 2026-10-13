@@ -436,6 +436,8 @@ col1 = Map.mapLowHighToColour_DoublesColorsInColorOut(
 
 with the commented-out green↔red version still above it, marked `//b&w version`. Even the per-actor `Actor.colour` field is grey — `gl.nextActorColour()` builds its palette as `new Color(i, i, i)` for `i = 0, 150`, so agents alternate black and mid-grey, with red/green/blue entries commented out just below. The name is vestigial. The thesis printed in black and white, and the figures were captured directly from screen, so the model was made to render for the page.
 
+**↻ But the colour was live in 2011, and it measured rather than identified.** The older renderer, `SpaceTools.draw3D`, survives dormant in the snapshot. It drew on a dark ground, stroking each Person `(colVal, 255 − colVal, 0)`: red for the highest utility in the population that frame and green for the lowest, normalised min–max over the previous frame. The range only updates once every Person's utility is positive, and it starts at 0/0, so a run opens all red. The same renderer also drew `drawMeanCentrePoint()`, a white ring at the mean position of every actor. A video from August 2011 and figures from that month (`DCrealism2–4.jpg`, `Engelwdensity.jpg`) use exactly this renderer. Read naively, its two colours look like two kinds of agent. [GREEN_BLOB_RED_BLOB.md](GREEN_BLOB_RED_BLOB.md) §2 makes the case, and model H1 rebuilds that video.
+
 **Everything is double-encoded.** The same variable drives both the greyscale *and* the size of a marker:
 
 ```java

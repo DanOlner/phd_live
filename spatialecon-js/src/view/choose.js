@@ -21,6 +21,7 @@ import { SUBJECT_ID, lastDecision } from '../scenarios/f4.js';
 import { currentWealth } from '../scenarios/f1.js';
 import { binCentre, gapHistogram } from '../scenarios/f2.js';
 import { coreParams } from '../scenarios/g1.js';
+import { settlements } from '../scenarios/h1.js';
 import { LINE, POINT, TWO_REGION } from '../space.js';
 import { coreModelView } from './coremodel.js';
 import { correlateView } from './correlate.js';
@@ -410,6 +411,11 @@ export function chooseView(scenario, world) {
   if (equalisingLineApplies(world)) {
     overlays.push({ key: 'showEqualisingLine', label: 'equalising cutoff' });
   }
+  // The white ring from H1's source video. Offered only there: on any other model the mean of
+  // every actor is just a point, with nothing to explain.
+  if (scenario.id === 'h1') {
+    overlays.push({ key: 'showMeanPoint', label: '2011 ring (mean of all actors)' });
+  }
 
   const planeCurve = PLANE_CURVES[scenario.id];
   const readPlane = planeCurve ? declared(scenario) : null;
@@ -455,6 +461,20 @@ const AUX = {
       },
       // The published statistic: total output, not output per unit. CODE_ANATOMY §3.2.
       y: { label: 'production ratio', get: productionRatio },
+    }),
+  },
+
+  // H1: the plane shows where the two settlements are at one moment; the rhythm of meeting
+  // and parting, which is the whole behaviour, needs a time axis. A rolling window, because
+  // the run never ends and the cycle is what matters, not its history.
+  h1: {
+    title: 'how far apart the two settlements are, in units of their own size',
+    aspect: 2.2,
+    make: (c) => timeSeriesView(c, {
+      tracks: [{ label: 'separation', get: (w) => settlements(w).separation }],
+      window: 1500,
+      reference: 1,
+      referenceLabel: 'touching',
     }),
   },
 };

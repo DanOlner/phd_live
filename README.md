@@ -10,7 +10,7 @@ If you want the argument before the models, start with the [methodology page](ht
 
 ## The models
 
-There are forty-two models in seven groups, following the thesis. Each one runs live, with its own controls and with a fixed run plus a reroll. Pop-out notes say what to watch, explain the economics behind the model and how it is built, and, where there is one, describe what the rebuild found that the thesis did not say.
+There are forty-two models in seven groups, following the thesis, plus a curiosity from the years of building it. Each one runs live, with its own controls and with a fixed run plus a reroll. Pop-out notes say what to watch, explain the economics behind the model and how it is built, and, where there is one, describe what the rebuild found that the thesis did not say.
 
 | Group | What it is for | Models |
 |---|---|---|
@@ -21,6 +21,7 @@ There are forty-two models in seven groups, following the thesis. Each one runs 
 | **E** · the transmission belt | Money is removed and People buy goods directly with time. Production reorganises abruptly, and the gains reach consumers as welfare. | [E1](https://danolner.github.io/phd_live/model.html?m=e1) · [E1raw](https://danolner.github.io/phd_live/model.html?m=e1raw) · [E1many](https://danolner.github.io/phd_live/model.html?m=e1many) · [E2](https://danolner.github.io/phd_live/model.html?m=e2) · [E3](https://danolner.github.io/phd_live/model.html?m=e3) · [E4](https://danolner.github.io/phd_live/model.html?m=e4) · [E5](https://danolner.github.io/phd_live/model.html?m=e5) · [E6](https://danolner.github.io/phd_live/model.html?m=e6) · [E7](https://danolner.github.io/phd_live/model.html?m=e7) · [E8](https://danolner.github.io/phd_live/model.html?m=e8) |
 | **F** · how the framework works | The machinery itself made visible: what a Bundle is, and what an agent can actually be assumed to do. | [F1](https://danolner.github.io/phd_live/model.html?m=f1) · [F2](https://danolner.github.io/phd_live/model.html?m=f2) · [F3](https://danolner.github.io/phd_live/model.html?m=f3) · [F4](https://danolner.github.io/phd_live/model.html?m=f4) |
 | **G** · the comparator | Krugman's Core Model, the benchmark everything else is measured against. | [G1](https://danolner.github.io/phd_live/model.html?m=g1) |
+| **H** · curiosities | Not in the thesis: runs from the years of building the framework that survive only as a picture or a video, reconstructed and tested against what is left. | [H1](https://danolner.github.io/phd_live/model.html?m=h1) |
 
 Good places to start:
 
@@ -36,7 +37,7 @@ Good places to start:
 
 **2. A Java reference implementation** ([`spatialecon-java/`](spatialecon-java/)). This is a clean rebuild of 28 models as self-describing scenarios, with 55 tests that pin a dozen thesis claims to numbers. It turned the thesis from prose plus an unreliable source tree into a verified specification, so the port that followed was a translation of something known. It is not published.
 
-**3. The JavaScript site** ([`spatialecon-js/`](spatialecon-js/)). It covers all 42 models, has no dependencies and no build step, and is plain ES modules drawing to Canvas 2D in the original's monochrome visual style. It has 142 tests, seven precomputed parameter sweeps, step-through walkthroughs and the methodology page. It is published to GitHub Pages directly from that folder.
+**3. The JavaScript site** ([`spatialecon-js/`](spatialecon-js/)). It covers all 42 models and the curiosity, has no dependencies and no build step, and is plain ES modules drawing to Canvas 2D in the original's monochrome visual style. It has 154 tests, seven precomputed parameter sweeps, step-through walkthroughs and the methodology page. It is published to GitHub Pages directly from that folder.
 
 **Verification** works in two tiers. The deterministic economics agrees with the Java reference to six significant figures. The two implementations deliberately use different random generators, so everything stochastic is checked against the published claim within a window rather than against a trace. For example, symmetry between two Firms breaks at ρ = 0.766 here and at 0.764 in the Java, and transmission-belt clearing prices match values worked out by hand to five decimal places.
 
@@ -46,6 +47,7 @@ Good places to start:
 - **One result still does not reproduce.** The thesis reports that strong love of variety makes the Firms' location game harder under noise. Both rebuilds show the opposite, and each has a coherent mechanism for its own result. It is on the site, in D2's notes.
 - **The undamped transmission belt never settles**, which corrects an earlier record. It is an undamped oscillator, and showing that is the point of the variant.
 - **Two scenario configs (C3 and C7) are lost.** Both are reconstructed from the thesis text, and every published direction they show reproduces.
+- **A 2011 video, reconstructed as H1.** In "Green blob red blob", one settlement chases another, smothers it and is shaken off, over and over. Its red and green turn out to be utility rank, not two cities. The setup that reproduces it is two Firms that crawl for revenue, each with a workforce tied to it for work only, and one paying double. It is scored against statistics measured on the video's own frames.
 
 The full list is the "Corrections to the record" table in [BUILD_LOG.md](BUILD_LOG.md).
 
@@ -57,6 +59,7 @@ The planning and reference documents at the root:
 - **[CODE_ANATOMY.md](CODE_ANATOMY.md)**: how the original Java models were actually built, including which code and config produced each published figure, the exact algorithms and constants, and the traps.
 - **[BUILD_PLANNER.md](BUILD_PLANNER.md)**: the plan for the JavaScript port, covering dependency policy, translation rules, visual fidelity, verification, staging and the design decisions now settled.
 - **[BUILD_LOG.md](BUILD_LOG.md)**: what was built stage by stage and what each stage taught, including the claims that later had to be corrected.
+- **[GREEN_BLOB_RED_BLOB.md](GREEN_BLOB_RED_BLOB.md)**: the case for H1's reconstruction of the 2011 video, covering what the frames show, how the 2011 renderer drew them, and the variants tested.
 - **[CLAUDE.md](CLAUDE.md)**: working notes for Claude Code, covering project conventions, known traps in the original code and how to run the 2013 jars.
 
 The two implementations have their own READMEs too:

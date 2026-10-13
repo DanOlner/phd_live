@@ -15,7 +15,7 @@ Four reference documents live at the repo root. Consult them before answering qu
 - **`BUILD_PLANNER.md`** — the plan for the JavaScript port: dependency policy, Java→JS translation rules, the visual fidelity spec, parity harness, staging.
 - **`BUILD_LOG.md`** — what was actually built, stage by stage, and what it taught: the decisions, the findings, and the things got wrong and corrected. The other three state current truth; this one keeps the history. Its "Corrections to the record" table is the fastest way to see which earlier claims have moved. **Append to it as stages land** — an entry earns its place by recording a decision, a finding or an error, not a list of files touched.
 
-And `spatialecon-java/README.md` for what the refactor verified, model by model.
+And `spatialecon-java/README.md` for what the refactor verified, model by model. `GREEN_BLOB_RED_BLOB.md` is the case for H1, the one model outside the thesis: a 2011 video, reconstructed.
 
 ## Layout
 
@@ -81,7 +81,7 @@ cd Thesis_on_github/thesisModelsDanOlner2013/FrameworkModelBuilds/<Scenario>
 
 ## Working notes
 
-- **The JavaScript is the live work.** `spatialecon-js/` — zero runtime dependencies, no build step, ES modules, Canvas 2D, `// @ts-check` + JSDoc instead of TypeScript. **All eight stages of `BUILD_PLANNER.md` §8 are done**: 42 models — the whole catalogue, all seven groups — 142 tests, seven precomputed sweeps, pop-outs, walkthroughs, and `methodology.html`. Over half the stage-8 tail are not agent models (C4/C5 closed forms, E4 a difference equation, F1/F2 process demonstrations, G1 Krugman's Core Model in `src/coremodel.js`); they are `Scenario`s anyway so every model is a page with the same machinery. Its §9 decisions are settled — read them before proposing anything they rule out.
+- **The JavaScript is the live work.** `spatialecon-js/` — zero runtime dependencies, no build step, ES modules, Canvas 2D, `// @ts-check` + JSDoc instead of TypeScript. **All eight stages of `BUILD_PLANNER.md` §8 are done**: 42 models — the whole catalogue, all seven groups — plus one curiosity in group H (`h1`, not in the thesis), 154 tests, seven precomputed sweeps, pop-outs, walkthroughs, and `methodology.html`. Over half the stage-8 tail are not agent models (C4/C5 closed forms, E4 a difference equation, F1/F2 process demonstrations, G1 Krugman's Core Model in `src/coremodel.js`); they are `Scenario`s anyway so every model is a page with the same machinery. Its §9 decisions are settled — read them before proposing anything they rule out.
 - **`data/sweeps/` and `snapshots/thumbs/` are committed output, not scratch.** The site is a static file tree with no build step, so anything a page fetches must already be in the repo. `npm run sweep` and `npm run thumbs` regenerate them; `.gitignore` un-ignores `data/sweeps/` specifically.
 - **Walkthrough captions may not read `world.day`** unless the step sets `elapsed: true`, and a test enforces it. A caption keyed to a day number is pinned to one trajectory and breaks the reroll button, which is the whole reason nothing user-facing may depend on a specific run.
 - **The Java does not ship.** It stays as the reference implementation, linked background, and the record of what was verified. The site is fully JS and depends on nothing in `spatialecon-java`.

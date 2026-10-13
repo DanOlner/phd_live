@@ -19,6 +19,7 @@ import { c1 } from '../src/scenarios/c1.js';
 import { c6, c6c } from '../src/scenarios/c6.js';
 import { d1a, d1b, d1c, d1d } from '../src/scenarios/d1.js';
 import { playBatch, playGame } from '../src/scenarios/d2.js';
+import { h1, settlements } from '../src/scenarios/h1.js';
 import { monocentric } from '../src/scenarios/monocentric.js';
 import { at } from '../src/space.js';
 import { assertClose, assertTrue, report, suite, test } from './tiny.js';
@@ -255,6 +256,144 @@ test('OPEN: rho does NOT reverse the difficulty, against §5.5.2', () => {
       + 'If this now fails, the thesis claim may have been reproduced -- investigate, do not just widen it.',
     lowRho < highRho * 2,
   );
+});
+
+// --- H: curiosities ------------------------------------------------------------------
+
+/**
+ * Run H1 and score it the way its source video was scored (GREEN_BLOB_RED_BLOB.md §1, §5):
+ * each day, where the two settlements and the two Firms are; then, over four-day windows,
+ * which way each moved along the line joining the settlements.
+ *
+ * The chased workforce is whichever leads on utility most of the run — the video's red blob.
+ * Windows below come from eight seeds at these settings, with a few points to spare.
+ *
+ * @param {(c: import('../src/config.js').ModelConfig) => void} [tweak] @param {number} [days]
+ */
+function scoreChase(tweak, days = 2000) {
+  const config = h1.config();
+  tweak?.(config);
+  const w = new World(config);
+  h1.setUp?.(w);
+  const frames = [];
+  for (let d = 0; d < days; d++) {
+    w.timeline.nextDay();
+    frames.push({ s: settlements(w), firms: w.firms.map((f) => ({ x: f.position.x, y: f.position.y })) });
+  }
+  const scored = frames.slice(400); // the settlements forming
+  const k = 4;
+  const hi = scored.filter((f) => f.s.leader === 1).length >= scored.length / 2 ? 1 : 0;
+  const lo = 1 - hi;
+
+  let n = 0, lead = 0, away = 0, toward = 0;
+  let firmAway = 0, firmToward = 0, hiMoves = 0, loMoves = 0;
+  let far = 0, engulfed = 0, changes = 0, state = 0;
+  for (let t = k; t < scored.length; t++) {
+    const now = scored[t], then = scored[t - k];
+    const a = now.s.groups, b = then.s.groups;
+    const gap = Math.hypot(a[hi].x - a[lo].x, a[hi].y - a[lo].y) || 1e-9;
+    const ux = (a[hi].x - a[lo].x) / gap, uy = (a[hi].y - a[lo].y) / gap;
+    /** Movement from q to p along the line from the chaser to the chased.
+     * @param {{x: number, y: number}} p @param {{x: number, y: number}} q */
+    const along = (p, q) => (p.x - q.x) * ux + (p.y - q.y) * uy;
+    /** @param {{x: number, y: number}} p @param {{x: number, y: number}} q */
+    const moved = (p, q) => Math.hypot(p.x - q.x, p.y - q.y) > 1e-12;
+
+    n++;
+    if (now.s.leader === hi) lead++;
+    if (along(a[hi], b[hi]) > 0) away++;
+    if (along(a[lo], b[lo]) > 0) toward++;
+    if (moved(now.firms[hi], then.firms[hi])) {
+      hiMoves++;
+      if (along(now.firms[hi], then.firms[hi]) > 0) firmAway++;
+    }
+    if (moved(now.firms[lo], then.firms[lo])) {
+      loMoves++;
+      if (along(now.firms[lo], then.firms[lo]) > 0) firmToward++;
+    }
+
+    const sep = now.s.separation;
+    if (sep > 1.5) far++;
+    if (sep < 0.35) engulfed++;
+    const st = sep > 0.75 ? 1 : sep < 0.35 ? -1 : 0;
+    if (st !== 0 && st !== state) {
+      if (state !== 0) changes++;
+      state = st;
+    }
+  }
+  return {
+    lead: lead / n, away: away / n, toward: toward / n,
+    firmAway: hiMoves ? firmAway / hiMoves : 0, firmToward: loMoves ? firmToward / loMoves : 0,
+    far: far / n, engulfed: engulfed / n, changes,
+  };
+}
+
+/** @param {number} x */
+const pct = (x) => `${(100 * x).toFixed(0)}%`;
+/** Neither direction favoured. @param {number} x */
+const noBias = (x) => x > 0.4 && x < 0.6;
+
+/** The default run, shared by the tests that read it. @type {ReturnType<typeof scoreChase> | null} */
+let h1Baseline = null;
+const baseline = () => (h1Baseline ??= scoreChase());
+
+suite('H1 — green blob, red blob (a 2011 video)');
+
+test('the better-paid workforce leads, gives ground, and is chased', () => {
+  // The video: red moving away from green 73% of frames, green towards red 75%. Here, over
+  // eight seeds: 57–68% and 57–69%, the better-paid ahead on utility every day.
+  const r = baseline();
+  assertTrue(`the better-paid should lead on utility throughout, did on ${pct(r.lead)}`, r.lead >= 0.95);
+  assertTrue(`they should move away more often than not: ${pct(r.away)}`, r.away > 0.53);
+  assertTrue(`and the others towards them: ${pct(r.toward)}`, r.toward > 0.53);
+  // The mechanism, not just the motion: the chaser is the poorer workforce's Firm, courting
+  // the richer customers, and its commuters follow it in.
+  assertTrue(`the poorer workforce's Firm should step towards the richer: ${pct(r.firmToward)}`,
+    r.firmToward > 0.54);
+  assertTrue(`and the richer workforce's Firm away: ${pct(r.firmAway)}`, r.firmAway > 0.5);
+});
+
+test('and the two keep meeting and parting', () => {
+  // The video: far apart 35% of frames, engulfed 11%, 20 changes of state. Eight seeds here:
+  // far apart 17–43%, engulfed 6–14%, 11–22 changes in 1,600 days.
+  const r = baseline();
+  assertTrue(`clearly apart for a real share of the run: ${pct(r.far)}`, r.far > 0.1);
+  assertTrue(`one wrapped round the other for a real share too: ${pct(r.engulfed)}`, r.engulfed > 0.03);
+  assertTrue(`and back and forth repeatedly: ${r.changes} changes`, r.changes >= 6);
+});
+
+test('take away any one ingredient and the chase stops', () => {
+  const equalWages = scoreChase((c) => { c.rangeStep = 0; });
+  assertTrue(`equal wages: no stable leader (${pct(equalWages.lead)})`, equalWages.lead < 0.7);
+  assertTrue(`equal wages: no chase (${pct(equalWages.away)} away, ${pct(equalWages.toward)} towards)`,
+    noBias(equalWages.away) && noBias(equalWages.toward));
+
+  const fixed = scoreChase((c) => { c.firmsMobile = false; });
+  assertTrue(`Firms fixed: the settlements barely move (${pct(fixed.away)}, ${pct(fixed.toward)})`,
+    fixed.away < 0.3 && fixed.toward < 0.3);
+
+  const bothTied = scoreChase((c) => { c.tie = 'both'; });
+  assertTrue(`both channels tied, as C6: the settlements repel (apart ${pct(bothTied.far)})`,
+    bothTied.far > 0.9);
+  assertTrue(`and nobody chases (${pct(bothTied.away)}, ${pct(bothTied.toward)})`,
+    noBias(bothTied.away) && noBias(bothTied.toward));
+});
+
+test('the runner-up reconstruction chases harder but never parts or engulfs', () => {
+  // Goods tied, work open: the wiring of the one 2011 preset that survives. The poorer
+  // workforce commutes to the better-paying Firm, and the two clouds stay glued edge to edge.
+  const r = scoreChase((c) => { c.tie = 'goods'; });
+  assertTrue(`a harder chase: ${pct(r.toward)} towards`, r.toward > 0.7);
+  assertTrue(`but never clearly apart: ${pct(r.far)}`, r.far < 0.02);
+  assertTrue(`and never engulfed: ${pct(r.engulfed)}`, r.engulfed < 0.02);
+});
+
+test('rho is the dial: merged below the video, parted above it', () => {
+  const tight = scoreChase((c) => { /** @type {any} */ (c.utility).rho = 0.45; });
+  assertTrue(`rho 0.45: rarely apart (${pct(tight.far)}) and often engulfed (${pct(tight.engulfed)})`,
+    tight.far < 0.15 && tight.engulfed > 0.1);
+  const loose = scoreChase((c) => { /** @type {any} */ (c.utility).rho = 0.8; });
+  assertTrue(`rho 0.8: parted most of the time (${pct(loose.far)})`, loose.far > 0.75);
 });
 
 // --- the Bundle cycle itself ---------------------------------------------------------
