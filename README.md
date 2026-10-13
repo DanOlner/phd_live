@@ -1,8 +1,8 @@
-# Agent-based modelling and spatial economics, live
+# "An agent-based modelling approach to spatial economic theory" live version
 
 > *This README was drafted by Claude Code.*
 
-Dan Olner's 2013 Geography PhD at the University of Leeds, *Agent-based modelling and spatial economics*, built a spatial economic agent framework from first principles. It asked how the costs of moving people and goods across distance shape the economic landscape, and why agent-based modelling had barely touched spatial economics. Its models were interactive Java (Processing) programs. This project rebuilds every one of them to run in the browser, with explanations and walkthroughs alongside.
+Dan Olner's 2013 Geography PhD at the University of Leeds, *An agent-based modelling approach to spatial economic theory*, built a spatial economic agent framework from first principles. It asked how the costs of moving people and goods across distance shape the economic landscape, and why agent-based modelling had barely touched spatial economics. Its models were interactive Java (Processing) programs. This project rebuilds every one of them to run in the browser, with explanations and walkthroughs alongside.
 
 **[Open the models → danolner.github.io/phd_live](https://danolner.github.io/phd_live/)**
 
