@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="234" viewBox="0 0 340 234">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="340" height="234" fill="#fff"/>
+<path d="M31 109L309 109" fill="none" stroke="#bbb" stroke-width="1"/>
+<path d="M31 125L309 125" fill="none" stroke="#bbb" stroke-width="1"/>
+<text x="314" y="109" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="start" dominant-baseline="middle" fill="#555">0</text>
+<text x="314" y="125" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="start" dominant-baseline="middle" fill="#555">0</text>
+<path d="M31 67L309 67" fill="none" stroke="#bbb" stroke-width="1"/>
+<path d="M31 167L309 167" fill="none" stroke="#bbb" stroke-width="1"/>
+<text x="314" y="67" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="start" dominant-baseline="middle" fill="#555">5e-10</text>
+<text x="314" y="167" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="start" dominant-baseline="middle" fill="#555">5e-10</text>
+<path d="M31 25L309 25" fill="none" stroke="#bbb" stroke-width="1"/>
+<path d="M31 209L309 209" fill="none" stroke="#bbb" stroke-width="1"/>
+<text x="314" y="25" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="start" dominant-baseline="middle" fill="#555">1e-9</text>
+<text x="314" y="209" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="start" dominant-baseline="middle" fill="#555">1e-9</text>
+<text x="0" y="0" transform="translate(13 67) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="middle" dominant-baseline="middle" fill="#000">firm efficiency</text>
+<text x="0" y="0" transform="translate(13 167) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="7" text-anchor="middle" dominant-baseline="middle" fill="#000">person utility</text>
+<path d="M31 109L309 109" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M31 125L309 125" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="31" y="102" width="1" height="4" fill="#fff"/>
+<rect x="31" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M31 109L27 101L35 101Z" fill="#fff"/>
+<path d="M31 109L27 101L35 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="62" y="102" width="1" height="4" fill="#fff"/>
+<rect x="62" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M62 109L58 101L66 101Z" fill="#fff"/>
+<path d="M62 109L58 101L66 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="93" y="102" width="1" height="4" fill="#fff"/>
+<rect x="93" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M93 109L89 101L97 101Z" fill="#fff"/>
+<path d="M93 109L89 101L97 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="124" y="102" width="1" height="4" fill="#fff"/>
+<rect x="124" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M124 109L119 101L128 101Z" fill="#fff"/>
+<path d="M124 109L119 101L128 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="155" y="102" width="1" height="4" fill="#fff"/>
+<rect x="155" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M155 109L150 101L159 101Z" fill="#fff"/>
+<path d="M155 109L150 101L159 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="185" y="102" width="1" height="4" fill="#fff"/>
+<rect x="185" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M185 109L181 101L190 101Z" fill="#fff"/>
+<path d="M185 109L181 101L190 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="216" y="102" width="1" height="4" fill="#fff"/>
+<rect x="216" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M216 109L212 101L221 101Z" fill="#fff"/>
+<path d="M216 109L212 101L221 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="247" y="102" width="1" height="4" fill="#fff"/>
+<rect x="247" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M247 109L243 101L251 101Z" fill="#fff"/>
+<path d="M247 109L243 101L251 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="278" y="102" width="1" height="4" fill="#fff"/>
+<rect x="278" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M278 109L274 101L282 101Z" fill="#fff"/>
+<path d="M278 109L274 101L282 101Z" fill="none" stroke="#000" stroke-width="2"/>
+<rect x="309" y="102" width="1" height="4" fill="#fff"/>
+<rect x="309" y="102" width="1" height="4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M309 109L305 101L313 101Z" fill="#fff"/>
+<path d="M309 109L305 101L313 101Z" fill="none" stroke="#000" stroke-width="2"/>
+</svg>

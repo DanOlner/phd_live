@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How these models are built — and what that costs</title>
+<style>
+  :root { --ink: #111; --line: #d8d4cc; --paper: #faf9f7; --muted: #6b675f; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.68 ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+  .back { display: inline-block; margin-bottom: 1.4rem; font-size: 0.82rem; color: var(--muted); }
+  h1 { font-size: 1.6rem; letter-spacing: -0.015em; margin: 0 0 0.4rem; line-height: 1.25; }
+  .lede { color: var(--muted); margin: 0 0 2.4rem; font-size: 1rem; }
+  h2 {
+    font-size: 1.12rem; margin: 2.8rem 0 0.7rem; letter-spacing: -0.01em;
+    padding-top: 1.4rem; border-top: 1px solid var(--line);
+  }
+  h3 { font-size: 0.98rem; margin: 1.8rem 0 0.4rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.5rem; }
+  code { font: 14px ui-monospace, Menlo, monospace; background: #fff;
+         border: 1px solid var(--line); border-radius: 2px; padding: 0.05em 0.3em; }
+  a { color: inherit; }
+  .models { font-size: 0.88rem; color: var(--muted); margin: 0.3rem 0 1.4rem;
+            padding-left: 0.8rem; border-left: 2px solid var(--line); }
+  .models a { text-decoration: none; border-bottom: 1px solid var(--line); }
+  blockquote { margin: 1.2rem 0; padding-left: 1rem; border-left: 3px solid var(--line);
+               color: #3a3630; font-style: italic; }
+  footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line);
+           font-size: 0.85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← all models</a>
+  <h1>How these models are built — and what that costs</h1>
+  <p class="lede">
+    Agent-based models are easy to build and easy to over-claim for. The thesis these come
+    from spends a chapter on the methodology before it runs anything, and the arguments are
+    still the reason to look at the models rather than at the pictures they make. Several of
+    them have a model you can run attached.
+  </p>
+
+  <h2>An agent's day is one unit of time, and that is the budget</h2>
+  <p>
+    Every Person in these models has one day and spends it. In the earlier models it buys a
+    wage, which buys goods; in the transmission belt it buys goods directly, and the goods
+    <em>are</em> the wage. That is not a simplification for tidiness. It is the answer to a
+    problem the thesis ran into and could not get around any other way.
+  </p>
+  <p>
+    Model money as a real conserved quantity that agents hand to each other, and it develops
+    dynamics of its own that swamp whatever you were studying — severe inequality out of
+    nothing but a random walk, with no preferences, no strategy and no production anywhere in
+    the model. Using time removes the problem by removing the stock: a day cannot be hoarded.
+  </p>
+  <p class="models">
+    <a href="model.html?m=f1">F1 — zero-intelligence money exchange</a>: the failure that
+    prompted it. Watch the Gini coefficient climb from zero on a model with nothing in it.
+  </p>
+
+  <h2>Three kinds of decision, and only one of them is dangerous</h2>
+  <p>
+    The framework distinguishes decisions by <em>when they fire</em>, and the distinction is
+    not bookkeeping — it decides which parts of a model can be trusted.
+  </p>
+  <ul>
+    <li>
+      <strong>Instant.</strong> Computed from the current state, used immediately. A Person
+      pricing goods delivered to a candidate location. Nothing can go wrong with the timing
+      because there is no timing.
+    </li>
+    <li>
+      <strong>Feedback.</strong> Compares now against last turn. A Firm asking whether its
+      revenue rose since it moved. <strong>This is the one that breaks.</strong>
+    </li>
+    <li>
+      <strong>Reflex.</strong> Fires on an event rather than on the clock — the transmission
+      belt's Firms adjust price on every single sale, three hundred times a day rather than
+      once. A reflex never asks how long ago anything happened, so it is immune to what
+      follows.
+    </li>
+  </ul>
+
+  <h3>The permutation gap</h3>
+  <p>
+    Agents act one at a time and the order is reshuffled every day, because otherwise whoever
+    goes first has a permanent advantage. Reshuffling is right. But now ask how much time
+    passes between one agent's consecutive actions: go last today and first tomorrow and
+    almost none has; go first today and last tomorrow and nearly two days have. The average
+    is exactly one day and it is <em>almost never</em> one day for anybody in particular.
+  </p>
+  <p>
+    So every feedback decision in the model is quietly dividing by a denominator that varies
+    by a factor of two. A Firm that moves, waits a turn and asks "did my revenue rise?" is
+    comparing across an interval it does not know the length of. It is a real source of the
+    noise those Firms are misreading, and it is invisible unless you go looking.
+  </p>
+  <p class="models">
+    <a href="model.html?m=f2">F2 — the permutation gap</a>: ten thousand agents, and the
+    distribution is a pyramid centred on one day rather than a spike at it. The checkbox turns
+    on the fix.
+  </p>
+
+  <h2>How many agents is a modelling assumption, not a detail</h2>
+  <p>
+    Agent counts are usually chosen for speed and reported as if they were incidental. They
+    are not. Several results in these models change with population, and one of them changes
+    in a way that is worth stating carefully.
+  </p>
+  <p>
+    In the monocentric model, People trade crowding against distance until nobody can improve
+    by moving, and utility ends up equal everywhere. Except at the edge: past a cutoff there
+    is no crowding left to trade away, so those People pay pure distance cost and their
+    utility falls. They are not out of equilibrium — no move improves them — they are outside
+    the range over which equalisation is <em>possible</em>.
+  </p>
+  <p>
+    That fringe is 44% of the population at 125 People and 0.45% at 2,000. So "utility is flat"
+    is a large-numbers idealisation, exactly true only in a limit, and a model run at 125
+    People to keep it responsive would report something qualitatively different from the same
+    model at 2,000.
+  </p>
+  <p class="models">
+    <a href="model.html?m=c1">C1 — the monocentric result</a>: switch on the equalising cutoff
+    to see the ring, and the swept figure below it for the population series.
+  </p>
+
+  <h2>Rational agents can do worse than blind ones</h2>
+  <p>
+    A production function with a fixed labour requirement — output is
+    <code>(l − α)/β</code>, so nothing is produced until α units of labour arrive — is
+    perfectly sound as algebra, where <code>l</code> is an aggregate and nobody has to be
+    first. Put it in a model where agents each supply one unit of labour and it has a hole in
+    it exactly where the agents are.
+  </p>
+  <p>
+    An agent who reasons correctly works out that joining alone yields less than nothing, and
+    declines. Every agent reasons correctly, so nobody ever joins, and production never
+    starts. An agent who does not reason at all — pick somewhere at random, stay if things
+    improved — eventually stumbles into a crowd, and production starts.
+  </p>
+  <p>
+    This is why every model here uses a smooth production function instead. It produces
+    something for any positive input, so there is no threshold to coordinate across, and both
+    kinds of agent work under it.
+  </p>
+  <p class="models">
+    <a href="model.html?m=f3">F3 — blind against rational choice</a>: two populations side by
+    side, one of which never produces anything.
+    <a href="model.html?m=a3">A3</a> shows the same function's negative region as a curve.
+  </p>
+
+  <h2>Showing something is the start of an explanation, not the end</h2>
+  <p>
+    This is the sharpest methodological claim in the thesis, and it is aimed at agent-based
+    modelling generally.
+  </p>
+  <blockquote>
+    A model that produces a striking result has demonstrated that some mechanism can produce
+    it. It has not said which one, and "emergence" is not a mechanism.
+  </blockquote>
+  <p>
+    The thesis holds itself to this. Two Firms and one Person, with no space anywhere in the
+    model, produce a catastrophic shift in production structure as one parameter crosses a
+    threshold — a good result, and on its own an unexplained one. So the next model strips
+    out the agents entirely and leaves four pairs of numbers and one line of arithmetic. It
+    does the same thing at the same threshold.
+  </p>
+  <p>
+    That locates the mechanism exactly. Both Firms are updated simultaneously from the same
+    state, so it cannot be turn order, or sampling, or anything about agents. The only channel
+    between them is that both prices appear in the same demand equation — which is what the
+    utility function <em>is</em> — and one parameter sets how strongly. The instability lives
+    inside the Person's preferences.
+  </p>
+  <p>
+    Compare that with the money-exchange model, which is the same situation handled the other
+    way: a striking output, a resemblance to real data, and no claim to the mechanism at all.
+    The thesis' footnote on it is the best line in the chapter.
+  </p>
+  <p class="models">
+    <a href="model.html?m=e3">E3 — the regime shift</a>, then
+    <a href="model.html?m=e4">E4 — tracking down the transmission belt</a>. Run them in that
+    order.
+  </p>
+
+  <h2>Functional and descriptive mapping</h2>
+  <p>
+    There are two things a model element can be doing. It can <em>describe</em> something —
+    this agent is a firm, this distance is kilometres — or it can <em>function</em> as
+    something: this term makes crowding expensive, and whether it is rent, congestion or
+    noise is left open.
+  </p>
+  <p>
+    The density cost in these models is deliberately functional. It is not land rent; there
+    are no landlords, no bid-rent curves and no market for space at all. It is only "being
+    near others costs something", and it is paid by the crowd to nobody. That it produces von
+    Thünen's rings anyway is the result — the rings do not require the institution usually
+    invoked to explain them.
+  </p>
+  <p>
+    The same discipline is why the thesis keeps love of variety and economies of scale apart
+    when the standard model collapses them into one parameter. Two distinct things doing two
+    distinct jobs, and their interaction is the finding.
+  </p>
+  <p class="models">
+    <a href="model.html?m=c6">C6 — von Thünen without landlords</a>, and
+    <a href="model.html?m=c6c">C6c</a>, where the sorting reverses because the cost is spatial.
+    <a href="model.html?m=g1">G1 — the Core Model</a> is the comparator that cannot separate
+    them.
+  </p>
+
+  <h2>What this rebuild adds</h2>
+  <p>
+    These models were rebuilt twice from the 2013 originals — once in Java to establish what
+    they do, and once in JavaScript to run here — and the rebuilding turned things up. They
+    are on the model pages under "what we found", including where they complicate the thesis
+    rather than confirming it.
+  </p>
+  <ul>
+    <li>
+      One published figure plots a different variable from the one its label names. Reading
+      the label instead of the code made three separate results look like failures to
+      reproduce; they were one measurement error.
+    </li>
+    <li>
+      One result has <strong>not</strong> reproduced. The thesis reports that strong love of
+      variety makes the Firms' search problem harder under noise; both independent rebuilds
+      show the opposite. That is written up as an open question rather than smoothed over.
+    </li>
+    <li>
+      The monocentric model's fringe, above, was a puzzle in the reimplementation before it
+      was a finding.
+    </li>
+  </ul>
+  <p>
+    A rebuild that quietly reproduced everything would be less informative than one that does
+    not.
+  </p>
+
+  <footer>
+    <p>
+      From Dan Olner's 2013 PhD, <em>Agent-based modelling and spatial economics</em>,
+      University of Leeds. The models are rebuilt in dependency-free JavaScript; the original
+      Java is kept as the reference implementation.
+    </p>
+  </footer>
+</main>
+</body>
+</html>

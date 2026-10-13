@@ -1,0 +1,94 @@
+\section{Model atoms \label{sec:modelatoms}}
+
+This section examines a series of the most basic model `atoms': very small examples for testing that key principles are working. As such, they are partial models, with many aspects kept fixed. 
+
+\subsection{Increasing returns \label{sec:modelatom_increts}}
+
+What are the minimal conditions for breaking out of the spatial impossibility theorem? As discussed in section \ref{sec:marketstructure}, increasing returns are a necessary (but not sufficient) condition. Those increasing returns do not need to come from a Firm's economies of scale, however. Love of variety alone, with linear output, is enough to make it worth actors' time to move out of their backyards and trade. Table \ref{tab:spatimpsimple} lists the model component settings. As described, two types are compared here to illustrate their equivalence: one where increasing returns come from love of variety alone, and one with production-level increasing returns.
+
+%%%%%%%%%%%%%%
+% Scenario table
+%%%%%%%%%%%%%%
+\input{ChapterModels/Tables/modelatom_increts_table}
+
+The situation is this:
+
+\begin{itemize}
+	\item Two actors $A$ and $B$, a given distance $d$ apart.
+	\item Each produces a unique good ($A$ makes $F$ and $B$ makes $M$) in their backyard using time. Time can also be used to move across space. Let any distance travelled by $A$ and $B$ equal $d_A$ and $d_B$. Let any time put into labour equal $l_A$ and $l_B$ respectively. Production is linear (and normalised to one) so $F = l_A$ and $M = l_B$. Each actor's `budget' is one day - so for example, for actor $A$, $d_A + l_A = 1$. (So movement cost is also linear, e.g. $d_A = 1 - 1_A$.)
+	\item Both actors have a pure-good \gls{ces} utility function of the form already described in equation \eqref{eq:-4}: $U = (F^\rho + G^\rho)^{1/\rho}$. This means that if they consume only the good they make (the backyard scenario) utility is proportional to good production, since e.g. $U=(F^\rho)^{1/\rho} = F$.
+\end{itemize}
+
+\cmt{part one of that sounds much more complex than it needs to. Simple diagram?}
+
+Trading is worthwhile only if it gives actors higher utility than backyard production: a simple comparative statics problem. (The next few paragraphs will describe the situation for actor $A$ to save repetition.) In the normalised example above, backyard production just gives $U = F = 1$. That is, utility is always proportional to the good quantity produced, and the amount produced is always just proportional to the time put in (for backyard production, $l_A = 1$ since there is no movement). 
+
+So trade will be better than backyard production if $U > 1$ for both actors. To help work out when this is true, some assumptions can be used from what has already been shown in section \ref{sec:CESbasics} and more formally in appendix \ref{apx:maths}. \emph{If} trade does take place, the optimal mix of two goods is a perfectly even split, $F=G$. Given what has just been stated about space costs, this means there is one unique location that will optimise utility from trade, if it is to take place at all: exactly half-way between the two actors, at $d/2$. (Note also, if they were delivering goods to each other, rather than meeting in the middle, this would by itself guarantee an even split, since $d_{AB} = d_{BA}$.)
+
+Trade can only occur if anything has actually been produced. Total production for the two actors, $F+M$, is zero-sum with distance. It is straightforward to show that total good production in trade is $F+M = 2-d$ - that is, if the total distance between them is more than two, nothing will be produced. This gives a maximum distance beyond which no trade can take place. Now, given the assumption that a trading optimum is an even split, each actor's optimum is just half the total: $F+M = (2-d)/2$ or $1-(d/2)$. This quantity can stand in as a budget constraint for each agent. Using it to optimise \eqref{eq:-4} produces similar results to that outlined in the appendix. $F=M$, but the optimal quantities of each in relation to distance are slightly different: $F=(2-d)/4$ and $M=(2-d)/4$.\footnote{To check this, only the partial equation for $dZ/d\lambda$ needs changing from that outlined in section \ref{sec:constrainedopt}. This is just the budget constraint described above, which $F=M$ can be plugged into to get quantities for $F$ and $M$.}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.85\columnwidth]{ChapterModels/Figures/CESTwoPartnertradeGraph}%
+\caption{Two-actor CES, backyard or trade? Love of variety ($\rho$) on the y axis, total distance ($d$) between actors on the x axis. Thick red line indicates where $U=1$: this marks the break between `backyard or trade'. Blue line, $U=1.2$ and red line, $U=0.8$.}%
+\label{fig:CESTwoPartner}%
+\end{figure}
+
+How to find whether trade is actually better than backyard alone? Given that this happens only where trade gives $U>1$, an easy option is to start by identifying where $U=1$. This can give a line separating trade from backyard. The fact that we already know there will be an even mix makes this easier: the optimal quantities for $F$ and $M$ can just be plugged into the utility function. Given that both quantites are the same -
+
+\begin{equation}
+U = (2\cdot(\frac{2-d}{4})^\rho)^{1/\rho}
+\end{equation}
+
+Isolating for $d$ gives: 
+
+\begin{equation}
+%d = -4(\frac{1}{2}U^\rho)^{1/\rho}+2
+d = -4(U\cdot2^{-1/\rho})+2
+\end{equation}
+
+That is, plugging any target utility value in for $U$ and $\rho$ gives a distance line for that utility. Figure \ref{fig:CESTwoPartner} shows three lines, indicating where trading gives better utility than sticking to backyard production. Where $\rho=1$, and the two goods are perfect substitutes, both actors would need to occupy the same point in space: this would be no different to producing for themselves. The further apart they are, more love of variety is required to make up for the distance cost - until distance itself rules out production altogether.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Firms searching for a location
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Firms: optimal location in a love-of-variety world \label{sec:firmsLoV}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Scenario table
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{ChapterModels/Tables/modelatom_firmsLoV_table}
+
+Just read this line: "A single Firm has no problem finding an income-maximising path: the rest of the world is static, so any change in the world must be a consequence of its own actions. As soon as a second Firm is added, however, that's not the case." (from DMR heading.) Good sentence for PhD!
+
+This partial model illustrates clearly the nature of the `data, meaning, response' problem. People are set in a stationary circle at the centre of an $R^2$ space, and two Firms must find an optimal location for maximising their revenue. All prices and wages are fixed, and Firms' stock is unlimited. Delivery costs are `iceberg': People pay a delivery cost, but it `melts away' and Firms receive just the unit value. This means that, from the point of view of People, cost per unit drops as Firms draw closer. They can then afford to buy more. This means that a Firm's revenue-maximising location (in the absence of any others) is directly in the centre of the circle of people. A Firm's decision process is this:
+
+\begin{itemize}
+	\item At time $t-1$: Try a new location near to my current one.
+	\item At $t$: did my marginal revenue improve?
+	\begin{itemize}
+	\item Yes: repeat the previous action, increasing the distance slightly
+	\item No: revert to last good location
+\end{itemize}
+\end{itemize}}
+
+\cmt{this decision structure: already described in previous chapter, yes?}
+
+What is the rationale behind this? To put it into \gls{dmr} terms: a Firm has only one datum to act on, a change in revenue. The meaning of an increase is taken to be, `my previous action was successful'. Conversely, a drop in revenue is taken to mean that the action was counter-productive. This interpretation of meaning leads to the subsequent response: either repeat the action or reverse it. 
+
+But are these appropriate responses? This depends on whether the Firm is correctly interpreting their data - and in a competitive situation, they may not be. Given that all parameters are fixed, there are only two ways a Firm can increase revenue: reducing delivery costs by being closer to their market, or taking trade away from another Firm. It is this last point that presents problems for the Firm's understanding of the data: revenue may have dropped, but it may not be because of the action the Firm has taken. If they then reverse that action, this is an \emph{in}appropriate response, based on misunderstanding of the data.
+
+When actors have love of variety controlled through $\rho$, this also dictates how directly Firms will be competing. When $\rho=1$, goods are perfect substitutes, and Firms can only compete on cost (which in this scenario, they can only reduce by getting closer to their market.) As $\rho\to0$, people increasingly prefer a mix of goods - but it also has a surprising effect on Firms: they find it easier to discover the optimal location. Where they are competing more directly, however, the problem of faulty data is strongest. A Firm will more often find their revenue has decreased.
+
+
+
+In contrast to objective optima possible in analytic approaches, in this situation Firms cannot know whether their current revenue has reached a point of final optimum. In practice this means they will always need to `test the waters' looking for further improvements. A consequence of this is that they may cede revenue, and leave a space for others to exploit. No one Firm can act without changing the situation others face. Attempting to seek revenue improvements thus becomes a constant battle, unable ever to stabilise.
+
+There is, however, a region of stability within which this battle for revenue takes place, and once a Firm has found it, they able to hold that position.
+
+
+
+
+
+This is intuitive enough: as goods become more complementary, and people want a mix of the two, a Firm's actions are likely to be correct, and the other Firms' actions won't be so prone to giving false negatives because they won't impact on the others' revenue so strongly.

@@ -1,0 +1,133 @@
+%note subsection \subsection{Market structure and space \label{Market structure and space}}
+%there's some good writing there, hidden in a comment. I'm nabbing some bits for here. 
+
+%%%%%%%%%%%%%%
+% SPACE DISCUSSION OVERVIEW
+%%%%%%%%%%%%%
+
+%This section builds directly on section \ref{sec:utilityintro}, where the details of utility and production functions were described. Here, the task is to move from how space has been understood in the modelling literature to a clear explanation of its use in this thesis.
+
+%The focus of this thesis is on how space affects the choices faced by actors. The job of this section is to examine how space has been defined in the literature. From that, the concept of 'space costs' will be clearly defined for later use. 
+
+%Things to do:
+%Need to mention Isard is arguing for a "general location theory" (is title of book after all!)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% WEBER-TYPE STORIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{`Weber-type stories'\label{sec:weberstories}}
+
+\cmt{The introduction will have explained: thesis is using `general location theory' approach, first suggested by Isard, taken up by geographical economics, pretty much ignored by agent modellers who have focussed on complexity.}
+
+This chapter describes the elements used in the thesis model approach. The focus will be on the ideas that have been directly used in the models or arguments later on. It does this in three sections. The first two outline the key economic and spatial concepts respectively. The third puts these two together to develop the theory behind the models described in chapter \ref{chapter:models}.
+
+\section{Isard's challenge: do we need space in spatial models? \label{sec:space_discuss}}
+
+\begin{quote}
+``Since it is the distance factor that is the heart of locational analysis, there is every reason to speak of transport inputs, wherein distance and weight are the two basic factors, and of transport rates as prices of these inputs. Location theorists unfortunately have shied away from such a concept.'' (\citealt{isard_location_1956} p.35)
+\end{quote}
+
+%``... it is as unjustifiable and inadequate to lump transport costs into one category along with all trade resistances in the theory of trade, as it is to treat them as implicit production costs in the theory of production'' \citealt{isard_location_1956} p.26).
+
+Since Isard wrote this, the `distance factor' as he describes it appears to have faded even further. When it comes to \gls{ge}, distance is thrown in with other trade barriers as a generic `transport cost'. The Weberian tradition of dealing explicitly with distances and weights is absent, replaced by an internalised `iceberg' cost of goods transport between regions and the effect of `externalities' within them. Krugman only ever mentions 'Weber-type stories of transport cost minimisation' to dismiss them (\citealt{krugman_geography_1991} p.49).
+
+Of course, there is nothing wrong with abstraction; if the complications of space can be reduced to simpler forms, all the better for the analysis. However, Isard, for one, believed that - 
+
+\begin{quote}
+``for a balanced treatment, the particular effects of transport and spatial costs in separating producers from each other must be considered. They are too vital to be sidestepped through implicit treatment.'' (p.26)
+\end{quote}
+
+This is Isard's challenge, then: space is too vital a factor to be treated implicitly. But why does he say this? His fundamental reasoning, on the surface, is the same as Krugman's. Isard argued for a `general location theory' to parallel general equilibrium, but railed against general equilibrium's lack of explicit space. For Isard, general equilibrium was a ``wonderland of no dimension'' (ibid). In the period between Isard's and Krugman's work, however, general equilibrium continued to avoid explicit space. As Isserman notes (\citealt{isserman_its_1996}), Krugman repeated Isard's claim almost verbatim, pointing out that ``in the late nineteen-eighties mainsteam economists were almost literally oblivious to the fact that economies aren't dimensionless points in space.'' Yet \gls{ge}'s core model replaces this with two dimensionless points in space; Isard for one seemed to have no time for this sort of ``one point world, which somehow or other is conceived as divided into n parts, representing n nations, between which trade and trade barriers exist'' (\citealt{isard_location_1956} p.26). This thesis uses agent modelling as a novel way of unpicking the implications of the exact choice of space type.
+
+Spatial agent modelling is obviously nothing new. As will be discussed in chapter \ref{chapter:ABM}, however, it appears to have largely steered away from traditional economic questions of the sort Isard and Krugman discuss: see, for instance, a recent review (\citealt{torrens_agent-based_2010}). \gls{abm} theory in the round tends to emphasise complexity over simplicity, and often defines itself against the standard canon of micro-economic ideas. This leaves a hole that agent modelling has avoided: asking the simple, `general location' questions about space that Isard - and now \gls{ge} - examine, but leveraging the particular strengths of \gls{abm}. Efforts have already been made to re-cast the central model of \gls{ge} in agent form: Christopher Fowler's work (also discussed in chapter \ref{chapter:ABM}) has the explicit goal of testing whether agent modelling can work within the constraints of \gls{ge}'s core structures. This thesis comes from the opposite direction to Fowler: it starts from an agent-oriented point of view, and points towards \gls{ge}. This leaves some very elemental questions about agent modelling of actors in space left open.
+
+Can an agent-based approach, modelling actors in explicit space, supply any novel `substantive propositions' (see section \ref{sec:constructalanguage}) regarding the role of space in economic theory? Does explicit distance affect model outcomes in ways that other space forms do not, or is there something fundamental to the \emph{interaction} of many actors in space does not show up in an aggregate analysis? Are there results from the straightforward effect of large numbers, that would not appear in \gls{ge}'s `representative agent' approach? More fundamentally, are there results stemming from the difference between the physics-based roots of economics and the computational, iterative structure imposed on \gls{abm} models? (See section \ref{sec:phys_vs_comp}.) Perhaps just as importantly, what are \gls{abm}'s weaknesses compared to more analytic approaches? The components used to answer these questions are now outlined, starting with the basic economic concepts.
+
+\cmt{need to come back here or to intro and answer these questions: PhDs are not whodunnits. Sadly.}
+%This does not require the actors or the environment to be `complex'. Quite the reverse: the goal is to examine whether using some commonly used, simple economic ideas in an agent context can bear fruit. 
+
+%%%%%%%%%%%%%%%%%%%
+% CUTTINZ
+%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+
+Each of these have different implications for model outcome. Space cost \emph{change} is a particularly thorny issue, which will be returned to shortly. Before that, some other concepts need outlining. 
+
+
+Clearly, geographical and organised proximity are in some way correlated. Indeed, this is an area ripe for tilting the `tractability-realism' scales towards the former: in two-dimensional space, Euclidean distance between two points can be a reasonable approximation, proportionately, of the time taken to move between those points. Indeed, at a push, it could be argued that all of the different space cost variables listed above can be treated in this way. Short-run space-cost changes might also be amenable to this sort of simplification: for example, fuel price changes would have an even impact in the very short run and, in the medium term, a more elastic response would be seen as - again, fairly evenly - actors adjust other more structural elements of their economic choices. 
+%going to need some examples of this, aren't I? Where to discuss the elasticities
+
+%going to need a lot of transport economics in this section!
+The problem gets more difficult, however, when considering longer-term space cost changes, and it is here where the fundamental difference between Torre and Rallet's geographical-organised distinction show its importance most keenly. In the long term, transport networks change - and they do so in a way that is hard to reduce to some simple formulation.
+
+As Torre and Rallet point out \citep{torre_proximity_2005} the concept of proximity needs careful definition. They ask, what is it, and what is its relation to space?
+
+\begin{quote}
+``The question might seem preposterous: does not 'being in proximity' simply mean being situated near and not somewhere else? Yet, this answer is not that obvious. What does 'being near' somebody mean?'' (p.48)
+\end{quote} 
+
+%They quote malmberg_elusive_2002 - will be reading that shortly. Sound like they have something interesting to say.
+
+They pull out two main meanings for proximity: geographical and organised. The latter can be used, for example, when discussing proximity on a network, which may have no direct relation to geographical distance. Neighbours may be geographically proximate but be much closer to work colleagues organisationally. In analysing the impact of space costs, however, a more precise take on proximity is required. An actors' choices may well be influenced by neighbours, work colleagues and range of other factors, but there needs to be a systematic way to describe those.
+
+---------
+
+In summary, the impact of the following variables on space cost will be discussed: 
+
+\begin{description}
+	\item[Distance:] raw distance is a cost, but without some other factor, its definition is arbitrary. Nevertheless, it is still useful as one of the main ways of comparing changes in spatial structure.
+	\item[Time:] the time it takes for people and goods to move about is the dominant space cost, some argue, when other costs are low.
+	\item[Factors:] different factors may be needed in order to 'buy' space - most obviously various forms of energy.
+	\item[Utility:] the utility derived from space costs will vary depending on, for example, whether an actor is using a car or walking. These empirical differences need discussing as they are an important aspect of the literature but - as with all else - the aim will be to use as simple a formulation as possible in the actual modelling work.
+\cmt{List of space costs: not sure if I should be including money on this list.}	
+\end{description}
+
+The idea of linkages between suppliers as a key agglomeration force goes back to Marshall - it is far from new. What is rare, however, is to see this emphasis on raw distance - that `conserving transport costs' itself could be at work in that agglomeration. Instead, most analyses show the effect of these `intermediate inputs' being felt through externalities, where it is assumed that ``firms have to be located closely enough together to benefit from these externalities.'' (Brakman et al p.40) What this means in practice is that externalities are usually the effect of functions within regional units. As a consequence, it is assumed that some form of economies of scale is required for them to be present. As Krugman argues: 
+``If there were no economies of scale in the production of intermediates inputs, then even a small-scale centre of production could replicate a large one in miniature and still achieve the same level of efficiency. It is only the presence of increasing returns that makes a large centre of production able to have more efficient and more diverse suppliers than a small one.'' (Krugman 1991, p.49)
+
+Some notes from Isard (Location and space economy)
+
+``Since it is the distance factor that is the heart of locational analysis, there is every reason to speak of transport inputs, wherein distance and weight are the two basic factors, and of transport rates as prices of these inputs. Location theorists unfortunately have shied away from such a concept. However, it brings into bold relief the basic aspects of spatial analysis without the necessity of tagging each unit of land, labour and capital with a set of absolute spatial co-ordinates or of converting them into common units, if, indeed, this can be done. The problem of production becomes a problem of choosing the right combination of the various types of capital, labour, land and transport inputs.'' (p.35-6)
+
+And on Weber: so the point I want to get from here is how Isard defends Weber's basic take on things. 
+
+``
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the discipline of economics, up until the publication of the Dixit/Stiglitz model, arguments about space in economic models had not moved on much from the 1940s and 1950s. As Krugman points out -
+
+\begin{quote}
+``... in the late 1980s mainsteam economists were almost literally oblivious to the fact that economies aren't dimensionless points in space.'' (\citealt{krugman_new_2010} p.1)
+\end{quote}
+
+This was at least in part because of earlier debates where economists had parted ways with a nascent regional science: the former insisted  that perfect competition models could include space implicitly as part of their cost structure; the latter argued that was nonsense. (Isard is one such, and it is interesting to note that he also seems to have little time for GE-style use of transport costs: ``... it is as unjustifiable and inadequate to lump transport costs into one category along with all trade resistances in the theory of trade, as it is to treat them as implicit production costs in the theory of production'' \citealt{isard_location_1956} p.478). After Krugman's reinterpretation of Dixit-Stiglitz in a spatial context, monopolistic competition gained two vital qualities appealling to mainstream economists: tractability and determinacy...
+
+
+
+%Like Fowler, \gls{ge} has been the primary source of theory, but rather than starting from \gls{ge}'s theoretical framework, here the focus has been on building economic actors in a spatial setting from the ground up.
+
+%although just to be annoying, that's not strictly true. Pecuniary exts affect prices; just in a way that involves no actual payment.
+
+%The implementation of the concept, though, must differ in analytic and ABM models. As will be discussed, an externality can be defined more transparently in analytic approaches than in ABM, where it cannot be assumed that all agglomeration effects are externalities. That transparency is one advantage analytics has over the relative opacity of ABM; whether it is insurmountable will depend on how successfully ABM can deal with the same effects.
+
+The key fact about space - that the torus method employed here explores - is distance between actors. But isn't the whole point of existing location theory approaches to deal with this key fact? Yes, but each has to abstract away from it in different ways. 
+
+%Next: discuss core model, central place model, continuous line model if I can understand that. Anyway, a quick outline, which I'll need to expand on / go into more detail.
+
+In the core model, an increase in transport costs affects only the quantity of goods able to move between regions. Indeed, those costs don't necessarily have to represent space-costs at all; as with their first appearance in Krugman's 'new trade theory', they could equally represent tariff barriers, defining a regional world somewhere between autarky and complete free trade. The internal spatial structure of regions is immaterial.
+
+Button’s definition of externalities was already mentioned in the introduction: ``externalities exist when the activities of one group affect the welfare of another group without any payment or compensation being made.'' (\citealt{button_transport_2010} p.161)
+
+Urban economics does deal with internal spatial structure, but Krugman's criticism is correct: it assumes what we want to explain, which is the emergence of centres. The way it deals with space also leaves little room for exploring how distances affect decisions. In many urban models, the result of spatial decisions is immediately assumed away: utility for all agents must, by definition, be equal, or there would be room for arbitrage over rents. 
+
+Externalities offer a way to keep space in, if only implicitly…
+
+
+
+%When agglomeration benefits from intermediates are treated solely as externalities in a black box, is the role of distance itself sidelined? 
+
+
+
+
+
+\end{comment}

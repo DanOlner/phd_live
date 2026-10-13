@@ -1,0 +1,1650 @@
+﻿
+@article{duranton_micro-foundations_2003,
+	title = {{Micro-Foundations} of Urban Agglomeration Economies},
+	volume = {No. 9931},
+	url = {http://www.nber.org/papers/w9931},
+	abstract = {This handbook chapter studies the theoretical micro-foundations of urban agglomeration economies. We distinguish three types of micro-foundations, based on sharing, matching, and learning mechanisms. For each of these three categories, we develop one or more core models in detail and discuss the literature in relation to those models. This allows us to give a precise characterisation of some of the main theoretical underpinnings of urban agglomeration economies, to discuss modelling issues that arise when working with these tools, and to compare different sources of agglomeration economies in terms of the aggregate urban outcomes they produce as well as in terms of their normative implications.},
+	journal = {National Bureau of Economic Research Working Paper Series},
+	author = {Giles Duranton and Diego Puga},
+	month = sep,
+	year = {2003},
+	note = {published as Duranton, Gilles \& Puga, Diego, 2004. {"Micro-foundations} of urban agglomeration economies," Handbook of Regional and Urban Economics, in: J. V. Henderson \& J. F. Thisse (ed.), Handbook of Regional and Urban Economics, edition 1, volume 4, chapter 48, pages 2063-2117 Elsevier.},
+	keywords = {agglomeration}
+},
+
+@article{puga_magnitude_2010,
+	title = {The Magnitude and Causes of Agglomeration Economies},
+	volume = {50},
+	url = {http://dx.doi.org/10.1111/j.1467-9787.2009.00657.x},
+	doi = {10.1111/j.1467-9787.2009.00657.x},
+	abstract = {Firms and workers are much more productive in large and dense urban environments. There is substantial evidence of such agglomeration economies based on three approaches. First, on a clustering of production beyond what can be explained by chance or comparative advantage. Second, on spatial patterns in wages and rents. Third, on systematic variations in productivity with the urban environment. However, more needs to be learned about the causes of agglomeration economies. We have good models of agglomeration through sharing and matching, but not a deep enough understanding of learning in cities. Despite recent progress, more work is needed to distinguish empirically between alternative causes.},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Diego Puga},
+	year = {2010},
+	keywords = {agglomeration},
+	pages = {203--219}
+},
+
+@article{figueiredo_localization_2009,
+	title = {Localization economies and establishment size: was Marshall right after all?},
+	volume = {9},
+	shorttitle = {Localization economies and establishment size},
+	url = {http://joeg.oxfordjournals.org/cgi/content/abstract/9/6/853},
+	doi = {10.1093/jeg/lbp007},
+	abstract = {This article re-examines the relationship between industry localization and the employment size of establishments. To measure localization, we use an approach that builds on Ellison and Glaeser's (1997, Journal of Political Economy, 105: 889-927) dartboard location model. Our localization index is based on plant (establishment) counts and more closely reflects the firm externalities of Marshallian industrial districts, in contrast with broader measures of localization that include an establishment's internal economies, such as Holmes and Steven's (2002, The Review of Economics and Statistics, 84: 682-690) analysis based on employment location quotients. In line with Alfred Marshall's theory of external economies in industrial districts, we find evidence that plants located in areas where an industry exhibits localization, or excess concentration, are smaller than plants in the same industry outside such areas.},
+	number = {6},
+	journal = {Journal of Economic Geography},
+	author = {Octavio Figueiredo and Paulo Guimaraes and Douglas Woodward},
+	month = nov,
+	year = {2009},
+	keywords = {economics, geography, localisation},
+	pages = {853--868}
+},
+
+@article{krugman_history_1991,
+	series = {The Quarterly Journal of Economics},
+	title = {History versus Expectations},
+	volume = {106},
+	url = {http://ideas.repec.org/a/tpr/qjecon/v106y1991i2p651-67.html},
+	number = {2},
+	journal = {The Quarterly Journal of Economics},
+	author = {Paul Krugman},
+	year = {1991},
+	keywords = {agglomeration},
+	pages = {651--67}
+},
+
+@article{wheeler_localization_2007,
+	title = {Do localization economies derive from human capital externalities?},
+	volume = {41},
+	issn = {0570-1864},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=15&SID=X2IOJGhGJaoneICFl6h&page=1&doc=1},
+	abstract = {One of the most robust findings emerging from studies of industrial agglomeration is the rise in productivity that tends to accompany it. What most studies have not addressed, however, is the potential role played by human capital externalities in driving this relationship. This paper seeks to do so using data from the 1980, 1990, and 2000 {US} Census covering a collection of 77 (primarily) three-digit manufacturing industries across a sample of more than 200 metropolitan areas. The analysis generates two primary results. First, a variety of education- and experience-based measures of average human capital rise significantly as an industry's employment in a metropolitan area increases. Hence, clusters of industry do tend to be characterized by larger stocks of human capital. However, second, even after accounting for the level of human capital in a worker's own industry, the overall size of the industry remains strongly associated with wages. Such results cast some doubt on the notion that localization economies emanate from education- or experience-based knowledge spillovers.},
+	number = {1},
+	journal = {{ANNALS} {OF} {REGIONAL} {SCIENCE}},
+	author = {{CH} Wheeler},
+	month = mar,
+	year = {2007},
+	keywords = {economics, geography, localisation},
+	pages = {31--50}
+},
+
+@book{wilson_complex_2000,
+	title = {Complex Spatial Systems: The Modelling Foundations of Urban and Regional Analysis},
+	isbn = {0582418968},
+	shorttitle = {Complex Spatial Systems},
+	publisher = {Prentice Hall},
+	author = {Alan Wilson},
+	month = jan,
+	year = {2000},
+	keywords = {economics, geography, localisation},
+	annote = {{{\textless}h2{\textgreater}Agglomeration} economies{\textless}/h2{\textgreater}
+{{\textless}p{\textgreater}Just} referring to pages in the index for 'agglomeration' and 'agglomeration economies' So -{\textless}/p{\textgreater}
+{\textless}h3{\textgreater}p.34:{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}Interesting} list of principles based on Paelink and Nijkamp 1975 [operational theory and method in regional economics], but here's the one I'm interested in right now:{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Indivisibilities} - lead to economies of scale, and spatial concentration / agglomeration economies{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}External} economies - e.g. cheaper transport costs for many firms producing in the same sector / related sectors etc. (and perhaps negative external economies too.) cf. Jacobs [external economies - just externalities?]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Compares} to Leontif {IO} analysis - hmm. They do cover this, wonder if/how they make it spatial?{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3{\textgreater}p.52-3{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}The} classic Weber's triangle problem - which even with one firm is not, apparently, analytically solveable. {(Trying} to find a minimum for Z=w1d1+w2d2+w3d3.) Surely that's solveable for particular values...? Aaanyhoo.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}When} more firms are introduced, even more of a problem. It's a nice little example - more alike to my stuff than von Thunen's. I should read his Theory of the Location of Industries. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Hotelling} (1929), Palander (1935, Hoover (1937) considered. Hotelling, they say, most long-lasting significance.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Palander:} optimal outcome for 2 firms, making goods for same market{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Hoover:} many firms; later, dynamic methods, whatever they are{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Hotelling:} ice-cream vans on a beach - so a {1D} model, then. {(See} Alonso 1960, 1964){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Stable} equilibrium outcome is only where both are at the centre...cf. 'welfare optimum' of having one at each quartile so as to minimise consumer cost (in distance){\textless}/li{\textgreater}
+{\textless}li{\textgreater}"an active treatment of the interactions of two 'firms' focusing on the process which generates the final pattern - in contrast to Weber, Palander and Hoover." [53]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3{\textgreater}p.110{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Note:} Arthur appears here, making a Markov-based location model. Agglomeration economies appear just as a multiplier though. {\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3{\textgreater}p.129{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Weber:} considers tendencies to agglomeration. {"Identifies} a number of factors which may make it attractive for plants to group together - either plants within a particular industry, or plants within different industries." [129]{\textless}/li{\textgreater}
+{\textless}li{\textgreater}- {[Internal]} Scale economies and "more effectively shared overheads" which I think means external economies{\textless}/li{\textgreater}
+{\textless}li{\textgreater}- other external economies: [forward linkages?] access to equipment manufd by other firms in the locality; "division of labour for all the firms in the locality." So labour market pooling - which does need breaking down a bit. Last: "improved marketing possibilities." Local market demand.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Land-rent:} deglomeration force{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Lots} more here to go back to! See labour particularly.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3{\textgreater}p.134{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Hotelling's} ice-cream vans: "not so much agglomeration economies that brings it about in such cases, but the outcome of the competitive process." [134]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3{\textgreater}p.146{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}On} Burgess, Hoyt, Harris, Ullman: {"In} logic, one might have expected a concentric ring theory, based on rent, to follow the work of von Thunen and an agglomeration theory in relation to centres to be based on the work of Weber, but these did not materialise. The Chicago sociologists looked towards plant ecology for their models; Hoyt and Harris and Ullman based their models on detailed empirical observation." [146] All very curious!{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3{\textgreater}p.149{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Re} Gravity models: note this quote from 1858 by Carey: "the greater the number collected in a given space, the greater the attractive force which is there exerted... Gravitation is here, as everywhere, in the direct ratio of the mass and the inverse one of distance."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}This} is quoted by Carrothers 1956: what's interesting is on p.151 there's a quote from him - "the behaviour of molecules, individually, is not normally predictable, but in large numbers their behaviour is predictable on the basis of mathematical probability." He then compares to people, of course. So - {ABM:} just probability-generating machines? Cf. why go all {ABM} when we're tying to get *away* from disaggregation? Justify.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}},
+	annote = {{{\textless}h3{\textgreater}STM:} System-theory-method{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Aim:} {STM} is used to analyse a number of different frameworks: how it defines the system it analyses; the theory that's used to understand that system, and the methods - the set of tools for operationalising that theory. {(Many} don't have this latter...){\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}h3{\textgreater}System} articulation{\textless}/h3{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}levels of resolution: raster, vector, zone etc... cf. Weber and {SI{\textless}/li{\textgreater}}
+{\textless}/ul{\textgreater}}
+},
+
+@article{maier_spatial_2009,
+	title = {Spatial prices, search behavior and location},
+	volume = {43},
+	url = {http://dx.doi.org/10.1007/s00168-007-0203-x},
+	doi = {10.1007/s00168-007-0203-x},
+	abstract = {Abstract  This paper presents a model that links spatial prices with search behavior and location. Consumers are assumed to search for
+a product at the lowest overall costs where suppliers are spatially distributed. The expected result of this “shopping decision”
+is linked with a longer term “quantity decision” relating the customer’s location via bid prices for land with the expected
+costs of buying the product. We demonstrate various characteristics of this model via numerical simulations.},
+	number = {1},
+	journal = {The Annals of Regional Science},
+	author = {Gunther Maier},
+	month = mar,
+	year = {2009},
+	keywords = {agglomeration},
+	pages = {27--48}
+},
+
+@book{weber_theory_1909,
+	title = {Theory of the Location of Industries},
+	isbn = {0226264696},
+	publisher = {University of Chicago Press},
+	author = {Alfred Weber},
+	translator = {{C.J.} Friedrich},
+	year = {1909},
+	keywords = {agglomeration}
+},
+
+@book{krugman_geography_1991,
+	title = {Geography and Trade},
+	isbn = {0262111594},
+	publisher = {{MIT} Press},
+	author = {Paul R. Krugman},
+	year = {1991},
+	keywords = {agglomeration}
+},
+
+@misc{krugman_increasing_2009,
+	title = {Increasing returns in a comparative advantage world},
+	url = {http://www.princeton.edu/~pkrugman/deardorff.pdf},
+	author = {Paul Krugman},
+	month = nov,
+	year = {2009},
+	keywords = {economics, geography, localisation}
+},
+
+@techreport{fujita_agglomeration_2002,
+	title = {Agglomeration and Market Interaction},
+	url = {http://ideas.repec.org/p/cpr/ceprdp/3362.html},
+	institution = {{C.E.P.R.} Discussion Papers},
+	author = {Masahisa Fujita and {Jacques-François} Thisse},
+	month = may,
+	year = {2002},
+	keywords = {agglomeration, geographical economics}
+},
+
+@article{overman_gis_2010,
+	title = {“gis a Job”: What Use Geographical Information Systems in Spatial Economics?},
+	volume = {50},
+	issn = {00224146},
+	shorttitle = {{“GIS} A {JOB”}},
+	url = {http://0-www3.interscience.wiley.com.wam.leeds.ac.uk/cgi-bin/fulltext/123239048/main.html,ftx_abs},
+	doi = {10.1111/j.1467-9787.2009.00644.x},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Henry G. Overman},
+	year = {2010},
+	keywords = {geographical economics, gis},
+	pages = {165--180}
+},
+
+@article{venables_spatial_2005,
+	title = {Spatial disparities in developing countries: cities, regions, and international trade},
+	volume = {5},
+	issn = {1468-2702},
+	shorttitle = {Spatial disparities in developing countries},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=17&SID=X2JOjA9k2of6Gpplk7p&page=1&doc=1},
+	doi = {10.1093/jnlecg/lbh051},
+	abstract = {Spatial inequality in developing countries is due to the natural advantages of some regions relative to others and to the presence of agglomeration forces, leading to clustering of activity. This paper reviews and develops some simple models that capture these first and second nature economic geographies. The presence of increasing returns to scale in cities leads to urban structures that are not optimally sized. This depresses the return to job creation, possibly retarding development. Looking at the wider regional structure, development can be associated with large shifts in the location of activity as industry goes from being inward looking to being export oriented.},
+	number = {1},
+	journal = {{JOURNAL} {OF} {ECONOMIC} {GEOGRAPHY}},
+	author = {{AJ} Venables},
+	month = jan,
+	year = {2005},
+	keywords = {economics, geography},
+	pages = {3--21}
+},
+
+@techreport{ormerod_why_2006,
+	title = {Why Distance Doesn't Die: Agglomeration and its Benefits},
+	url = {http://www.google.co.uk/url?sa=t&source=web&ct=res&cd=7&ved=0CC0QFjAG&url=http%3A%2F%2Fwww.london.gov.uk%2Fmayor%2Feconomic_unit%2Fdocs%2Fwp17_agglomeration.rtf&ei=r5wXS6qoE9Cu4QabzuHgAg&usg=AFQjCNEZTKPhjtK7AgLGanIB4IIq0nQw5A&sig2=SdUjO4Uvs1Z75ybBliQYlA},
+	institution = {Volterra ltd},
+	author = {Paul Ormerod and William Cook and Bridget Rosewell},
+	year = {2006},
+	keywords = {abm, localisation}
+},
+
+@article{krugman_increasing_1991,
+	series = {Journal of Political Economy},
+	title = {Increasing Returns and Economic Geography},
+	volume = {99},
+	url = {http://ideas.repec.org/a/ucp/jpolec/v99y1991i3p483-99.html},
+	number = {3},
+	journal = {Journal of Political Economy},
+	author = {Paul Krugman},
+	year = {1991},
+	keywords = {economics, geography, localisation},
+	pages = {483--99}
+},
+
+@article{isard_game_1967,
+	title = {Game theory, location theory and industrial agglomeration},
+	volume = {18},
+	issn = {1056-8190},
+	url = {http://www.springerlink.com/content/j5tm34785335686v/},
+	doi = {10.1007/BF01940309},
+	number = {1},
+	journal = {Papers of the Regional Science Association},
+	author = {Walter Isard},
+	year = {1967},
+	keywords = {location theory},
+	pages = {1--11}
+},
+
+@book{schelling_micromotives_2006,
+	edition = {Rev Ed},
+	title = {Micromotives and Macrobehavior},
+	isbn = {0393329461},
+	publisher = {W. W. Norton \& Co.},
+	author = {Thomas C. Schelling},
+	month = oct,
+	year = {2006}
+},
+
+@book{galbraith_history_1991,
+	edition = {New Ed},
+	title = {A History of Economics: The Past as the Present},
+	isbn = {0140153950},
+	shorttitle = {A History of Economics},
+	publisher = {Penguin},
+	author = {John Kenneth Galbraith},
+	month = aug,
+	year = {1991},
+	keywords = {economics, historical}
+},
+
+@techreport{gilles_duranton_nursery_2000,
+	title = {Nursery Cities: Urban diversity, process innovation, and the life-cycle of products},
+	shorttitle = {Nursery Cities},
+	url = {http://ideas.repec.org/p/tor/tecipa/dpuga-00-01.html},
+	institution = {University of Toronto, Department of Economics},
+	author = {Gilles Duranton and Diego Puga},
+	month = jan,
+	year = {2000}
+},
+
+@article{ottaviano_agglomeration_1997,
+	title = {Agglomeration in the Global Economy: A Survey of the {'New} Economic Geography'},
+	volume = {21},
+	shorttitle = {Agglomeration in the Global Economy},
+	url = {http://ideas.repec.org/p/cpr/ceprdp/1699.html},
+	number = {6},
+	journal = {The World Economy},
+	author = {Gianmarco Ireo Paolo Ottaviano and Diego Puga},
+	month = oct,
+	year = {1997},
+	keywords = {agglomeration, geographical economics},
+	pages = {707--731}
+},
+
+@article{duranton_rising_2008,
+	title = {Rising trade costs? Agglomeration and trade with endogenous transaction costs},
+	volume = {41},
+	issn = {0008-4085},
+	shorttitle = {Rising trade costs?},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=3&doc=28},
+	abstract = {While transport costs have fallen, the empirical evidence also points at rising total trade costs. In a model of industry location with endogenous transaction costs that seeks to replicate features from the machinery industry, we show how and under which conditions a decline in transport costs can lead to an increase in the total cost of trade. The subtle relationship between (endogenous) transport costs and the sensitivity of trade to distance is also explored.},
+	number = {1},
+	journal = {{CANADIAN} {JOURNAL} {OF} {ECONOMICS-REVUE} {CANADIENNE} D {ECONOMIQUE}},
+	author = {G Duranton and M Storper},
+	month = feb,
+	year = {2008},
+	keywords = {agglomeration, geographical economics},
+	pages = {292--319}
+},
+
+@article{glaeser_growth_1992,
+	title = {Growth in Cities},
+	volume = {100},
+	issn = {0022-3808},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=19&SID=N216h7AKffeJjj7gc48&page=1&doc=3},
+	abstract = {Recent theories of economic growth, including those of Romer, Porter, and Jacobs, have stressed the role of technological spillovers in generating growth. Because such knowledge spillovers are particularly effective in cities, where communication between people is more extensive, data on the growth of industries in different cities allow us to test some of these theories. Using a new data set on the growth of large industries in 170 {U.S.} cities between 1956 and 1987, we find that local competition and urban variety, but not regional specialization, encourage employment growth in industries. The evidence suggests that important knowledge spillovers might occur between rather than within industries, consistent with the theories of Jacobs.},
+	number = {6},
+	journal = {Journal of Political Economy},
+	author = {{EL} Glaeser and {HD} Kallal and {JA} Scheinkman and A Shleifer},
+	month = dec,
+	year = {1992},
+	keywords = {economics, geography, localisation},
+	pages = {1126--1152}
+},
+
+@article{murata_engels_2008,
+	title = {Engel's law, Petty's law, and agglomeration},
+	volume = {87},
+	issn = {0304-3878},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=3&doc=22},
+	doi = {10.1016/j.jdeveco.2007.06.001},
+	abstract = {This paper presents a model of structural change and agglomeration. A decline in transportation costs, by enhancing consumers' purchasing power, leads to Engel's law of the demand shift from agricultural to non-agricultural goods. At the same time, the decline in transportation costs, by enlarging the extent of the market for non-agricultural goods, induces Petty's law of the labor reallocation from agriculture to non-agricultural activities. These structural transformations weaken dispersion forces given by farmers tied to the land, whereas they strengthen agglomeration forces generated by footloose non-agricultural workers. Thus, a substantial decline in transportation costs gives rise to agglomeration of non-agricultural activities. (c) 2007 Elsevier {B.V} All rights reserved.},
+	number = {1},
+	journal = {{JOURNAL} {OF} {DEVELOPMENT} {ECONOMICS}},
+	author = {Y Murata},
+	month = aug,
+	year = {2008},
+	keywords = {agglomeration, geographical economics},
+	pages = {161--177}
+},
+
+@article{rodriguez-pose_how_2006,
+	title = {How does trade affect regional disparities?},
+	volume = {34},
+	issn = {{0305-750X}},
+	url = {http://www.sciencedirect.com/science/article/B6VC6-4K2SKF2-3/2/775a7008ad420116371a39c09589f298},
+	doi = {10.1016/j.worlddev.2005.12.003},
+	abstract = {Summary
+Although the relationships between rising trade, economic growth, and international disparities have been well studied, those between trade and intranational disparities remain under-explored. In this paper, we present a theoretical formulation and empirical evaluation based on eight major world economies, finding that the link between trade and regional disparities is evidenced most strongly when sectoral shifts in trade composition are considered. As primary sector goods trade loses importance in the composition of total trade, regional disparities are likely to increase. This effect may have a greater negative impact on developing countries because the initial magnitude of intranational disparities tends to be greater in the developing world and its share of agricultural trade has historically been higher.},
+	number = {7},
+	journal = {World Development},
+	author = {Andrés {Rodríguez-Pose} and Nicholas Gill},
+	month = jul,
+	year = {2006},
+	keywords = {economics, geography},
+	pages = {1201--1222}
+},
+
+@article{hotelling_stability_1929,
+	title = {Stability in Competition},
+	volume = {39},
+	issn = {0013-0133},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=1&SID=R2n3nOJAALbilEkkANC&page=1&doc=1},
+	number = {153},
+	journal = {Economic Journal},
+	author = {H Hotelling},
+	month = mar,
+	year = {1929},
+	keywords = {economics, geography},
+	pages = {41--57}
+},
+
+@incollection{head_empirics_2004,
+	series = {Handbook of Regional and Urban Economics},
+	title = {The empirics of agglomeration and trade},
+	volume = {4},
+	url = {http://ideas.repec.org/h/eee/regchp/4-59.html},
+	publisher = {Elsevier},
+	author = {Keith Head and Thierry Mayer},
+	year = {2004},
+	keywords = {economics, geography, localisation},
+	pages = {2609--2669}
+},
+
+@article{fujita_does_2003,
+	title = {Does Geographical Agglomeration Foster Economic Growth? And Who Gains and Loses from It?},
+	volume = {54},
+	shorttitle = {Does Geographical Agglomeration Foster Economic Growth?},
+	url = {http://dx.doi.org/10.1111/1468-5876.00250},
+	doi = {10.1111/1468-5876.00250},
+	abstract = {This paper proposes a two-region model of endogenous growth, which is a natural combination of a core2013periphery model à la Krugman and an endogenous growth model à la {Grossman/Helpman/Romer.} The innovation activity in the {R\&D} sector involves knowledge externalities among skilled workers. Our analysis supports the idea that the additional growth spurred by agglomeration may lead to a Pareto-dominant outcome such that, when the economy moves from dispersion to agglomeration, innovation follws a much faster pace. As a consequence, even those who stay put in the periphery are better off than under dispersion, provided that the growth effect triggered by the agglomeration is strong enough. {JEL} Classification Numbers: F43, O18, R11},
+	number = {2},
+	journal = {The Japanese Economic Review},
+	author = {Masahisa Fujita and {Jacques-François} Thisse},
+	year = {2003},
+	keywords = {agglomeration},
+	pages = {121--145}
+},
+
+@article{bacolod_elements_2010,
+	title = {Elements of Skill: Traits, Intelligences, Education, and Agglomeration},
+	volume = {50},
+	shorttitle = {{ELEMENTS} {OF} {SKILL}},
+	url = {http://dx.doi.org/10.1111/j.1467-9787.2009.00650.x},
+	doi = {10.1111/j.1467-9787.2009.00650.x},
+	abstract = {There are many fundamental issues in regional and urban economics that hinge on worker skills. This paper builds on psychological approaches to learning to characterize the role of education and agglomeration in the skill development process. While the standard approach of equating skill to worker education can be useful, there are important aspects of skill that are missed. Using a measure of skill derived from hedonic attribution, the paper explores the geographic distribution of worker traits, intelligences, and skills and considers the roles of urbanization and education in the skill development process.},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Marigee Bacolod and Bernardo S. Blum and William C. Strange},
+	year = {2010},
+	keywords = {agglomeration, knowledge},
+	pages = {245--280}
+},
+
+@article{desmet_spatial_2010,
+	title = {On Spatial Dynamics},
+	volume = {50},
+	issn = {00224146},
+	url = {http://0-www3.interscience.wiley.com.wam.leeds.ac.uk/cgi-bin/fulltext/123189122/main.html,ftx_abs},
+	doi = {10.1111/j.1467-9787.2009.00648.x},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Klaus Desmet and Esteban {Rossi-Hansberg}},
+	year = {2010},
+	keywords = {geographical economics},
+	pages = {43--63}
+},
+
+@article{martin_new_1999,
+	title = {The new 'geographical turn' in economics: some critical reﬂections},
+	volume = {23},
+	abstract = {Over the past few years, a new 'geographical' economics has emerged, focused on the spatial agglomeration of industry and the long-run convergence of regional incomes. Several leading names are associated with this 'geographical turn', including Paul Krugman, Michael Porter, Robert Barro and W. Brian Arthur. This ŉew economic geography', it is argued here, is neither that new, nor is it geography. Instead, it is a reworking (or re-invention)-using recent developments in formal (mathematical) mainstream economics-of traditional location theory and regional science. As such it is quite opposed to, and diﬀicult to reconcile with, the work on regional development and industrial agglomeration being carried out in economic geography proper.},
+	journal = {Cambridge Journal of Economics},
+	author = {R. Martin},
+	year = {1999},
+	note = {{JanReviewThe} new 'geographical turn' in economics: some critical {reﬂectionsISI:000078343900004195OXFORD} {UNIV} {PRESSEnglish}},
+	keywords = {economics, geography},
+	pages = {65--91}
+},
+
+@article{duncan_black_spatial_1999,
+	series = {American Economic Review},
+	title = {Spatial Evolution of Population and Industry in the United States},
+	volume = {89},
+	url = {http://ideas.repec.org/a/aea/aecrev/v89y1999i2p321-327.html},
+	number = {2},
+	journal = {American Economic Review},
+	author = {Duncan Black and Vernon Henderson},
+	year = {1999},
+	keywords = {agglomeration},
+	pages = {321--327}
+},
+
+@techreport{carrere_geography_2004,
+	title = {On the geography of trade : distance is alive and well},
+	shorttitle = {On the geography of trade},
+	url = {http://ideas.repec.org/p/wbk/wbrwps/3206.html},
+	institution = {The World Bank},
+	author = {Celine Carrere and Maurice Schiff},
+	month = feb,
+	year = {2004},
+	keywords = {economics, geography, localisation}
+},
+
+@incollection{audretsch_knowledge_2004,
+	title = {Knowledge spillovers and the geography of innovation},
+	volume = {Volume 4},
+	isbn = {1574-0080},
+	url = {http://www.sciencedirect.com/science/article/B7P64-4FFPH84-2R/2/2c557f0d93ea190abcc8a573e7d47217},
+	abstract = {This chapter focuses on the geographic dimensions of knowledge spillovers. The starting point comes from the economics of innovation and technological change. This tradition focused on the innovation production function however it was aspatial or insensitive to issues involving location and geography. However, empirical results hinted that knowledge production had a spatial dimension. Armed with a new theoretical understanding about the role and significance of knowledge spillovers and the manner in which they are localized, scholars began to estimate the knowledge production function with a spatial dimension. Location and geographic space have become key factors in explaining the determinants of innovation and technological change. The chapter also identifies new insights that have sought to penetrate the black box of geographic space by addressing a limitation inherent in the model of the knowledge production. These insights come from a rich tradition of analyzing the role of both localization and urbanization economies, by extending the focus to the organization of economic activity within a spatial dimension and examine how different organizational aspects influence economic performance. While the endogenous growth theory emphasizes the importance of investments in research and development and human capital, a research agenda needs to be mapped out identifying the role that investments in spillover conduits can make in generating economic growth. It may be that a mapping of the process by which new knowledge is created, externalized and commercialized, hold the key to providing the microeconomic linkages to endogenous macroeconomic growth.},
+	booktitle = {Handbook of Regional and Urban Economics},
+	publisher = {Elsevier},
+	author = {David B. Audretsch and Maryann P. Feldman and J. Vernon Henderson and {Jacques-Francois} Thisse},
+	year = {2004},
+	keywords = {economics, geography, knowledge, localisation},
+	pages = {2713--2739},
+	annote = {{{\textless}h3{\textgreater}Intro{\textless}br} /{\textgreater}{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}New} lit - goal: 'understanding the spatial dimension of innovative activity' [1]{\textless}/p{\textgreater}
+{\textless}p{\textgreater}"specifically the determinants and mechanisms that underlie the propensity of innovative activity to cluster spatially."{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Started} with an aspatial 'innovation production function.'{\textless}/p{\textgreater}
+{\textless}p{\textgreater}- all concentrating on {\textless}strong{\textgreater}industrial {\textless}/strong{\textgreater}clustering.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Later} studies: following in the rich tradition of Hoover - brilliant!{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Unclear} - "how and why knowledge spills over."{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}The} knowledge production function{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}At} the firm level - {R\&amp;D.} Other measures - human capital, skilled labour, education levels.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}But} basically just a Cobb {Douglas.Unit} has been countries, industries, enterprises.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Jacobs} (1969) - talks about the difference between information and knowledge. Hmmph.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Manski} - 'social interactions have economic value in trasmitting knowledge and ideas.' [7]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Von} Hipple (1994) coined 'sticky knowledge'{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"An} implication of the distinction between information and tacit knowledge is that the marginal cost of transmitting information across geographic space has been rendered invariant by the revolution in telecommunications while the marginal cost of transmitting knowledge, especially tacit knowledge, is lowest with frequent social interaction, observation and communication." [7]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Feldman} - 1994ish - 'location mitigates the inherent uncertainty of innovative activity.... innovation clusters spatially where knowledge externalities reduce the costs of scientific discovery and commercialisation.'{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Jaffe} 1989 - adding to a very Cobb Douglas looking thing, adding e.g. research expenditures of universities.{\textless}/p{\textgreater}
+{\textless}p{\textgreater}// got to about p20{\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}}
+},
+
+@article{storper_rethinking_2009,
+	title = {Rethinking human capital, creativity and urban growth},
+	volume = {9},
+	issn = {1468-2702},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=2&doc=13},
+	doi = {10.1093/jeg/lbn052},
+	abstract = {Do jobs follow people or do people follow jobs A number of currently prominent approaches to urbanization respond to this question by privileging the role of individual locational choice in response to amenity values as the motor of contemporary urban growth. Amenities, it is often said, have an especially potent effect on the migration patterns of individuals endowed with high levels of human capital. However, these approaches raise many unanswered questions. Theories that describe urban growth as a response to movements of people in search of consumer or lifestyle preferences can be questioned on the grounds of their assumptions about human behavior, as well as their silence in regard to the geographical dynamics of production and work. We argue that a more effective line of explanation must relate urban growth directly to the economic geography of production and must explicitly deal with the complex recursive interactions between the location of firms and the movements of labor. In this context, we also offer a reinterpretation of the currently fashionable notions of creativity and the role of skilled labor in cities.},
+	number = {2},
+	journal = {{JOURNAL} {OF} {ECONOMIC} {GEOGRAPHY}},
+	author = {M Storper and {AJ} Scott},
+	month = mar,
+	year = {2009},
+	keywords = {agglomeration, economics, geographical economics, geography},
+	pages = {147--167}
+},
+
+@article{mirowski_kicking_2007,
+	title = {On kicking the habit: A response to the {JEBO} Symposium on {"Markets} Come to Bits"},
+	volume = {63},
+	issn = {0167-2681},
+	shorttitle = {On kicking the habit},
+	url = {http://www.sciencedirect.com/science/article/B6V8F-4MW901V-1/2/e276d9ae8d0e015fb7e2be5d6f303641},
+	doi = {10.1016/j.jebo.2006.05.006},
+	number = {2},
+	journal = {Journal of Economic Behavior \& Organization},
+	author = {Philip Mirowski},
+	month = jun,
+	year = {2007},
+	keywords = {ace},
+	pages = {359--371}
+},
+
+@article{rice_equilibrium_2003,
+	title = {Equilibrium regional disparities: Theory and British evidence},
+	volume = {37},
+	issn = {0034-3404},
+	shorttitle = {Equilibrium regional disparities},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=42&SID=X2JOjA9k2of6Gpplk7p&page=1&doc=1},
+	doi = {10.1080/0034340032000108769},
+	abstract = {Regional inequalities in many countries, including the {UK,} are large and persistent. They show up in a number of economic variables, most of them endogenous, making it difficult for the researcher to identify the underlying causes of the disparities. This paper uses sub-regional data for Great Britain to identify spatial patterns of disparities. It then compares these patterns with those predicted by a theoretical model under a number of alternative hypotheses about the underlying cause of the disparities. The approach lays the groundwork for theory based econometric modelling of the causes of regional inequalities.},
+	number = {6-7},
+	journal = {{REGIONAL} {STUDIES}},
+	author = {P Rice and {AJ} Venables},
+	month = oct,
+	year = {2003},
+	keywords = {economics, geography},
+	pages = {675--686}
+},
+
+@article{neary_hype_2001,
+	title = {Of Hype and Hyperbolas: Introducing the New Economic Geography},
+	volume = {39},
+	issn = {00220515},
+	shorttitle = {Of Hype and Hyperbolas},
+	url = {http://www.jstor.org/stable/2698247},
+	number = {2},
+	journal = {Journal of Economic Literature},
+	author = {J. Peter Neary},
+	month = jun,
+	year = {2001},
+	note = {{ArticleType:} primary\_article / Full publication date: Jun., 2001 / Copyright © 2001 American Economic Association},
+	keywords = {economics, geographical economics, geography},
+	pages = {536--561},
+	annote = {{{\textless}p{\textgreater}"The} key contribution of the new economic geography is a framework in which standard building blocks of mainstream economics (especially rational decision making and simple general equilibrium models) are used to model the trade-off between dispersal and agglomeration, or centrifugal and centripetal forces. The approach thus gives a choice- theoretic basis for a 'propensity to ag- glomerate' " 536{\textless}/p{\textgreater}}
+},
+
+@article{glaeser_cities_2004,
+	title = {Cities, regions and the decline of transport costs},
+	volume = {83},
+	issn = {1056-8190},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=2&SID=V12HKdCpCId@c9I99en&page=1&doc=1},
+	doi = {10.1007/s10110-003-0183-x},
+	abstract = {The theoretical framework of urban and regional economics is built on transportation costs for manufactured goods. But over the twentieth century, the costs of moving these goods have declined by over 90\% in real terms, and there is little reason to doubt that this decline will continue. Moreover, technological change has eliminated the importance of fixed infrastructure transport (rail and water) that played a critical role in creating natural urban centres. In this article, we document this decline and explore several simple implications of a world where it is essentially free to move goods, but expensive to move people. We find empirical support for these implications.},
+	number = {1},
+	journal = {{PAPERS} {IN} {REGIONAL} {SCIENCE}},
+	author = {{EL} Glaeser and {JE} Kohlhase},
+	month = jan,
+	year = {2004},
+	keywords = {economics, geography, localisation},
+	pages = {197--228}
+},
+
+@article{isard_general_1949,
+	title = {The General Theory of Location and {Space-Economy}},
+	volume = {63},
+	issn = {00335533},
+	url = {http://www.jstor.org/stable/1882135},
+	abstract = {I. Introduction, {476.--II.} Early contributions to general location theory: The evolutionary approach of Alfred Weber, {479.--III.} Predohl and the substitution principle in location analysis, {482.--IV.} The contribution of Hans Weigmann, {489.--V.} The Losch model of a space-economy operating under conditions of monopolistic competition, {494.--VI.} The inter relation of trade and location theories, {502.--VII.} Conclusion, 505.},
+	number = {4},
+	journal = {The Quarterly Journal of Economics},
+	author = {Walter Isard},
+	month = nov,
+	year = {1949},
+	note = {{ArticleType:} research-article / Full publication date: Nov., 1949 / Copyright © 1949 The {MIT} Press},
+	keywords = {location},
+	pages = {476--506}
+},
+
+@misc{krugman_fall_1993,
+	title = {The Fall and Rise of Development Economics},
+	url = {http://web.mit.edu/krugman/www/dishpan.html},
+	author = {P. Krugman},
+	year = {1993},
+	howpublished = {http://web.mit.edu/krugman/www/dishpan.html}
+},
+
+@book{webber_industrial_1985,
+	edition = {New edition},
+	title = {Industrial Location},
+	isbn = {0803925468},
+	publisher = {Sage Publications, Inc},
+	author = {Michael J. Webber},
+	month = sep,
+	year = {1985},
+	keywords = {agglomeration}
+},
+
+@article{henderson_cities_2010,
+	title = {Cities and Development},
+	volume = {50},
+	url = {http://dx.doi.org/10.1111/j.1467-9787.2009.00636.x},
+	doi = {10.1111/j.1467-9787.2009.00636.x},
+	abstract = {This paper starts with a "primer" on what we know about the conceptual and empirical links between development and urbanization. While historical experience of developed countries is reviewed, today's rapid urbanization in developing countries offers an intense set of challenges. Rapid urbanization requires massive population movements and enormous local and inter-city infrastructure investments in a modern context of heavy government interventions in economies. This context raises under-researched issues, discussed in the second part of the paper. First concerns the spatial form of development. How much development should be focused in mega-cities, or huge urban clusters, as opposed to being more spatially dispersed, a critical question facing China and India today? How do we conceptualize and measure both the benefits and costs of increased urban concentration; and how are they linked to a country's evolving national industrial composition? Second, what is the evolution of spatial income inequality under massive rural-urban migration? Is inequality heightened today relative to the past by national government policies which "favor" certain cities and regions and by local government policies in those cities that may try to deflect migrants by offering them poor living conditions?},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {J. Vernon Henderson},
+	year = {2010},
+	keywords = {agglomeration, growth},
+	pages = {515--540}
+},
+
+@article{thisse_toward_2010,
+	title = {Toward a Unified Theory of Economic Geography and Urban Economics},
+	volume = {50},
+	url = {http://dx.doi.org/10.1111/j.1467-9787.2009.00651.x},
+	doi = {10.1111/j.1467-9787.2009.00651.x},
+	abstract = {In this paper, I pursue two objectives. First, I propose a primer in economic geography relying on a simple model that can be solved analytically by undergraduate students. Second, I briefly discuss two topics that, in my opinion, should rank high on the research agenda.},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {{Jacques-François} Thisse},
+	year = {2010},
+	keywords = {agglomeration},
+	pages = {281--296}
+},
+
+@article{boschma_why_2006,
+	title = {Why is economic geography not an evolutionary science? Towards an evolutionary economic geography},
+	volume = {6},
+	abstract = {The paper explains the commonalities and diﬀerences between neoclassical, institutional and evolutionary approaches that have been inﬂuential in economic geography during the last couple of decades. By separating the three approaches in terms of theoretical content and research methodology, we can appreciate both the commonalities and diﬀerences between the three approaches. It is also apparent that innovative theorizing currently occurs at the interface between neoclassical and evolutionary theory (especially in modelling) and at the interface between institutional and evolutionary theory (especially in 'appreciative theorizing'). Taken together, we argue that Evolutionary Economic Geography is an emerging paradigm in economic geography, yet does so without isolating itself from developments in other theoretical approaches.},
+	journal = {Journal of Economic Geography},
+	author = {R. A Boschma and K. Frenken},
+	year = {2006},
+	note = {{JunReviewWhy} is economic geography not an evolutionary science? Towards an evolutionary economic {geographyISI:000238146100002172OXFORD} {UNIV} {PRESSEnglish}},
+	keywords = {economics, geography},
+	pages = {273--302}
+},
+
+@article{behrens_krugmans_2009,
+	title = {Krugman's Papers in Regional Science: The 100 dollar bill on the sidewalk is gone and the 2008 Nobel Prize well-deserved},
+	volume = {88},
+	issn = {1056-8190},
+	shorttitle = {Krugman's Papers in Regional Science},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=1&doc=9},
+	doi = {10.1111/j.1435-5957.2009.00241.x},
+	abstract = {This paper reviews Paul Krugman's fundamental contributions to new trade theory {(NTT)} and new economic geography {(NEG)} on the occasion of his 2008 Nobel Prize. We appraise the impact his work had on the field of regional science broadly defined, and we quantify its influence on papers published in Papers in Regional Science {(PIRS)} between 1991 and 2009 (vols. 70-87 and papers in press). We then discuss in more detail a few contributions published in {PIRS} that extend his original analysis in various directions. Finally, we briefly speculate on where {NEG} is headed to and which are the research directions that should be explored more thoroughly in the future.},
+	number = {2},
+	journal = {{PAPERS} {IN} {REGIONAL} {SCIENCE}},
+	author = {K Behrens and F {Robert-Nicoud}},
+	month = jun,
+	year = {2009},
+	keywords = {agglomeration, economics, geographical economics, geography}
+},
+
+@article{redding_empirics_2010,
+	title = {The Empirics of New Economic Geography},
+	volume = {50},
+	url = {http://dx.doi.org/10.1111/j.1467-9787.2009.00646.x},
+	doi = {10.1111/j.1467-9787.2009.00646.x},
+	abstract = {Although a rich and extensive body of theoretical research on new economic geography has emerged, empirical research remains comparatively less well developed. This paper reviews the existing empirical literature on the predictions of new economic geography models for the distribution of income and production across space. The discussion highlights connections with other research in regional and urban economics, identification issues, potential alternative explanations, and possible areas for further research.},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Stephen J. Redding},
+	year = {2010},
+	keywords = {agglomeration},
+	pages = {297--311}
+},
+
+@article{fowler_taking_2007,
+	title = {Taking geographical economics out of equilibrium: implications for theory and policy},
+	volume = {7},
+	shorttitle = {Taking geographical economics out of equilibrium},
+	url = {http://joeg.oxfordjournals.org/cgi/content/abstract/7/3/265},
+	doi = {10.1093/jeg/lbm006},
+	abstract = {This article reports on research that translated a basic model from geographical economics into a dynamic, agent-based environment with the goal of tracing the path it takes towards the equilibrium/a posited by the analytic model. The research finds that the relationships in the analytic model do not make sense in a dynamic space-time economy. Specifically, it is impossible for firms to make decisions about production levels without knowing exactly what every other firm will do and where labor will be available. This finding suggests some new directions for the development of dynamic spatial-economic models that can operate outside of equilibrium.},
+	number = {3},
+	journal = {J Econ Geogr},
+	author = {Christopher S. Fowler},
+	month = may,
+	year = {2007},
+	keywords = {abm, economics, geography},
+	pages = {265--284}
+},
+
+@article{lang_heterogeneous_2010,
+	title = {Heterogeneous transport costs and spatial sorting in a model of New Economic Geography*},
+	volume = {89},
+	issn = {10568190},
+	url = {http://0-www3.interscience.wiley.com.wam.leeds.ac.uk/cgi-bin/fulltext/122455516/main.html,ftx_abs},
+	doi = {10.1111/j.1435-5957.2009.00245.x},
+	number = {1},
+	journal = {Papers in Regional Science},
+	author = {Corey Lang},
+	year = {2010},
+	keywords = {agglomeration},
+	pages = {191--202}
+},
+
+@book{osullivan_geographic_2002,
+	title = {Geographic Information Analysis},
+	isbn = {0471211761},
+	publisher = {John Wiley \& Sons},
+	author = {David {O'Sullivan} and David J. Unwin},
+	month = nov,
+	year = {2002}
+},
+
+@book{fujita_economics_2002,
+	title = {Economics of Agglomeration: Cities, Industrial Location, and Regional Growth},
+	isbn = {0521805244},
+	shorttitle = {Economics of Agglomeration},
+	publisher = {Cambridge University Press},
+	author = {Masahisa Fujita and {Jacques-Francois} Thisse},
+	month = may,
+	year = {2002},
+	keywords = {agglomeration, economics, geography}
+},
+
+@article{holub_anti-equilibrium_1977,
+	title = {Anti-equilibrium theory vs. equilibrium theory},
+	volume = {125},
+	url = {http://dx.doi.org/10.1007/BF01479119},
+	doi = {10.1007/BF01479119},
+	abstract = {Summary Anti-equilibrium models wishing to present a real alternative to the equilibrium models cannot confine themselves to replacing the equilibrium conditions that are entailed by corresponding disequilibrium conditions, while simply adopting the rest of the model. It is, rather, essential for the establishment of an anti-equilibrium model to first develop a new basic principle, which differs from the ‘general insight‘ of equilibrium theory in essential points. This basic idea may then act as a nucleus for the creation of alternative questions, definitions, and problem-solving strategies. This article attempts to draw some first conclusions from that point of view, using a debate between J. Kornai and F. H. Hahn as an example.},
+	number = {3},
+	journal = {De Economist},
+	author = {H. W. Holub},
+	year = {1977},
+	keywords = {equilibrium, methodology},
+	pages = {393--403}
+},
+
+@article{cromley_population_2008,
+	title = {Population growth and the development of a central place system},
+	volume = {10},
+	url = {http://dx.doi.org/10.1007/s10109-008-0071-7},
+	doi = {10.1007/s10109-008-0071-7},
+	abstract = {Abstract  This paper describes the spatial and functional evolution of a central place system as market conditions change with population growth. Utilizing a partial equilibrium optimization model, we examine the spatial response of two economic sectors to increases in market populations resulting from natural increase and migration. Response in both sectors is conditioned by threshold demand, with factor prices also affecting one of the sectors. As the central place system evolves it exhibits spatial and functional characteristics that are initially consistent with a Löschian landscape, then a Christallerian landscape at higher populations, while at even larger populations Krugman’s landscape emerges.},
+	number = {4},
+	journal = {Journal of Geographical Systems},
+	author = {Robert Cromley and Dean Hanink},
+	month = dec,
+	year = {2008},
+	keywords = {economics, geography, localisation},
+	pages = {383--405}
+},
+
+@incollection{gershenson_simplicity_2007,
+	title = {Simplicity is not truth-indicative},
+	isbn = {9812705481},
+	booktitle = {Worldviews, Science and Us: Philosophy and Complexity},
+	publisher = {World Scientific Publishing},
+	author = {Bruce Edmonds},
+	editor = {Carlos Gershenson and Diederik Aerts and Bruce Edmonds},
+	month = may,
+	year = {2007}
+},
+
+@article{malmberg_elusive_2002,
+	title = {The elusive concept of localization economies: towards a knowledge-based theory of spatial clustering},
+	volume = {34},
+	issn = {{0308-518X}},
+	shorttitle = {The elusive concept of localization economies},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=7&SID=N1fi2@eA4EinLnMJk2G&page=2&doc=12},
+	doi = {10.1068/a3457},
+	abstract = {A number of possible advantages of industry agglomeration-or spatial clustering-have been identified in the research literature, notably those related to shared costs for infrastructure, the build-up of a skilled labour force, transaction efficiency, and knowledge spillovers leading to firm learning and innovation. We identify two shortcomings of existing research on. the clustering phenomenon. First, the abundance of theoretical concepts and explanations stands in sharp contrast with the general lack of work aimed at validating these mechanisms empirically, and the contradictory evidence found in recent empirical work in the field. Second, there is still a. lack of a unified theoretical framework for analyzing spatial clustering. In an attempt to remedy the latter shortcoming, this paper investigates the nature of the cluster from a knowledge-creation or learning perspective. We argue for the need to establish a specific theory of the cluster where learning occupies centre stage. The basic requirements for such a theory of the cluster are discussed. Two main components of such a theory are identified: it must explain the existence of the cluster on the one hand and its internal organization on the other.},
+	number = {3},
+	journal = {{ENVIRONMENT} {AND} {PLANNING} A},
+	author = {A Malmberg and P Maskell},
+	month = mar,
+	year = {2002},
+	keywords = {localisation},
+	pages = {429--449}
+},
+
+@book{krugman_self_1996,
+	title = {The Self Organizing Economy},
+	isbn = {1557866988},
+	publisher = {{WileyBlackwell}},
+	author = {Paul Krugman},
+	month = feb,
+	year = {1996},
+	keywords = {agglomeration, complexity}
+},
+
+@article{delgado_clusters_2010,
+	title = {Clusters and entrepreneurship},
+	volume = {10},
+	issn = {1468-2702},
+	url = {http://joeg.oxfordjournals.org/content/early/2010/05/28/jeg.lbq010.abstract},
+	doi = {10.1093/jeg/lbq010},
+	number = {4},
+	journal = {Journal of Economic Geography},
+	author = {M. Delgado and M. E. Porter and S. Stern},
+	year = {2010},
+	keywords = {agglomeration, innovation, localisation},
+	pages = {495--518}
+},
+
+@article{krugman_whats_1998,
+	title = {What's new about the new economic geography?},
+	volume = {14},
+	abstract = {Since 1990 a new genre of research, often described as the ŉew economic geography', has emerged. It diﬀers from traditional work in economic geography mainly in adopting a modelling strategy that exploits the same technical tricks that hale played such a large role in the ŉew trade' and ŉew growth' theories; these modelling tricks, while they preclude any claims of generality, do allow the construction of models that-unlike most traditional spatial analysis-are fully general-equilibrium and clearly derive aggregate behaviour from individual maximization. The new work is highly suggestive, particularly in indicating how historical accident can shape economic geography, and how gradual changes in underlying parameters can produce discontinuous change in spatial structure. It also serves the important purpose of placing geographical analysis squarely in the economic mainstream.},
+	journal = {Oxford Review of Economic Policy},
+	author = {P. Krugman},
+	year = {1998},
+	note = {{SumArticleWhat's} new about the new economic {geography?ISI:00007512150000230OXFORD} {UNIV} {PRESSEnglish}},
+	keywords = {economics, geography},
+	pages = {7--17}
+},
+
+@article{storper_agglomeration_2010,
+	title = {Agglomeration, Trade, and Spatial Development: Bringing Dynamics Back In},
+	volume = {50},
+	issn = {0022-4146},
+	shorttitle = {{AGGLOMERATION,} {TRADE,} {AND} {SPATIAL} {DEVELOPMENT}},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=1&doc=1},
+	doi = {10.1111/j.1467-9787.2009.00658.x},
+	abstract = {The field of spatial economics has made enormous progress in theorizing and measuring agglomeration effects, trade costs, and urbanization. Typical models establish structural determinants by making strong assumptions about which forces are relevant and how these forces interact. But many of these assumptions, about firms, agents, spatial costs, and market structures, are questionable. As a result, the field has a long way to go to establish causality, and to be able to account for spatial economic dynamics.},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {M Storper},
+	month = feb,
+	year = {2010},
+	keywords = {agglomeration, economics, geography},
+	pages = {313--342}
+},
+
+@book{fujita_spatial_2001,
+	edition = {New edition},
+	title = {The Spatial Economy: Cities, Regions and International Trade},
+	isbn = {0262561476},
+	shorttitle = {The Spatial Economy},
+	publisher = {{MIT} Press},
+	author = {M. Fujita and P. Krugman and {A.J.} Venables},
+	month = sep,
+	year = {2001},
+	keywords = {economics, geography, localisation},
+	annote = {{\textless}h3 {style="padding-left:30px;"{\textgreater}Intro:{\textless}/h3{\textgreater}}
+{\textless}p style="padding-left:30px;"{\textgreater}p.1: nice def of agglomeration - "the clustering of economic activity, created and sustained by some sort of circular logic". {OK,} it's a bit vague, but useful!{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Or} p4: "in which spatial concentration itself creates the favourable economic environment that supports further or continued concentration."{\textless}/p{\textgreater}
+{\textless}h3 {style="padding-left:30px;"{\textgreater}{\textless}strong{\textgreater}Increasing} returns: {\textless}/strong{\textgreater}{\textless}/h3{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Most} theory presumes constant returns - but if this, why not 'backyard capitalism' where everyone produces their own goods? {(Cf.} C19th - many did do this.){\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Disparities} between regions - "surely the result not of inherent differences among locations but of some set of cumulative processes, necessarily involving some form of increasing returns, whereby geographic concentration can be self-reinforcing." [2]{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}IncRets:} mathematically tricky, posing problems for equilibria.{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Options} - e.g. Von Thunen: take position and existence of cities as given, "trace out consequences for land rents and land use."{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Or:} Henderson (74, 80,88): inc rets = black box 'localisation externalities'.{\textless}/p{\textgreater}
+{\textless}h3 {style="padding-left:30px;"{\textgreater}{\textless}strong{\textgreater}NEG{\textless}/strong{\textgreater}:{\textless}/h3{\textgreater}}
+{\textless}p {style="padding-left:30px;"{\textgreater}Begins} with {Dixit-Stiglitz} - 'a formalization of Chamberlin's concept of monop comp that, though admittedly a very special case, has turned into the workhorse of theoretical modelling in a number of fields.' [3] Because analytically tractable.{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}New} trade and new growth theory: the books -{\textless}/p{\textgreater}
+{\textless}ul {style="padding-left:30px;"{\textgreater}{\textless}li{\textgreater}Helpman} / Krugman - Market structure and foreign trade (85){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Grossman} / Helpman - Innovation and growth in the world economy (91){\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}h3 {style="padding-left:30px;"{\textgreater}Linkages} and circular causation:{\textless}/h3{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}'Defining} issue' of econgeog - need to explain concentrations of pop and econ activity; distinction betw manuf and agri belt.{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}[I} wonder: what are my questions?]{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Aim} of {NEG:} to get inside black box of agglomeration economies to "derive the self-reinforcing character of spatial concentration from more fundamental considerations." [4]{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}Marshall's} three 'returns to spatial concentration' -{\textless}/p{\textgreater}
+{\textless}ol {style="padding-left:30px;"{\textgreater}{\textless}li{\textgreater}Knowledge} spillovers{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Advantages} of 'thick markets' for specialised skills [more please!]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Backward} and forward linkages in large local markets{\textless}/li{\textgreater}
+{\textless}/ol{\textgreater}{\textless}p style="padding-left:30px;"{\textgreater}1st two - downplayed because hard to model.{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}"Loose-jointed} modelling is, we believe, underappreciated in economics." [5]{\textless}/p{\textgreater}
+{\textless}p {style="padding-left:30px;"{\textgreater}{\textless}strong{\textgreater}What} "linkages" doesn't address:{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}ul {style="padding-left:30px;"{\textgreater}{\textless}li{\textgreater}The} nature of competition            
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Without} increasing returns at the level of the firm, they'd "establish separate facilities to serve each market."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"But} if there are increasing returns, competition must be imperfect; how do firms compete and set prices?" [why?] [6]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}And} transport costs...?{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}h3{\textgreater}Modelling} tricks: [6]{\textless}/h3{\textgreater}
+{\textless}p{\textgreater}"... assumptions that reflect not so much a realistic view of how the world works as a judgement about what will make the analysis of geographic issues manageable without doing too much damage to the relevance of that analysis."{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"We} are aware that this lends the analysis a certain air of unreality, that this book sometimes looks as if it should be entitled {{\textless}em{\textgreater}Games} you Can Play with {CES} Functions{\textless}/em{\textgreater}. Nonetheless, we regard the advantages of the {Dixit-Stiglitz} model as overwhelming for our purposes."{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Use} of {DxSt:} reconcile 2 seemingly incompatible things - "respecting the integer nature of indiv choices under increasing returns while representing the aggregate of such choices with continuous variables (such as the share of production carried out in a particular location.)" [7]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Nice:} {"Dixit} Stiglitz lets us have our cake in discrete lumps while doing calculus on it, too." [7]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Notes} Samuelson transport iceberg assumption; "there turns out to be a tremendous synergy between the assumption of iceberg transport costs and the {DxSt} model, in the sense that combining them causes many potentially nasty technical complications simply to, well, melt away." [7]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Big} break: using evolutionary models to make sense of essentially static models.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"When} one speaks of a {\textless}em{\textgreater}cumulative process{\textless}/em{\textgreater} by which spatial concentration reinforces itself, one has a definite image of a snowballing urban or regional concentation, developing over time. Yet to insist that models of economic geography explicitly model firms and households as making intertemporal decisions based on rational expectations would greatly complicate an already difficult subject." [7]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"A} hallmark of the new economic geography, as compared with the new trade and new growth literatures, has been its willingness to turn where necessary to computer-assisted thinking: to use high-tech numerical examples to guide and supplement analytical results."{\textless}/p{\textgreater}
+{\textless}p{\textgreater}-- so, all the bad things about equilibrium analysis, and all the bad things about computers. How does this compare to {ABM?{\textless}/p{\textgreater}}
+{\textless}p{\textgreater}-- and how fair is it to oppose 'analytical' and 'numerical' and dismiss the latter? {(Possibly,} it is. But what are the grounds?){\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Two} useful questions:{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}When} is a spatial concentration of economic activity sustainable? (... whether the economy can support something other than backyard capitalism, whether backyard capitalism is a necessary outcome) {\textless}strong{\textgreater}[is it an equilibrium?]{\textless}/strong{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}When} is a symmetric equilibrium, without spatial concentration, unstable? (does backyard capitalism necessarily unravel; is it even a {\textless}em{\textgreater}possible{\textless}/em{\textgreater} outcome?){\textless}strong{\textgreater} [is the equilibrium stable?]{\textless}/strong{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Difference} between the two: {\textless}strong{\textgreater}petal / fugal forces. {\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"Can} derive explicit formulas for the 'sustain point' at which an economy with agglomeration becomes possible and the 'break point' at which an economy without agglomeration becomes unstable." [10] {[Sustain} point: guess, then confirm that guess. Break point: linearize then solve...]{\textless}/p{\textgreater}
+{\textless}p{\textgreater}-- which makes me wonder about my questions... Under what future conditions might our economy be sustainable? How will the spatial morphology change?{\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}},
+	annote = {{{\textless}h2{\textgreater}Lit} review{\textless}/h2{\textgreater}
+{{\textless}h3{\textgreater}Urban} economics{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}If} economists talk about space at all, they tend to turn to von Thunen [15]{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Von} Thunen summary{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Isolate} town supplied by farmers{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Crops} differ in 
+{\textless}ul{\textgreater}{\textless}li{\textgreater}yield per acre{\textless}/li{\textgreater}
+{\textless}li{\textgreater}transportation costs{\textless}/li{\textgreater}
+{\textless}li{\textgreater}can be produced with different intensities of cultivation{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}His} questions: 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}"How} should the land around the town be allocated to minimize the combined costs of producing and transporting a given supply of food to the town?" [16]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"How} will the land actually be allocated if there is an unplanned competition among farmers and landowners, with each individual acting in his own perceived self-interest?"{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Result:} 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Competition} -- "a gradient of land rents that declines from a maximum at the town to zero at the outermost limit of cultivation" 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Farmer:} faces trade-off betw land rent and transport costs - "because transport costs and yields differ among crops, a pattern of concentric rings of production will result."{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}}
+},
+
+@article{krugman_increasing_2009-1,
+	title = {The Increasing Returns Revolution in Trade and Geography},
+	volume = {99},
+	issn = {0002-8282},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=1&SID=P1M6hL8JlLll8cb4F3b&page=1&doc=1},
+	doi = {10.1257/aer.99.3.561},
+	abstract = {Thirty years have passed since a small group of theorists began applying concepts and tools from industrial organization to the analysis of international trade. The new models of trade that emerged from that work didn't supplant traditional trade theory so much as supplement it, creating an integrated view that made sense of aspects of world trade that had previously posed major puzzles. The "new trade theory"-an unfortunate phrase, now quite often referred to as "the old new trade theory"-also helped build a bridge between the analysis of trade between countries and the location of production within countries. In this paper I will try to retrace the steps and, perhaps even more important, the state of mind that made this intellectual transformation possible. At the end I'll also ask about the relevance of those once-revolutionary insights in a world economy that, as I'll explain, is arguably more classical now than it was when the revolution in trade theory began.},
+	number = {3},
+	journal = {{AMERICAN} {ECONOMIC} {REVIEW}},
+	author = {P Krugman},
+	month = jun,
+	year = {2009},
+	keywords = {geographical economics},
+	pages = {561--571}
+},
+
+@misc{krugman_new_2010,
+	title = {The New Economic Geography, Now {Middle-Aged}},
+	url = {http://www.princeton.edu/~pkrugman/aag.pdf},
+	author = {Paul Krugman},
+	month = apr,
+	year = {2010},
+	keywords = {economics, geography}
+},
+
+@article{fujita_evolution_2010,
+	title = {The Evolution of Spatial Economics: From Thunen to the New Economic Geography},
+	volume = {61},
+	issn = {1352-4739},
+	shorttitle = {{THE} {EVOLUTION} {OF} {SPATIAL} {ECONOMICS}},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=10&SID=P1M6hL8JlLll8cb4F3b&page=4&doc=39},
+	doi = {10.1111/j.1468-5876.2009.00504.x},
+	abstract = {This paper presents a review of the evolution of spatial economics over the past two centuries. The focus is on the evolution of what I consider to be the most fundamental theory of spatial economics, i.e., general location theory. The paper starts with a review of Thunen (1826), and ends with a review of the New Economic Geography initiated by Paul Krugman in the early 1990s. It is shown that the study of general location theory has been successful at shedding light on many important features of actual spatial economies.},
+	number = {1},
+	journal = {Japanese Economic Review},
+	author = {M Fujita},
+	month = mar,
+	year = {2010},
+	pages = {1--32}
+},
+
+@article{torre_proximity_2005,
+	title = {Proximity and Localization},
+	volume = {39},
+	issn = {0034-3404},
+	url = {http://www.informaworld.com/10.1080/0034340052000320842},
+	doi = {10.1080/0034340052000320842},
+	number = {1},
+	journal = {Regional Studies},
+	author = {Andre Torre and Alain Rallet},
+	year = {2005},
+	keywords = {agglomeration},
+	pages = {47}
+},
+
+@article{fujita_frontiers_2005,
+	title = {Frontiers of the new economic geography},
+	volume = {84},
+	issn = {1056-8190},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=4&doc=35},
+	abstract = {This article presents an overview of the recent development in the new economic geography {(NEG),} and discusses possible directions of its future development. Since several surveys on this topic already exist, we focus on the selected features of {NEG} which are important yet have attracted insufficient attention, and also on the recent refinements and extensions of the framework.},
+	number = {3},
+	journal = {{PAPERS} {IN} {REGIONAL} {SCIENCE}},
+	author = {M Fujita and T Mori},
+	month = aug,
+	year = {2005},
+	keywords = {geographical economics},
+	pages = {377--405}
+},
+
+@book{krugman_role_1998,
+	title = {The role of geography in development},
+	publisher = {World Bank},
+	author = {Paul R Krugman},
+	year = {1998}
+},
+
+@article{krugman_urban_1996,
+	title = {{'Urban} concentration: The role of increasing returns and transport costs},
+	volume = {19},
+	issn = {0160-0176},
+	shorttitle = {{'Urban} concentration},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=1&SID=P1M6hL8JlLll8cb4F3b&page=1&doc=2},
+	abstract = {Very large urban centers are a conspicuous feature of many developing economies, yet the subject of the size distribution of cities (as opposed to such issues as rural-urban migration) has been neglected by development economists. This article argues that some important insights into urban concentration, especially the tendency of some developing countries to have very large primate cities, can be derived from recent approaches to economic geography. Three approaches are compared: the well-established neoclassical urban systems theory, which emphasizes the tradeoff between agglomeration economies and diseconomies of city size; the new economic geography, which attempts to derive agglomeration effects from the interactions among market size, transportation costs, and increasing returns at the firm level; and a nihilistic view that cities emerge out of a random process in which there are roughly constant returns to city size. The article suggests that Washington consensus policies of reduced government intervention and trade opening may tend to reduce the size of primate cities or at least slow their relative growth.},
+	number = {1-2},
+	journal = {International Regional Science Review},
+	author = {P Krugman},
+	year = {1996},
+	keywords = {geographical economics},
+	pages = {5--30}
+},
+
+@article{mirowski_markets_2007,
+	title = {Markets come to bits: Evolution, computation and markomata in economic science},
+	volume = {63},
+	issn = {0167-2681},
+	shorttitle = {Markets come to bits},
+	url = {http://www.sciencedirect.com/science/article/B6V8F-4MRFC3R-3/2/ea5572d1b148e9aeda3c0ab502754662},
+	doi = {10.1016/j.jebo.2005.03.015},
+	abstract = {Based upon my previous historical work, I attempt to isolate and identify what appears to be a profound shift in the conception of the economy in recent economic research, focusing on five areas: mechanism design, zero-intelligence agents, [`]market microstructure', engineering economics and artificial intelligence. The shift identified concerns treating markets as diverse algorithms, and will have profound effects upon the conceptual frames used to address the economy. Rather than deal in vague imponderables, in the paper we proceed to sketch the emergent outlines of the implicit alternative program of an evolutionary computational economics constructed from the theory of automata which situates the problematic existence of diverse market species at the very center of the research agenda, and not, as happens all too frequently, to relegate it to the margins of modern economic thought. The laws that are sought under the new paradigm are laws of the markets, not laws of human nature.},
+	number = {2},
+	journal = {Journal of Economic Behavior \& Organization},
+	author = {Philip Mirowski},
+	month = jun,
+	year = {2007},
+	keywords = {ace},
+	pages = {209--242}
+},
+
+@article{fujita_new_2004,
+	title = {The new economic geography: Past, present and the future},
+	volume = {83},
+	abstract = {This article presents a summary of our conversation on the past, present and future of the new economic geography, which took place with the help of an interlocutor in San Juan, Puerto Rico in November 2002. Following the introduction, we explain what the new economic geography is, and we describe some basic models. The discussion of its various critical aspects is presented subsequently, and the article concludes with the discussion of future issues and challenges facing the ﬁeld.},
+	journal = {Papers in Regional Science},
+	author = {M. Fujita and P. Krugman},
+	year = {2004},
+	note = {{JanArticleThe} new economic geography: Past, present and the {futureISI:00018876850000756SPRINGER-VERLAGEnglish}},
+	keywords = {agglomeration},
+	pages = {139--164}
+},
+
+@article{krugman_intraindustry_1981,
+	title = {Intraindustry Specialization and the Gains from Trade},
+	volume = {89},
+	issn = {00223808},
+	url = {http://www.jstor.org/stable/1830815},
+	abstract = {Several recent empirical studies of trade suggest that interindustry specialization and trade, which reflect the conventional forces of comparative advantage, are also accompanied by intraindustry specialization, which reflects scale economies and consumers' taste for a diversity of products. This paper develops a simple model which illustrates this argument. Two main results are developed. First, the nature of trade depends on how similar countries are in their factor endowments. As countries become more similar, the trade between them will increasingly become intraindustry in character. Second, the effects of opening trade depend on its type. If intraindustry trade is sufficiently dominant, the advantages of extending the market will outweigh the distributional effects, and the owners of scarce as well as of abundant factors will be better off.},
+	number = {5},
+	journal = {The Journal of Political Economy},
+	author = {Paul R. Krugman},
+	month = oct,
+	year = {1981},
+	note = {{ArticleType:} primary\_article / Full publication date: Oct., 1981 / Copyright © 1981 The University of Chicago Press},
+	keywords = {agglomeration},
+	pages = {959--973}
+},
+
+@article{disdier_puzzling_2008,
+	title = {The puzzling persistence of the distance effect on bilateral trade},
+	volume = {90},
+	issn = {0034-6535},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=3&doc=24},
+	abstract = {One of the best-established empirical results in international economics is that bilateral trade decreases with distance. Although well known, this result has not been systematically analyzed before. We examine 1,467 distance effects estimated in 103 papers. Information collected on each estimate allows us to test hypotheses about the causes of variation in the estimates. Our most interesting finding is that the estimated negative impact of distance on trade rose around the middle of the century and has remained persistently high since then. This result holds even after controlling for many important differences in samples and methods.},
+	number = {1},
+	journal = {Review of Economics and Statistics},
+	author = {{AC} Disdier and K Head},
+	month = feb,
+	year = {2008},
+	keywords = {agglomeration, geographical economics},
+	pages = {37--48}
+},
+
+@article{dixit_monopolistic_1977,
+	title = {Monopolistic Competition and Optimum Product Diversity},
+	volume = {67},
+	issn = {00028282},
+	url = {http://www.jstor.org/stable/1831401},
+	doi = {10.2307/1831401},
+	number = {3},
+	journal = {The American Economic Review},
+	author = {Avinash K. Dixit and Joseph E. Stiglitz},
+	month = jun,
+	year = {1977},
+	note = {{ArticleType:} primary\_article / Full publication date: Jun., 1977 / Copyright © 1977 American Economic Association},
+	keywords = {economics},
+	pages = {297--308},
+	annote = {{{\textless}ul{\textgreater}{\textless}li{\textgreater}"With} scale economies, resources can be saved by producing fewer goods and larger quantities of each. However, this leaves less variety, which entails some welfare loss."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Scale} economies: modelled with
+{\textless}ul{\textgreater}{\textless}li{\textgreater}fixed cost{\textless}/li{\textgreater}
+{\textless}li{\textgreater}constant marginal cost{\textless}/li{\textgreater}
+{\textless}li{\textgreater}[so - a straight line where the y intersect = fixed cost?]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}{\textless}strong{\textgreater}"Modelling} the desirability of variety..." {\textless}/strong{\textgreater}[297] - difficult, various approaches:{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Hotelling} spatial model{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Lancaster} "product characteristics approach"{\textless}/li{\textgreater}
+{\textless}li{\textgreater}"mean variance portfolio selection model" {[I} think Stiglitz...]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater} {\textless}/p{\textgreater}}
+},
+
+@article{behrens_changes_2007,
+	title = {Changes in transport and non-transport costs: Local vs global impacts in a spatial network},
+	volume = {37},
+	issn = {0166-0462},
+	shorttitle = {Changes in transport and non-transport costs},
+	url = {http://www.sciencedirect.com/science/article/B6V89-4PCPFBW-2/2/d0eac47c387a3c6c20178b6395e6d346},
+	doi = {10.1016/j.regsciurbeco.2007.08.003},
+	abstract = {We develop a multi-country {Dixit-Stiglitz} trade model and analyze how industry location and welfare respond to changes in: (i) transport frictions (e.g., infrastructure, transportation technology); and (ii) non-transport frictions (e.g., tariffs, standards and regulations). We show that changes in non-transport frictions, which are usually origin-destination specific, do not allow for any clear prediction as to changes in industry location and welfare; whereas changes in transport frictions, which are usually not origin-destination specific, may allow for such predictions. In particular, we show that reductions in transport frictions occurring at links around which the spatial network is locally a tree are Pareto welfare improving.},
+	number = {6},
+	journal = {Regional Science and Urban Economics},
+	author = {Kristian Behrens and Andrea R. Lamorgese and Gianmarco {I.P.} Ottaviano and Takatoshi Tabuchi},
+	month = nov,
+	year = {2007},
+	keywords = {economics, geography, localisation},
+	pages = {625--648}
+},
+
+@article{overman_can_2004,
+	title = {Can we learn anything from economic geography proper?},
+	volume = {4},
+	issn = {1468-2702},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&search_mode=GeneralSearch&qid=25&SID=X2JOjA9k2of6Gpplk7p&page=1&doc=1},
+	doi = {10.1093/jnlecg/lbh028},
+	abstract = {This paper considers the ways geographers (proper) and (geographical) economists approach the study of economic geography. It argues that there are two areas where the approach of the latter is more robust than the former. First, formal models identify which assumptions are crucial in obtaining a particular result and enforce internal consistency when moving from micro to macro behaviour. Second, empirical work tends to be more rigorous. There is much greater emphasis on identifying and testing refutable predictions from theory and on dealing with issues of observational equivalence. But any approach can be improved and so the paper also identifies ways in which geographical economists could learn from the direction taken by economic geographers proper.},
+	number = {5},
+	journal = {Journal of Economic Geography},
+	author = {{HG} Overman},
+	month = nov,
+	year = {2004},
+	keywords = {economics, geography},
+	pages = {501--516}
+},
+
+@article{glaeser_complementarity_2010,
+	title = {The Complementarity Between Cities and Skills},
+	volume = {50},
+	url = {http://dx.doi.org/10.1111/j.1467-9787.2009.00635.x},
+	doi = {10.1111/j.1467-9787.2009.00635.x},
+	abstract = {There is a strong connection between per-worker productivity and metropolitan area population, which is commonly interpreted as evidence for the existence of agglomeration economies. This correlation is particularly strong in cities with higher levels of skill and virtually nonexistent in less skilled metropolitan areas. This fact is particularly compatible with the view that urban density is important because proximity spreads knowledge, which either makes workers more skilled or entrepreneurs more productive. Bigger cities certainly attract more skilled workers, and there is some evidence suggesting that human capital accumulates more quickly in urban areas.},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Edward L. Glaeser and Matthew G. Resseger},
+	year = {2010},
+	keywords = {agglomeration},
+	pages = {221--244}
+},
+
+@book{brakman_new_2009,
+	edition = {2},
+	title = {The New Introduction to Geographical Economics},
+	isbn = {0521698030},
+	url = {http://www2.econ.uu.nl/users/marrewijk//newgeo/index.htm},
+	publisher = {Cambridge University Press},
+	author = {Steven Brakman and Harry Garretsen and Charles van Marrewijk},
+	month = apr,
+	year = {2009},
+	keywords = {economics, geography},
+	annote = {{{\textless}h2{\textgreater}A} first look at geography, trade and development{\textless}/h2{\textgreater}
+{{\textless}p{\textgreater}First} thing that strikes me - p.16-17. {HDD} global production - the diversity of the 'value chain', more money made in the {US} though {SE} Asia is where most of the actual employment is, but wages are lower - the same applies for global food chains, doesn't it? If you did a map of the same thing, how would it turn out?{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}It} starts out with lots of empirical data - which is nice. The ultimate conclusion: the distribution of economic activity across space is:{\textless}/p{\textgreater}
+{{\textless}ol{\textgreater}{\textless}li{\textgreater}Uneven{\textless}/li{\textgreater}}
+{{\textless}li{\textgreater}Fractal} - "the phenomenon repeats itself at various levels of aggregation." [26]{\textless}/li{\textgreater}
+{{\textless}/ol{\textgreater}{\textless}p{\textgreater}This} distribution across space appears to follow the rank size distribution. So - perhaps similar economic forces are at play. This is what I want to be integrating into my work of course - how these forces impact on the direction geographies of food will take, under different social technologies.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"Finding} a common framework to get a better grip on a plethora of data is what makes economic models useful. That being said, common framework should not become a straightjacket." [27]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}The} key question we're talking about here is the {\textless}strong{\textgreater}location of economic activity. {{\textless}/strong{\textgreater}(Oo,} that's the name of the Hoover book!) They want a theory in which "the geography of the economy itself can be derived from the behaviour of economic agents." [32]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Many} theories - "typically assume as given what has to be explained from the underlying behaviour of the economic agents, namely the spatial structure of economic activity." [33]{\textless}/p{\textgreater}
+{{\textless}h2{\textgreater}Geography} and economic theory{\textless}/h2{\textgreater}
+{{\textless}h3{\textgreater}Regional} economics \&amp; economic geography: examining different things...{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Regional} econs: based on {\textless}strong{\textgreater}neoclassical economic theory - {\textless}/strong{\textgreater}successor to German location economics tradition{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Econ} Geog: eclectic, empirically focused - not just economics, but nicking bits from e.g. sociology, regulation theory{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}A} definition of agglomeration for you: "the decline in average costs as more production occurs within a specified geographical area" {(Anas,} Arnott, Small 1998 - a paper.) 35{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Which} they also call 'increasing returns to scale. Do they mean increasing returns to geographical scale? I'm a little unclear.{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Monocentric} city model: von Thunen 1826 stylee{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Featureless} plane{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}One} city (taking the location of the city as a given){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Outside} city - farmers grow crops, which they must sell in the city{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Crops:} transport costs differ, market prices differ{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Q:} how do farmers locate themselves across the plane?{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Farmers:} want to be as close as possible to minimise transport costs - leads to higher land rents through more demand{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}So} - land rent / transport costs trade-off{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}"Von} Thunen showed that competition for locations ensures that the resulting equilibrium allocation of land among the farmers will be efficient." [35]{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Better} crops (lower cost e.g. transport, higher market price) means better bidding for land - they end up closer to the city. {\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}So} - do any farmers actually move about that much? How do they make decisions? Wouldn't a farmer renting land make decisions on what to grow rather than shifting farm? Does this end up being the same conclusion?{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Urban} version - Alonso 1964.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"The} efficiency of land allocation in the monocentric model hinges on the assumption that there are no externalities of location." [36]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Noted:} link between decentralisation of cities and drop in transport costs over the 20th century.{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Terminology} of scale economies{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}The} basic point of course - increasing scale of production = decrease in average costs. = downward sloping {AC} curve.{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}{\textless}strong{\textgreater}Internal} vs external {{\textless}/strong{\textgreater}EoS} - seem to come from Tibor Scitovsky 1954{\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}Internal} - {AC} decrease comes from increasing production within the firm itself{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"The} market structure underlying internal scale economies, typically used in the geographical economics literature, must necessarily be one of {\textless}strong{\textgreater}imperfect competition{\textless}/strong{\textgreater}, as internal economies of scale imply market power." [38]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}External} - {AC} decrease comes from output increase at industry level "making average costs per unit a function of industry-wide output." [38]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}{\textless}strong{\textgreater}Pure} vs pecuniary external economies{\textless}/strong{\textgreater} 
+{\textless}ul{\textgreater}{\textless}li{\textgreater}{\textless}strong{\textgreater}pure {\textless}/strong{\textgreater}(or technological) external economies - "an increase in industry-wide output alters the technological relationship between inputs and output for each firm. It therefore has an impact on the firm's production function." {\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}A} Marshallian example: information spillovers - general increase in output increases the general local stock of knowledge. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Markets} affected by pure externalities can still be perfectly competitive, since individiual firms' size does not matter. {(Hmm} - surely some cases where it would?){\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}{\textless}strong{\textgreater}Pecuniary{\textless}/strong{\textgreater}} - "transmitted through the market by price effects for the individual firm"; e.g.            
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}From} wikipedia - influence of new comers in city driving up house-prices. A purely price effect on others in the city. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Marshallian} ones - large local market for specialised inputs, labour market pooling. Both are the result of new firms coming into an area - but importantly {\textless}strong{\textgreater}do not{\textless}/strong{\textgreater} affect the actual tech relationship between inputs and output.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}These} appear in the geogecon lit through a {\textless}strong{\textgreater}love-of-variety{\textless}/strong{\textgreater} effect in a large local market. {(Q:} through {CES?)} Utility goes {\textasciicircum} with variety of manufactures consumed.[39]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"The} price effects crucial to pecuniary externalities can come about only with imperfect competition." I think I saw why once, but right now...{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}These} distinctions seem somewhat vague to me - surely there are situations where production 'functions' will change as a result of all kinds of externality? Will have to think this one through a little more mefinks. And I'm still pretty unclear how love-of-variety = pecuniary externality. Huh?{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Mentions} negative externalities - e.g. I imagine one firm increases production, increases costs for others coz of overall increase in demand.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}They} characterise {MAR} vs Jacobs externalities as "sector specific" and "city specific" spillovers. The latter spanning many sectors - diverse spillovers. Also: localisation economies vs urbanisation economies - same thing.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}New} term: {{\textless}strong{\textgreater}Porter} externality. {{\textless}/strong{\textgreater}A} little unclear on what it is - competitive externalities of some sort.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Two} surveys of theories of agglomeration: Fujita and Thisse, 1996, 2002.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Strategic} behaviour in firm's spatial competition not taken into account in this book. {"Firms} take each other's (pricing) behaviour as given." [43] But then - how do they {\textless}em{\textgreater}know{\textless}/em{\textgreater} what prices those firms have?{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Another} reason for agglomeration (surely a very important one) - physical geography. E.g. a natural harbour.{\textless}/p{\textgreater}
+{\textless}p{\textgreater}\&gt;\&gt; on to note 2 for regional economics...{\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}},
+	annote = {{{\textless}h2{\textgreater}Agglomeration{\textless}/h2{\textgreater}}
+{{\textless}p{\textgreater}Going} though and nicking bits to nail down a definition of agglomeration I can start to use for the modelling. Thus -{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Chapter} 7: cities, economies of scale, urban systems, Zipf's law{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}"Congestion"} - a useful idea. "a catchall phrase for many drawbacks associated with urban agglomeration, referring to limited physical space, heavy usage of roads, communication channels and storage facilities, limited local resources (such as water for cooling processes), and environmental pollution." [273]
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}They} note it's notoriously very hard to measure, but in an abstract model (and if I can succeed with the density function idea) it'd be quite easy to add a simple negative externality associated with clustering (beyond rent prices.){\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Modern} urban economics (there's that phrase again, cf. Glaeser) - "turns mainly to increasing returns to scale to explain the existence of cities." [275] + solid microeconomic foundation. {(BLech!){\textless}/li{\textgreater}}
+{{\textless}li{\textgreater}They} note the main categories are not far off Marshall's original formulation. 3 main sources:
+{\textless}ul{\textgreater}{\textless}li{\textgreater}'information or knowledge sharing'{\textless}/li{\textgreater}
+{\textless}li{\textgreater}labour market pooling{\textless}/li{\textgreater}
+{\textless}li{\textgreater}the sharing of (specialised) inputs.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}They} then list addition ones taken from Rosenthal and Strange 2004 tab2:
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Natural} advantages (though cf. Glaeser, not actually an agglom econ.){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Home} market effects at the industry level{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}'Consumption} externalities': 'various city-specific amenities' [276] making particular places attractive; feedback relation with the level of human capital. E.g. cities in Germany that started out with a high share of skilled labour diverged in growth from those that didn't. [279] "people in their dual capacity as workers and consumers are nowadays probably as important to city growth and innovation as firms are." [277]
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}In} what ways, exactly? (and what's the simplest I should consider?){\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Rent-seeking:} may lead to too-large cities. Cf. my point about political capitals in the Glaeser notes; cf. what a political centre looks like with little other industry - lobbyists, coffee shops, barren...{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}They} note there's a pretty large empirical black hole over all of this. Plenty we don't know yet. [276]
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Much} of it cannot be observed directly{\textless}/li{\textgreater}
+{\textless}li{\textgreater}"model-based testable hypotheses in this literature are subject to observational equivalence (it is often  difficult, or even impossible, to discriminate between the different sources of scale economies.)" [276]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}Duranton} \&amp; Puga 2004: mechanisms of agglom different from sources.
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Picture:} agglom gives a match between firms and inputs; label them workers, intermediates, or ideas.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Depending} on label, "a matching model of urban agglom economies could be presented as a formalisation of either one of Marshall's 3 basic {\textless}em{\textgreater}sources{\textless}/em{\textgreater} of agglomecons even though it captures a single {\textless}em{\textgreater}mechanism{\textless}/em{\textgreater}." [direct quote from {D+P]{\textless}/li{\textgreater}}
+{{\textless}li{\textgreater}Their} 3 basic mechanisms:
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}"Sharing":} indivisibilities e.g. an opera house feasible only in large city.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Matching":} quality of match between worker and employer (so elasticity of labour substitution then, presumably...?) {"Larger} cities offer a higher probability of a successful match."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Learning":} face to face contact; better in larger cities, again. {\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}They} think in practice, the distinction is more blurred than this. I wonder what I think?{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}Scope:} "the extent or strength underlying economic force." [sic] [276] again from Rosenthal + Strange tab 1{\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}Industrial} scope: does it extend across all sectors? cf. localisation and urbanisation economies.[277]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Temporal} scope: path dependency? Activities at time t affect t+1?{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Geographic} scope: "is proximity (to other cities) or density (within cities) good for urban development in terms of, for instance, wage rates or the growth rate of employment?"
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}From} Ch 5 section 5.5.: neoclassical trade theory - "no foundation for a spatial wage structure."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}I} think I need to come back to this ch on spatial wage structure - not so vital for now.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Organisation} and business culture / competitiveness scope": {"Does} competition increase productivity? This issue touches upon the distinction between sector-specific and city-specific externalities." {[MAR} vs Jacobs] "better for sectoral growth if the size of individual establishments is smaller." Why?{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}"Cities} with higher levels of human capital have higher wages and income levels." Duh. [278]{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}They} don't cover the whole lit, concentrating on industrial and competitiveness scope studies.{\textless}/p{\textgreater}
+{\textless}p{\textgreater}btw: using {MAR} vs Jacobs externalities - from Glaeser et al 1992.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}So} to recap:{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}MAR} externalities ("which feature in much of modern growth theory, knowledge spillovers occur between firms that belong to the same industry. In this case, city growth is fostered by specialisation, and so localisation externalities are the main driving force." [280]){\textless}/li{\textgreater}
+{\textless}li{\textgreater}cf. Jacobs - not industry-specific. Diversity = key.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Glaeser} et al: Jacobs most important. Others find {MAR} for e.g. high-tech industries. {(Huh?){\textless}/li{\textgreater}}
+{{\textless}li{\textgreater}Glaeser} 2000: "for the moment, the role of concentration and diversity does not seem to have been resolved by the literature." [280-1]
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}City} size seems to matter more for productivity than specialisation {[I} can think of several reasons why...]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Notes} the Krugman feedback: {"In} the core model of geogecons, firms group together in a city because local demand is high, and demand is high because firms have decided to produce in that city. What matter is that te positive externality is assocd with the number of firms (and their workers) in the city and its surrounding cities and not with whether or not firms specialise in the production of the same type of goods. The core model is therefore a model in which, if anything, urbanisation and not localisation exts are present. There is no advantage is cities being specialised; only size as such matters." [281]
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Presumably} because: core model firms all produce unique product, with defined elasticity of substitution. So, no specialisation and love of variety underpins it. That seems to sooooo miss the point of Jacobs' work.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}They} note: all the focus is on {\textless}strong{\textgreater}positive{\textless}/strong{\textgreater} externalities; spreading forces not analysed directly. {(E.g.} I suppose, land rent - an equilibriating force.) They also mention 'the need for city firms to serve non-city markets' and congestion.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}A} reason they give is interesting for my stuff, where I'm trying to get right outside of city or region: the empirical focus has been on individual cities, not the relationship between them. {"The} nationwide space, which includes {\textless}em{\textgreater}both{\textless}/em{\textgreater} cities and rural areas, is simply not a prime object of research in urban economics."{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}They} then move onto urban systems. Weird. So - the closest we have to a full equilibrium model is... Krugman? Hmm.{\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}},
+	annote = {{{\textless}h2{\textgreater}Regional} economics{\textless}/h2{\textgreater}
+{{\textless}p{\textgreater}Starting} with von Thunen, Launhardt, Weber (optimal location and plant size for manufacturing firms), Christaller and Losch.{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Central} place theory -{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Shows} "that Different points or locations on the economic landscape have different levels of centrality and that good services are efficiently provided on a {\textless}em{\textgreater}hierarchical {\textless}/em{\textgreater}basis." {(Mulligan} 1984 in this book p.44){\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Briefly} -{\textless}/p{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}even dist of identical consumers across a homog plane{\textless}/li{\textgreater}
+{\textless}li{\textgreater}centrality determined by {\textless}strong{\textgreater}internal increasing returns to scale{\textless}/strong{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Location} important coz consumers incur transport costs, which they try to minimise.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}For} things with limited inc rets to scale - gonna be more of em. E.g. breadmaking in villages. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}The} hierarchy - cities do all functions e.g. {TVs} and bread; villages just bread.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater}"central place theory, especially the graphical version still found in most introductory textbooks on economic geography, is indeed more a descriptive story - or an exercise in geometry - than a causal model." [46]{\textless}/p{\textgreater}
+{\textless}p{\textgreater}\&gt; no theory of consumer or firm behaviour, no demand curve derived - just assumed. That sort of thing. Generally a bit lacking.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Other} models mentioned as having no connection to underlying behaviour - gravity models and rank-size distribution equations. {(But} perhaps their job isn't to explain?){\textless}/p{\textgreater}
+{{\textless}p{\textgreater}All} this stuff also appears to miss feedbacks between demand and {supply.E.g.} "demand is high where production is located as a result of the purchasing power of the workers making production at that location possible." [49]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Good} quote: {"The} theoretical approaches, like central place theory and the more empirically inspired approaches, like the market potential analysis, deal with important aspects of the spatial organisation of economic activity. The framework of analysis by and large does not, however, meet the standards of mainstream economic theory, which requires the conclusions to be based on the actions and interactions of individual economic agents in the market place. This calls for the analysis of individual consumer and producer behaviour, market structure, and the resulting equilbria." [50]{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}The} spatial impossibility theorem{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}"The} standard general equilibrium framework will not work if we want geogaphy or space to matter." {(David} Starrett 1978 showed this.) [51]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}This} is the {\textless}strong{\textgreater}backyard capitalism {\textless}/strong{\textgreater}thesis - transport costs can be avoided if production and consumption happen on the same spot. {"Each} location will prefer aukarky to save on transportation costs." [52]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Returns} to scale is clearly an important part of the story here. Divisibility is also important. One indivisibility - operations must take up space.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"Without} recognising indivisibilities - in human person, in residences, plants, equipment, and in transportation - location patterns, down to those of the smallest village, {\textless}em{\textgreater}cannot {\textless}/em{\textgreater}be understood." Tjalling Koopmans 1957:154 at p.51{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Fujita} / Thisse 2002 chap 4: inc returns - transport costs = "the fundamental trade-off for a spatial economy." [52]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"With} increasing returns but without transport costs, firms may find it profitable to produce at a single plant, but they do not care about the location of this plant. // In the absence of increasing returns (or non-homogenous space) but with transport costs, we will thus end up in a situation of backyard capitalism." [52]{\textless}/p{\textgreater}
+{\textless}p{\textgreater}"... because it turned out to be difficult to combine transportation costs, increasing returns to scale, and imperfect competition in a general equilibrium framework, it took quite some time from Koopmans (1957) via Starrett (1978) to arrive at the first geographical economics model, by Krugman (1991a){\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}International} trade theory{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}"The} core model of geographical economics has its roots firmly in international trade theory." [53] An extension of Krugman's own 'new trade theory' 79-80. So - looking at the geog content of these two papers.{\textless}/p{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}neoclassical trade theory - trade flows determined by comparative advantage - either tech differences {(Ricardian)} or factor endowments {(Heckscher,} Olin, Samuelson.){\textless}br /{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}---{\textless}/li{\textgreater}
+{\textless}li{\textgreater}2x2x2 model: 2 goods, 2 countries, 2 factors of production{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Goods:} clothes and machinery{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Factors} - high and low skill labour{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}North:} relatively well-endowed with high-skill{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Machinery} production: relatively highly skilled (but both need some of each.){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}N+S} consumers - identical preferences, consume both goods.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Result:} partial specialisation, equalisation of factor prices - that is, one high-skill wage, one low-skill wage.{\textless}/li{\textgreater}
+{\textless}li{\textgreater}---{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Assumptions:} perfect competition, homogenous goods, constant {RtScale,} no transport costs assoc'd with trade of goods; mobility of factors of prod between industries but {NOT} countries.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}So} - very at odds with what we've said so far about regional econs - esp {RtScale.{\textless}/li{\textgreater}}
+{{\textless}li{\textgreater}Empirical} evidence: {"Although} there is some disagreement, the general consensus seems to be that relatively strong {\textless}em{\textgreater}additional{\textless}strong{\textgreater} {\textless}/strong{\textgreater}{\textless}/em{\textgreater}assumptions are needed to close the gap between the neoclassical theory and the data. In any event, the four implications of the factor abundance model [see 56] are not convincingly substantiated by the evidence." [57]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}{\textless}strong{\textgreater}First} nature {\textless}/strong{\textgreater}and {\textless}strong{\textgreater}second nature {\textless}/strong{\textgreater}of econs of location {(Krugman} 1993b)        
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}First} nature - e.g. where the mines are, the river is, the natural port is.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Second} - some endogenous result - e.g. a labour market. Could be used as given (e.g. in model above) but better to deduce as part of model -{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Want} to show "how the relevance of location follows from the decisions made by economic agents and their interactions and not (only) from some exogenous difference in factor endowments." [55]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"The} endogenisation of location decisions is needed to produce agglomeration of economic activity. Differences in factor endowments cannot imply a core-periphery pattern of production; they just lead to specialisation (as opposed to agglomeration.)" ibid{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater}of course, first nature geog does, in fact, explain a lot of economic differences. This is one of Sachs' big things, apparently. See p57.and ch.10.{\textless}/p{\textgreater}
+{\textless}h3{\textgreater}specific factors model -{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}They} use this to illustrate limited role of geog in neoclassical trade theory. [p.58]{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}One} factor is mobile, the other not.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Goods} require a mix of the mobile factor and a specific immobile one (land or sector-specific capital.){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}With} predictable results... but again, decision on immobile factors is given.{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}This,} like with others then - the equilibrium is the result of these exogenous givens, not an internal model dynamic flowing from agent behaviour. {(Which} may be fair enough, of course...) Also, no core-periphery equilibrium possible.{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}New} trade theory{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}"The} reason for trade between countries in new trade theory does not depend on comparative advantage. In fact, Krugman (1979/80) has developed a (by now standard) model in which countries engage in welfare-enhancing trade even when there is no comparative advantage whatsoever."{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Some} problems it addresses -{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}A} big chunk of international trade = between countries with similar factor endowments.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}This} is not (as neoclassical predicts) intra-industry, but inter-industry - e.g. import and export of cars for cars.{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}h3{\textgreater}Krugman} 1979:{\textless}/h3{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}2 countries of equal market size - same endowments, and use the same technology{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Both} have 1 immobile car-producing firm.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}In} factor abundance model, these countries wouldn't trade at all{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Inc} {RtS} for each type of car.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}In} autarky, firms produce {A,B,C} cars in West \&amp; {X,Y,Z} cars in East{\textless}/li{\textgreater}
+{\textless}li{\textgreater} - which is one industry producing six types / varieties of car{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Consumers/workers} in West and East - immobile, evenly distributed, identical preferences{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Cars:} imperfect substitutes{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Consumers:} variety lovers{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}So} - internal economies of scale in the firms + love-of-variety effect = how we get to a rationale for trade: {"Moving} from autarky to free trade these two assumptions ensure that trade will take place and is welfare-improving." [60]{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}So:} easy enough to picture that {\textless}strong{\textgreater}enlarging your market means getting further along your increasing returns curve{\textless}/strong{\textgreater} - a bigger factor and selling market. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Prices} per variety will decrease too{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}But:} total number of varieties must {\textless}strong{\textgreater}decrease{\textless}/strong{\textgreater}. Why?       
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Total} {(E+W)} endowments and total market size are {\textless}strong{\textgreater}fixed{\textless}/strong{\textgreater} - trade just opens them up.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Which} means you cannot simultaneously increase production of {\textless}strong{\textgreater}all {\textless}/strong{\textgreater}six varieties. {\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Implications:}       
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}The} decrease in prices through econs of scale = real wage increase for everyone{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}After} trade, consumers can choose from 4 rather than 3 varieties - inc welfare through love-of-variety{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}But} inc {RtS} implies imperfect competition. Krugman built on {Dixit-Stiglitz} 77.{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}New} trade theory \&amp; external economies{\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Example:} {PC} industry - pure external economies of scale, through information spillovers as the sector grows. {\textless}/li{\textgreater}
+{\textless}li{\textgreater}2 countries - consumers have identical preferences{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"This} implies not only that average costs per {PC} for each firm are a decreasing function of the {\textless}em{\textgreater}industry{\textless}/em{\textgreater} output, but also that we can still use perfect competition." [61]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}No} advantage to being large - so many small firms producing at {AC} per unit.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}You} may get a {\textless}strong{\textgreater}lock-in effect:{\textless}/strong{\textgreater} 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}As} with internal {EoS,} you may get intra-industry trade - both countries producing and exporting {PC} varieties. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}With} {\textless}strong{\textgreater}external{\textless}/strong{\textgreater} {EoS} - can have equilibrium where {\textless}strong{\textgreater}1 country produces total world demand{\textless}/strong{\textgreater}. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}If,} for e.g. some historical reason the {PC} industry establishes itself in one country, external economies may turn this into a lasting equilibrium. {(Isn't} that exog...?){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}{\textless}strong{\textgreater}Initial} conditions {\textless}/strong{\textgreater}can determine the stable outcome{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}The} resulting equilibrium {\textless}strong{\textgreater}may be inefficient{\textless}/strong{\textgreater}{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}{\textless}strong{\textgreater}What} would a bad equilibrium look like?{\textless}/strong{\textgreater} 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}For} me, I can grasp this best by thinking that a country with lock-in has an imperfect competition market advantage - the spillover effects means it can produce more cheaply. E.g. if A can produce for £750, but the market will bear £1000, they can charge that - if B can't enter the market at that price. So as long as they keep their price below B's {AC,} they have the market cornered. {(Is} that what happens though? Many markets are hugely segregated...){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Note:} Seth Bullock has worked on segregated markets - http://eprints.ecs.soton.ac.uk/13380/{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}In} fact, yes - country A would be able to take into account consumer's travel and other costs and perhaps segregate the market price based on differences in demand and demand elasticity{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}{\textless}strong{\textgreater}But} - {\textless}/strong{\textgreater}isn't this just exactly the same as internal economies of scale, except those {EoS} are internal to a country rather than a firm?{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}h3{\textgreater}{\textless}strong{\textgreater}Krugman} 1980{\textless}/strong{\textgreater}{\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}A} crucial step from Krugman 79 to get us closer to the core geographical economics model.{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Somehow,} going from autarky to trade does {\textless}strong{\textgreater}not{\textless}/strong{\textgreater} lead to an increase in production despite increasing returns to scale at the firm {level.Huh?{\textless}/li{\textgreater}}
+{{\textless}li{\textgreater}"The} gains from trade are now completely due to the love-of-variety effect, as consumers can choose between more varieties under trade than autarky." [63] So - it's a welfare gain? {(Prices} don't change either.) {"The} core model of geog econs coincides with Krugman (80) on this important issue."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Trade} between nations {\textless}strong{\textgreater}incurs transport costs{\textless}/strong{\textgreater} - yay, geography!{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Demand} per variety is no longer symmetric as countries differ in market size."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Combine} uneven market sizes with transport costs: countries will produce varieties for which demand is relatively high in their own country - minimising transport costs.{\textless}/li{\textgreater}
+{\textless}li{\textgreater}leads to the {\textless}strong{\textgreater}home market effect{\textless}/strong{\textgreater}: Krugman - "countries will tend to export those kind of products for which they have relatively large home demand. Notice that this argument is wholly dependent on increasing returns; in a world of diminishing returns, strong domestic demand for a good will tend to make it an import rather than an export." {[Krugman} 80 p.955 at p.64]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Davis} and Weinstein tested for home market effect - they don't report the result.{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Note} differences to core geog econ model:{\textless}/p{\textgreater}
+{{\textless}ol{\textgreater}{\textless}li{\textgreater}Neither} firms nor workers decide anything about location; "given their (exogenous) location, firms make a decision only about the varieties they want to produce." [64]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Core-periphery} equilibria are not possible because the concentration of demand in the first country, say for x varieties, is mirrored" by 1-x in the other country. Gosh they say that in a wordy way.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"The} allocation of the market size for the vareities is not an outcome of the model but is simply given (income is therefore also given."{\textless}/li{\textgreater}
+{\textless}/ol{\textgreater}{\textless}p{\textgreater}"agglomerations arise but only through the magnification of initial region size asymmetries." [67-8]{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}Krugman} and Venables (1990){\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}Won't} spend a lot of time on this one: the key points -{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}They're} examining an exogenously defined core-periphery model, to see what happens when transport costs change.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Transport} costs are used as a proxy for increasing integration (as they drop, you move from autarky.){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}As} they drop, there's a period where the richer country gets a larger share of world production (firms are allowed to enter and exit the market){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Why?} Higher labour market costs are offset by lower transport costs and the larger market{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}As} transport costs drop more, the advantage of producing in the larger market declines - so things even out again.{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}That} wasn't a bad summary! The point, really, is pocketbook considerations of firms, and the effect of having access to a market (and presumably the effect that has on your {RtS} and subsequent pricing.) Also that agglomeration is a dynamic part of the model, not exogenously imposed (if one discounts market size.){\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Actually,} that's why they say its not quite a "full-fledged geographical economics model" - the source of core-periphery is not derived from the model. {(That's} worth noting: they're claiming that a full-fledged model has to explain these things dynamically, endogenously. What things am I trying to explain or examine endogenously?){\textless}/p{\textgreater}
+{{\textless}p{\textgreater}{\textless}strong{\textgreater}The} core model - adds endogenisation of market size and worker mobility to this model. {\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}The} non-linear, U-shaped pattern of a graph of changing transport costs crops up in much of geog econ.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Key} difference between new trade theory and geog econ: endogenising the size of the market. {(So} they claim.){\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Head} and Mayer's (2004a) {\textless}strong{\textgreater}five essential ingredients to geog econs{\textless}/strong{\textgreater}:{\textless}/p{\textgreater}
+{{\textless}ol{\textgreater}{\textless}li{\textgreater}Inc} {RtS} - internal to firm{\textless}/li{\textgreater}
+{\textless}li{\textgreater}imperfect competition (implied by \#1...){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Positive} transport / trade costs{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Endogenous} firm locations{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Endogenous} location of demand - either through mobile workers {(Krugman} 91) or "firms using their sector output as intermediate inputs" {(Venables} 96; Krugman \&amp; Venables 95; Ch.4.) [67]{\textless}/li{\textgreater}
+{{\textless}/ol{\textgreater}{\textless}p{\textgreater}"The} key innovation of {NEG} relative to new trade theory is assumption [5]. Without 5 symmetric initial conditions can be expected to lead to symmetric outcomes. With all 5 assumptions, initial symmetry can be broken and agglomerations can form through a process of circular causation." [68]{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater}{\textless}strong{\textgreater}{\textless}br /{\textgreater}{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}},
+	annote = {{{\textless}h2{\textgreater}The} core model: demand structure{\textless}/h2{\textgreater}
+{{\textless}h3{\textgreater}Spending} on food and manufactures (callout a){\textless}/h3{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Two} goods: manuf M, food F{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Price} index of M = I - will come back to this. Needs to represent all varieties{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Consumers} earn income Y - spends on a mix of M and F{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Utility} is a Cobb Douglas U = F{\textasciicircum}(1-delta) * M{\textasciicircum}delta [eq.3.1]{\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}Remember:} power summing to 1 means if F and M increase by 20\%, so does utility{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Budget} constraint: want to spend up to Y - {\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}So} Y must equal F + {(I*M)} [eq.3.2]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}So} - F, which is the numeraire, plus the price index of M. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Which} is why there's no actual price of food in the equation, but there is a price of manufactures{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"To} decide on the optimal allocation of income over the purchase of food and manufactures, the consumer now has to solve a simple optimisation problem, namely - {\textless}/li{\textgreater}
+{\textless}li{\textgreater}maximise utility as given in equation 3.1, subject to the budget constraint of equation 3.2." [90]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}This} is a {\textless}strong{\textgreater}constrained maximum problem{\textless}/strong{\textgreater} I think - and there's a derivation using the Lagrangean multiplier on p.91. Same thing used in Fundamental Methods pp.349ish. So - the utility function is constrained by budget. Doing as I'm told by the book, I'll come back to the technical derivations and get the basic gist first...!{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Anyway,} maximise 3.1 subject to constraining by 3.2, you get:{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}F} = (1 - {delta)Y;} {IM} = delta * Y{\textless}/li{\textgreater}
+{\textless}li{\textgreater} - which is handily tractable, isn't it? {"It} is optimal for the consumer to spend a fraction, (1-delta), on food, and a fraction, delta, of income on manufactures.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}So} delta is "the fraction of income spent on manufactures." [90]{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}h3{\textgreater}Spending} on manufacturing varieties (callout b){\textless}/h3{\textgreater}
+{{\textless}p{\textgreater}How} is delta allocated among the different varieties? {"We} have to optimally allocate spending between the consumption of a number of goods that can be consumed." [91]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}So:} we need to define how preferences for M depend on particular varieties.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}{\textless}strong{\textgreater}Roll} out the {CES} function from Dixit Stiglitz:{\textless}/strong{\textgreater}{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Ci} = level of consumption of variety i{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}N} = total number of varieties{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Go} see equation 3.4 - N variety {CES} equation with rho being the love of variety effect. What does Krugman call this? Oh - its elasticity of substitution of course. The more elastic, presumably, the more people don't mind what they get, the more manufactures become homogenous (perfect substitution.){\textless}/p{\textgreater}
+{{\textless}p{\textgreater}The} {CES} here is also slightly different from Krugman's - have to wait and see if that comes up later I guess.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}It} ends up with N{\textasciicircum}(1/p)-1 * Nc; 0 \&lt; p \&lt; 1 [p is rho] by assuming demand is entering symmetrically for all goods.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Quick} mathstruggle note: just spent yonks trying to work out how{\textless}/p{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}x * y = x{\textasciicircum}-1 * (yx){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}It} does work, and in seeking an intuitive answer, I think I sort of have one - you're removing a multiple of x from the first term, so you can add one to the last term. I've checked the sums, it definitely works! {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}I'm} just a little unclear why they needed to do it - perhaps that will become apparent.{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater}\&gt; {"The} term N{\textasciicircum}(1/p)-1 represents a bonus for large markets - hence the term 'love of variety effect.' In this sense, and increase in the extent of the market, which increases the number of varieties N the consumer can choose from, more than proportionally increases utility." [93]{\textless}/p{\textgreater}
+{\textless}h4{\textgreater}box 3.2: Dixit Stiglitz monopolistic competition{\textless}/h4{\textgreater}
+{{\textless}p{\textgreater}This} is quite weird, actually. So we know that they use a {CES} to make some "heroic assumptions concerning symmetry of new varieties and the structural form, which allowed for an elegant and consistent way to model production... without getting bogged down in a taxonomy of oligopoly models." [93]  They note the messy history of imperfect competition research.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Why} weird? How this meant the {DXS} model became so universally popular - "the new standard for modeling monopolistic competition." Take this sentence:{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}"In} international trade theory, the introduction of the monopolistic competition model enabled international economists to explain and understand intra-industry trade, which until then had been empirically observed but never satisfactorily explained. {(Krugman} 1979/80) In industrial organisation, it helped to get rid of many ad hoc assumptions, which hampered the development of many industrial organisation models." [93]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}But} how is it actually any explanation? The criteria for validity seems bizarre to me - if you can build endogenous dynamics into the model that somehow represent some empirical aspect of the world, you're explaining it.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}I} can't help but wonder: was it so popular because it opened up a rich new seam of academic work and funding? It's a bit of a mystery to me.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Again:} the very different ways this model might map to the world in comparison to an {ABM?} The latter would be accused of adhocery, but these equations seem so colossally distant from reality. Christ, maybe Scott Moss is right!{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Anyhoo,} back to the sums...{\textless}/p{\textgreater}
+{\textless}p{\textgreater}---{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}How} does the consumer allocate spending on manuf over the various varieties? [94]{\textless}/h3{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}pi = price of variety i for i = 1 to N{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Naturally"} - funds {\textless}strong{\textgreater}p{\textless}/strong{\textgreater}i{\textless}strong{\textgreater}c{\textless}/strong{\textgreater}i spent on variety i can't be spent on variety j - there's a budget constraint for spending on manuf:sum of all{\textless}strong{\textgreater}{\textless}strong{\textgreater} {\textless}/strong{\textgreater} {\textless}/strong{\textgreater}{\textless}strong{\textgreater}p{\textless}/strong{\textgreater}i{\textless}strong{\textgreater}c{\textless}/strong{\textgreater}i{\textless}strong{\textgreater} {\textless}/strong{\textgreater}{\textless}strong{\textgreater} {\textless}/strong{\textgreater}{\textless}strong{\textgreater} {\textless}/strong{\textgreater} = delta Y [eq.94] (as we saw above.){\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}},
+	annote = {{{\textless}h2{\textgreater}The} core model: introduction{\textless}/h2{\textgreater}
+{{\textless}p{\textgreater}Ohlin} 1933: all trade theory is asking "who produces what, where and why?" [81] But trade theory followed a different path to reg/urb econs.{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Trade} theorists: how do market structure, production techniques and consumer behaviour interact? {"The} resulting factor and commodity prices determine the pattern of international trade flows." Location plays only an exogenous role at best.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Reg/urb} econs: take market structure and prices as given - then seeks the most efficient allocation of space. {"The} underlying behaviour of consumers and producers, central to trade theory, is less important." [81]{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}These} two combined in geog econ with Krugman's small {GE} model. Results are non-linear:{\textless}/p{\textgreater}
+{\textless}p{\textgreater}"this means, for example, that the location decision of a single producer might not change the spatial pattern of production, but it {\textless}em{\textgreater}could{\textless}/em{\textgreater} have dramatic or 'catastropic' [chaos] consequences." [82]{\textless}/p{\textgreater}
+{\textless}p{\textgreater}- possible it might trigger a feedback.{\textless}/p{\textgreater}
+{{\textless}h3{\textgreater}An} example to get us warmed up -{\textless}/h3{\textgreater}
+{\textless}ul{\textgreater}{\textless}li{\textgreater}2 regions, 2 sectors: agri, manuf{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Manuf} = a variety of products under internal economies of scale - {AC} falls as firms expand production level; "as a result, each firm produces only one variety." [83]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Firms:} can decide which region to produce in. {"This} location decision essentially differentiates the example from new trade theory."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}In} this example: total demand is exogenous: assume each firm sells -             
+{\textless}ul{\textgreater}{\textless}li{\textgreater}4 units  to workers{\textless}/li{\textgreater}
+{\textless}li{\textgreater}6 units to farmers{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Total} demand for each variety therefore = 10{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Agri:} immobile  - 4 units in N, 2 units in S.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Location} of workers in manuf is not exogenous{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"The} role of the immobile workers is important, as they ensure that there is always positive demand in {\textless}em{\textgreater}both{\textless}/em{\textgreater} regions." [83]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Transport} costs between North and South are \$1 - firms make location decisions to minimise cost. See their little table on p.84{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}Used} to illustrate these 'distinctive characteristics' -{\textless}/p{\textgreater}
+{{\textless}ol{\textgreater}{\textless}li{\textgreater}Cumulative} causation - i.e. agglomeration / feedback{\textless}/li{\textgreater}
+{\textless}li{\textgreater}multiple equilibria (some stable, some not - i.e. can be tipped by one firm){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Stable} equilibria can be non-optimal (all firms can agglomerate somewhere with expensive transport costs){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Interaction} of agglomeration and trade flows - depending on regional mix of agglomeration, trade can be inter- or intra-industry. The former showing the home market effect{\textless}/li{\textgreater}
+{{\textless}/ol{\textgreater}{\textless}p{\textgreater}What's} missing from the simple example?{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Interaction} of transport costs, price-setting behaviour and location choice [85] Assume demand is given and independent of price-setting behaviour and transport costs. {"In} reality, prices, wages and transport costs will determine the purchasing power of consumers" - which drives the location decisions of consumers and producers.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Firms} don't worry about what labour they need - "it will turn out that assumptions with regard to the functioning of the labour market are important." [86]{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}h2{\textgreater}Structure} of the model{\textless}/h2{\textgreater}
+{{\textless}p{\textgreater}Nuts} and bolts of core model: Dixit Stiglitz 77 and Krugman 79/80{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Some} of this I know, so I'll try to pick up on what's new / useful. The diagram on p.87 is absolutely invaluable.{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Agri} production: constant {RtS,} perfect competition, {\textless}strong{\textgreater}no transport costs{\textless}/strong{\textgreater}{\textless}/li{\textgreater}
+{\textless}li{\textgreater}n1 firms in region 1, n2 firms in region 2 - {\textless}br /{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}each producing a differentiated product{\textless}/li{\textgreater}
+{\textless}li{\textgreater}using only labour, with internal economies of scale; "this implies firms have monopolistic power, which they use in determining the price of their product." [87]{\textless}/li{\textgreater}
+{\textless}li{\textgreater}{\textless}strong{\textgreater}transport costs {\textless}/strong{\textgreater}incurred selling to another region; not so for own region; "as a result of the transport costs, exporting firms will {\textless}strong{\textgreater}charge a higher price {\textless}/strong{\textgreater}in the foreign region than in the home region." [87]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Consumers:}           
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Food} - homogenous good so they don't care where it's produced. No transport costs in getting to market, see? {(Implying} that farmers earn the same wage in both regions.){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Manuf} spending - "has to be allocated over the many varieties produced in regions 1 and 2." [88]          
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Transport} costs mean consuming domestic is (ceteris paribus) cheaper; but - {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Variety-loving} means consumers will always have at least a little of everything [note: consumers are dealt with in aggregate, so the love of variety effect is also aggregate...]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}We're} going to deal with four model aspects:{\textless}/p{\textgreater}
+{{\textless}ol{\textgreater}{\textless}li{\textgreater}Demand} structure{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Supply} structure{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Role} of transport costs{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Model} dynamics{\textless}/li{\textgreater}
+{{\textless}/ol{\textgreater}{\textless}p{\textgreater}Q:} why would one assume manuf workers were mobile, agri not? Isn't the opposite true? The land is an immobile factor, but... oh: {"The} relocation of manufacturing firms from one region to another is the other side of the same coin, as an expansion of the manufacturing workforce in a region implies an expansion of production in the manufacturing sector." [88]{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}Though} still: "the farmers need the land for cultivation and are thus not mobile." [88] Well, I guess it's illustrating a point - but here's one of those enormously unrealistic assumptions. In some places, agri labour is enormously mobile.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}The} two are presumably bundled in one equation somehow... we shall see.{\textless}/p{\textgreater}
+{{\textless}p{\textgreater}So:} shaded boxes in model outline - can disappear if e.g. workers/firms all end up in one region. Unshaded boxes = immobile.{\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}
+{\textless}p{\textgreater} {\textless}/p{\textgreater}}
+},
+
+@article{lucas_mechanics_1988,
+	title = {On the mechanics of economic development},
+	volume = {22},
+	issn = {0304-3932},
+	url = {http://www.sciencedirect.com/science/article/B6VBW-47N61RY-3/2/d5af17f237229feefc2278ac76c2bc56},
+	doi = {10.1016/0304-3932(88)90168-7},
+	abstract = {This paper considers the prospects for constructing a neoclassical theory of growth and international trade that is consistent with some of the main features of economic development. Three models are considered and compared to evidence: a model emphasizing physical capital accumulation and technological change, a model emphasizing human capital accumulation through schooling, and a model emphasizing specialized human capital accumulation through learning-by-doing.},
+	number = {1},
+	journal = {Journal of Monetary Economics},
+	author = {Robert E. Lucas},
+	month = jul,
+	year = {1988},
+	keywords = {economics},
+	pages = {3--42}
+},
+
+@book{glaeser_cities_2008,
+	title = {Cities, Agglomeration, and Spatial Equilibrium},
+	isbn = {{019929044X}},
+	publisher = {{OUP} Oxford},
+	author = {Edward L. Glaeser},
+	month = jul,
+	year = {2008},
+	keywords = {economics, geography, localisation},
+	annote = {{{\textless}h2{\textgreater}Agglomeration} economies{\textless}/h2{\textgreater}
+{{\textless}p{\textgreater}From} intro:{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}"Agglomeration} economies exist whenever people become more productive through proximity to others." [5]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Agglomeration} economies are the catchall explanation for why cities can be so productive and why so many people flock to urban areas." [5]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"If} the spatial equilibrium concept comes from the individual's location choice, agglomeration economies are inferred from the labour demand decisions of firms. High wages are a pervasive feature of cities [glaeser \&amp; mare, 2001]. The spatial equilibrium concept maintains that these high wages are offset by something else and indeed they are offset by high urban housing prices."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Q:} why are firms willing to locate in places where workers are so expensive? Must be offset by something else. Hmm - from all the reasons he gives, he doesn't yet mention "being near to workers"; some equlibiriating force: easier access to capital / "something pushing up the marginal product of labour." [6]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}But} space! "the absence of physical space between people and firms. Cities are density, proximity, closeness. The advantage of all that closeness is the absence of transport costs." [absence??] He notes this has led urban economists to focus on transport cost advantages. 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}"Cities} eliminate transport costs for goods, people and ideas." [eliminate???]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}NEG,} he says {[Krugman,} Fujita, Venables 2001] "emphasise the cost savings associated with low shipping costs for goods."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}He} goes on to say this was appropriate for C19th, but less so now...{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Two} ways low transport costs from clustering help firms: 
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}Home} market effect: being close to customers ['mechanism that lies at the heart of Krugman 1991']{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}That} talked about closeness to customers "but it is only a slight variant to assume that the core urban edge comes from firms that have to pay less for intermediate goods."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}I} always thought the main point of the home market effect was these cost savings' impact on exports? Central point: you tend to export what you're good at. [which looks a bit like {CA,} but can arise without {CA's} natural advantages.]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}From} C19th to 20th: story of transport costs becoming less important. Would like to see some numbers for that! {\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}Major} transport hubs. Ports and railyards were key advantages for places; natural advantage for e.g. New York: large transatlantic shipping dropped stuff off that was ferried up the coast by smaller boats. {NY} also become an intermediary processing point for e.g. sugar that wouldn't make the voyage if already refined. Also {NY:} "river-based access to the hinterland."{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"In} the nineteenth century, when moving goods overland was expensive, access to the transport advantages in Chicago and New York made firms much more productive." [7] So seen from a firm's point of view - place to be to reduce costs.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Cities} emerged around transport hubs. Question: does it even make sense to try and separate 'pure' agglomeration from natural advantage? Well cf Krugman: small differences can feed back into complete advantage; worth knowing that.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Note:} that's what Glaeser seems to think should be done - control for natural advantage to get at the underlying agglomeration, and don't mistake one for the other e.g. high population and wages around C19th ports != agglom.[7]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Glaeser:} transport costs now much less of an issue for agglom; C20th - rail freight costs dropped by 90\% {[Glaeser} \&amp; Kohlhase 2004] Other modes of transport "made it easy to ship goods over space. As a result, cities that once had an advantage based on moving goods over space lost that advantage and often lost their economic raison d'etre." Cf. Great Lakes region: Iron, Coal - he doesn't mention water, but presumably that too. Now: carmaking in Tennessee or Korea is possible. {\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Glaeser} contrasts transport costs for goods w/ for people and ideas - which now dominate agglomeration, he believes. {\textless}br {/{\textgreater}{\textless}ul{\textgreater}{\textless}li{\textgreater}People's} time is now the largest element of transport cost, and that has become more and more valuable. [8]{\textless}/li{\textgreater}
+{\textless}li{\textgreater}services more important; interaction between people dominates; {"The} dense urban markets for these services then create gains from specialisation and the division of labour." [8]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Idea-producing"} industries now dominating in agglom.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Though} cf. Marshall's "in the air" quote, and Jacobs: not new. {(Glaeser} sez Jacobs 1969, which is the economy of cities; Glaeser: "new ideas are formed by combining old ideas and in dense agglomerations, old ideas abound." [8]{\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}He} then goes on to other elements of 'modern urban economics' that don't directly come under agglom, but it's worth noting them: the 'bricks and mortar' of the physical infrastructure, and their transportation technology. Might be worth following up on John Meyer... 
+{\textless}ul{\textgreater}{\textless}li{\textgreater}e.g. monocentric cities a hangover from C19th transport tech - water and rail lnk, when roads were very expensive.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Interesting} point: tech ability to build higher changes value of land... skyscapers etc.{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Government:} he doesn't mention it as a 'natural advantage' which I would have thought it was like - being near to power makes you better connected, helps your business. Cf. lobbying groups. Instead, mentions political capitals growing wealthy off the backs of great leaders' plans. {(Which} often involved taxing hinterlands to fund urban growth.) [9]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Then} there's government regulation and zoning policy... {\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}William} Alonso: location and land use - need to read that at some point! Appears to be "seminal" re spatial equilibrium.{\textless}/li{\textgreater}
+{{\textless}/ul{\textgreater}{\textless}p{\textgreater}From} later chapter:{\textless}/p{\textgreater}
+{{\textless}ul{\textgreater}{\textless}li{\textgreater}"Agglomeration} economies are said to exist whenever an individual's productivity rise when he or she is near to other individuals." [116]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"Agglomeration} economies can explain urban density in a closed model that doesn't need to appeal to external factors, like ports or mines." [116]{\textless}/li{\textgreater}
+{{\textless}li{\textgreater}"The} key advantage from proximity and therefore the key agglomeration economy is the reduction of transport costs for goods, for people and for ideas." [117]{\textless}/li{\textgreater}
+{\textless}li{\textgreater}(or as he says afterwards: 'proximity reduces transport costs for goods, for people and for ideas." A bit neater, though the same thing.){\textless}/li{\textgreater}
+{\textless}li{\textgreater}cf. Krugman: lower transport costs themselves {\textless}strong{\textgreater}cause {\textless}/strong{\textgreater}agglomeration, rather than agglomeration being driven by a desire to lower transport costs. {(Outweighed} by proximity of markets... so different forces at play.){\textless}/li{\textgreater}
+{{\textless}li{\textgreater}Real} wages in cities appear to remain constant across cities: costs adjust. 177 {(Effect} of this spatial variation in inflation is what...?){\textless}/li{\textgreater}
+{\textless}/ul{\textgreater}{\textless}p{\textgreater} {\textless}/p{\textgreater}}
+},
+
+@article{berliant_misbehavioral_2010,
+	title = {Misbehavioral Urban Economics},
+	volume = {50},
+	issn = {00224146},
+	url = {http://0-www3.interscience.wiley.com.wam.leeds.ac.uk/cgi-bin/fulltext/123189120/main.html,ftx_abs},
+	doi = {10.1111/j.1467-9787.2009.00634.x},
+	number = {1},
+	journal = {Journal of Regional Science},
+	author = {Marcus Berliant},
+	year = {2010},
+	keywords = {geographical economics},
+	pages = {93--101}
+},
+
+@article{partridge_employment_2008,
+	title = {Employment growth in the American urban hierarchy: Long live distance},
+	volume = {8},
+	issn = {1935-1690},
+	shorttitle = {Employment growth in the American urban hierarchy},
+	url = {http://apps.isiknowledge.com/full_record.do?product=WOS&colname=WOS&search_mode=CitingArticles&qid=4&SID=S2JalPmgknOkea34cgI&page=3&doc=23},
+	abstract = {New information technologies and reductions in transportation costs have led pundits to pronounce the "death of distance." These claims would suggest that distance is no longer a barrier to growth for remote areas and small urban centers. Despite extensive research on the localized effects of agglomeration, very few studies have empirically investigated the broader spillover effects of proximity and location in the urban system. This study attempts to fill this void using {U.S.} county level employment data. A primary innovation is that urban centers, from which distance is measured, are differentiated by their position within six tiers (rural plus 5 urban) of the American urban hierarchy. Net agglomeration economies can thus originate from multiple sources throughout the entire 360 degrees span. Our findings indicate that proximity to higher-tiered urban centers continues to be an important positive determinant of local job growth, all the way from the smallest to largest urban centers.},
+	number = {1},
+	journal = {B E Journal of Macroeconomics},
+	author = {{MD} Partridge and {DS} Rickman and K Ali and {MR} Olfert},
+	year = {2008},
+	keywords = {agglomeration, geographical economics}
+},
+
+@book{hoover_location_1948,
+	title = {The Location Of Economic Activity},
+	publisher = {{Mcgraw-Hill} Book Company Inc},
+	author = {Edgar M. Hoover},
+	year = {1948},
+	keywords = {economics, geography, localisation}
+},
+
+@article{kirman_basic_2007,
+	title = {The basic unit of economic analysis: Individuals or markets?: A comment on {"Markets} come to bits" by Phil. Mirowski},
+	volume = {63},
+	issn = {0167-2681},
+	shorttitle = {The basic unit of economic analysis},
+	url = {http://www.sciencedirect.com/science/article/B6V8F-4N3P50P-1/2/7820c1a7918a0130ead45fda7e337c74},
+	doi = {10.1016/j.jebo.2005.12.017},
+	abstract = {Mirowski has put forward an argument for viewing the economy as a set of interlocking markets. I argue that he is right to shift attention from the individual to a higher level. He further holds that there has been a shift to considering the informational problem as central to economics and that this can provide the framework for a new vision of markets as automata. I see the decline of homo economicus as rather due to a dissatisfaction with the intrinsic value of that concept with the development of cognitive economics and a realisation that this notion can give us no hold on analysing aggregate behaviour. However, markets are indeed, important and they have been largely ignored as a result of our preoccupation with the individual. Different market forms co-exist in reality, and it is necessary to analyse the reasons for this. However, to reduce them to computable algorithms may miss many of the other features which make them fascinating but intractable.},
+	number = {2},
+	journal = {Journal of Economic Behavior \& Organization},
+	author = {Alan Kirman},
+	month = jun,
+	year = {2007},
+	keywords = {ace},
+	pages = {284--294}
+}

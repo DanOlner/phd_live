@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="626" viewBox="0 0 900 626">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="900" height="600" fill="#fff"/>
+<path d="M127.04 30L127.04 528.6M244.92 30L244.92 528.6M362.79 30L362.79 528.6M480.67 30L480.67 528.6M598.54 30L598.54 528.6M99 477.25L626.82 477.25M99 362.89L626.82 362.89M99 248.53L626.82 248.53M99 134.17L626.82 134.17" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M99 528.6L626.82 528.6M99 30L99 528.6" fill="none" stroke="#000" stroke-width="1"/>
+<text x="127.04" y="532.6" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="244.92" y="532.6" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#444">500</text>
+<text x="362.79" y="532.6" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#444">1000</text>
+<text x="480.67" y="532.6" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#444">1500</text>
+<text x="598.54" y="532.6" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#444">2000</text>
+<text x="95" y="477.25" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">1.0e-8</text>
+<text x="95" y="362.89" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">1.0e-6</text>
+<text x="95" y="248.53" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">1.0e-4</text>
+<text x="95" y="134.17" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="end" dominant-baseline="middle" fill="#444">0.01</text>
+<text x="362.91" y="569.4" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#000">iterations</text>
+<text x="0" y="0" transform="translate(44.6 279.3) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="17" text-anchor="middle" dominant-baseline="middle" fill="#000">error, spread</text>
+<path d="M127.28 173.23L139.06 101.64L151.32 150.75L163.35 106.52L175.37 143.61L187.39 135.59L199.65 157.37L211.68 118.45L223.7 156.63L235.96 141.18L247.98 151.11L260 183.06L272.03 272.08L284.29 193.8L296.31 169.59L308.33 170L320.59 223.77L332.62 239.28L344.64 232.07L356.66 255.49L368.92 420.07L380.95 439.24L392.97 421.63L404.99 431.3L417.25 428.41L429.27 426.4L441.3 435.6L453.56 430.25L465.58 438.42L477.6 469.95L489.63 435.23L501.89 443.47L513.91 443.68L525.93 501.89L538.19 412.53L550.21 460.23L562.24 468.84L574.26 491.94L586.52 438.58L598.54 464.41" fill="none" stroke="rgb(0,0,0)" stroke-width="1.6"/>
+<path d="M596.04 464.41a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(0,0,0)"/>
+<path d="M127.28 56.71L139.06 59.4L151.32 60.03L163.35 63.83L175.37 65.84L187.39 68.32L199.65 72.53L211.68 76.49L223.7 78.65L235.96 86.67L247.98 89.51L260 93.16L272.03 100.62L284.29 107.29L296.31 110.33L308.33 119.8L320.59 141.97L332.62 154.19L344.64 160.98L356.66 189.74L368.92 354.99L380.95 353.3L392.97 355.9L404.99 358.6L417.25 358.6L429.27 357.36L441.3 359.41L453.56 361.38L465.58 359.14L477.6 359.74L489.63 365.36L501.89 365.51L513.91 364.57L525.93 368.41L538.19 364.95L550.21 376.08L562.24 363.99L574.26 368.6L586.52 370.47L598.54 371.44" fill="none" stroke="rgb(47,47,47)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M596.04 371.44a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(47,47,47)"/>
+<path d="M127.28 156.51L139.06 157.44L151.32 171.36L163.35 166.45L175.37 176.42L187.39 207.63L199.65 175.39L211.68 213.73L223.7 230.52L235.96 301.96L247.98 284.71L260 317.05L272.03 364.98L284.29 357.81L296.31 316.88L308.33 318.56L320.59 275.35L332.62 310.75L344.64 281.75L356.66 362.86L368.92 301.93L380.95 302.28L392.97 312.98L404.99 302.73L417.25 367.45L429.27 308.1L441.3 296.95L453.56 307.2L465.58 301.97L477.6 305.15L489.63 331.29L501.89 305.16L513.91 298.24L525.93 343.67L538.19 303.69L550.21 313.45L562.24 299.4L574.26 309.85L586.52 295.83L598.54 282" fill="none" stroke="rgb(93,93,93)" stroke-width="1.6"/>
+<path d="M596.04 282a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(93,93,93)"/>
+<path d="M127.28 82.86L139.06 91.96L151.32 95.57L163.35 104.06L175.37 107.21L187.39 117.9L199.65 132.34L211.68 135.73L223.7 158.06L235.96 211.8L247.98 213.98L260 228.85L272.03 230.73L284.29 229.78L296.31 229.57L308.33 232.87L320.59 232.67L332.62 232.16L344.64 233.52L356.66 234.02L368.92 232.91L380.95 234.1L392.97 232.98L404.99 231.11L417.25 232.05L429.27 234.34L441.3 234.13L453.56 233.5L465.58 233.93L477.6 235.76L489.63 235.29L501.89 236.53L513.91 235.21L525.93 235.78L538.19 235.67L550.21 236.49L562.24 235.51L574.26 235.82L586.52 237.62L598.54 239.17" fill="none" stroke="rgb(140,140,140)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M596.04 239.17a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(140,140,140)"/>
+<text x="631.82" y="464.41" font-family="ui-monospace, Menlo, monospace" font-size="21" text-anchor="start" dominant-baseline="middle" fill="rgb(0,0,0)">error n=2 1.7e-8</text>
+<text x="631.82" y="371.44" font-family="ui-monospace, Menlo, monospace" font-size="21" text-anchor="start" dominant-baseline="middle" fill="rgb(47,47,47)">spread n=2 7.1e-7</text>
+<text x="631.82" y="282" font-family="ui-monospace, Menlo, monospace" font-size="21" text-anchor="start" dominant-baseline="middle" fill="rgb(93,93,93)">error n=8 2.6e-5</text>
+<text x="631.82" y="239.17" font-family="ui-monospace, Menlo, monospace" font-size="21" text-anchor="start" dominant-baseline="middle" fill="rgb(140,140,140)">spread n=8 1.5e-4</text>
+<text x="8" y="618" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#666">a4 · Hill-climber vs constrained optimiser · §4.6.1, §5.2.3 · day 40</text>
+</svg>

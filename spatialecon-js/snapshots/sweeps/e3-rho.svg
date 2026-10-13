@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="555" viewBox="0 0 900 555">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="900" height="529" fill="#fff"/>
+<path d="M127.93 26.45L127.93 464.4M288.66 26.45L288.66 464.4M449.4 26.45L449.4 464.4M610.13 26.45L610.13 464.4M99 376.61L639.06 376.61M99 162.9L639.06 162.9" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M99 464.4L639.06 464.4M99 26.45L99 464.4" fill="none" stroke="#000" stroke-width="1"/>
+<text x="127.93" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0.6</text>
+<text x="288.66" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0.7</text>
+<text x="449.4" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0.8</text>
+<text x="610.13" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0.9</text>
+<text x="95" y="376.61" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">1</text>
+<text x="95" y="162.9" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">10</text>
+<text x="369.03" y="500.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">rho (1 = perfect substitutes)</text>
+<text x="0" y="0" transform="translate(51 245.43) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">ratio, price</text>
+<path d="M369.03 26.45L369.03 464.4" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="369.03" y="37.85" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="middle" dominant-baseline="middle" fill="#666">thesis ~0.75</text>
+<path d="M127.93 376.61L144.01 376.61L160.08 376.61L176.15 376.61L192.22 376.61L208.3 376.61L224.37 376.61L240.44 376.61L256.52 376.6L272.59 376.6L288.66 376.6L304.74 376.59L320.81 376.57L336.88 376.6L352.96 376.45L369.03 375.66L385.1 353.56L401.18 339.28L417.25 334.81L433.32 328.16L449.4 325.5L465.47 322.91L481.54 314.17L497.62 312.27L513.69 312.27L529.76 312.27L545.84 312.27L561.91 312.27L577.98 312.27L594.05 312.27L610.13 312.27" fill="none" stroke="rgb(0,0,0)" stroke-width="1.6"/>
+<path d="M607.63 312.27a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(0,0,0)"/>
+<path d="M127.93 414.24L144.01 414.24L160.08 414.24L176.15 414.24L192.22 414.24L208.3 414.24L224.37 414.24L240.44 414.24L256.52 414.24L272.59 414.24L288.66 414.23L304.74 414.23L320.81 414.22L336.88 414.24L352.96 414.15L369.03 413.77L385.1 402.25L401.18 393.02L417.25 390.81L433.32 385.66L449.4 384.8L465.47 383.74L481.54 353.29L497.62 120.53L513.69 88.65L529.76 72.72L545.84 62.96L561.91 56.35L577.98 52.44L594.05 50.26L610.13 49.91" fill="none" stroke="rgb(70,70,70)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M607.63 49.91a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(70,70,70)"/>
+<path d="M127.93 414.24L144.01 414.24L160.08 414.24L176.15 414.24L192.22 414.24L208.3 414.24L224.37 414.24L240.44 414.24L256.52 414.24L272.59 414.24L288.66 414.24L304.74 414.25L320.81 414.26L336.88 414.24L352.96 414.32L369.03 414.71L385.1 424.98L401.18 431.08L417.25 432.85L433.32 435.33L449.4 436.3L465.47 437.23L481.54 440.31L497.62 440.94L513.69 440.94L529.76 440.94L545.84 440.94L561.91 440.94L577.98 440.94L594.05 440.94L610.13 440.94" fill="none" stroke="rgb(140,140,140)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M607.63 440.94a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(140,140,140)"/>
+<text x="644.06" y="312.27" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(0,0,0)">efficiency ratio 2</text>
+<text x="644.06" y="49.91" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(70,70,70)">price max 33.78</text>
+<text x="644.06" y="440.94" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(140,140,140)">price min 0.5</text>
+<text x="8" y="547" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#666">e3-rho · Where the production regime breaks · 31 points</text>
+</svg>

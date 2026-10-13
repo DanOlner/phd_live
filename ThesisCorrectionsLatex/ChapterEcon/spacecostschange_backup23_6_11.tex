@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%
+% SPATIAL CHANGE
+%%%%%%%%%%%%%%%
+% Things to get in here
+% Defining space costs against concepts from reeality
+% This needs to tie back to the rest of the key space concepts. Can't stand on its own.
+
+\section{Space costs and spatial change \label{sec:spacechange}}
+
+\subsection{Defining space costs \label{sec:spacecostsdef}}
+
+%The job of this section is to explain how the concept of space costs is used in the modelling work later. 
+
+
+
+\subsection{Old space cost change section}
+
+G/K: ``These reduced costs, and the declining importance of the good-producing sector of the economy, means that in our view it is better to assume that moving goods is essentially costless than to assume that moving goods is an important component of the production process.'' [199]
+
+%I could do with covering exactly how transport costs do enter into the core model - yup, a very useful thing to do. 
+%WUD30
+What happens when space costs change? In theory, \gls{ge} does have answers. Lang points out that \gls{ge} models aim to:
+
+\begin{quote}
+``examine how the spatial distribution of economic activity changes as transportation costs slowly decline. The slow decline is meant to mirror the actual decline in transportation costs observed over the modern era of civilisation.'' (\citealt{lang_heterogeneous_2010} p.191)
+\end{quote}
+
+%note: orig paper for 'history' quote is krugman, venables 2005, globalisation and the inequality of nations
+As Neary points out (\citealt{neary_hype_2001} p.536), this is a sweeping claim of telling the `history of the world part one', spanning ``first caravels, then steamships and railroads, then air freight...'' (\citealt{fujita_spatial_2001} p.253) This has led to a situation where transport costs are so low that they hardly factor in economic decisions at all - and that ``there is little reason to doubt that this decline will continue'' (\citealt{glaeser_cities_2004}, p.197). Time thus becomes the prime factor in spatial economic decision-making; as Beckmann notes, ``for many types of interaction the expenditure of time is more relevant than physical distance even when the latter involves a money cost.'' (\citealt{beckmann_lectures_2010}, p.3)
+%WUD21
+
+It would seem, then, that rather than asking about change \emph{per se}, the question is implicitly, `what happens when space costs decrease?' This is a somewhat `Whig history' approach to thinking about space cost change, but is that a problem? One might cite recent analyses suggesting that oil prices may begin to creep back up again (see e.g. \citealt{sorrell_assessment_2009} for a thorough analysis of the issue of oil depletion and \citealt{kerschner_assessing_2009} for a rare examination of the potential economic consequences\footnote{Kerschner \emph{et al}, using an input-output model, find surprising results: agriculture is more resilient to oil cost changes than other sectors. Note, however, that no space cost or space change factors enter into the analysis.}). However, even without any specific reason to think costs may go up as well as down, thinking about space cost change `in the round' opens up interesting theoretical avenues. The fundamental point is that changing space costs means different things depending on the space-type under consideration, and the model assumptions.
+\cmt{Does it? That's nice. What are they? Going to have to come back here and nail this down.}
+
+%cf. space cost change in the core model.
+To pre-empt the conclusion of the upcoming discussion, in the models this thesis presents, space costs are theorised as having three components. The third of these, it will be argued, is beyond the scope of this thesis to model but, as in \gls{ge}, it is a reality that needs to be consciously and carefully placed outside the analysis.
+ \cmt{of course, secretly, I'm hoping I'll find a way} 
+
+\begin{enumerate}
+	\item \Gls{mbf}: actors must `spend' these to get themselves and goods across any distance. Time can be an \gls{mbf}; others will be discussed later.
+	\item Technology: this changes the level of \gls{mbf}s required to buy a given unit of distance.
+	\item Infrastructure: development, such as road and rail networks or ports, that affect both technology and \gls{mbf}s.
+\end{enumerate}}
+
+%WUD 46	Simple details of everything going into the simplest model:
+%-- 1 or 2 MBFs. Definitely time - at least for people. Possibly fuel.
+%-- Generic tech. Free, but entering into both of the functions for those MBFs. Can exogenously change.
+Each of these is associated with a particular timescale. \gls{mbf}s are the most short-term consideration; technology can be medium term. The most commonly cited example is that, while the actual money cost of driving is affected by changes in fuel prices, short-run and long-run elasticities are different. For instance, actors can alter technology choices in the medium-run by changing car. \fixref{citations needed for short-long run difference in fuel elasticities} In the longer-run, larger-scale technology changes blend into infrastructure development as the two co-develop. 
+
+%WUD21
+%One definition of Byzantine is `highly complex or intricate and occasionally devious'; this is an accurate enough reflection of the problem. Sadly, online source.
+The last of these, infrastructure, is by far the biggest modelling challenge: it is just as important as the other two, but it is also the most byzantine. The largest long-run changes are due almost entirely to infrastructure development; most obviously, choices about new rail and road routes. Infrastructure \emph{change} is pivotal: it changes proximity unevenly. Transport development tends to happen between economically important sites and, as Fowler notes, ``uneven power relations'' are both a cause and consequence (\citealt{fowler_reexploring_2006} p.1433). This has major modelling implications: if considered explicitly, infrastructure change makes no sense in anything other than $R^2$. Between or within discrete regions, it must be conceptualised as either an externality or a generic transport cost change between points. In $R^1$, the same applies: there is only one route between points. Choosing discrete space or $R^1$, however, does not make the problem go away: it just masks the fact of this uneven change dynamic. If, as argued here, it is perhaps the most important long-run dynamic, this means avoiding it leads to wrong results. In $R^2$, however - as on the locally two-dimensional reality of the Earth's surface - this change can at least in theory be examined.
+
+Analysis of infrastructure change does exist; operationally, it needs to. Current plans for high-speed rail routes in the UK, for example, have been analysed using an econometric framework developed at the London School of Economics (\fixref{overman report}) for assessing the economic impact of transport network choices. Of course, this has to make an assessment of the existing economic landscape. However, to find more theoretical attempts to understand the cumulative effects of long-term change (`history of the world'-type questions mentioned above) one has to look to pre-1980 geographers like Haggett \emph{et al} and Chapman (\citealt{haggett_locational_1977}, \citealt{chapman_people_1979}).
+
+\cmt{Lots of stuff to write up from Haggett, Chapman, but if I'm mainly avoiding it, should I? Could do with a one-para overview. Difficult to summarise though: great stuff those old human geog textbooks!}
+
+This presents something of a catch twenty-two. One of the arguments made here is that 'Weber-type stories' absent from \gls{ge} are worth telling. But $R^2$ appears to have a uniquely complex relationship to long-run space cost change that makes telling them very difficult. How could one possibly go about modelling it in a way that fits with \gls{ge}'s goal of endogenising outcomes? The obvious answer is to avoid it: as long as networks in $R^2$ remain static, the analysis is potentially much easier. Specifically, it becomes possible to use Euclidean distance as a reasonably accurate estimator proxy for actual distance and space cost between points (see, for instance, \citealt{cooper_use_1983}.) This has one clear advantage: it is very simple. Calculations are trivial and, as an added bonus, visualisation is straightforward and intuitively easy to grasp. This method is used in \cmt{backyard, twogoods, all models?}
+
+%but even this can say nothing about \emph{why} particular routes end up being selected. It would seem impossible to model long-term space cost change without some model of how that `why' happens, equivalent to a micro-economic foundation of utility for actors.
+%These changes are difficult to frame as micro-decisions.
+%Economic factors drive route development choices, and even the most carefully planned routes will leave losers as well as winners. (Historically, route development choice has often been driven by various narrow economic interests such as coal. \fixref{narrow interests drive route development?})
+
+ 
+%along with a very simple assumption about how space costs change. Actors can travel a certain Euclidean distance in `one day'; as space costs are exogenously changed, the span of `one day' changes. Clearly, in reality, space does not work like that.
+
+This approach would appear to mean considering only medium-term space cost changes. The closer to the very short-term, the better the approximation to reality. However, whether measured in physical distance, cost, time or some other unit like utility, for actors on a single Euclidean plane, these different units will usually not be proportional, and point-to-point measurements will not be Euclidean.  \cmt{I can find nothing on this anywhere. Surely…? Example of time and distance most useful.} For instance, the town of Nauta in the Peruvian rainforest is only accessible by road via the city of Iquitos, which is itself only accessible via plane or boat from three points. Using Euclidean distance between Lima airport and Nauta would seriously under-represent journey cost.
+%WUD 7	Fowler, networks: points out unevenness of power. Big problem for modelling general outcomes for space-infrastructure change.
+%WUD 21: Space costs do not change evenly, and their relationship to energy costs is not direct. Their impact is far from consistent across space: 
+%though can't find anything in wud20
+
+%WUD21
+Even if one accepts that Euclidean distance can represent space in the short-run, keeping space costs constant, modelling spatial change faces a number of hurdles. Jumping ahead, in the `backyard' model discussed in section \ref{sec:backyard}, a naive take on space cost change is tested: the distance actors can traverse in a day is changed over time. In reality, this could not be an energy cost change because that would not affect time. But it also cannot be an infrastructure change because, as discussed, that would not be even. It could potentially be a technological change - but the point is that modelling that change is challenging, and easy to do in a naive way. 
+
+Another very basic point regarding the difference space cost change makes in different spaces is this: in $R^2$, if distance actors are able to cover is doubled, area covered is quadrupled. $\pi(2r)^2$ is just $\pi 4r^2$. 
+
+
+
+%I think this stuff prob needs to go in nuts and bolts: how actually am I dealing with it in the code? E.g. Weberian: ignore; Euclidean space.
+%FDA 12	General thoughts here on how to make density costs work. 
+
+%The eco-economics def is different
+Sticking with $R^2$, other problems present themselves. The most important of these is that two-dimensional space has two components: Euclidean and productive. `Euclidean' is used here in the broadest sense to convey that relative location has a cost. It is this space that Weber worked with: for instance, the Weber-Fermat problem (still exercising theorists; see e.g. \citealt{brimberg_fermat-weber_1995}) of optimising a plant location given two inputs and a market happens on an otherwise entirely featureless and costless surface. Productive space is land that may be bought, sold, rented and invested in, and can enter into a production or utility function as a quantity. This complicates the simple Euclidean picture.\footnote{Another common way to distinguish $R^2$ components comes from eco-economics, where `Ricardian land' has both a location and `physical substrate', as distinct from its resources and productivity. This is not used here, not least because Ricardo's work on land rent was based precisely on that aspect this definition leaves out - the productive differences between types of land - rather than its location. See \citealt{daly_ecological_2003} pp.88.} 
+
+%FDA 12	Decision-timings, general timespread for certain goods. Isard 
+%To return to Isard, describing the work of Weigmann: ``Each individual commodity market including its labour, capital and land orientation possesses a particular structure which offers a certain resistance to change. Some change frequently, others slowly. Some are active, others highly inactive. By definition those markets of a relatively permanent nature, of persistent inactivity, are grouped together as the essential ones… their combined structure determines the basic structure of the Gestalt whole, of the space economy under question." (GenLoc p.39)
+
+
+
+
+
+%Value density?
+%WUD 33	Land: what role in production functions?
+%Density as a proxy for land cost; cf. externalities
+%FDA 12	Land use realities: e.g. investment over time required for particular land uses. Not instantly fungible. In fact, becomes less %fungible, perhaps, the more investment occurs.
+
+
+
+
+
+
+%Taking a leaf from \gls{ge}'s book, however, one might say that it is worth attempting models like this that `do violence to reality', since they can still help build intuitions.
+
+
+%Don't forget following point from WUD21: existing transport costs reflect already adjusted landscape. Not sure where to fit that in currently. 
+%WUD 20	Small write-up on moving vs migration needed
+
+
+%Note: that's not true - if one presumes the methodology is correct, model the best outcome as the one chosen and dismiss other political considerations.
+%notes
+% http://www.dft.gov.uk/pgr/evaluation/evaluationguidance/evalprodimpacts/
+% That the DfT's methodology on transport impacts…
+%WUD 42	Thoughts on dealing with changing infrastucture.
+
+%WUD 20	Daly, Isard: against implicit costs (resources, space.) Question: can you get rid of transport costs by arbitrarily increasing the cost of other inputs? Could even be true. But I suspect all costs will in some way relate back to space costs, so depends.
+%Good for section on production functions though. See also WUD 45 for more thoughts on prod functions.
+
+%WUD 27	When can Euclidean distance stand in for time distance? (I have that written up somewhere...)
+%Networks: point of dev where this happens. In People pattern process somewhere.
+
+%WUD 36	Fuel price, tech, infrastructure: the 3 key elements that control space cost, and combined can change time. 
+%WUD 31	Haggett: in network dev, ratio of user costs to builder costs key. Need to return to!
+%Related q: Question: what has been the rate of change of transport infrastucture, i.e. say the total miles and the density?
+
+%%%%%%%%%%%%%%%
+% TIME SPACE COST INFORMATION
+%%%%%%%%%%%%%%%
+%\input{ChapterEcon/timespace.tex}
+
+%%%%%%%%%%%%%%%
+% CUTTINZ
+%%%%%%%%%%%%%%%
+
+%It can be argued that many of the key distinctions in \gls{ge} flow from the maths: the clear blue water between perfect and imperfect competition models is a consequence of the maths, not of the real world. 
+
+%Fujita, in his retrospective on Isard's `Location and Space Economy', wonders what Isard meant by the `particular effects' of space costs; he concludes Isard probably meant the impact of ``the monopolistic elements that spatial costs necessarily introduce into production theory.'' \fixref{Fujita on Isard p.376.}
+
+%In reality, space-costs must be as much a part of the production function as any other factor. Without this fact it is impossible to explain why any firm would want to locate closer to a market, or that doing so offers that firm a real competition advantage over others. 
+
+%As mentioned, geographical and urban economics assume different things about space. The former assumes discrete regions, each with no internal structure as such; all that matters is the interaction between regions. Agglomeration comes about through a feedback between the location choices of firms and people, whose productivity is effected by transport costs and economies of scale. A merit of this approach is its parsimony: two regions suffice to make its point, as will be discussed below. Urban economics assumes a central reference point around which spatial equilibrium results. However, both share two motivations. Firstly, to build on a foundation of individual behaviour. 
+
+%1st vs second nature:
+%This is a problem that will arise again when the nature of spatial externalities are discussed; two-dimensional, explicit categories of space can make several common GE concepts hard to sustain - yet they also offer useful ways to think about spatial organisation in the abstract, a fact not lost on some of the classical location theorists.
+
+%No claim will be made here about the future of transport costs, but there are several reasons why it would be worthwhile not to assume their continued decline, and why that should inform abstract model-building in this thesis. Two of the most pressing are: first, fuel costs could change as oil demand outstrips supply. Such `peak oil' arguments are made very rarely in the literature at present, though they are starting to regain more credibility again, after a period where resource depletion analyses have been out in the cold. A second reason is climate change: whatever the policy outcome of current climate change negotiations, there is a likelihood that carbon will cost more in the future. It is at least worth asking, then: might there be benefits from considering the fact that costs can go up as well as down? What modelling tools exist for thinking about the likely impact of such cost structure changes? A strength of agent-based location theory, it will be argued, is that it does well at examining the impact of such changes over time. \cmt{fix cross-ref to BY model}(See model run 5.2.2.3 below.)
+

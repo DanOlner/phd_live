@@ -1,0 +1,69 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Intro
+\end_layout
+
+\begin_layout Standard
+In this document, I'm going to have another attempt at wrapping my noggin
+ around the core-periphery model and related ideas.
+ I want to get the intuition nailed, as well as pull out some of the gnarly
+ maths problems that continue to niggle at me.
+ So it might be in a slightly peculiar order.
+ 
+\end_layout
+
+\begin_layout Section
+The simplest core model's final equations, and some thoughts
+\end_layout
+
+\begin_layout Standard
+I won't reproduce them here.
+ The one thing I'd like to tackle now: in the final equations, much of the
+ earlier structure drops away through various arguments.
+ In particular, I'm curious about where the externalities have gone.
+ Since there appears to be no 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,94 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{abm}{\glsnamefont{ABM}}{Agent Based Modelling}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{3}\delimN 
+		\setentrycounter{page}\glsnumberformat{5}\delimN 
+		\setentrycounter{page}\glsnumberformat{7\delimR 11}\delimN 
+		\setentrycounter{page}\glsnumberformat{33}\delimN 
+		\setentrycounter{page}\glsnumberformat{37}\delimN 
+		\setentrycounter{page}\glsnumberformat{53}\delimN 
+		\setentrycounter{page}\glsnumberformat{55\delimR 60}\delimN 
+		\setentrycounter{page}\glsnumberformat{62\delimN 63}\delimN 
+		\setentrycounter{page}\glsnumberformat{65\delimR 67}\delimN 
+		\setentrycounter{page}\glsnumberformat{71\delimR 73}\delimN 
+		\setentrycounter{page}\glsnumberformat{75}\delimN 
+		\setentrycounter{page}\glsnumberformat{78\delimN 79}\delimN 
+		\setentrycounter{page}\glsnumberformat{81}\delimN 
+		\setentrycounter{page}\glsnumberformat{85}\delimN 
+		\setentrycounter{page}\glsnumberformat{90}\delimN 
+		\setentrycounter{page}\glsnumberformat{111\delimN 112}\delimN 
+		\setentrycounter{page}\glsnumberformat{119}\delimN 
+		\setentrycounter{page}\glsnumberformat{162}\delimN 
+		\setentrycounter{page}\glsnumberformat{164\delimR 166}}}%
+\glossaryentryfield{ace}{\glsnamefont{ACE}}{Agent-based Computational Economics}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{57\delimR 62}\delimN 
+		\setentrycounter{page}\glsnumberformat{78}\delimN 
+		\setentrycounter{page}\glsnumberformat{82}}}%
+\glossaryentryfield{ai}{\glsnamefont{AI}}{Artificial Intelligence}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{72}\delimN 
+		\setentrycounter{page}\glsnumberformat{82}}}\glsgroupskip
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{cas}{\glsnamefont{CAS}}{Complex Adaptive Systems}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{3}\delimN 
+		\setentrycounter{page}\glsnumberformat{8}\delimN 
+		\setentrycounter{page}\glsnumberformat{58\delimN 59}\delimN 
+		\setentrycounter{page}\glsnumberformat{88}\delimN 
+		\setentrycounter{page}\glsnumberformat{165}}}%
+\glossaryentryfield{ces}{\glsnamefont{CES}}{Constant Elasticity of Substitution}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{18\delimR 20}\delimN 
+		\setentrycounter{page}\glsnumberformat{25}\delimN 
+		\setentrycounter{page}\glsnumberformat{96}\delimN 
+		\setentrycounter{page}\glsnumberformat{99}\delimN 
+		\setentrycounter{page}\glsnumberformat{111\delimR 113}\delimN 
+		\setentrycounter{page}\glsnumberformat{116}\delimN 
+		\setentrycounter{page}\glsnumberformat{121\delimN 122}\delimN 
+		\setentrycounter{page}\glsnumberformat{125\delimR 129}\delimN 
+		\setentrycounter{page}\glsnumberformat{149}\delimN 
+		\setentrycounter{page}\glsnumberformat{151\delimR 153}\delimN 
+		\setentrycounter{page}\glsnumberformat{159}\delimN 
+		\setentrycounter{page}\glsnumberformat{166\delimR 169}\delimN 
+		\setentrycounter{page}\glsnumberformat{172}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{dmr}{\glsnamefont{DMR}}{Data Meaning Response}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{110\delimN 111}\delimN 
+		\setentrycounter{page}\glsnumberformat{113}\delimN 
+		\setentrycounter{page}\glsnumberformat{145}\delimN 
+		\setentrycounter{page}\glsnumberformat{161\delimR 163}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossaryentryfield{ge}{\glsnamefont{GE}}{Geographical Economics}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{4\delimN 5}\delimN 
+		\setentrycounter{page}\glsnumberformat{7}\delimN 
+		\setentrycounter{page}\glsnumberformat{9\delimR 11}\delimN 
+		\setentrycounter{page}\glsnumberformat{13\delimR 15}\delimN 
+		\setentrycounter{page}\glsnumberformat{18}\delimN 
+		\setentrycounter{page}\glsnumberformat{24\delimN 25}\delimN 
+		\setentrycounter{page}\glsnumberformat{29\delimR 32}\delimN 
+		\setentrycounter{page}\glsnumberformat{34}\delimN 
+		\setentrycounter{page}\glsnumberformat{37}\delimN 
+		\setentrycounter{page}\glsnumberformat{44\delimN 45}\delimN 
+		\setentrycounter{page}\glsnumberformat{47}\delimN 
+		\setentrycounter{page}\glsnumberformat{50\delimN 51}\delimN 
+		\setentrycounter{page}\glsnumberformat{59\delimN 60}\delimN 
+		\setentrycounter{page}\glsnumberformat{62\delimN 63}\delimN 
+		\setentrycounter{page}\glsnumberformat{83}\delimN 
+		\setentrycounter{page}\glsnumberformat{89\delimN 90}\delimN 
+		\setentrycounter{page}\glsnumberformat{105}\delimN 
+		\setentrycounter{page}\glsnumberformat{163\delimN 164}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{ied}{\glsnamefont{IED}}{Income Elasticity of Demand}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{16}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{mbf}{\glsnamefont{MBF}}{Movement Buying Factor}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{34}\delimN 
+		\setentrycounter{page}\glsnumberformat{43}\delimN 
+		\setentrycounter{page}\glsnumberformat{46}}}\glsgroupskip
+\glsgroupheading{O}\relax \glsresetentrylist %
+\glossaryentryfield{oop}{\glsnamefont{OOP}}{Object-Oriented Programming}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{page}\glsnumberformat{56\delimR 58}\delimN 
+		\setentrycounter{page}\glsnumberformat{65\delimN 66}\delimN 
+		\setentrycounter{page}\glsnumberformat{73}\delimN 
+		\setentrycounter{page}\glsnumberformat{81}\delimN 
+		\setentrycounter{page}\glsnumberformat{103}}}%
+\end{theglossary}\glossarypostamble

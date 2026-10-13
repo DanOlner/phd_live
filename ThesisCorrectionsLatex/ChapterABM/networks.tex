@@ -1,0 +1,26 @@
+\section{Space, networks and market structure \label{sec:ABM_networks}}
+
+Explicit space imposes two related issues onto agent models. The first is that `clearing market' conditions do not hold. As Leijonhufvud puts it quoting Hicks -
+
+\begin{quote}
+``In a normal, ongoing market, transactors are not all brought together in a single location and at the same time. Without centralisation and synchronisation, the supply-equals-demand condition `cannot be used to determine price, in Walras' or Marshall's manner'.'' (\citealt{leijonhufvud_agent-based_2006} p.1633)
+\end{quote}
+
+%``Instead, ongoing markets require market makers who announce their prices and maintain inventories to handle customers arriving at irregular intervals." What I'm calling a granular market to contrast to the clearing one.''
+It is possible to circumvent this fact if all economic actors are presumed to exist on a point - but explicit space rules that out. It follows that actors cannot make decisions simultaneously, in a way that could lead to `clearing'. Markets designed to clear can exist in space, but these are not the norm; instead, the market is made up of decisions made at ``irregular intervals'' (Leijonhufud, ibid.). When building an agent economic model in space, this is a fact that quickly becomes apparent, and some work needs to be done to define the range of options to deal with it. 
+
+The second, related condition imposed by explicit space is that actors naturally form networks. Take the most basic example from section \ref{sec:spacenutility}, which outlined the simple rule \eqref{eq:circlerule} defining the set of actors' neighbours simply as `others within a given radius'. Actors face overlapping groups of potential trading partners: as well as making it impossible to assume that all prices can be simultaneously adjusted, as just discussed, this can be used to define a network.
+
+This form of spatial graph has been studied in both discrete and continuous forms, and in an agent context.
+\cmt{Think I'll wait on these refs to see what I write next...}
+
+The theoretical existence of these network properties is not always relevant to model outcome. In the backyard model in section \ref{sec:backyard}, for example, while actors have the option each turn of deciding on a collaborator, one central site quickly becomes locked in. As soon as this happens, any potential network effect disappears. In more complex models, however, the network structure becomes more important. The density of actor networks within possible travel radii is the foundation for cost signals. In this context, agglomeration and space cost changes will impact on these network effects by moving the model towards stronger synchronised signalling. 
+
+%Networks connect to diffusion, of course: so, price signals, demand signals may diffuse. 1D model perhaps best for trying to trace how that works.
+
+%As Ladley and Bullock point out, an immediate consequence of economic actors having explicit location is that `single market' assumptions no longer hold (\citealt{ladley_effects_2007} p.83-4). Most obviously, a `clearing' model of market action will not work: 
+
+%So I model granular agents; I've written about that, possibly in zotero notes for the last comp handbook chapter.
+
+
+

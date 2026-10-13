@@ -1,0 +1,72 @@
+/*
+ * Bucket for storing people's employment status. Used for post-data creation visualisation
+ */
+package location2012.io;
+
+import java.util.ArrayList;
+import location2012.Firm;
+import location2012.utils.gl;
+
+/**
+ *
+ * @author Olner Dan
+ */
+public class AllFirmsY extends Bucket {
+
+    ArrayList<Firm> firms;
+
+    public AllFirmsY(String str, ArrayList entities, int samplelength) {
+        super(str, entities, samplelength); //- not passing these up here,
+
+        //override to add a column in for mean
+        //vals = new double[samplelength][entities.size()+1];
+
+        firms = entities;
+
+        switch (gl.mode) {
+
+            case Model:
+
+                break;
+
+            case DataRead:
+
+                //need to do this in reverse: load data from file into array
+                DataLoader.LoadData("data/" + name + ".csv", vals);
+
+        }//end switch
+
+    }
+
+    @Override
+    public void grabData() {
+
+       switch (gl.mode) {
+
+            case Model:
+
+                for (int i = 0; i < firms.size(); i++) {
+
+                    //pac = (PersonAction) firms.get(i).actions.get(0);
+                    vals[samplePoint][i] = firms.get(i).gety();
+
+                }
+
+                samplePoint++;
+                break;
+
+            case DataRead:
+
+                for (int i = 0; i < firms.size(); i++) {
+
+                    //pac = (PersonAction) firms.get(i).actions.get(0);
+                    firms.get(i).getPoint().y = vals[samplePoint][i];
+
+                }
+
+                samplePoint++;
+
+        }
+
+    }
+}

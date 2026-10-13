@@ -1,0 +1,134 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Cobb Douglas function, $\delta $ is $0.5$. Contour lines show isoquants.\relax }}{13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Engel function showing optimal mix of two goods, one necessity, one luxury for two sets of values of $\delta $ and $\gamma $. The white line indicates the split in consumption between the two goods: necessity at the bottom, luxury at the top. Green and red lines indicate total necessity and luxury consumption respectively. Also, with $\gamma =0$, becomes Cobb Douglas (2.2c\hbox {}).\relax }}{14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\delta =0.5$, $\gamma =1$}}}{14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\delta =\frac {1}{3}$, $\gamma =2$}}}{14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\delta =0.5$, $\gamma =0$}}}{14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Two-good CES function, $\rho =\frac {1}{2}$, constrained by $\delta $, $0<\delta <1$\relax }}{17}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Two ways to achieve increasing returns for a single input. (a) core model style production function; (b) `smooth increasing returns' function. Both show total, average and marginal output per unit of labour.\relax }}{20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {core model style}}}{20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {smooth}}}{20}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Continuous CES function, $0<\rho <1$, $1<n<2$\relax }}{23}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Timeline sequence \relax }}{91}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Elements for the Person action\relax }}{93}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Optimisation of Bundles in a Person's action\relax }}{96}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Utility-maximising stochastic search algorithm, optimising a CES function with 16 goods over a thousand iterations (x axis)\relax }}{97}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces A Firm's feedback mechanism: ``jiggle'' a random value, wait to see effect.\relax }}{98}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Zero-intelligence agents exchange finite money, beginning with equal amounts. \relax }}{103}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Histogram: ten thousand actors over a thousand days, 24 bins, showing how many times on average actors have an action gap between zero and two days, when the order of actions is permuted randomly on each turn.\relax }}{105}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Testing CES function works correctly. 6.1a\hbox {} and 6.1b\hbox {} look at the same data: two goods, changing $\rho $. 6.1c\hbox {} keeps $\rho $ fixed at 0.75 and changes the good number. \relax }}{115}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 goods, $\rho $ changed}}}{115}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2 goods, $\rho $ changed, from $\rho =0.2$}}}{115}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\rho =0.75$, good number changed}}}{115}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces 2 Firms facing Cobb-Douglas demand randomise prices (6.2a\hbox {}): no effect on either of their revenue (6.2b\hbox {}). \relax }}{116}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 Firms randomise prices}}}{116}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Income change for 2 Firms: none}}}{116}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Two Firms selling goods 1 and 2: Firm 1's price fixed, 2 attempting to optimise price. Actors with Cobb Douglas utility: changing price of one has no effect on demand for the other \relax }}{116}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Optimal demand for goods 1, 2}}}{116}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Price change of Firm 2}}}{116}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Constrained Engel function, with and without correction for negative consumption value. Demand for necessity (nec), luxury (lux) and utility (av utility) on y axis, wage on x axis. \relax }}{118}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{118}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{118}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Testing the Engel utility function: $\gamma = 1$, wage level changed from 0 to 2. Graph shows optimal amount of necessity and luxury good plus utility on the y axis, and wage on the x axis. \relax }}{118}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Comparing greedy and constrained utility algorithms, fixed People, fixed Firms supplying goods at random distances at give a spread of values. Space costs on all goods increased from left to right. \relax }}{121}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{121}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{121}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{121}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{121}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Difference between greedy (G) and constrained (C)}}}{121}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Greedy algorithm optimising 2 goods (6.7a\hbox {} and 6.7b\hbox {}) and 8 goods (6.7c\hbox {}). Optimum for one good is shown. 1000 optimisations for each iteration point, mean and one standard deviation. \relax }}{122}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {1 of 2 goods, zero to 2000 iterations}}}{122}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {1 of 2 goods from 1100 iterations}}}{122}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {1 of 8 goods, zero to 2000 iterations}}}{122}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Effect of changing $\rho $ on space, one Person buying from nine Firms, with lines connecting this single buyer to sellers. Height/thickness of lines indicates demand for each good. Figure 6.10a\hbox {} illustrates demand is even when good costs are equal. \relax }}{124}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No delivery costs}}}{124}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\rho =0.5$}}}{124}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\rho =0.7$}}}{124}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\rho =0.85$}}}{124}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Demand levels for ten goods spaced between a distance of zero and one, for $0<\rho <1$. One Person, $p=1$ and $c=1$, five nearest and one most distant shown here. As $\rho \rightarrow 1$, the nearest good ends up getting the whole spend. \relax }}{125}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Impact of changing good space cost: one Person, ten goods spaced between zero and one, five nearest shown here. Note: g axes have different values. 6.10b\hbox {} shows Firm at $d=0$ receiving all re-allocated demand, unaffected by space cost change. \relax }}{126}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nearest Firm at $d=0.1$}}}{126}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nearest Firm at $d=0$}}}{126}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Four fixed Firms, mobile People, CES utility, $\rho =0.75$. Low enough good delivery cost allows locating where a perfect mix gives better utility (centre of image) than locating next to a Firm to make space costs zero for one good. People's locations are emphasised by a small circle, making clear that many actors choose identical locations in both cases. \relax }}{127}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Low good space cost: People locate at centre}}}{127}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {High good space cost: People locate next to random Firm}}}{127}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Engel test: wage is changed, and demand for `luxury' good increases - but location of People stays where delivery costs are kept to zero for the necessity good. \relax }}{129}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Income for the two Firms}}}{129}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean distance of actors from Firms}}}{129}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Necessity and Luxury Firm, Engel-function optimising People for zero and positive delivery costs. 6.13d\hbox {} shows mean distance to Firms: if close to zero, People are located at Firm. Lines indicate where People are buying goods from: green indicates necessity buying, so in this case, all buying is from the necessity-producing Firm. \relax }}{130}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Wage distance cost on, no delivery cost}}}{130}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {With delivery cost}}}{130}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {With delivery cost, density cost}}}{130}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Delivery cost versus mean distance to Firms}}}{130}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Means and standard deviations of nearest neighbour distance, randomised starting locations, averaged from 20 model runs. \relax }}{131}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {People}}}{131}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Firms}}}{131}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Spatial equilibrium test. Visualisation of good space-cost changes interacting with density cost for six good space-cost values; spatial equilibrium outcome. 1200 days, 1000 People. \relax }}{133}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {500}}}{133}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {5}}}{133}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {1}}}{133}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {0.5}}}{133}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {0.125}}}{133}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {0.05}}}{133}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Spatial equilibrium test. Utility and mean distance from centre versus delivery cost. \relax }}{133}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{133}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{133}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces At spatial equilibrium, density cost versus distance from centre. \relax }}{133}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{133}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Density cost versus standard deviation of utility, showing that utility moves away from equilibrium. Height = utility; green = lower utility, red = higher utility. \relax }}{134}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Visualisation, density cost = 250}}}{134}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility S.D vs density cost}}}{134}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Mean distance from centre Firm (MDFC) for 400 People. Density cost is one, four variables changed. 6.19a\hbox {} and 6.19b\hbox {} are non-spatial costs, 6.19c\hbox {} and 6.19d\hbox {} are both spatial costs. \relax }}{135}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MDFC vs wage}}}{135}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MDFC vs good cost}}}{135}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {MDFC vs $tech$}}}{135}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {MDFC vs delivery cost $c$}}}{135}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Wage-distance on, density cost = 250, few People able to gain utility on edge. White indicates where People are unable to get any utility. \relax }}{136}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Visualisation}}}{136}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility vs distance from centre}}}{136}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Post-equilibrium People fixed in position, responding to changes in density and delivery cost. Height = utility; green squares = lower utility, red squares = higher utility. Red lines at ground level are buying lines showing People getting goods from central Firm. \relax }}{140}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Density cost increased, forms `bowl'}}}{140}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delivery cost increased}}}{140}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Four Firms, fixed at a centre point, with a spread of delivery costs. 400 People with density costs optimise location, with each Person `locked' into buying from one Firm only. Matched colours across graphs and visualisation indicate different Firms: in the visualisation, the colour indicates which Firm each Person is locked into. \relax }}{140}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Firm delivery costs}}}{140}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Incurred density costs}}}{140}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Spatial equilibrium}}}{140}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Four Firms, fixed at a centre point, with a spread of good costs up to 3.6. 400 People with density costs optimise location, with each Person `locked' into buying from one Firm only. Matched colours across graphs and visualisation indicate different Firms: in the visualisation, the colour indicates which Firm each Person is locked into. \relax }}{141}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Firm good costs}}}{141}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {People's utility}}}{141}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Spatial equilibrium}}}{141}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Two Firms at `winning' position in centre of circle. Lines indicate buying strength from People: when goods are fully substitutable ($\rho \approx 1$) People buy from nearest Firm. When there is love of variety, they buy a mix from both. \relax }}{143}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\rho =0.995$}}}{143}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\rho =0.5$}}}{143}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Firms compete to reach centre of market. Number of days to success on vertical axis, value of $\rho $ on horizontal. Mean and S.D. for a hundred randomisations of each value point. Three different noise levels. Note for figure 6.25c\hbox {}, days to complete are an order of magnitude higher than for 6.25b\hbox {}. \relax }}{146}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$noise = 0$}}}{146}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$noise = 0.1$}}}{146}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$noise = 0.5$}}}{146}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Two-actor CES, backyard or trade? Love of variety ($\rho $) on the y axis, total distance ($d$) between actors on the x axis. Thick red line indicates where $U=1$: this marks the break between `backyard or trade'. Blue line, $U=1.2$ and red line, $U=0.8$. \relax }}{148}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Economies of scale `multiplier' versus mean utility and good price set by all actors. \relax }}{152}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {EoS multiplier vs mean utility}}}{152}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {EoS multiplier vs mean price}}}{152}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Economies of scale `multiplier' versus utility, showing (6.28a\hbox {}) response to changes in the EoS `multiplier' and (6.28a\hbox {}) failure to break out of internal oscillation dynamic. \relax }}{153}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {EoS multiplier vs utility over model time}}}{153}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {EoS multiplier vs utility}}}{153}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Actors fixed at even intervals along a unit line, delivery costs = 10. Contributed time change as rho moves from 0.5 to 0.9. Visualisation shows end of this process, with a few large producers emerging. \relax }}{154}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Visualisation: height of coloured squares = contributed time}}}{154}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Graph: contributed time}}}{154}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Change in the number of actors receiving more than 1.5 units of contributed input, for changes in $\rho $ (6.30a\hbox {}) and delivery cost (6.30b\hbox {}). \relax }}{155}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\rho $ vs input, holding delivery cost at 10}}}{155}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Delivery cost vs input, holding $\rho $ at 0.85}}}{155}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces 10 Actors, delivery cost = 1. Mean utility versus $\rho $ and all Actors' utility as $\rho $ is changed in model time. The `kink' in utility indicates where Actors transition to a single central producer. \relax }}{156}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input per Actor: production spread out}}}{156}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Input per actor: single producer}}}{156}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Correlation: $\rho $ vs mean utility}}}{156}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {All Actors' utility over model time as $\rho $ increases}}}{156}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Total and marginal utility for a $\delta =\frac {1}{2}$ Cobb Douglas utility function, holding $M$ constant at 1.\relax }}{169}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Model framework UML overview \relax }}{179}

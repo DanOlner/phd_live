@@ -1,0 +1,7 @@
+<HTML>
+<BODY>
+Classes implementing {@link location1.observe.Listener} can hear {@link location.observe.Audible}s. Only {@link location1.TimeLine} is audible currently.
+</BODY>
+</HTML>
+
+<!--observe-->

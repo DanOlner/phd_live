@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent-based modelling and spatial economics — the models</title>
+<style>
+  :root { --ink: #111; --line: #d8d4cc; --paper: #faf9f7; --muted: #6b675f; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.6 ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 62rem; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  h1 { font-size: 1.5rem; letter-spacing: -0.015em; margin: 0 0 0.3rem; }
+  .lede { color: var(--muted); margin: 0 0 0.9rem; max-width: 42rem; }
+  .lede + .lede { margin-bottom: 2rem; font-size: 0.92rem; }
+  h2 {
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--muted); margin: 2.4rem 0 0.15rem; font-weight: 620;
+  }
+  .blurb { margin: 0 0 0.9rem; font-size: 0.88rem; color: var(--muted); max-width: 42rem; }
+
+  ul {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: 0.7rem;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  }
+  a.card {
+    display: flex; flex-direction: column; height: 100%;
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 3px; text-decoration: none; color: inherit; overflow: hidden;
+  }
+  a.card:hover { border-color: #a9a49a; }
+  a.card img {
+    display: block; width: 100%; aspect-ratio: 1; object-fit: cover;
+    object-position: center; border-bottom: 1px solid var(--line); background: #fff;
+  }
+  .body { padding: 0.55rem 0.7rem 0.65rem; display: grid; gap: 0.12rem; }
+  .title { font-size: 0.88rem; line-height: 1.35; }
+  .meta { display: flex; justify-content: space-between; gap: 0.5rem;
+          font: 11px ui-monospace, Menlo, monospace; color: var(--muted); }
+  footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line);
+           font-size: 0.82rem; color: var(--muted); max-width: 42rem; }
+  footer p { margin: 0 0 0.6rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Agent-based modelling and spatial economics</h1>
+  <p class="lede">
+    The models from Dan Olner's 2013 PhD, running live in the browser. Each one is the
+    thesis' own experiment, rebuilt from the original Java and re-verified against the
+    published figures.
+  </p>
+  <p class="lede">
+    Every model page has notes on what to watch, the economics behind it, how it is actually
+    built — and, where there is one, what the rebuild found that the thesis did not say. Those
+    disagreements are the point rather than an embarrassment: one figure turned out to be
+    plotting a different variable than its label claims, and one result still has not
+    reproduced.
+  </p>
+  <p class="lede">
+    If you want the argument before the models, start with
+    <a href="methodology.html">how these models are built — and what that costs</a>: why an
+    agent's budget is a day rather than money, which kind of decision quietly breaks, and why
+    showing something is the start of an explanation rather than the end.
+  </p>
+  <div id="groups"></div>
+  <footer>
+    <p>
+      Forty-two models: the whole catalogue, all seven groups. Several are not agent models at
+      all — two are closed forms you could do on paper, one is a difference equation, and the
+      last is Krugman's Core Model, which is what everything else is measured against.
+    </p>
+    <p>
+      No dependencies, no build step, nothing to install. The stills are rendered by the same
+      view code the live models use.
+    </p>
+  </footer>
+</main>
+
+<script type="module">
+import { all } from './src/scenario.js';
+import './src/scenarios/index.js';
+
+/**
+ * The seven groups of THESIS_DIGEST, with a sentence on what each is for. A visitor who has
+ * not read the thesis needs to know why a group exists before any individual model in it
+ * means anything.
+ */
+const GROUPS = [
+  ['A · the economics on its own', /^a/,
+    'No space and no agents to speak of — the utility and production functions the rest of '
+    + 'the thesis is built from, and why each was chosen over the obvious alternative.'],
+  ['B · space meets love of variety', /^b/,
+    'Distance enters, through a delivered price that rises with it. What variety is worth '
+    + 'starts to depend on what reaching it costs.'],
+  ['C · the density cost', /^c/,
+    'Crowding is made expensive, and a city appears — with no landlords, no rent and no '
+    + 'market for space. The crowding cost is paid by the crowd itself.'],
+  ['D · Firms groping for a location', /^d/,
+    'Firms that know nothing but whether their own revenue went up. They are poor optimisers '
+    + 'on purpose, and how poorly they do under noise is the finding.'],
+  ['E · the transmission belt', /^e/,
+    'Money is thrown away and People buy goods directly with time. Production reorganises '
+    + 'catastrophically, and the gains reach consumers as welfare.'],
+  ['F · how the framework works', /^f/,
+    'The machinery itself, made visible — what a Bundle is, and what an agent can actually '
+    + 'be assumed to do.'],
+  ['G · the comparator', /^g/,
+    "Krugman's Core Model, the benchmark everything else is measured against."],
+];
+
+const container = document.getElementById('groups');
+for (const [label, match, blurb] of GROUPS) {
+  const models = all().filter((s) => match.test(s.id));
+  if (models.length === 0) continue;
+
+  const h2 = document.createElement('h2');
+  h2.textContent = label;
+  const p = document.createElement('p');
+  p.className = 'blurb';
+  p.textContent = blurb;
+  const ul = document.createElement('ul');
+
+  for (const s of models) {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.className = 'card';
+    a.href = `model.html?m=${s.id}`;
+    // Lazy, because the stills are vector and a settled 500-Person plane is a thousand
+    // shapes however small it is drawn.
+    a.innerHTML = `<img src="snapshots/thumbs/${s.id}.svg" alt="" loading="lazy">`
+      + `<span class="body"><span class="title">${s.title}</span>`
+      + `<span class="meta"><span>${s.id}</span><span>${s.thesisRef}</span></span></span>`;
+    li.append(a);
+    ul.append(li);
+  }
+  container.append(h2, p, ul);
+}
+</script>
+</body>
+</html>

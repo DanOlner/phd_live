@@ -1,0 +1,240 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: LocationTheory_ABM2.aux
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: ChapterIntro/IntroFromWord.aux
+A level-1 auxiliary file: ChapterEcon/Ch_EconFromWord.aux
+A level-1 auxiliary file: ChapterABM/ABMfromWord.aux
+A level-1 auxiliary file: ChapterFramework/Ch_FrameworkFromWord.aux
+A level-1 auxiliary file: ChapterTestingModels/TestingModelsFromWord.aux
+A level-1 auxiliary file: ChapterConnectedModels/ConnectedModelsFromWord.aux
+A level-1 auxiliary file: ChapterConclusion/ConclusionFromWord.aux
+A level-1 auxiliary file: Appendices/appendixtop.aux
+The style file: Bibliography/ha.bst
+White space in argument---line 20 of file LocationTheory_ABM2.aux
+ : \bibdata{Bibliography/upgradebib,Bibliography/HomelessBits,Bibliography/geogecon,
+ :                                                                                   Bibliography/CEUS2012bib}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: DataReferences.aux
+Database file #1: Bibliography/upgradebib.bib
+Database file #2: Bibliography/HomelessBits.bib
+Database file #3: Bibliography/geogecon.bib
+Repeated entry---line 1601 of file Bibliography/geogecon.bib
+ : @book{daly_ecological_2003
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2444 of file Bibliography/geogecon.bib
+ : @article{taylor_agricultural_2003
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2491 of file Bibliography/geogecon.bib
+ : @article{blaug_trade-off_2009
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2684 of file Bibliography/geogecon.bib
+ : @article{vriend_was_2002
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2710 of file Bibliography/geogecon.bib
+ : @book{blaug_economic_1997
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2751 of file Bibliography/geogecon.bib
+ : @book{blaug_methodology_1992
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "krugman_how_2008"
+Warning--I didn't find a database entry for "heppenstall_hybrid_2005"
+`editor' is a missing field, not a string, for entry abernathy_stitch_1999
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry alonso_location_1964
+while executing---line 1245 of file Bibliography/ha.bst
+`author' is a missing field, not a string, for entry batten_transportation_1988
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry baumol_economic_1976
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry baumol_economics:_2005
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry becker_economic_1976
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry beckmann_lectures_2010
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry beer_brain_1994
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry betz_prediction_2006
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry black_transportation:_2003
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry blaug_methodology_1992
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry blaug_economic_1997
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry brakman_new_2009
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry button_transport_2010
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry carrere_distance_2009
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry chalmers_what_1999
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry chapman_people_1979
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry christaller_central_1933
+while executing---line 1245 of file Bibliography/ha.bst
+`author' is a missing field, not a string, for entry consiglio_artificial_2007
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry craik_nature_1967
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry daly_ecological_2003
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry diamond_infrastructure_1989
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry durlauf_new_2008
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry epstein_growing_1996
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry epstein_generative_2006
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry fisher_statistical_1927
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry flake_computational_1998
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry franklin_artificial_1997
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry friedman_essays_1953
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry friedman_price_1962
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry fujita_economics_2002
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry fujita_spatial_2001
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry gilbert_latin_1974
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry gilbert_agent-based_2007
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry glaeser_cities_2008
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry gold_proof_2008
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry goyal_connections:_2009
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry granovetter_sociology_2001
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hagerstrand_innovation_1953
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry haggett_locational_1977
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hicks_market_1989
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hodgson_economics_1996
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry holland_adaptation_1975
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hollis_philosophy_1994
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hollis_rational_1975
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hoover_location_1937
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hoover_causality_2001
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hopkins_transition_2008
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry horgan_end_1998
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hume_treatise_1739
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry hutchins_cognition_1996
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry next_computer_inc._object-oriented_1993
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry isard_location_1956
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry jacobs_economy_1970
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry jacobs_cities_1986
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry jacobs_nature_2001
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry jana_java_2005
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry klamer_new_1984
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry krugman_geography_1991
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry krugman_self_1996
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry losch_economics_1940
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry marshall_principles_1895
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry maslow_psychology_1966
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry mcluhan_understanding_1964
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry melchior_integration_1972
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry miller_complex_2007
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry mitchell_introduction_1998
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry morgan_worlds_2006
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry myrdal_economic_1957
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry oed_oxford_2002
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry ohlin_interregional_1933
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry osullivan_geographic_2002
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry palander_contributions_1935
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry ricardo_principles_1817
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry robbins_essays_1935
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry robinson_economics_1933
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry rose_who_1993
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry schelling_micromotives_1978
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry schumpeter_capitalism_1942
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry scott_seeing_1998
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry shackle_years_1983
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry silver_ascent_2000
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry smith_inquiry_1776
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry spedding_freams_1983
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry starr_general_1997
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry taylor_classical_2005
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry varian_intermediate_2006
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry vives_oligopoly_2001
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry webber_explanation_1984
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry weber_theory_1909
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry wilson_entropy_1970
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry wilson_complex_2000
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry wood_john_1994
+while executing---line 1245 of file Bibliography/ha.bst
+`editor' is a missing field, not a string, for entry wooldridge_introduction_2009
+while executing---line 1245 of file Bibliography/ha.bst
+Warning--there's a number but no volume in hamilton_causes_2009
+Warning--can't use both author and editor fields in launhardt_mathematical_1885
+Warning--empty booktitle in leijonhufvud_agent-based_2006
+Warning--empty institution in roberts_oil_2010
+Warning--can't use both author and editor fields in thunen_isolated_1826
+Warning--there's a number but no volume in wallace_relationship_1974
+(There were 101 error messages)

@@ -1,0 +1,6 @@
+# Headless run output (`tools/run.mjs --out data`) is scratch and stays out.
+data/*
+# The precomputed sweeps are not scratch: they ARE the swept figures on the site, and the
+# site is a static file tree with no build step. Decision 1, BUILD_PLANNER §9.
+!data/sweeps/
+node_modules/

@@ -1,0 +1,22 @@
+#Initialisation file for Location2012 model by Dan Olner
+#Program will be wanting just one uncommented .properties file (stored in the same folder as this file, 'configs')
+#If more than one is uncommented, it may not necessarily pick the first
+
+
+#Transmission belt results
+
+config = 1DLineManyAgentsTransmission.properties
+#config = TwoRegionTransmission.properties
+#config = EoS_LoV_noSpace.properties
+#config = Transmission_singleFirm1.properties
+#config = Transmission_stableManyFirms.properties
+
+#config = peoplefirm1.properties
+#config = spatialimpact_of_CES.properties
+#Firsttest: single actor + EoS model
+#config = firsttest.properties
+#config = firsttest2.properties
+#config = singleActor3.properties
+#config = CEUS1.properties
+
+#config = peoplefirm_with_reliefLines.properties

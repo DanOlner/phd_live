@@ -1,0 +1,651 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Space costs a go-go
+\end_layout
+
+\begin_layout Standard
+So I'm now attempting to really nail down my definitions for space costs,
+ mathematically and conceptually.
+ It's a slippery bugger, but I'm hoping some maths might help.
+ I'll tie this to externalities shortly, but let's get some basics down.
+ 
+\end_layout
+
+\begin_layout Standard
+Firstly, note that for ease of reading, I'll use `x per mile' rather than
+ 'x per distance unit'.
+ That `mile' is arbitrary - solely present to make the argument easier to
+ read.
+\end_layout
+
+\begin_layout Standard
+We have:
+\end_layout
+
+\begin_layout Subsection
+Elements of space-cost
+\end_layout
+
+\begin_layout Itemize
+Spatial structure - fundamental distance.
+ Either some conception of space, which could perhaps be warped by longer-run
+ structural changes, or an infrastructure network.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fundamental: measured in distance.
+ I'll be calling 'distance units' miles for descriptive convenience - they're
+ not real miles.
+\end_layout
+
+\begin_layout Itemize
+For some forms of space, other factors may have to get involved: this can't
+ then remain pure distance.
+ E.g.
+ speed may be affected by congestion rates / density of use.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Movement-buying factor (MBF) (time-per-mile or other factor-per-mile.)
+\end_layout
+
+\begin_layout Itemize
+Technology; probably more like a fixed cost for space, though I'll be leaving
+ this out for now.
+ So ultimately, is it just another factor? I distinguish it because - like
+ infrastructure - it can be responsible for changing the amount of time
+ it takes to cover a given distance.
+\end_layout
+
+\begin_layout Standard
+Those elements come into two categories.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Time-changing elements: these change how much time it takes to cover a certain
+ distance - see function below.
+ Both tech and infrastructure can do this, though tech also may have no
+ effect on time, changing 
+\end_layout
+
+\begin_layout Enumerate
+Time-neutral elements: fuel is an obvious one.
+ Fuel use per mile can only change via a tech change.
+\end_layout
+
+\begin_layout Standard
+Not also at this point: factors can be movement-buying 
+\emph on
+and
+\emph default
+ productive.
+ I'm thinking of ones that can go directly into productivity as well as
+ movement.
+ Initially, I'll certainly keep them separate: it will only be the indirect
+ effect of MBFs on firms I'll look at: via actors and goods moving.
+\end_layout
+
+\begin_layout Standard
+So, to be distinguished from 
+\series bold
+measures 
+\series default
+of space cost, which will be like the aforementioned factor-per-mile.
+ The trickiest of these is infrastructure, since there are several ways
+ to define how they relate to space cost - they may alter any of the other
+ elements in fact.
+ Time is the most obvious: time between points will likely change.
+ Other factors could alter, though - for simplicity's sake - it would be
+ worth sticking to just time, perhaps.
+ It is all three put together that can ultimately change the distance that
+ can be covered in a given time.
+ There is probably an important generic model to be done looking at the
+ problem of technology shift (and of course elasticity between co-existing
+ modes) but I don't think I have time for that now! I will, however, write
+ about some of the empirics.
+ 
+\end_layout
+
+\begin_layout Standard
+Other measures come into play, but quite how - that has yet to be worked
+ out.
+ Some thoughts:
+\end_layout
+
+\begin_layout Itemize
+Utility.
+ One can come up with a 'utility per mile' measurement, the same as with
+ 'productivity per mile' and transport intensity.
+ But space itself does not - at present - directly enter into any utility
+ or production function.
+ 
+\end_layout
+
+\begin_layout Standard
+So let's see if I can work out what's going on.
+ Here's the basic functions for a typical actor and firm - though not any
+ current firm I've modelled; they only have one input at present.The primary
+ reason I'm adding a second now: without another input, it becomes impossible
+ for space costs to drop as a percentage of overall production costs.
+ Without that, the space cost argument doesn't work.
+ I'll come back to that.
+ So:
+\end_layout
+
+\begin_layout Itemize
+Person: 
+\begin_inset Formula $u=f(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Firm: 
+\begin_inset Formula $x=f(time,factor1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No space there! Keep in mind Scitovsky's two definitions for tech and pecuniary
+ externalities:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}=F(l_{1},c_{1},...;x_{2},l_{2,}c_{2},...)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{1}=G(x_{1,}l_{1},c_{1},...;x_{2},l_{2,}c_{2},...)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, let's just consider the range of things that entered into the actor's
+ and firm's utility and output.
+ x, y, time and some generic factor1.
+ y has yet to be defined.
+ In some model runs, I'm going to want y to be factor1 - that is, for firm
+ x to be using y as an intermediary (and perhaps vice versa - cf.
+ Krugman.)
+\end_layout
+
+\begin_layout Standard
+However, we also want space costs to enter into things.
+ They can do this in a number of ways.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Movement-buying factors
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Time: 
+\series default
+referring back to the list above - the amount of time taken to cover a given
+ distance is not constant.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Like any other factor, we'll label time generally as 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ For each model tick, 
+\begin_inset Formula $t=1$
+\end_inset
+
+ for each actor.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For a given distance between 
+\begin_inset Formula $r$
+\end_inset
+
+ and 
+\begin_inset Formula $s$
+\end_inset
+
+, which we'll just label 
+\begin_inset Formula $rs$
+\end_inset
+
+, the time is takes to cover it is 
+\begin_inset Formula $t_{rs}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $t{}_{rs}=f(rs,tech_{1})$
+\end_inset
+
+.
+ Where 
+\begin_inset Formula $tech_{1}$
+\end_inset
+
+ is some technology that has an impact on the time taken.
+ What we're saying here: the time it takes to cover a distance between two
+ points
+\series bold
+ 
+\series default
+- labelled 
+\begin_inset Formula $t{}_{rs}$
+\end_inset
+
+ - is a function of the distance itself, plus some other defined tech factor
+ or factors.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I will likely be limiting the use of 
+\begin_inset Formula $t$
+\end_inset
+
+ to people.
+ Goods and firms' movement can imply other movement-buying factors, but
+ not time.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+It becomes more complex when thinking about how e.g.
+ network infrastucture changes that; it doesn't exactly enter as a factor
+ so much as define distance itself in some way.
+ Will have to think about that.
+ I think it will vary depending on the approach taken.
+ As always, the precise way in which is re-structures the maths could well
+ be very interesting.
+ (Er, to me anyway.)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Others: 
+\series default
+I think (though not yet 100% sure) these can be fixed and variable, where
+ fixed mbfs are standing in for technology (hossies or cars...)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Variable: 
+\begin_inset Formula $i_{n}$
+\end_inset
+
+ per mile.
+\end_layout
+
+\begin_layout Enumerate
+Fixed: 
+\begin_inset Formula $j_{n}$
+\end_inset
+
+ per day.
+ Probably not using these yet, if at all.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Actually, those two look quite a lot like stock and flow costs: variable
+ is stock and fixed is flow.
+ Hmm.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+In order to get a handle on the above, I need a better handle on factors
+ generally.
+ So, some thoughts on factors:
+\end_layout
+
+\begin_layout Subsection
+Factors
+\end_layout
+
+\begin_layout Standard
+Let's consider all of the factors I'm currently looking at, and then how
+ they enter into the model.
+ So we have:
+\end_layout
+
+\begin_layout Itemize
+Good1
+\end_layout
+
+\begin_layout Itemize
+Good2
+\end_layout
+
+\begin_layout Itemize
+Time
+\end_layout
+
+\begin_layout Itemize
+Factor_n (which will either be purely productive, purely movement-buying,
+ or some mix of the two.
+ Time is a mix of the two.)
+\end_layout
+
+\begin_layout Subsection
+Getting space costs into utility
+\end_layout
+
+\begin_layout Standard
+I need to work through some of the simplest examples to find out how space-costs
+ can plug into utility and production, and how I should describe that.
+ So - let's start with utility.
+ We've said that 
+\begin_inset Formula $u=f(x,y)$
+\end_inset
+
+.
+ The 'budget' a person has to work with is, at base, 
+\begin_inset Formula $t=1$
+\end_inset
+
+ - but 
+\begin_inset Formula $t$
+\end_inset
+
+ needs converting into goods.
+ Matters are complicated, though, because 
+\begin_inset Formula $t$
+\end_inset
+
+ can be converted into either goods or, in one model at least, money and
+ then goods.
+ (It may be convertable into goods, but at different productivity levels
+ from economies of scale.)
+\end_layout
+
+\begin_layout Standard
+If I'm sticking with backyard definitions, 
+\begin_inset Formula $t$
+\end_inset
+
+ is literally the budget: 
+\begin_inset Formula $u$
+\end_inset
+
+ can be maximised with a budget of 
+\begin_inset Formula $x+y=t=1$
+\end_inset
+
+.
+ Space doesn't come into it because they're staying put.
+ But what about working?
+\end_layout
+
+\begin_layout Standard
+Well, let's stick with what's happening in twogoods1 for now, and we can
+ come back to converting directly to goods later.
+ In twogoods1, production and wage-earning are separate: from the point
+ of view of the actor, they know nothing about the firm's productivity.
+ They only know the wage.
+ 
+\end_layout
+
+\begin_layout Standard
+Right, let's get some space into this shizzle.
+ I can't quite think up a clean way to describe the distance between firm
+ 1 and actor 1.
+ Can't just use a vector as distance might end up being defined in various
+ ways.
+ So.
+ 
+\begin_inset Formula $d_{f1\&a1}$
+\end_inset
+
+, which says, `the distance between f1 and a1'.
+ The 'miles' between the two, whether Euclidean or some network distance.
+ The raw time will also need defining, as it's the upper limit on whether
+ a firm enters into the considerations of an actor (at the moment - move
+ options may change that.) So 
+\begin_inset Formula $t_{f1\&a1}$
+\end_inset
+
+, which says `time to get between f1 and a1'.
+ Another label, 
+\begin_inset Formula $c_{a1}$
+\end_inset
+
+can be commute time for 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+.
+ This is just two times the distance to the firm they are commuting to.
+ Er - well, this would actually have to be the final one chosen.
+ All very confusing.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ by itself can be the chosen firm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{a1}=2t_{a1\&f}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I'm only allowing actors to choose firms half a day away, since they need
+ to commute there and back.
+ So, we now also need to define the set of potential employers for an actor.
+ 
+\begin_inset Formula $PE_{a1}=\{f_{n}...\}$
+\end_inset
+
+ (How to describe that it can have any, but not necessarily all, firms?)
+ The set of firms is of course 
+\begin_inset Formula $F=\{f_{1},f_{2},...,f_{n}\}$
+\end_inset
+
+ So -
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+for\, each\, f_{n}\in F\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+if(2t_{a1\&fn}<1)\, then\, f_{n}\in PE_{a1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which just says, unless the time it takes for actor 1 to get to a firm and
+ back again (the commute distance) is more than 1, add it to my set of potential
+ employers.
+ All this does, really, is guarantee that there's some time left for working,
+ and the actor can then use it to see if working is worthwhile.
+ So, let's presume that actor 1 ends up choosing to work with firm 1.
+ The amount of labour they have available for contributing is just:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+l_{a1}=1-c_{a1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which is their one day, minus their commute time.
+ In twogoods1, they - currently - actually test splitting that remaining
+ time between backyard and work.
+ I suspect if I worked it out, there would probably be no benefit in doing
+ that test, but I'll have to check.
+ For now - since I'm trying to home in on space costs - let's stick to presuming
+ that if they are working, they are 
+\emph on
+only
+\emph default
+ working.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's define a wage as `the amount paid for 1 day's input' - and for firm
+ 1 that is: 
+\begin_inset Formula $w_{f1}$
+\end_inset
+
+.
+ The amount of time an actor puts into a firm is their labour, so we can
+ call that: 
+\begin_inset Formula $l_{a1},0<l<1$
+\end_inset
+
+.
+ At the moment at least, actors don't work for more than one firm so there's
+ no need to specify that.
+ So actor 1's actual wage is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w_{a1}=w_{f1}*l_{a1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+They will then try to spend that whole wage on an optimum mix of goods.
+ So we know it's the standard: 
+\begin_inset Formula $w_{a1}=p_{x}x+p_{y}y$
+\end_inset
+
+.
+ Now, if we want to actually put the space in there - or at least the time
+ aspect of it - we can substitute and get: 
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\end_body
+\end_document

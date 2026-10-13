@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%
+% Model components table for basic LoV / inc rets example
+%%%%%%%%%%%%%%%%%
+%http://texblog.net/help/latex/ltx-68.html
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[!hbt]
+\begin{center}
+
+%\begin{tabular*}{0.8\textwidth}{|l|l|}
+\begin{tabular}{|l|l|}
+\hline 
+\textbf{Component} & \textbf{Description}\\
+\hline
+Run type & How many `days'? Are parameter sweep runs used?\\
+\hline
+Actor type & Single actor type, able to trade or collaborate\\
+\hline
+Actor number & Initially two\\
+\hline
+Actor action & Collaborate if output per person is better\\
+& Trade if utility is improved\\
+\hline
+Timing &
+Randomised order\\
+\hline
+Space-type &
+Line\\
+\hline
+Actor location & Separated by parameter-swept distance: find point\\
+&where trade or collaboration become better option than backyard\\
+\hline
+Space costs & If collaboration, commute. If trade, good cost.\\
+\hline
+Parameters & All fixed, except space cost: variable but not set by agents\\
+\hline
+Utility form & CES\\
+\hline
+Production form & Economies of scale\\
+\hline
+
+\end{tabular}
+
+\caption{Model components for simple 'break out of spatial impossibility' model \label{tab:spatimpsimple}}
+\end{center}
+\end{table}

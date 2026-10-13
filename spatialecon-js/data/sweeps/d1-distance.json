@@ -1,0 +1,78 @@
+{
+ "id": "d1-distance",
+ "title": "Two Firms on a line: separation, and how reliably",
+ "model": [
+  "d1a",
+  "d1b",
+  "d1c",
+  "d1d"
+ ],
+ "kind": "settled",
+ "note": "Distance cost against the separation the two Firms end up at, for both values of\nrho the thesis uses — so the four corners of the d1a–d1d table are the four ends of these\ncurves.\n\nTwo things had to be got right for this figure to mean anything, and both are the thesis'\nown point about these models rather than measurement fussiness.\n\nThe Firms never settle: the crawl always perturbs, so a Firm that has found a good spot\nkeeps testing and keeps giving ground. Reading the separation off the final day is therefore\none draw of a wandering process. What is plotted is the separation averaged over the second\nhalf of each run, and averaged again over several seeds.\n\nAnd the spread is not error — it is the result. The dashed curves are how much the\nseparation wanders *within* a run, and at rho = 0.99 the wandering is worst exactly where\nthe separation is smallest: 0.155 at a distance cost of 1, falling to 0.07 by 20. That is\nthe §5.5.2 finding in one number. When goods are near-perfect substitutes and distance is\ncheap, a Firm's position barely affects its revenue, so the crawl has almost no signal to\nfollow and the Firms roam. Raising the distance cost sharpens the signal, and they both\nseparate further and hold position better. The weak-incentive corner is the unreliable one.\n\nThe four corners of these curves are the four cases d1a–d1d: locked centrally together at\nlow rho and cheap distance, roaming at high rho and cheap distance, spread at low rho and\ndear distance, and the Hotelling-like split at high rho and dear distance — 0.376 here\nagainst 0.343 in the independently-built Java.\n\nDistance cost 0 is left out. With no distance cost a Firm's location cannot affect its\nrevenue at all, so the crawl gets no signal, nothing moves, and the \"result\" is just where\nthe Firms were placed.",
+ "yScale": "linear",
+ "xLabel": "distance cost",
+ "xs": [
+  1,
+  2,
+  5,
+  10,
+  20,
+  30,
+  40
+ ],
+ "yLabel": "separation, as a fraction of the line",
+ "series": [
+  {
+   "label": "sep, rho 0.99",
+   "values": [
+    0.19838081200008995,
+    0.2902586588184182,
+    0.37877957236483906,
+    0.4027443946611253,
+    0.3755503579750756,
+    0.3405482815382225,
+    0.3365010986450059
+   ]
+  },
+  {
+   "label": "wander, rho 0.99",
+   "values": [
+    0.15477873188624386,
+    0.1321193703770559,
+    0.080915018773479,
+    0.06435594401331661,
+    0.06147442240311514,
+    0.07326158214390861,
+    0.07089388829473049
+   ],
+   "dash": true
+  },
+  {
+   "label": "sep, rho 0.1",
+   "values": [
+    0.018315398121892913,
+    0.019397179121572874,
+    0.031463421380811894,
+    0.0833590490502692,
+    0.1653838977731743,
+    0.21800370341260766,
+    0.21104178952733182
+   ]
+  },
+  {
+   "label": "wander, rho 0.1",
+   "values": [
+    0.013690317695689666,
+    0.014813518516124726,
+    0.024464502423442315,
+    0.049807414872274865,
+    0.06329395570211231,
+    0.06368308721941127,
+    0.08074236317323423
+   ],
+   "dash": true
+  }
+ ],
+ "generatedBy": "tools/sweep.mjs",
+ "points": 7
+}

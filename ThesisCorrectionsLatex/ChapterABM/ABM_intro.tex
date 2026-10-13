@@ -1,0 +1,252 @@
+%Intro quote
+\vspace{2cm}
+%http://www.youtube.com/watch?v=wMFPe-DwULM
+\begin{quote}
+{\large
+``When you explain a `why', you have to be in some framework that you allow something to be true. Otherwise you are perpetually asking why.''
+\\
+\hspace*{10cm}\emph{Richard Feynman\footnote{In interview on `Fun to Imagine,' BBC, 1983.}}}
+}
+\end{quote}
+
+\vspace{2cm}
+
+%\section{Introduction to chapter \label{ABMintro}}
+
+%conceptual apparatus! Di Paulo. 
+
+\section{What is agent-based modelling?}
+
+\gls{abm}, as the name suggests, simulates `agents': distinct code objects, programmed to interact with their environment and each other. \gls{abm} developed in tandem with \gls{oop}. Though \gls{oop} has a history going back to the sixties, it was not until the nineties that computing power and programming languages like Java developed enough to mark a `paradigm shift' in programming (\citealt{robinson_emergence_2009} p.211). This shift provided the soil for \gls{abm} to flourish. 
+
+%The objects in \gls{oop} differ from more standard functions in their multi-faceted structure. 
+Wooldridge defines objects as ``computational entities that \emp{encapsulate} some state, are able to perform actions, or \emph{methods}, on this state, and communicate by message passing'' (\citealt{wooldridge_introduction_2009} p.28). Objects are created from classes; a real-world metaphor would be that classes are the blueprint and objects the physical form. Thus, a model may have a single `Firm' class but many `Firms' created from that blueprint, with their own internal state.
+
+This focus on objects' `encapsulation' - that `objects have control over their own internal state' - requires the programmer to think of them as separate entities, and to define inter-relations with care. (The procedural element of programming has not gone away, however, and is still of vital importance, particularly with regard to timings; see section \ref{sec:actions}.) A popular online java tutorial (\citealt{the_java_tutorials_what_????}) has a simple illustration of encapsulation: if a rider of a bicycle attempts to change gear, the bicycle should have a `method' that ensures it cannot exceed its gear number. The rider is denied the ability to \emph{force} a gear-change above those available. In coding practice, this mean providing methods to raise and lower gears: the rider may \emp{`request'} a gear change, but the bicycle `decides' if it can be done.
+
+This trivially simple idea, in conjunction with a set of supporting \gls{oop} coding concepts, has created a very powerful set of tools for defining how objects interact. 
+%`a preditable effect...' woz ere.
+
+\subsection{Mapping: code versus function \label{sec:mapping}}
+
+Some cuttings:
+
+influence of MONIAC on Keynesians - \citealt{wood_john_1994} p.249, which notes even over this, there were arguments about the `misleading reduction of economics to hydraulics' (\citealt{shackle_years_1983} p.189 in \citealt{wood_john_1994} p.249)
+
+ironic, given that Newyln himself was well aware of this limitation: ``once the model has served its purpose... the student will need to return to the literature for the complications and refinements - hydraulics is no substitute for economics.'' (\citealt{newlyn_phillips/newlyn_1950} p.119)
+
+Point I want to make there again, it is the job of the modeller to define the purpose of the model; it is incumbent on others who want to comment to try and understand what the modeller wanted to achieve; it is also entirely possible for models to develop a form of `mission creep', and perhaps then it is worthwhile trying to re-think where things have got to.
+
+This section argues that `functional mapping' needs to be distinguished from `code mapping'. A natural consequence of \gls{oop} is to look for ways to make object structures mirror their real-world counterparts. This happens both for objects themselves and the structural relations that object orientation uses. Wooldridge notes from an early commenter a ``tendency to think of objects as `actors' and endow them with human-like intentions and abilities.'' (\citealt{next_computer_inc._object-oriented_1993} p.7 in \citealt{wooldridge_introduction_2009} p.28; see also \citealt{franklin_is_1996}). As regards structure, Tesfatsion, for example, uses \gls{oop}'s distinctions between public, private and protected methods to define private behaviours and to allow agents to ``communicate with each other through their public and protected methods'' (\citealt{tesfatsion_agent-based_2006} p.837). It is an entirely understandable and intuitive belief: the closer the match between code and real-world - the more `realistic' - the better. As Tesfatsion puts it:
+
+\begin{quote}
+``encapsulation into agents is done in an attempt to achieve a more transparent and realistic representation of real-world systems involving multiple distributed entities with limited information and computational capabilities.'' (ibid p.838)
+\end{quote}
+
+%x-ref that with Epstein, making the same mistake: assuming what we should be stating as hypotheses, i.e. that many humans interacting = 'multiple distributed entities with limited information and computational capabilities'. Note: Tesfatsion subscribes to the generative stuff. 
+But should a more realistic representation be the aim? Scott and Page make a useful comparison between models and maps: it is intuitively easy to grasp why a more realistic map may not necessarily be a better one (\citealt{miller_complex_2007} pp.36). But they go on to make a stronger case: that one can construct a `homomorphism' between model and reality. This would mean a distinct equivalence between identified real-world and model structures. They argue that too broad a homomorphism would be ``at the cost of lowering the model's resolution and value'' (p.40). As with arguments that models should aim for isomorphism\footnote{e.g. ``Isomorphism is a relation between mathematical structures. If there is a function that maps each element of one structure onto each element of another the structures are isomorphic'' (\citealt{downes_importance_1992} p.147). The term is used by, among others, Epstein to describe model-to-reality mappings (\citealt{epstein_generative_2006} p.24-5).}, these terms have strict mathematical meanings that encourage the idea that object structures should very explicitly map onto reality, and be transformable in the same way. These terms are too strict: the slightly looser idea of `mapping' that Miller and Page start with can be a more useful way to think about building models. While it can be interpreted mathematically, it also draws attention to the fact that mappings can often be implicit; examples of this are discussed below \cmt{Mapping meaning...see e.g. DMR section... How to map 'meaning?' A: do it implicitly. Though cf. Miller and Page ref to Holland's work on mental models?}
+
+Building an agent model in a way that maps \gls{oop} structures onto real-world equivalents (mapping of source to target, \citealt{suarez_scientific_2003} p.225), can be described as a `code mapping'. Problems do not automatically occur if a code mapping exists, of course: to an extent, code structures must map to the model's target. It is equally obviously true that any effective model must in some way represent the dynamic it wants to examine. But that is precisely the point: models should have a `functional mapping'. This does not require models to be as realistic as possible, or that the code structure itself, imposed by \gls{oop}, is better for closely mapping to reality.
+
+It is far from obvious why this distinction should matter. Errr.... it's only one important distinction among others, but I have to be careful I'm not constructing a straw non-gender-specific person. It would help if I don't overstate my case. 
+
+====
+
+There are, at the very least, good reasons of computational expense to consider. In \gls{modelname}, for instance, a single class takes care of utility (see section \ref{sec:howPeopleAct} for full details). Each Person asks this centralised class what utility they can get from a given bundle of goods. In reality, of course, the process of deciding what to buy takes place in a person's head: they do not ask some centralised organisation to tell them what they like. While it would be entirely possible to give each Person agent their own private methods for working out their wants (a closer code isomorphism), in this case there is nothing to be lost by having a single class do the job: functional isomorphism is maintained. 
+
+Of course, there are situations where it may be advantageous to internalise these decisions to each Person - but the example illustrates a point that applies for all modelling choices. 
+
+I think I need to go on to bring in Friedman and Epstein and the whole model/reality confusion thing.
+
+
+Some concrete things affected by this. The biggest is probably:
+
+- understanding what to do with agent numbers.
+Number of agents can have different impacts. Some of those effects you may be interested in, and others you won't. Example of competition effects, which are different for `very large numbers'. So, functional isomorphism-wise, this leads to a counter-intuitive point: it is possible to say `assuming large numbers' while only having a small number of agents, if the dynamic you're after is separate from the assumption. (E.g. you may only be interested in the statistical spread of where agents end up.)
+So, x-ref to that section.
+
+%Friedman needs to come in here! Is this a little early in the chapter? I should cover broader view of ABM at this point.
+%I've found lots of quote about this, I should gather them here really.
+%Section x argued that agent models should be designed with functional isomorphism in mind, not code isomorphism.
+%This take on agent modelling is questioned below in section x. 
+
+Some of the early ancestors of agent models do pre-date the \gls{oop} paradigm shift. Thomas Schelling's segregation model, first presented in 1969 (\citealt{schelling_models_1969}) and later described in `Micromotives and Macrobehaviour' \citep{schelling_micromotives_1978} is often cited as the `Eve' of agent models, and is used by Krugman as a compact illustration of how a good economic explanation links micro to macro results  (\citealt{krugman_self_1996}, p.15). 
+
+Stick Holland in here too: writing in the 70s I believe... So the point: many of the coding innovations now associated with oop predate it.
+
+Craig Reynold's `Boids', while originating from a desire to animate flocking, talked of agents as objects (\citealt{reynolds_flocks_1987}). Schelling initially used only pencil and paper (\citealt{schelling_fun_2006}); Reynolds used an \gls{oop} extension to LISP. 
+\fixref{add ferynman interview to bib.}
+%In his `Self-Organising Economy', Krugman asks ``what constitutes an `explanation' from the point of view of economists?'' The title of 
+
+This is not just of historical interest: it is hard to overstate the importance of the \gls{oop} paradigm's approach to the subsequent shape of agent modelling theory and practice. 
+%More on oop please!
+
+
+
+
+
+
+\gls{abm} is algorithmic rather than equation-based. While equation-based elements may be present (as they are in \gls{modelname}) they are used by agents as part of their discrete decision-making. In an early comparison of equation-based versus \gls{abm} methods for supply-chain management, Van Dyke Parunak \emph{et al} highlight the fundamental differences. Equation-based methods using differential equations start with observables; in contrast, the \gls{abm} modeller -
+
+\begin{quote}
+`` - begins by representing the behaviours of each individual, then turns them loose to interact. Direct relationships among the observables are an output of the process, not its input.'' (\citealt{van_dyke_parunak_agent-based_1998} p.10)
+\end{quote}
+
+This focus on the output from the interaction of agents developed into a large body of work on `emergence' and `self-organisation'. Reynold's `boids' are a perfect example, intuitively illustrating a macro-level outcome (flocking) from individual-level decision processes, in a way mathematically next-to-impossible using anything like Schelling's earlier hand-worked approach. Agent modelling has since been strongly identified with these ideas - what has been called a `Santa Fe' outlook, ``retailing the snake oil of `chaoplexity'.'' (\citealt{mirowski_kicking_2007}, p.361) 
+
+These two trends in agent modelling - a push for more and more `realism' in the structure of agents themselves, coupled with a narrative about complexity - have perhaps distracted from the simpler ideas that \gls{abm} has made possible. For this thesis, the important ideas are those that offer a way out of strictures imposed by analytic approaches to spatial economics - namely asynchronous decision-making and an ongoing, non-clearing market mechanism. 
+\cmt{async, non-clearing: where have these things been discussed?}
+
+
+Aside from those two, this chapter will argue that there are good reasons for keeping other model elements simple. 
+%Others argue the reverse: researchers are ``obsessed with maintaining a respectful subordination to the neoclassical profession, discouraging anything that might have been perceived as wandering too far beyond the pale.'' There are seeds of truth to both of these. Abandoning the neoclassical approach has all too often meant abandoning everything connected to it; the lure of `complexity' has drawn ABM modellers' gaze away from a rich history of economic thought. This begs the question: what, then, is ABM actually good for?
+
+%%%%%%%%%%%%%%%%%%%
+% APPLIED VS THEORY
+%%%%%%%%%%%%%%%%%%%
+\section{Applied versus theory}
+
+``So far, these models have been made mostly with the idea that the model
+might help, but the possibility remained that the eybernetician (or the Sponsor) might think that some other way was better, and that making a model (whether digitid, analogue, niathematical, or other) was a waste of time. Recent work (Conant I!Ni9), however, has suggested that the relation between regulation and modelling might be much closer, that modelling might in fact be a necessary part of regulation. In this article we address ourselves to this question.'' \citealt{conant_every_1970}
+
+Perhaps true: but it's still the case that theoretic models will want to do different things, assume different things. But - very interesting article!
+
+
+Beyond the simple observation that \gls{abm} is about interacting agents, it is easiest to get at the kernel of \gls{abm} by considering examples.
+
+\gls{abm} spans the full panoply of modelling goals, but it seems to have been particularly susceptible to confusion between these. The reasons for this are discussed below, but a distinction from an urban economics perspective will help explain the problem. Webber, writing in the eighties, identified some confusion from mixing up the purpose of models. He distinguishes between applied and theoretic (or `scientific') models (\citealt{webber_explanation_1984}). Theoretic models are ``designed to increase our understanding... and to integrate theoretical and empirical research.'' Applied models, in contrast, are tools used in the day-to-day running of organisations and institutions, and in longer-term forecasting and planning. They  - 
+
+\begin{quote}
+`` - regard the form of society as given and are produced to make that society operate more profitably; since scientific research examines the conditions under which the society operates and the manner in which it is changing, such research ought not to regard the form of society as constant.'' (p.149)
+\end{quote}
+
+Webber argues this comes to down to `a difference between the need to understand and the need to prescribe' (p.151). Traditionally in economics, this is the distinction between positive and normative analyses (\citealt{friedman_essays_1953}). \gls{abm}, as with any form of social modelling, has feet in both camps, but the boundaries between them seems more confused now than were the urban models Webber examined. 
+
+---
+representational agents (in models) and instrumental agents (used to accomplish tasks), a distinction also made by Brown and Xie (2006: 941).
+
+`modes': instrumental and representational (\citealt{brown_spatial_2006} p.941; see also \citealt{osullivan_agent-based_2000}). Instrumental agents are carrying out some real-world task, whether collecting information on the internet or optimising container port flows. 
+
+I should compare that to 1970s / models, Ashby? Round here somewhere. Triangle between instrumental, applied, theoretic.
+
+Depending on if I'm discussing instrumentalism, might want to change that terminology!
+
+---
+
+
+For different reasons, both applied and theoretic \gls{abm} suffers from this confusion. For example, applied \gls{abm} has a strong presence in the `operations research' literature; Van Dyke Paranuk's supply chain comparison above is an example of this. Optimisation of container ports is a particularly striking case: the gap between models of good flow and reality is shortened to optimising automated port systems (\citealt{steenken_container_2004}). 
+
+This mirroring of real and virtual systems is underpinned by arguments that, as Epstein says, ``certain social systems, such as trade networks, are essentially computational architectures.'' (\citealt{epstein_generative_2006} p.16) Epstein can thus develop a theory that computations carried out \emph{in silico} can be considered as a version of the physical computation under study. Similar lines of thought about theoretic agent modelling have created quite a tangle as regards the model-reality relationship. For instance, an argument has developed that such models can actually be ``synthetic sources of empirical data'' (\citealt{di_paolo_simulation_2000}, who criticise this approach). In combination with the idea of `emergence', this has been followed through to its logical conclusion: what Epstein calls `generative social science', in which a model that generates a particular phenomenon can be said to explain it. (Epstein's case is discussed in more depth below, in section x.)
+
+It is easy to see why the distinction between applied and theoretic has become so blurred, if one believes the virtual model and reality are in some scientific sense identical. But it is an unhelpful approach to modelling that, it could be argued, leads directly to another central problem in agent modelling: the belief that the closer agents \emph{in silico} and in reality are matched, the more valid a model is.
+%Perhaps insert various critiques of that here. (di paulo, lansing)
+
+Compare to \citealt{osullivan_agent-based_2000}: ``We conclude that ABMs strongly tend towards an individualist view of the social world.'' 1409
+
+``In economics, bounded rationality is particularly suitable for investigation by agent-based simulation. Conlisk (1996) provides an extended overview of this terrain, which recognises that the wholly rational utility maximiser of classical economics is a fiction.'' 1412
+
+So they point out the history of how abm co-developed with the `santa fe' view, of the ``economy as an evolving complex system''. 
+
+There is a case to be made that \gls{abm} disappeared down that particular rabbit-hole and has never come back. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Litty litty
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lit stuff}
+
+As Wooldridge notes, \gls{abm} has long since expanded beyond the scope of any one person to follow all the literature (\citealt{wooldridge_introduction_2009} p.xix). It is better to consider particular branches of relevance. This was part of the purpose of discussing applied versus theoretic models, since this helps narrow down the focus for what agent approaches the thesis needs to consider. Two areas of \gls{abm} should, in theory, be relevant:
+
+\begin{enumerate}
+	\item Spatial agent-based modelling
+	\item Agent-based computational economics (ACE) modelling
+\end{enumerate}
+
+In fact, there is surprisingly little overlap between these two. This is made clear if one considers the sorts of questions considered in the literature. Torrens' recent review of `\gls{abm} in the Spatial Sciences' (\citeyear{torrens_agent-based_2010}) is a good place to start. 
+
+Rodriguez and Raper (\citeyear{rodrigues_defining_1997}) describe the role of spatial agents in instrumental terms: helping users in different ways to optimise use of geographical information systems. 
+
+Urban/transport - 
+Swarming, flocking, crowds (\citealt{osullivan_agent-based_2000} p.1411)
+
+Contrast to GE - how come so little overlap of interests? Questions completely different. 
+
+
+%Other papers, not \gls{ace}, include
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simplicity vs complexity
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Why make things simple when one can make them complicated?}
+
+%The development of \gls{modelname} was driven by two motivations. First, there are still a great many things about spatial economics to be learned, and a lot of scope for generalisations still to be wrung out of the real world. 
+%Chapter \ref{chapter:locations} outlined the economic and spatial ideas used in the thesis, and also drew attention to those points where those ideas were restricted to a particular approach. Oh yeah, that's a sexy sentence. 
+%A venn diagram of neoclassical economic models and agent models, containing both Krugman's original core-periphery model, would also contain a particular type of abstract agent model. 
+%However, there is very little communication between these two approaches as regards the purpose and method of developing such abstract models. 
+
+Neoclassical economics and \gls{abm} share a common thread: the use of abstract models in the development of ideas. However, defences of the use of such models greatly differ between the two. As discussed above, many leading lights in the \gls{abm} field have argued that in some sense, abstract agent models can be directly compared to reality. 
+
+To take one example, Edmonds take's Occam's Razor to task. Given two theories that explain some phenomenon, where one is simpler than the other, he argues that ``if we were to hold to Occam's razor (in the form that simplicity is truth-indicative) then we would choose the first because this is sufficient to explain the phenomena - the postulated bias in the natural world is an `unnecessary entity'.'' (\fixref{edmondssimplicity} p.4) He is right: this is nonsense. Edmonds is very blunt about what simplicity should mean to modelling:
+
+\begin{quote}
+``if I am right, model selection `for the sake of simplicity' is either: simply laziness; is really due to pragmatic reasons such as cost or the limitations of the modeller; or is really a relabelling of more sound reasons due to special circumstances or limited data. Thus appeals to it should be recognised as either spurious, dishonest or unclear and hence be abandoned.'' \fixref{edmonds simplicity}
+\end{quote}
+
+There are grounds for simplicity that go beyond laziness or dishonesty on the part of the modeller, however, that serve as an illustration of the often-ignored thought economists have given to modelling prior to the computation era. Friedman, writing in 1946, makes a very good point about how progress in physical sciences has been made: ``the theorist starts with some set of observed and related facts, as full and comprehensive as possible'' (\citealt{friedman_lange_1953} p.282-3). There are, he argues, then an infinite number of theories consistent with the facts. The theorist must use some `arbitrary' method to choose between them - such as Occam's Razor. Simplicity by itself, then, is \emph{not} truth-indicative at all. However, in the physical sciences at least, theorists using a principle of looking for simplicity have found it to be an excellent shortcut for finding successful theoretical needles in among the haystack of competing ideas. As Friedman points out, only comparing the theory to reality can reveal whether it explains the observations. It just so happens that simple explanations have done better in the physical sciences.
+
+One might respond, that is all very well for physics, but Friedman erred in applying these standards to the social sciences. Perhaps so, but that does not nullify Friedman's point.
+
+
+...
+
+``the field seems to be retreating into a self-consistent but ultimately irrelevant approach (thus following the path of economics)'' (Edmonds, review in JASSS, 1. “Michael Wooldridge: Reasoning about Rational Agents”, n.d., http://jasss.soc.surrey.ac.uk/5/1/reviews/edmonds.html.)
+
+
+
+\section{Opaque thought experiments}
+
+While this chapter looks at a number of approaches to abstract modelling, one paper in particular stands out as especially useful starting point: Di Paolo \emph{et al}'s \fixref{opaqueexps} `Simulation models as opaque thought experiments'. 
+
+
+\section{Tesfatsion waffle \label{sec:Tesfatsion}}
+%see chapter~\ref{chapter:Intro} on page~\pageref{chapter:Intro}.
+
+Tesfatsion gives a good list of the dynamics that face an agent model of economic processes, once one has stepped out of the analytic framework and attempted to define what happens from the point of view of the agents themselves. A Pandora's box is opened:
+
+\begin{quote}
+``The modeller must now come to grips with challenging issues such as asymmetric information, strategic interaction, expectation formation on the basis of limited information, mutual learning, social norms, transaction costs, externalities, market power, predation, collusion, and the possibility of coordination failure.'' (\citealt{tesfatsion_agent-based_2006) p.6})
+\end{quote}
+
+Each of these `challenging issues' does in fact garner plenty of attention from analytic economics: Stiglitz has examined asymmetric information, game theory deals with strategy (and `predation and collusion' might be considered forms of strategy), and Krugman himself discusses expectation and the role of history. As regards agglomeration economies, the importance of learning and externalities has been discussed in chapter \ref{chapter:location}. The economic coordination problem has perhaps had the least analytic attention; it has been the reserve of Austrian school thinkers such as Hayek and, more recently, is a particular focus for agent-based economics.
+\fixref{need a lot of citations here!}
+
+In one sense, however, Tesfatsion is completely right: analytic approaches such as the \gls{coremodel} can avoid all these problems. Indeed, as discussed, a key strength of the \gls{monocomp} approach is precisely that it lets the model avoid strategic pitfalls. However, when building an agent model of similar problems, at least some of these issues simply cannot be avoided. Tesfatsion talks of \gls{ace} as ``the computational study of economies modelled as dynamic systems of interacting agents.'' The most basic principle here is that those agents must make decisions based on the environment they find themselves in. It transpires that, for even the simplest attempt to create a fully agent-based version of an agglomeration model, it is very difficult to avoid some, if not all, of Tesfatsion's list of complex horrors.
+
+The success of \gls{ge}, then, is precisely because it finds a way for actors to avoid having to use strategy in decision-making. But as with all \gls{ge} work, this is done with some consciousness of the damage to reality it entails and an argument about why it is still valid. One of those arguments is tractability. In theory, \gls{abm} is not restricted by that need for analytic tractability - but this may be a curse in itself, if this leads one to believe that all the elements of reality that Tesfatsion lists must be incorporated. The purpose of this chapter, as agent-based methods are surveyed, is to ask how this problem has been dealt with, and how it has informed the thesis model approach. 
+
+\subsection{Heroic assumptions \label{sec:heroicassumpts}}
+
+%Economics, \gls{ge} and location theory are replete with `heroic assumptions'. The phrase itself has been in use for a great many years; 
+One reviewer  of the English translation of Weber's `Theory of the Location of Industries' (\citealt{weber_theory_1909}) in 1930 warns, ``in approaching this book the reader must be prepared to meet a very abstract treatment and some very heroic assumptions'' (\citealt{fetter_review:_1930} p.233}). Much later, Brakman \emph{et al} note that the same type of heroism led to the success of the \gls{dxs} (\citealt{brakman_new_2009} p.93). The phrase appears to be quite common. From context, it seems that a heroic assumption is characterised by two things: being highly unrealistic, but opening up new avenues for analysis. As such, they have always been an easy target for critics, and \gls{abm} theorists have certainly taken aim at them. 
+
+There is, however, a different problem with heroic assumptions: they are generally the consequence of analytic necessity forcing some simplification on the modeller. The resulting analytic models cannot easily deviate from the tracks thus laid down. (\gls{ge} writers (and Krugman especially) have, to their credit, been very self-aware in discussing these constraints and their implications.) What this means for any attempt to take ideas from \gls{ge} and apply them to \gls{abm} is very different types of constraint present themselves. Because of this, there is not always a clear way to `translate' one into the other. In fact, when working through model development, the ways in which one relates to the other can seem so unique, it is very hard to define quite where these differences come from.
+
+The actual details of where in model development this manifested itself are written up in chapter \ref{chapter:models}. The main point to take from this for the rest of the chapter here, however, is just this: a knee-jerk reaction against simplification does not help analysis or the development of an \gls{abm} model. Different approaches have different limitations, and \gls{abm} itself most definitely has its share. So one goal of this chapter is to understand what they are.
+
+%WUD 18	The realism-relevance argument. Same as GE arg: depending on what you want to analyse, you have to be selective about what you're willing to do damage to. As implied here, it's a judgement call.
+%p.s. just remembered Blaug has a paper on this. Worth remembering the history of economic thought on this; no year zero necessary.
+
+%\section{Bits from original introduction}
+
+%But what of \gls{abm}? On the face of it, ABM is a perfect tool for the job. The analytic approach of GE is - as Krugman himself acknowledges - a `mathematical straightjacket' (\citealt{martin_new_1999}). The core model is bound to a particular approach to monopolistic competition built on a 1977 Dixit \& Stiglitz paper (\citealt{dixit_monopolistic_1977}). Its engine is the `constant elasticity of substitution' function. As \citeauthor{fujita_spatial_2001} note, it can sometimes seem like GE is all about ``games you can play with CES functions'' (\citealt{fujita_spatial_2001}, p.6). Unhindered by many of the restrictions that afflict analytics, is ABM not perfectly placed to explore locaton theory more freely? The fact is, however, this promised freedom has not led to great new theoretical vistas of success. Why not? One possibility is that precisely those things ABM claims to be good at are actually its weaknesses. Heterogeneity, diversity, many interactions - all of these can be abstracted away in analytics with no loss of strength - and perhaps, in fact, with a large gain in clarity. 
+
+
+%ABM and GE do share a common commitment. In his `Self-Organising Economy' (\citealt{krugman_self_1996}, p.15), Krugman asks ``what constitutes an `explanation' from the point of view of economists?'' The title of Thomas Schelling's `Micromotives and Macrobehaviour' \cite{schelling_micromotives_2006} is, for Krugman, a compact answer to that question: a good economic explanation shows how micromotives link to macro results. This is a rare commonality, however. GE ``aims to explain the formation of various forms of economic agglomeration in geographical space using a general equilibrium framework'' (\citealt{fujita_frontiers_2005}, p.377). This framework is the main fracture line between GE and ABM. GE is impossible without it; ABM not only manages outside of equilibrium, many argue that, precisely because it can do this, it can more closely mirror reality. (E.g. Tesfatsion  - see chapter~\ref{chapter:ABM}.)  Making a model more closely mirror the world can be described as a higher isomorphism - literally a more `equal shape' match. It will be argued, however, that ABM work tends to assume isomorphism between code objects and real world is `better'; the history of modelling says otherwise.

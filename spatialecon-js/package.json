@@ -1,0 +1,14 @@
+{
+  "name": "spatialecon",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Interactive models from Dan Olner's 2013 PhD on agent-based spatial economics",
+  "scripts": {
+    "test": "node test/all.js",
+    "list": "node tools/run.mjs --list",
+    "run": "node tools/run.mjs",
+    "sweep": "node tools/sweep.mjs",
+    "thumbs": "node tools/thumbs.mjs"
+  }
+}

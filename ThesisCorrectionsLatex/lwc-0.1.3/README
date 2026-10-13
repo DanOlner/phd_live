@@ -1,0 +1,96 @@
+
+            			     Wordcount
+                            Copyleft 2004-2008 Max Lekeux
+
+      LaTeX Word Counter, well, just count the number of word in a file.
+    It has a LaTeX option to dismiss commands and
+    count the words in included files also.
+	
+    version 0.1.1: october 23rd 2008 by Max Lekeux
+		- log : can count file not ending with two "end of lines" at the end of the file
+		- allow \fbox structure
+		- add possiblity to spedify start path of the dialog to choose file
+    version 0.1.0: july 22th 2004 by Max Lekeux
+        - rename program for SF.net release
+    version 0.0.3: feb 25th 2004 by Max Lekeux
+		- log : title with \& allowed
+		- log : if no chapter used, then log contains sections and subsections
+    version 0.0.2: feb 15th 2004 by Max Lekeux
+    	- log : print bug corrected
+    version 0.0.1: feb 04th 2004 by Max Lekeux
+    Creation: jan 28th 2004 by Max Lekeux 
+
+      This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+      This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+      You should have received a copy of the GNU General Public License	
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+    MA  02111-1307  USA
+
+
+
+
+ LaTeX Word Counter works fine under Windows and Linux (I cannot try other systems ...) 
+
+I Compilation (not needed if you downloaded only the lwc-'version'.zip
+  -----------
+
+Well, it's not very difficult. Just unzip the zip file ...
+This is valid for both Linux and Windows.
+
+Windows : use winzip or whatever other file decompressor
+Linux   : use the command :
+ unzip lwc-0.1.0.zip
+
+If you want to modify the program and recompile it (you are encourage to do so), use the following commands to pack it in a jar file
+
+Windows : double click on pack.bat (or run it in DOS command windows)
+Linux   : run the pack script with the command :
+ ./pack
+
+
+II Use 
+   ---
+
+* Windows
+
+ Just double click on the lwc.bat file (or run it in a DOS command window)
+
+* Linux
+
+ Run the script wordcount with the command :
+  ./lwc
+
+ Be sure that the file is executable.
+ If not, use this command to change it :
+  chmod 777 lwc
+
+
+III Options
+    -------
+
+A log window is available. 
+The user can see there the number of words per file or chapter/section following the option he chosed.
+The user can also chose to count the title in the total of words (it can help when you feel short).
+
+IV Restriction
+   -----------
+
+The actual version of the program suffers from a restriction.
+This restriction is relevant for LaTeX files only.
+We encounter this restriction in a special situation.
+
+ * The option to count the words section by section has to be on;
+ * The file has to include some \include commands
+
+In this case, wich can occur on big reports, it is asked to one and only one chapter per included file.
+If this condition is not respected, the result will errors in the log window. 
+The total number of word will still be correct, but the number and names of the chapter will probably not be correct.

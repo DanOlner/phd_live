@@ -1,0 +1,64 @@
+[
+ {
+  "id": "e3-rho",
+  "title": "Where the production regime breaks",
+  "model": "e3",
+  "points": 31,
+  "seconds": "0.1"
+ },
+ {
+  "id": "c1-fringe",
+  "title": "The fringe thins with numbers",
+  "model": "c1",
+  "points": 5,
+  "seconds": "67.2"
+ },
+ {
+  "id": "c8-density",
+  "title": "Density cost against the settlement",
+  "model": [
+   "c1",
+   "c8"
+  ],
+  "points": 7,
+  "seconds": "38.2"
+ },
+ {
+  "id": "d1-distance",
+  "title": "Two Firms on a line: separation, and how reliably",
+  "model": [
+   "d1a",
+   "d1b",
+   "d1c",
+   "d1d"
+  ],
+  "points": 7,
+  "seconds": "3.7"
+ },
+ {
+  "id": "g1-tomahawk",
+  "title": "The tomahawk: every equilibrium at every transport cost",
+  "model": "g1",
+  "points": 1746,
+  "seconds": "3.8"
+ },
+ {
+  "id": "c3-costs",
+  "title": "Spatial against non-spatial costs",
+  "model": [
+   "c3w",
+   "c3g",
+   "c3c",
+   "c3d"
+  ],
+  "points": 9,
+  "seconds": "96.8"
+ },
+ {
+  "id": "e8-rho",
+  "title": "The closing result, as rho rises",
+  "model": "e8",
+  "points": 210,
+  "seconds": "4.2"
+ }
+]

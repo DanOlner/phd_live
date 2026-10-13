@@ -1,0 +1,1 @@
+the config folder contains .config files that describe specific model runs. They are loaded by the model via the Properties methods in gl.

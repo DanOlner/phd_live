@@ -1,0 +1,88 @@
+{
+ "id": "c3-costs",
+ "title": "Spatial against non-spatial costs",
+ "model": [
+  "c3w",
+  "c3g",
+  "c3c",
+  "c3d"
+ ],
+ "kind": "settled",
+ "note": "One settled run per point, for each of the four costs, against the mean distance\nPeople end up from the centre. Each cost is swept across its own range and the x axis is that\nrange normalised to 0–1, because the four have nothing else in common.\n\nThe result is a set of SIGNS, not magnitudes:\n\n  wage             non-spatial   agglomerating\n  base good cost   non-spatial   DISPERSIVE\n  commute cost     spatial       agglomerating\n  goods distance   spatial       agglomerating\n\nNon-spatial costs enter the closed form as constants — the wage on top, the base price in the\ndenominator of U = (w − D(d)) / (p + cd) — and change how much the distance term is worth\nrelative to the crowding term. Raise the wage and crowding is cheap in proportion, so People\naccept more of it and pack in. Raise the base price and the cd term matters proportionally\nless, so distance stops being worth paying to avoid. A spatial cost is multiplied by distance\nand simply makes distance dearer, which pulls inward every time.\n\nWhy this licenses the whole of chapter 6: if a wage and a goods price reach location through\nthe same channel, differing only in whether they are multiplied by distance, then there is no\nneed to model a labour market and a goods market as separate things. That collapse is exactly\nwhat the transmission belt performs.\n\nC3's config is lost; this is reconstructed from the thesis text on C1's population and space.",
+ "yScale": "linear",
+ "xLabel": "each cost across its own range, normalised",
+ "yLabel": "mean distance from the centre",
+ "xs": [
+  0,
+  0.125,
+  0.25,
+  0.375,
+  0.5,
+  0.625,
+  0.75,
+  0.875,
+  1
+ ],
+ "series": [
+  {
+   "label": "wage",
+   "values": [
+    0.418746319514037,
+    0.3982387579663207,
+    0.35580914488577603,
+    0.31900302652060936,
+    0.2917783919060083,
+    0.2742827940068717,
+    0.2598821119239391,
+    0.24600998805727503,
+    0.23581022012628458
+   ]
+  },
+  {
+   "label": "base good cost",
+   "values": [
+    0.1210511601506749,
+    0.1862195654725424,
+    0.22420747535258784,
+    0.2493679869354289,
+    0.27240040834277285,
+    0.28955667319506223,
+    0.30482503939845157,
+    0.31769696903097594,
+    0.3312572958647152
+   ],
+   "dash": true
+  },
+  {
+   "label": "commute",
+   "values": [
+    0.2689994037403759,
+    0.23581022012628458,
+    0.21334375118211366,
+    0.19649634566732713,
+    0.18422190471880187,
+    0.1744547388113853,
+    0.16767433273756813,
+    0.15812800321485848,
+    0.15462873939703387
+   ]
+  },
+  {
+   "label": "goods distance",
+   "values": [
+    0.7334626309435506,
+    0.3312572958647152,
+    0.2689994037403759,
+    0.23940016819148127,
+    0.21879537334560703,
+    0.2041173735414638,
+    0.1909912493146625,
+    0.18460713586094962,
+    0.17883781693797046
+   ],
+   "dash": true
+  }
+ ],
+ "generatedBy": "tools/sweep.mjs",
+ "points": 9
+}

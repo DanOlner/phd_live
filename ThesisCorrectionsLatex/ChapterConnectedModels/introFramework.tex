@@ -1,0 +1,65 @@
+\section{Modelling framework: introduction \label{sec:introFramework}}
+
+\cmt{will have to come back and list the model scenarios that make it here. Cross ref to the outline of the table elements.}
+
+This chapter outlines the model framework developed for this thesis, and provides a consistent way to describe the model `scenarios' that are presented. Appendix \ref{apx:modelcodeoverview} gives full details of the code structure and where to find the fully commented code itself, along with the relevant documentation. 
+
+The main components that make up a particular model scenario will be described in table form as succinctly as possible. Where a scenario has particular idiosyncracies, these will be described below the model scenario table. 
+
+\subsection{Model scenario description method}
+
+The \emph{components} of model scenarios vary in a limited number of ways: table \ref{tab:op_eqs_coremodel} lists these commonalities, and the following discussion explains the table entries in detail. Following this, model \emph{parameters} will also be outlined. 
+
+\input{ChapterModels/Tables/modelComponentsTable}
+
+\subsubsection{Run type}
+
+Model iterations are considered `days'. A model run will last a set number of days. Generally, all actors will take an action at least once a day (with some exceptions where firms only respond every few days.) The particular number of days chosen will vary depending on the appropriate amount of time needed to find a useful result. 
+
+In each scenario, a single model run will be used to illustrate the basic point. Subsequently, parameter sweep runs may be used. These repeat model runs, while altering a particular parameter. See the discussion of parameters below for a consistent way of describing how they change.
+
+\subsubsection{Actor type}
+
+Actors will be either of two types, firms and people, or a single type (just referred to as `actors'). The distinction between actor types may be hard-coded, or where there is only one type of actor, differences between them may arise through  interaction. For example, the `backyard' model scenario in section \ref{sec:backyard} uses one actor type, where each independently decides who to collaborate with.
+
+\subsubsection{Actor number}
+
+The number of each type of actor in a particular scenario can be set specifically, or given as a quantity per unit distance or radius, so that the total amount stays consistent regardless of the size of space used. Reasons for a chosen number will be given. The general principle is to use as small a number as possible to achieve useful insights. In situations where agent number affects outcomes in important ways, the total may be changed over a parameter sweep run. See also the discussion in section x on the use and meaning of agent number.
+
+\cmt{use and meaning of agent number: don't think this section exists yet. I have it written up somewhere don't I? The point: some dynamics come from agent number that we want to ignore, and take `as if' they exist. E.g. certain competition dynamics. But where it's still useful to have more than a single agent to make a modelling point.}
+
+\subsubsection{Actor action}
+
+A basic description of the actions to be taken will be given for each scenario. Some are more common than others: people looking for the best wage and goods prices; firms changing cost settings in search of better net incomes. Action types are usually very intuitive and obvious. The complication arise in how they are implemented, and particularly in how they relate to timing within model runs. 
+
+\subsubsection{Timing}
+
+As already mentioned, a model run `day' is the most fundamental unit of time. Beyond that, the way timing is structured in model scenarios is one of the most important determinants of outcome. How do actors `know' when to take an action? The most common approach \fixref{ref for randomising agent action order?} is to randomise the order of actions. That approach is important to avoid artifacts arising as a result of actor order, but it raises its own problems. Consider a scenario with both firms and people, where all actions are daily randomly permuted, both firms and people mixed. An obvious logical outcome is that the time between any one actors' actions will vary. There is a small probability on each day that two of their actions will actually be consecutive: at the very end of one day and the very beginning of another. That also means, of course, that the subsequent action could be almost two `days' apart. More generally, the time between actions will never be consistent. Why should this be a problem? An example: if a firm is making decisions based on responding to a change in net income between days, it will be based on faulty data. There are two ways around this: firstly, the actions of people and firms can be put into two `bins' and permuted separately. This guarantees that all people will have made market decisions before firms come to act. Second, firms can be allowed to know the length of time between decision points and alter their decision-making (for example, by correcting the rate of change of net income accordingly.)
+
+\cmt{Don't know if I'm including this dynamic yet.}
+In the scenario just discussed, each actor acted only once per day. The order was randomly permuted, but that single-action daily limit defined what a `day' was. There may be other stopping conditions that define the boundary of a day, and these may mean an arbitrary number of actions occur. In a clearing market, for example, the day may not be over until all firms have the labour they require, or all people have the wage they want. (Note that, in that situation, firms may end up without having employed all the labour they would prefer, or some people could find themselves unable to work.) Rather than a single action each, this scenario could see actors contacting others many times before one of those two stopping conditions is met.
+
+Often, the importance of timing structure is much less obvious than the random permutation problem. As an example, consider a scenario where people choose wages and goods in the same `moment' (that is, during one action). They will not work if no goods are available, as there is no point: they cannot buy them. Equally, if no work is available, they cannot afford to buy anything. This can lead to a catch-22: if firms run out of stock, they need labour to make more, but no-one will work if no stock is available. This also illustrates a point that will be returned to: is this catch-22 a `bug' or a `feature'? That is, should the modeller be arguing that it says something about the real world, or that the model is broken and needs fixing?
+
+The description of timing, then, will summarise as briefly as possible what particular structure is being used for a scenario. 
+
+\cmt{bug or feature? Where do I discuss that? Also, how to describe timing issue of e.g. changing time input between firm actions? And online vs offline optimisation? That relates to timing but overlaps with action. Relates also to whether actors are facing a `static' world or not... how to tie that together coherently?}
+
+\subsubsection{Space type}
+
+\cmt{should I bring over the space-type outline from chapter 2?}
+
+\subsubsection{Actor location}
+
+This describes both actors' initial location starting conditions, and their relation to location change. Location may be randomised to start with either over the whole defined model space or within a certain distance or radius, or they may be set to a particular pattern, most often a line or circle (which stands in for a square or triangle if four or three actors are used.) Actors will also either be permanently fixed at this initial locations, or able to move. If mobile, their movement may a `crawl' or a `jump' - that is, they will move short distances from their current location, or will be able to move anywhere within a defined range. Lastly, these movements may cost them. This comes under the broader heading of space costs.
+
+\subsubsection{Space costs}
+
+A model scenario will state whether space costs are used, and how they are implemented. As well as any costs incurred through actor movement, two other types of space cost may be used: good delivery cost and land cost. \cmt{may also include land costs e.g. via landlord agents, but don't know if I'm including this in the write-up yet.}
+
+\subsubsection{Parameters}
+
+In defining parameters, some concepts from object-oriented programming are borrowed. Variable parameters can vary at any time in or between model runs. Static parameters are fixed for single model runs, but may vary between runs if, for instance, they are subject to a parameter sweep or randomisation. Final parameters never change. Where appropriate, a description will also be given of the exact way in which parameters change. Most commonly, this will be whether wages, prices, stock and money are fixed and if not, how they are set. 
+
+Some parameters represent excludable, rivalrous values, where only one actor can `have' them. Both stock and money can come into this category, but note that in a particular model scenario, the `flow' of these parameters may be turned off. For example, if the wage and goods prices are both fixed, money flow may also be turned off.
+

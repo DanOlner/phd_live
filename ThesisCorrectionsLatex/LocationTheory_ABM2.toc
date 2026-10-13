@@ -1,0 +1,170 @@
+\contentsline {chapter}{List of Figures}{xi}
+\contentsline {chapter}{List of Tables}{xiii}
+\contentsline {chapter}{Glossary}{xv}
+\contentsline {chapter}{Acronyms}{xvii}
+\contentsline {chapter}{\numberline {1}Introduction }{1}
+\contentsline {section}{\numberline {1.1}Introductory discussion and aims}{1}
+\contentsline {subsection}{\numberline {1.1.1}Agent-based modelling and spatial economics }{1}
+\contentsline {subsection}{\numberline {1.1.2}Aims and objectives }{4}
+\contentsline {section}{\numberline {1.2}The models }{5}
+\contentsline {subsection}{\numberline {1.2.1}`Partial' versus `general' models}{6}
+\contentsline {subsection}{\numberline {1.2.2}Dependencies }{8}
+\contentsline {section}{\numberline {1.3}The streetlight effect }{9}
+\contentsline {section}{\numberline {1.4}The spatial economic `problem' }{12}
+\contentsline {section}{\numberline {1.5}Organisation of the thesis }{14}
+\contentsline {subsection}{\numberline {1.5.1}Terminology}{14}
+\contentsline {subsection}{\numberline {1.5.2}Chapter outline}{15}
+\contentsline {chapter}{\numberline {2}Economic and spatial concepts }{17}
+\contentsline {section}{\numberline {2.1}Introduction }{17}
+\contentsline {section}{\numberline {2.2}Fundamental economic concepts }{18}
+\contentsline {subsection}{\numberline {2.2.1}Factors }{18}
+\contentsline {subsection}{\numberline {2.2.2}Utility }{18}
+\contentsline {subsection}{\numberline {2.2.3}The CES function and `love of variety' }{20}
+\contentsline {subsection}{\numberline {2.2.4}Constrained optimisations }{22}
+\contentsline {subsection}{\numberline {2.2.5}`Increasing returns' and production }{22}
+\contentsline {subsection}{\numberline {2.2.6}The meaning of `marginal' }{25}
+\contentsline {section}{\numberline {2.3}Bringing space into economics }{25}
+\contentsline {subsection}{\numberline {2.3.1}Overview }{26}
+\contentsline {subsection}{\numberline {2.3.2}Market structure }{28}
+\contentsline {subsection}{\numberline {2.3.3}Preconditions for spatial economic activity }{30}
+\contentsline {subsection}{\numberline {2.3.4}Endogenisation }{31}
+\contentsline {subsection}{\numberline {2.3.5}The `ecological' criticism }{32}
+\contentsline {section}{\numberline {2.4}Model parallels to specific classical spatial economic ideas }{34}
+\contentsline {section}{\numberline {2.5}The `core model' of geographical economics }{38}
+\contentsline {subsection}{\numberline {2.5.1}The core model's story }{39}
+\contentsline {subsection}{\numberline {2.5.2}Outline of core model explanation}{41}
+\contentsline {subsection}{\numberline {2.5.3}Top-level structure }{42}
+\contentsline {subsection}{\numberline {2.5.4}Scaffold }{45}
+\contentsline {subsubsection}{Utility, real wages and the `price index'}{46}
+\contentsline {subsubsection}{Production }{49}
+\contentsline {subsubsection}{Piecing the `region equations' together}{52}
+\contentsline {subsubsection}{Normalisations }{54}
+\contentsline {subsection}{\numberline {2.5.5}Dynamics }{55}
+\contentsline {subsection}{\numberline {2.5.6}Core model: concluding thoughts}{57}
+\contentsline {section}{\numberline {2.6}How space is theorised in the thesis model framework }{58}
+\contentsline {subsection}{\numberline {2.6.1}Goods }{58}
+\contentsline {subsection}{\numberline {2.6.2}People }{59}
+\contentsline {subsection}{\numberline {2.6.3}The interaction of people and goods }{61}
+\contentsline {section}{\numberline {2.7}The costs and benefits of proximity }{62}
+\contentsline {subsection}{\numberline {2.7.1}Externalities }{63}
+\contentsline {subsection}{\numberline {2.7.2}Externalities and proximity }{64}
+\contentsline {subsection}{\numberline {2.7.3}Land cost and congestion }{66}
+\contentsline {subsection}{\numberline {2.7.4}First versus second nature in the density cost }{67}
+\contentsline {section}{\numberline {2.8}Important spatial ideas placed outside framework }{68}
+\contentsline {subsection}{\numberline {2.8.1}Avoiding infrastructure change and networks }{68}
+\contentsline {subsection}{\numberline {2.8.2}Trade costs }{71}
+\contentsline {subsection}{\numberline {2.8.3}Risk is expensive }{72}
+\contentsline {section}{\numberline {2.9}Chapter summary}{73}
+\contentsline {chapter}{\numberline {3}Agent-based modelling and economic theory }{75}
+\contentsline {section}{\numberline {3.1}Introduction to chapter }{75}
+\contentsline {section}{\numberline {3.2}What is agent-based modelling? }{76}
+\contentsline {section}{\numberline {3.3}ABM overview }{78}
+\contentsline {subsection}{\numberline {3.3.1}Agent-based computational economics (ACE) }{78}
+\contentsline {subsection}{\numberline {3.3.2}Spatial versus economic agents}{82}
+\contentsline {subsection}{\numberline {3.3.3}Fowler }{83}
+\contentsline {section}{\numberline {3.4}Mapping the model }{85}
+\contentsline {subsection}{\numberline {3.4.1}`Descriptive' versus `functional' mapping }{85}
+\contentsline {subsection}{\numberline {3.4.2}What role for simplicity? }{87}
+\contentsline {subsection}{\numberline {3.4.3}What role for realism? }{88}
+\contentsline {subsection}{\numberline {3.4.4}Virtual worlds versus engines of analysis }{92}
+\contentsline {subsection}{\numberline {3.4.5}Three types of prediction }{94}
+\contentsline {subsection}{\numberline {3.4.6}Applied versus theory }{95}
+\contentsline {subsection}{\numberline {3.4.7}Generation versus explanation }{96}
+\contentsline {subsection}{\numberline {3.4.8}What level of explanation? }{99}
+\contentsline {subsection}{\numberline {3.4.9}Connecting levels of explanation }{102}
+\contentsline {section}{\numberline {3.5}Production and utility in an agent context }{105}
+\contentsline {subsection}{\numberline {3.5.1}Using utility in an agent model }{105}
+\contentsline {subsection}{\numberline {3.5.2}Production }{108}
+\contentsline {subsection}{\numberline {3.5.3}The link between production and utility }{109}
+\contentsline {section}{\numberline {3.6}Summary }{111}
+\contentsline {chapter}{\numberline {4}Model framework }{113}
+\contentsline {section}{\numberline {4.1}Introduction }{113}
+\contentsline {subsection}{\numberline {4.1.1}Chapter overview}{113}
+\contentsline {section}{\numberline {4.2}Framework overview }{114}
+\contentsline {section}{\numberline {4.3}Implementation of space costs }{116}
+\contentsline {subsection}{\numberline {4.3.1}Cost of moving goods }{116}
+\contentsline {subsection}{\numberline {4.3.2}Cost of moving people }{116}
+\contentsline {subsection}{\numberline {4.3.3}The cost of moving people as a parallel to moving goods }{116}
+\contentsline {section}{\numberline {4.4}Density cost }{118}
+\contentsline {section}{\numberline {4.5}Elements of the model }{119}
+\contentsline {subsection}{\numberline {4.5.1}Key table }{119}
+\contentsline {subsection}{\numberline {4.5.2}Decision structures and model timeline }{119}
+\contentsline {subsection}{\numberline {4.5.3}Two agent data sources}{120}
+\contentsline {section}{\numberline {4.6}Agent setup }{120}
+\contentsline {subsection}{\numberline {4.6.1}How People act }{120}
+\contentsline {subsubsection}{Bundles: overview }{121}
+\contentsline {subsubsection}{Selecting the best wage }{122}
+\contentsline {subsubsection}{Optimising bundles }{124}
+\contentsline {subsubsection}{Overview of People's utility }{127}
+\contentsline {subsection}{\numberline {4.6.2}How Firms act }{127}
+\contentsline {section}{\numberline {4.7}Framework discussion }{128}
+\contentsline {subsection}{\numberline {4.7.1}Interdependence of decision structures }{128}
+\contentsline {subsection}{\numberline {4.7.2}Communicating costs }{129}
+\contentsline {subsection}{\numberline {4.7.3}Timing structures }{131}
+\contentsline {subsection}{\numberline {4.7.4}Randomisation and timing of actions }{132}
+\contentsline {subsection}{\numberline {4.7.5}Economies of scale and avoiding the need for strategy }{133}
+\contentsline {subsection}{\numberline {4.7.6}Blind versus rational choice: an illustration of the problem with economies of scale }{135}
+\contentsline {subsection}{\numberline {4.7.7}`Data, meaning, response' }{136}
+\contentsline {subsection}{\numberline {4.7.8}Examples of descriptive versus functional mapping }{137}
+\contentsline {subsubsection}{Number of Actors }{138}
+\contentsline {section}{\numberline {4.8}Summary}{140}
+\contentsline {chapter}{\numberline {5}Framework testing and `partial' model results }{141}
+\contentsline {section}{\numberline {5.1}Introduction}{141}
+\contentsline {subsection}{\numberline {5.1.1}Organisation of the chapter}{141}
+\contentsline {subsection}{\numberline {5.1.2}Presentation of results }{141}
+\contentsline {section}{\numberline {5.2}Testing utility functions }{143}
+\contentsline {subsection}{\numberline {5.2.1}CES function}{143}
+\contentsline {subsection}{\numberline {5.2.2}Cobb Douglas }{143}
+\contentsline {subsection}{\numberline {5.2.3}Hill-climber versus constrained utility }{147}
+\contentsline {subsubsection}{Comparing the two}{148}
+\contentsline {section}{\numberline {5.3}Two basic distance tests }{150}
+\contentsline {subsection}{\numberline {5.3.1}Love of variety's interaction with distance }{150}
+\contentsline {subsection}{\numberline {5.3.2}The `black hole' outcome }{155}
+\contentsline {section}{\numberline {5.4}Mobile People }{156}
+\contentsline {subsection}{\numberline {5.4.1}Basic monocentric result: density cost traded off against distance }{156}
+\contentsline {subsection}{\numberline {5.4.2}Density cost }{158}
+\contentsline {subsection}{\numberline {5.4.3}Impact of changing spatial and non-spatial costs on size of settlement }{162}
+\contentsline {subsection}{\numberline {5.4.4}What drives agent location choice in the monocentric model? }{162}
+\contentsline {subsection}{\numberline {5.4.5}Giving People a spread of costs }{166}
+\contentsline {subsection}{\numberline {5.4.6}Love of Variety in a simple two-Firm scenario }{166}
+\contentsline {subsection}{\numberline {5.4.7}Spatial equilibria are not always utility equilibria }{171}
+\contentsline {section}{\numberline {5.5}Mobile Firms }{174}
+\contentsline {subsection}{\numberline {5.5.1}Two Firms optimising location on a line }{174}
+\contentsline {subsection}{\numberline {5.5.2}`Data, meaning, response' with two Firms }{179}
+\contentsline {section}{\numberline {5.6}Summary }{182}
+\contentsline {chapter}{\numberline {6}`Transmission belt' model results }{185}
+\contentsline {section}{\numberline {6.1}Introduction}{185}
+\contentsline {section}{\numberline {6.2}Moving from `partial' to `general' }{186}
+\contentsline {section}{\numberline {6.3}The `transmission belt' between production and welfare }{186}
+\contentsline {subsection}{\numberline {6.3.1}The stock targeting mechanism }{189}
+\contentsline {subsection}{\numberline {6.3.2}Markup and problems with competition }{196}
+\contentsline {subsection}{\numberline {6.3.3}Interaction between economies of scale and love of variety }{202}
+\contentsline {subsection}{\numberline {6.3.4}Tracking down the `transmission belt' }{204}
+\contentsline {section}{\numberline {6.4}Introducing space into the transmission model }{206}
+\contentsline {subsubsection}{Two Firms per region }{209}
+\contentsline {subsection}{\numberline {6.4.1}Space and welfare outcomes in a many-agent model }{211}
+\contentsline {subsection}{\numberline {6.4.2}Combining the transmission belt model with density cost }{214}
+\contentsline {section}{\numberline {6.5}Summary }{216}
+\contentsline {chapter}{\numberline {7}Discussion and conclusions }{219}
+\contentsline {section}{\numberline {7.1}Comparison with the core model }{222}
+\contentsline {subsubsection}{Timing structure}{223}
+\contentsline {subsubsection}{Use of agents and the nature of firms and people}{223}
+\contentsline {subsubsection}{Production structure}{224}
+\contentsline {subsubsection}{Market structure}{226}
+\contentsline {section}{\numberline {7.2}Dependencies }{227}
+\contentsline {subsection}{\numberline {7.2.1}Overview}{227}
+\contentsline {subsection}{\numberline {7.2.2}Model framework dependencies }{228}
+\contentsline {section}{\numberline {7.3}Different types of interaction }{230}
+\contentsline {section}{\numberline {7.4}Assumptions }{232}
+\contentsline {subsection}{\numberline {7.4.1}Overview}{232}
+\contentsline {subsection}{\numberline {7.4.2}Model framework assumptions}{233}
+\contentsline {section}{\numberline {7.5}Future work and concluding comments }{235}
+\contentsline {chapter}{\numberline {A}Thesis model code }{241}
+\contentsline {section}{\numberline {A.1}Introduction}{241}
+\contentsline {section}{\numberline {A.2}UML overview }{242}
+\contentsline {section}{\numberline {A.3}Framework outline }{244}
+\contentsline {subsection}{\numberline {A.3.1}Visualisation and interaction}{244}
+\contentsline {subsubsection}{Main visualisation window}{244}
+\contentsline {subsubsection}{Graph visualisation}{245}
+\contentsline {subsection}{\numberline {A.3.2}List of scenarios}{245}
+\contentsline {chapter}{Bibliography}{249}

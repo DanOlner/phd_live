@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="555" viewBox="0 0 900 555">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="900" height="529" fill="#fff"/>
+<path d="M113.19 26.45L113.19 464.4M219.08 26.45L219.08 464.4M324.98 26.45L324.98 464.4M430.87 26.45L430.87 464.4M536.76 26.45L536.76 464.4M99 454.7L561.54 454.7M99 354.19L561.54 354.19M99 253.68L561.54 253.68M99 153.18L561.54 153.18M99 52.67L561.54 52.67" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M99 454.7L561.54 454.7M99 26.45L99 464.4" fill="none" stroke="#000" stroke-width="1"/>
+<text x="113.19" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="219.08" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">10</text>
+<text x="324.98" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">20</text>
+<text x="430.87" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">30</text>
+<text x="536.76" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">40</text>
+<text x="95" y="454.7" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0</text>
+<text x="95" y="354.19" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.1</text>
+<text x="95" y="253.68" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.2</text>
+<text x="95" y="153.18" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.3</text>
+<text x="95" y="52.67" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.4</text>
+<text x="330.27" y="500.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">distance cost</text>
+<text x="0" y="0" transform="translate(51 245.43) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">separation, as a fraction of the line</text>
+<path d="M123.78 255.31L134.37 162.97L166.14 74L219.08 49.91L324.98 77.24L430.87 112.42L536.76 116.49" fill="none" stroke="rgb(0,0,0)" stroke-width="1.6"/>
+<path d="M534.26 116.49a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(0,0,0)"/>
+<path d="M123.78 299.13L134.37 321.91L166.14 373.37L219.08 390.02L324.98 392.91L430.87 381.07L536.76 383.44" fill="none" stroke="rgb(47,47,47)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M534.26 383.44a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(47,47,47)"/>
+<path d="M123.78 436.29L134.37 435.2L166.14 423.08L219.08 370.92L324.98 288.48L430.87 235.59L536.76 242.59" fill="none" stroke="rgb(93,93,93)" stroke-width="1.6"/>
+<path d="M534.26 242.59a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(93,93,93)"/>
+<path d="M123.78 440.94L134.37 439.81L166.14 430.11L219.08 404.64L324.98 391.08L430.87 390.69L536.76 373.55" fill="none" stroke="rgb(140,140,140)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M534.26 373.55a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(140,140,140)"/>
+<text x="566.54" y="116.49" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(0,0,0)">sep, rho 0.99 0.3365</text>
+<text x="566.54" y="395.4" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(47,47,47)">wander, rho 0.99 0.07089</text>
+<text x="566.54" y="242.59" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(93,93,93)">sep, rho 0.1 0.211</text>
+<text x="566.54" y="373.55" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(140,140,140)">wander, rho 0.1 0.08074</text>
+<text x="8" y="547" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#666">d1-distance · Two Firms on a line: separation, and how reliably · 7 points</text>
+</svg>

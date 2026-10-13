@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="555" viewBox="0 0 900 555">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="900" height="529" fill="#fff"/>
+<path d="M113.98 26.45L113.98 464.4M268.42 26.45L268.42 464.4M422.86 26.45L422.86 464.4M99 441.21L522.78 441.21M99 338.16L522.78 338.16M99 235.1L522.78 235.1M99 132.04L522.78 132.04M99 28.99L522.78 28.99" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M99 235.1L522.78 235.1M99 26.45L99 464.4" fill="none" stroke="#000" stroke-width="1"/>
+<text x="113.98" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="268.42" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">200</text>
+<text x="422.86" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">400</text>
+<text x="95" y="441.21" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">-1</text>
+<text x="95" y="338.16" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">-0.5</text>
+<text x="95" y="235.1" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0</text>
+<text x="95" y="132.04" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.5</text>
+<text x="95" y="28.99" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">1</text>
+<text x="310.89" y="500.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">density cost</text>
+<text x="0" y="0" transform="translate(51 245.43) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">correlation, utility, distance</text>
+<path d="M121.7 310.1L133.29 337.12L152.59 362.72L191.2 433.38L268.42 440.94L384.25 440.92L500.08 440.63" fill="none" stroke="rgb(0,0,0)" stroke-width="1.6"/>
+<path d="M497.58 440.63a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(0,0,0)"/>
+<path d="M121.7 49.91L133.29 53.24L152.59 54.24L191.2 53.22L268.42 53.18L384.25 53.21L500.08 53.35" fill="none" stroke="rgb(70,70,70)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M497.58 53.35a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(70,70,70)"/>
+<path d="M121.7 179.71L133.29 158.5L152.59 140.77L191.2 127.42L268.42 124.04L384.25 123.78L500.08 123.05" fill="none" stroke="rgb(140,140,140)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M497.58 123.05a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(140,140,140)"/>
+<text x="527.78" y="440.63" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(0,0,0)">corr(dist, utility) -0.9971</text>
+<text x="527.78" y="53.35" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(70,70,70)">mean utility 0.8818</text>
+<text x="527.78" y="123.05" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(140,140,140)">mean distance 0.5437</text>
+<text x="8" y="547" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#666">c8-density · Density cost against the settlement · 7 points</text>
+</svg>

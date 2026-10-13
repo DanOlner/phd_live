@@ -1,0 +1,7 @@
+<HTML>
+<BODY>
+Input-output package. Data is stored in {@link location1.io.Bucket}s when {@link location1.io.DataStore} hears {@link location1.TimeLine} telling it to; also includes classes for loading data back in and running, for visualising data produced on Grid computing systems.
+</BODY>
+</HTML>
+
+<!--io-->

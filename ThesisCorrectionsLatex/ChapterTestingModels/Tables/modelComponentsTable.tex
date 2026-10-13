@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%
+% Model components table
+%%%%%%%%%%%%%%%%%
+%http://texblog.net/help/latex/ltx-68.html
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[!hbt]
+\begin{center}
+
+%\begin{tabular*}{0.8\textwidth}{|l|l|}
+\begin{tabular}{|l|l|}
+\hline 
+\textbf{Component} & \textbf{Description}\\
+\hline
+Run type & How many `days'? Are parameter sweep runs used?\\
+\hline
+Actor type & 1. `People' and `Firms'\\
+& 2. Just one actor-type, `People'\\
+\hline
+Actor number & Number and reason for use\\
+\hline
+Actor action & e.g. find best wage, best good price, maximise net income\\
+& Relates closely to -\\
+\hline
+Timing &
+When do actors act? What decision structure?\\
+\hline
+Space-type &
+Dimension: point, region, line ($R^1$) or plane ($R^2$)\\
+& If $R^1$ or $R^2$, does space 'wrap?' (Racetrack or torus.)\\
+& Size\\
+\hline
+Actor location & Initial location e.g. random, circle, line\\
+&move type: static or mobile\\
+\hline
+Space costs & On goods and/or wage over distance?\\
+\hline
+Values & Parameters: fixed in single model runs but may change between runs\\
+& Variables: will vary during model runs\\
+& Constants: fixed at all times\\
+\hline
+Utility form & Cobb Douglas or CES.\\
+\hline
+Production form & \gls{eos}? Can also be `none' of e.g. stock levels do not matter.\\
+\hline
+
+%Final: fixed for all model runs\\
+%& Static: fixed within a model run, can change between them (e.g. parameter sweep)\\
+%%& Variable: can change in one model run\\
+%& Flow: an excludable and rivalrous quantity e.g. stock or money\\
+%& Wage: fixed, set by firms or negotiated between actors?\\
+%& Good cost: fixed, set by firms or negotiated between actors?\\
+
+\end{tabular}
+
+\caption{List of model components \label{tab:components}}
+\end{center}
+\end{table}

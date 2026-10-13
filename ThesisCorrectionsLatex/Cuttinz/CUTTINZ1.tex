@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%
+% CUTTINZ
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Getting space into utility and production functions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\subsection{Getting space into utility and production functions \label{sec:spacenutility}}
+
+Consider a typical actor and firm, each with a generic function specifying their utility and output:
+
+\begin{itemize}
+\item Person: $u=f(x,y)$
+\item Firm: $x=f(i,j)$
+\end{itemize}
+
+In this example, people get utility from a mix of two goods, while a firm's output depends also on a mix of two different goods. Space is, at present, absent. How should it be introduced? Two ways will be discussed here: externalities and direct costs, starting with the latter.
+
+%Where am I going to be discussing externalities? Probably not here - let's stick to direct costs for now. The odd thing: though it must be obvious, and someone must have done it, I can't find anything that explicitly deals with factors that can be productive as well as movement-buying.
+In the models presented here, actors must 'buy movement', whether for themselves or some good they want to transport. This is where direct space costs enter. As discussed in section \ref{sec:spacechange}, any factor that can be used to `buy movement' will be labelled an \gls{mbf}: units of distance can be bought with it. Depending on the type of actor, specific \gls{mbf}s \emph{must} be spent to cover distance. The most obvious \gls{mbf} is time: it takes a certain quantity of time to cover a given distance. For the sake of readability, `units of distance' will be referred to as `miles': these are entirely abstract, and are used purely to make description more readable (`miles per day' rather than `distance units per day'.) A factor can be an \gls{mbf} as well as a standard productive factor entering into a firm's production function. Again, time fits this description: where actors are not putting time into moving, they can put it into production. Often, economic models use the term `labour' to refer to this productive factor; in the core model, it is the only factor. In more detail:
+
+\begin{itemize}
+\item For each model day, each actor is given $t=1$ to spend: in other words, they have `one day per day' and will aim to make optimum use of it. (See note below for more on this.)
+\item A given distance between $r$ and $s$ will be labelled $rs$. The time is takes to cover it is $t_{rs}$. So, generically, $t_{rs}=f(rs,tech)$, where $tech$ is some technology that has an impact on the time taken. For many of the models, time to cover a given distance will be a function of the distance alone. However, the generic factor $tech$ here indicates that the amount of time to cover a distance may change. 
+\item $tech$'s role in this function is separate from its cost. For example, if $t{}_{rs}=rs/tech$, the time taken to travel between $r$ and $s$ goes down as the level of $tech$ increases. It says nothing about $tech$'s cost. Indeed, from the point of view of actors, it could be free and ubiquitous.
+\end{itemize}
+
+A quick note on `time as factor' versus `time as iteration'. The first - as a factor used for movement and production - has just been discussed. The second relates to model time. Each model iteration can be considered a `day'. The model gives the appropriate actors a `day' (time as a factor) per iteration to spend. When discussing how the time order of actor decision-making affectes outcomes, however, iteration time will be the focus, not time as a factor. It will be obvious from the context which is being discussed.
+\cmt{time-as-factor vs time-as-iteration: different notation for the two of them?}
+
+%Note, there will also be externalities and, say, density costs (which I think I'm going to argue is a form of externality that works in continuous space.)
+To summarise: the time it takes to cover a distance between two points is a function of the distance itself, plus some other defined tech factor or factors. Direct space costs enter into utility and production functions via \gls{mbf}s. Note that no other \gls{mbf} enters into time's movement-cost function. If another \gls{mbf} is defined - for example, fuel - it will have its own movement-cost function.  Next, the way they enter into firm production will be discussed, followed by actors' utility. 
+
+%========
+% MBFs in prod functions
+%========
+A basic firm production function can be simply defined to include time as a productive factor (say $x=f(t,j)$). Indirectly, this brings space into a firm's production function, but only via the choices of people optimising their time use. It is also possible that other \gls{mbf}s may enter into their production function. Consider a generic, non-time \gls{mbf} - $mbf_{1}$, say - which could be a fuel, some source of energy or just a generic `transport cost'. As with time, $mbf_{1}$ can be used to buy both space and productive output. The primary reason firms need to `buy movement' is to ship goods. If $j$ is included again as a third productive factor, this new generic production function would be:
+
+\begin{equation}
+x=f(t, mbf_{1}, j)
+\end{equation}
+
+The primary reason for including $j$ is this: it provides one way for space costs to change as a proportion of overall production costs - that is, to model the drop in transport costs described in section \ref{sec:spacechange}. Note that other approaches, such as using an `iceberg' transport cost, can be used, but keeping other inputs in allows explicit consideration of the impact that lowering non-transport costs may have. The firm's output is a function of time input from workers, and two other generic factors, one other of which is also an \gls{mbf}. 
+
+This, then, is how space costs enter into a firm's production function: through the indirect effects of people optimising their time use, and the cost of transporting their own goods. Note, this does not define how the space cost of $mbf_{1}$ enters into the firm's cost: this will be discussed later. It also has not defined the cost of those inputs: a full description would need to include these. The goal now has been to illustrate some basic points:
+
+\begin{itemize}
+\item A firm's production function can be dependent on one or more \gls{mbf}s, and one of these is time input from workers.
+\item At least one other input is required if the most prominent empirical stylized fact about firm production and space is to be included - that space costs as a percentage of overall costs can change.
+\item The above are `raw' production functions; the exact way a firm pays for transport goods, or its productive factors, is yet to be defined.
+\end{itemize}
+
+%========
+% MBFs in utility
+%========
+Moving onto people: time does not enter directly into a utility function; rather, time is peoples' ultimate budget. They have `one day per day' to spend, and they want to maximise it. It can be spent on space as an \gls{mbf}, on production in their own backyard, or put into firms or collaborators in exchange for either goods or money.
+A utility function could be defined to include the generic $mbf_{1}$; the real world corollary might be that people gain utility from household fuel use. However, such direct space costs are not so obviously relevant in a standard utility function; it is less likely that an \gls{mbf} would directly be included as a utility-producing good in this way. So there is a little work to be done to explain how direct space costs enter into utility. 
+
+%====================
+
+Consider a generic utility function with two goods: $u=f(x,y)$.  The `budget' a person has to work with is, at base, one day or $t=1$. However, $t$ needs converting into goods $x$ and $y$. Depending on the model, matters are complicated because $t$ can be converted into either goods or money first - via a wage - and then to goods.
+
+Backyard production is linear: time can be converted directly into goods. In this case, $t$ is literally the budget: $u$ can be maximised with a budget of $x+y=t=1$. Space does not enter into this decision at present: by definition, backyard production means staying put. But what about working? 
+
+%Compare two examples, the simplest and one of the most involved models. In the simplest backyard model, people can decide to contribute their time to collaborators, and they are able to know instantly if that choice... well, I was writing that up, but we're writing about two goods here, not one.
+The most complicated set of steps a person will have to take involves earning a money wage and then seeking to buy goods with that wage. People know nothing about any firm's productivity. They only know the wages and goods prices they find, and their own utility function. So a person cannot know what quantity of goods they can get without first knowing a wage and goods prices.  
+
+\subsubsection{Bringing space in \label{sec:bringspacein}}
+
+How do people optimise their space use? They are able to search around them to find the best wage and best prices, accounting for distance to potential work places. Consider a person, labelled $a$, who is looking for a firm $f$ offering the best wage (exactly what `best wage' means will be explained below.) Actors all have location, so the distance between them is - as outlined above - just labelled $af$. The time taken to commute can now be found. In most models here, a `commute' is taken to be twice $af$. The upper distance limit on whether a firm enters into $a$'s considerations has to be less than $a$'s one available day in total - half a day there, half back - otherwise there is no time left at all to contribute to production. So $f$ can only be a maximum of half a day away. If $c_{af}$ is the commute time between them then -
+
+\[
+c_{af}=2*t_{af}\]
+
+The set of potential employers for a person is thus immediately limited by commute distance. This set of potential employers is labelled as $PE_{a}=\{f_{n}...\}$ It can contain any number of firms within commute range. The set of firms is just  $F=\{f_{1},f_{2},...,f_{n}\}$ So, $p$ uses the following to populate $PE_{a}$:
+
+\[
+for\, each\, f_{n}\in F\]
+
+\[
+if(c_{af(n)}<1)\, then\, f_{n}\in PE_{a}\label{eq:circlerule}\]
+
+Which translates as: unless the time it takes for $a$ to get to $f_{n}$ and back again (the commute distance) is more than one, add it to my set of potential employers. This guarantees there is time left for working, and $a$ can then use it to see if working is worthwhile. 
+
+\cmt{write up details of backyard collaboration production} 
+So what counts as a `best wage?' This varies between model types, but what all models share is that people's wage will be proportional to the time they can contribute. In the simplest, the `wage' is a single good: the direct product of $a$'s contributed labour. The amount of labour they have available for contributing is, of course, just their own time (usually one day, $t_{a}=1$) minus commute time. To distinguish this labour, it will be labelled $l_{a}$ here, though note it is still just raw time. The selection criteria above guarantees this will never be less than zero:
+
+\[
+l_{a}=t_{a}-c_{af},\; 0<l_{a}<1\]
+
+The wage offered by firms or collaborators is `the amount paid for 1 day's input'; for $f$, label it $W_{f}$. So $a$'s actual wage is:
+
+\[
+w_{a}=W_{f}*l_{a}\]
+
+Whether paid in raw goods or money, what this means is that, for the set of potential employers, $PE_{a}$, there is always one objectively best wage, since distance cost has been accounted for. 
+
+If $w_{a}$ is money-based or the economy has more than one good, $a$ will then want to spend it on an optimum mix of goods. In contrast to the \gls{coremodel}, where the diversity of goods is subsumed under a single CES function (see sections \ref{sec:CESbasics} and \ref{sec:keyconcepts_coremodel}), disaggregated actors will be faced with a range of goods prices and available quantities. An explanation of the particular way this is dealt with is in chapter \ref{chapter:models}; here, instead, the focus is on explaining how this choice enters into peoples' utility. Sticking with the two-good example developed so far, $a$ will want to spend all their wage: 
+
+\begin{equation}
+w_{a} \geq p_{x}x+p_{y}y \label{eq:wagenprices}
+\end{equation}
+
+That is, the wage must be able to cover the desired quantities times their price. (Why `more than or equal to?' Generally, a person will attempt to spend the whole wage, but as explained below, there may be situations where this is not possible.) Where is the space here, however? The movement of goods is not free. The cost of a good from the point of view of a person will vary depending on how close they are to the seller. However, if the price of a good is only described as $p_{x}$, that fact is not actually visible in the buyer's function.
+
+%I can put it there, but then where am I going with all this? The point I was trying to get to was being able to show how space actually affected outcomes, but how will that work? Well, it only needs to be there if we need to illustrate the effect. 
+Of course, it could be left that way: space is then only implicit and, from the point of view of $a$ is just another cost. Certainly, that is how the models deal with good cost: the spatial element does not directly enter into actors' considerations, only the cost itself. However, it is useful to be able to analyse how those implicit space costs ultimately affect actors' choices, and that requires stating them explicitly.
+
+The easiest solution, used in the backyard models in section \ref{sec:backyard}, is for goods to incur no space cost. In these models, actors acquire the produce of their labour directly from the site they commute to. The good itself, then, does have an explicit location - its site of production - but its space cost is already accounted for in actors' commute calculations. As soon as more than one variety is being produced, however, that approach is less feasible. Three options are outlined here. (Note that they are framed in terms of `actors': this is because intermediates may be purchased by other firms, as well as final goods by people.)
+%Should note: even with one-good, in theory, other sites should be able to charge a lower price. Realistically, not going to happen though.
+
+\begin{enumerate}
+	\item Actors must `go to' the sites of production for all goods they require, thus incurring direct movement costs themselves, as people do for commuting.
+	\item Apply a space cost to produced goods, calculated from the site of production to the buyer. In searching, actors get a list of the total cost of the goods, which is some function of the firm's price and space cost. From the point of view of people, then, this looks a lot like \gls{ge}'s iceberg transport costs (see section \ref{sec:keyconcepts_coremodel}), though there are complications - see below.
+	\item Allow firms to `move' goods to explicit locations other than their own site of production. From those spots, people can then implement either of the two above acquisition strategies. 
+\end{enumerate}
+%The intuition with that last one: firms should end up self-organising market sites so that people can reduce their space costs while maximising their love of variety.
+
+For options two and three, then, goods will incur space costs. Option three, where firms move goods to another site, firms themselves incur that cost. People may or may not do so, depending on if they `go to' the site of sale, thus incurring a space cost directly. To take one example of how goods space-cost might be calculated from later model runs: a good $x$ incurs a space cost proportional to its price, per `mile', labelled $sc_{x}$. As with `iceberg' transport costs, if $sc_{x} = 1$, there are no space costs. It is delivered between $rs$. Its total `delivery cost' $p_{x(rs)}$ is then just -
+
+\[
+p_{x(rs)} = p_{x}x * sc_{x} * rs
+\]
+
+
+\cmt{That's currently wrong; it's not total delivery cost. If it was, its price would become zero if sent to its own location. I need to frame it exactly as I do in the model: adding this cost to the already existing unit cost. That's messier, though, for simple analysis.}
+Equation \eqref{eq:wagenprices} can then be re-stated to explicitly include space (here $uv$ is distance $y$ has to be moved):
+
+\begin{equation}
+w_{p} \geq (p_{x}x * sc_{x} * rs) + (p_{y}y * sc_{y} * uv) \label{eq:wagenprices2}
+\end{equation}
+
+%From the point of view of the firm: problems. Define firm's revenue function; where does delivery cost money go? How is that theorised? So far I've cheated.
+
+\cmt{actually at the moment, the only price-inclusive constraints are in the two-good model building writeup. Need to put one in the utility section.}
+It is easy to see now how an argument can be made that space is nothing more than another cost, and does not need considering separately. If actors are price-takers, then all values in \eqref{eq:wagenprices2} are constants, apart from $rs$ and $uv$. This leaves a budget constraint functionally identical to that used to constrain the two-good utility functions in section \ref{sec:utilityintro}. 
+\end{comment}
+

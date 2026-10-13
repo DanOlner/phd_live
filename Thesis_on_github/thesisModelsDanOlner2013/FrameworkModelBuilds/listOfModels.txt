@@ -1,0 +1,20 @@
+This folder contains runnable versions of a selection of models from the thesis. The sections they relate to in the thesis are referenced. They should run by double-clicking the *.jar files in each folder. If this does not work, the command line can be used. Navigate to the `scenarios’ folder, and use: java -jar "<filename>.jar"
+
+MonoCentricDensity (section 5.4.7: "Spatial equilibria are not always utility equilibria"): Starts with density cost = 100, at the point where two bands of utility indifference emerge. Two correlation graphs show density and utility versus distance from centre. 
+
+TwoFirmsLineMove2000dayAverage (section 5.5.1: "Two Firms optimising location on a line"): Two firms on a 1d line of length one compete for demand by moving location only. Fifty People spread evenly along the line from $0$ to $1$. Means taken over $2000$ timesteps for Firm position and People's demand. White arrows shows Firms' mean location; white bars show one standard deviation each side of this; thin black vertical lines show actual positions taken by Firm over previous $2000$ timesteps. Timestep value to average over can be changed via the config file "Hotelling_Line_DMR.properties" in the `configs' folder.
+
+`SymmetryBreak' (section 6.4: "Introducing space into the transmission model") folder contains the following two jars:
+
+SymmetryBreakParameterSweep: Greyed out correlation graph will fill with datapoints as the model sweeps up rho and delivery costs in turn. Main visualisation window blocks: Firms' time input from People.
+
+SymmetryBreakParameterSweepFast: after 500 days, model run speeds up to show full range of transitions quickly and the way each Firm reacts. Main visualisation window blocks: Firms' time input from People.
+
+Other folders for chapter 6 models:
+
+ManyAgentsLineTransmissionBelt (section 6.4.1: "Space and welfare outcomes in a many-agent model"): line of 19 firms/people set at point that transition to a single more-efficient producer will emerge. Mouse is linked to rho (left button) and distance costs (right button). Increase distance costs to return the model to the spread equilibrium. Increasing rho (increasing substitutability of goods) will in turn allow efficient production to re-emerge. At higher distance costs, more than one efficient producer will emerge.
+
+TransmissionBeltPlusDensity (section 6.4.2: "Combining the transmission belt model with density cost"): Two firms a distance of 1 apart, 300 people. If rho is raised (left-mouse click and drag up) at  ~rho=0.9, transition to single more-efficient producer takes place, People move, create settlement there, buy in from further firm.
+
+
+TwoRegionFourFirmsTransmissionBelt (section 6.4: "introducing space into the transmission belt model"): discrete two region model with two Firms per region. For values of rho and distance cost (attached to mousebutton 1 and 2) four different production regime types emerge (see section 6.4).

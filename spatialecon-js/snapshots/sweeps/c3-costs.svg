@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="555" viewBox="0 0 900 555">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="900" height="529" fill="#fff"/>
+<path d="M125.86 26.45L125.86 464.4M349.65 26.45L349.65 464.4M573.44 26.45L573.44 464.4M99 390.53L600.3 390.53M99 262.83L600.3 262.83M99 135.13L600.3 135.13" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M99 464.4L600.3 464.4M99 26.45L99 464.4" fill="none" stroke="#000" stroke-width="1"/>
+<text x="125.86" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="349.65" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0.5</text>
+<text x="573.44" y="468.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">1</text>
+<text x="95" y="390.53" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.2</text>
+<text x="95" y="262.83" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.4</text>
+<text x="95" y="135.13" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0.6</text>
+<text x="349.65" y="500.4" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">each cost across its own range, normalised</text>
+<text x="0" y="0" transform="translate(51 245.43) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">mean distance from the centre</text>
+<path d="M125.86 250.86L181.8 263.95L237.75 291.04L293.7 314.55L349.65 331.93L405.6 343.1L461.55 352.29L517.5 361.15L573.44 367.66" fill="none" stroke="rgb(0,0,0)" stroke-width="1.6"/>
+<path d="M570.94 367.66a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(0,0,0)"/>
+<path d="M125.86 440.94L181.8 399.33L237.75 375.07L293.7 359.01L349.65 344.3L405.6 333.35L461.55 323.6L517.5 315.38L573.44 306.72" fill="none" stroke="rgb(47,47,47)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M570.94 306.72a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(47,47,47)"/>
+<path d="M125.86 346.47L181.8 367.66L237.75 382.01L293.7 392.77L349.65 400.6L405.6 406.84L461.55 411.17L517.5 417.26L573.44 419.5" fill="none" stroke="rgb(93,93,93)" stroke-width="1.6"/>
+<path d="M570.94 419.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(93,93,93)"/>
+<path d="M125.86 49.91L181.8 306.72L237.75 346.47L293.7 365.37L349.65 378.53L405.6 387.9L461.55 396.28L517.5 400.36L573.44 404.04" fill="none" stroke="rgb(140,140,140)" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M570.94 404.04a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" fill="rgb(140,140,140)"/>
+<text x="605.3" y="367.66" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(0,0,0)">wage 0.2358</text>
+<text x="605.3" y="306.72" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(47,47,47)">base good cost 0.3313</text>
+<text x="605.3" y="425.89" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(93,93,93)">commute 0.1546</text>
+<text x="605.3" y="404.04" font-family="ui-monospace, Menlo, monospace" font-size="19" text-anchor="start" dominant-baseline="middle" fill="rgb(140,140,140)">goods distance 0.1788</text>
+<text x="8" y="547" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#666">c3-costs · Spatial against non-spatial costs · 9 points</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="200" viewBox="0 0 340 200">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="340" height="200" fill="#fff"/>
+<path d="M41 14L41 169M99 14L99 169M156 14L156 169M214 14L214 169M272 14L272 169M330 14L330 169M41 159L330 159M41 101L330 101M41 44L330 44" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M41 159L330 159M41 14L41 169" fill="none" stroke="#000" stroke-width="1"/>
+<text x="41" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="99" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">20</text>
+<text x="156" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">40</text>
+<text x="214" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">60</text>
+<text x="272" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">80</text>
+<text x="330" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">100</text>
+<text x="37" y="159" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">0</text>
+<text x="37" y="101" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">100</text>
+<text x="37" y="44" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">200</text>
+<text x="185" y="191" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#000">agents, richest first</text>
+<text x="0" y="0" transform="translate(12 92) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#000">units held</text>
+<rect x="41" y="25" width="2" height="145" fill="rgb(0,0,0)"/>
+<rect x="44" y="29" width="2" height="141" fill="rgb(6,6,6)"/>
+<rect x="47" y="30" width="2" height="140" fill="rgb(8,8,8)"/>
+<rect x="50" y="41" width="2" height="129" fill="rgb(24,24,24)"/>
+<rect x="53" y="44" width="2" height="125" fill="rgb(29,29,29)"/>
+<rect x="55" y="50" width="2" height="119" fill="rgb(38,38,38)"/>
+<rect x="58" y="50" width="2" height="119" fill="rgb(38,38,38)"/>
+<rect x="61" y="53" width="2" height="116" fill="rgb(43,43,43)"/>
+<rect x="64" y="54" width="2" height="115" fill="rgb(44,44,44)"/>
+<rect x="67" y="57" width="2" height="113" fill="rgb(48,48,48)"/>
+<rect x="70" y="61" width="2" height="108" fill="rgb(55,55,55)"/>
+<rect x="73" y="63" width="2" height="106" fill="rgb(57,57,57)"/>
+<rect x="76" y="63" width="2" height="106" fill="rgb(57,57,57)"/>
+<rect x="79" y="65" width="2" height="105" fill="rgb(60,60,60)"/>
+<rect x="81" y="68" width="2" height="101" fill="rgb(65,65,65)"/>
+<rect x="84" y="69" width="2" height="100" fill="rgb(67,67,67)"/>
+<rect x="87" y="71" width="2" height="99" fill="rgb(68,68,68)"/>
+<rect x="90" y="71" width="2" height="98" fill="rgb(69,69,69)"/>
+<rect x="93" y="73" width="2" height="97" fill="rgb(72,72,72)"/>
+<rect x="96" y="73" width="2" height="97" fill="rgb(72,72,72)"/>
+<rect x="99" y="73" width="2" height="96" fill="rgb(73,73,73)"/>
+<rect x="102" y="73" width="2" height="96" fill="rgb(73,73,73)"/>
+<rect x="105" y="73" width="2" height="96" fill="rgb(73,73,73)"/>
+<rect x="107" y="74" width="2" height="95" fill="rgb(74,74,74)"/>
+<rect x="110" y="76" width="2" height="93" fill="rgb(77,77,77)"/>
+<rect x="113" y="78" width="2" height="91" fill="rgb(79,79,79)"/>
+<rect x="116" y="79" width="2" height="91" fill="rgb(80,80,80)"/>
+<rect x="119" y="80" width="2" height="89" fill="rgb(83,83,83)"/>
+<rect x="122" y="80" width="2" height="89" fill="rgb(83,83,83)"/>
+<rect x="125" y="81" width="2" height="88" fill="rgb(85,85,85)"/>
+<rect x="128" y="82" width="2" height="87" fill="rgb(85,85,85)"/>
+<rect x="131" y="83" width="2" height="86" fill="rgb(87,87,87)"/>
+<rect x="133" y="88" width="2" height="82" fill="rgb(94,94,94)"/>
+<rect x="136" y="88" width="2" height="82" fill="rgb(94,94,94)"/>
+<rect x="139" y="88" width="2" height="81" fill="rgb(95,95,95)"/>
+<rect x="142" y="89" width="2" height="81" fill="rgb(96,96,96)"/>
+<rect x="145" y="89" width="2" height="80" fill="rgb(97,97,97)"/>
+<rect x="148" y="90" width="2" height="79" fill="rgb(97,97,97)"/>
+<rect x="151" y="91" width="2" height="79" fill="rgb(98,98,98)"/>
+<rect x="154" y="92" width="2" height="77" fill="rgb(101,101,101)"/>
+<rect x="157" y="94" width="2" height="75" fill="rgb(103,103,103)"/>
+<rect x="159" y="95" width="2" height="75" fill="rgb(104,104,104)"/>
+<rect x="162" y="95" width="2" height="74" fill="rgb(105,105,105)"/>
+<rect x="165" y="96" width="2" height="74" fill="rgb(106,106,106)"/>
+<rect x="168" y="97" width="2" height="73" fill="rgb(108,108,108)"/>
+<rect x="171" y="97" width="2" height="72" fill="rgb(109,109,109)"/>
+<rect x="174" y="99" width="2" height="71" fill="rgb(110,110,110)"/>
+<rect x="177" y="99" width="2" height="71" fill="rgb(110,110,110)"/>
+<rect x="180" y="99" width="2" height="71" fill="rgb(110,110,110)"/>
+<rect x="183" y="101" width="2" height="68" fill="rgb(115,115,115)"/>
+<rect x="186" y="101" width="2" height="68" fill="rgb(115,115,115)"/>
+<rect x="188" y="102" width="2" height="67" fill="rgb(115,115,115)"/>
+<rect x="191" y="103" width="2" height="66" fill="rgb(117,117,117)"/>
+<rect x="194" y="104" width="2" height="66" fill="rgb(118,118,118)"/>
+<rect x="197" y="104" width="2" height="65" fill="rgb(119,119,119)"/>
+<rect x="200" y="104" width="2" height="65" fill="rgb(119,119,119)"/>
+<rect x="203" y="105" width="2" height="64" fill="rgb(121,121,121)"/>
+<rect x="206" y="107" width="2" height="62" fill="rgb(123,123,123)"/>
+<rect x="209" y="107" width="2" height="62" fill="rgb(123,123,123)"/>
+<rect x="212" y="108" width="2" height="61" fill="rgb(125,125,125)"/>
+<rect x="214" y="108" width="2" height="61" fill="rgb(125,125,125)"/>
+<rect x="217" y="111" width="2" height="59" fill="rgb(128,128,128)"/>
+<rect x="220" y="111" width="2" height="58" fill="rgb(129,129,129)"/>
+<rect x="223" y="113" width="2" height="57" fill="rgb(132,132,132)"/>
+<rect x="226" y="113" width="2" height="57" fill="rgb(132,132,132)"/>
+<rect x="229" y="114" width="2" height="55" fill="rgb(133,133,133)"/>
+<rect x="232" y="118" width="2" height="51" fill="rgb(139,139,139)"/>
+<rect x="235" y="119" width="2" height="51" fill="rgb(140,140,140)"/>
+<rect x="238" y="121" width="2" height="48" fill="rgb(144,144,144)"/>
+<rect x="240" y="122" width="2" height="47" fill="rgb(145,145,145)"/>
+<rect x="243" y="123" width="2" height="46" fill="rgb(147,147,147)"/>
+<rect x="246" y="124" width="2" height="45" fill="rgb(149,149,149)"/>
+<rect x="249" y="125" width="2" height="44" fill="rgb(150,150,150)"/>
+<rect x="252" y="125" width="2" height="44" fill="rgb(150,150,150)"/>
+<rect x="255" y="125" width="2" height="44" fill="rgb(150,150,150)"/>
+<rect x="258" y="127" width="2" height="43" fill="rgb(152,152,152)"/>
+<rect x="261" y="128" width="2" height="42" fill="rgb(154,154,154)"/>
+<rect x="264" y="129" width="2" height="40" fill="rgb(156,156,156)"/>
+<rect x="266" y="131" width="2" height="39" fill="rgb(158,158,158)"/>
+<rect x="269" y="131" width="2" height="38" fill="rgb(159,159,159)"/>
+<rect x="272" y="133" width="2" height="36" fill="rgb(162,162,162)"/>
+<rect x="275" y="136" width="2" height="34" fill="rgb(166,166,166)"/>
+<rect x="278" y="136" width="2" height="33" fill="rgb(167,167,167)"/>
+<rect x="281" y="139" width="2" height="30" fill="rgb(171,171,171)"/>
+<rect x="284" y="140" width="2" height="29" fill="rgb(173,173,173)"/>
+<rect x="287" y="145" width="2" height="24" fill="rgb(179,179,179)"/>
+<rect x="290" y="146" width="2" height="24" fill="rgb(180,180,180)"/>
+<rect x="292" y="146" width="2" height="24" fill="rgb(180,180,180)"/>
+<rect x="295" y="148" width="2" height="22" fill="rgb(184,184,184)"/>
+<rect x="298" y="148" width="2" height="22" fill="rgb(184,184,184)"/>
+<rect x="301" y="148" width="2" height="21" fill="rgb(185,185,185)"/>
+<rect x="304" y="149" width="2" height="20" fill="rgb(185,185,185)"/>
+<rect x="307" y="150" width="2" height="19" fill="rgb(187,187,187)"/>
+<rect x="310" y="152" width="2" height="17" fill="rgb(191,191,191)"/>
+<rect x="313" y="153" width="2" height="16" fill="rgb(191,191,191)"/>
+<rect x="316" y="154" width="2" height="16" fill="rgb(192,192,192)"/>
+<rect x="318" y="154" width="2" height="15" fill="rgb(193,193,193)"/>
+<rect x="321" y="155" width="2" height="15" fill="rgb(194,194,194)"/>
+<rect x="324" y="158" width="2" height="11" fill="rgb(199,199,199)"/>
+<rect x="327" y="158" width="2" height="11" fill="rgb(199,199,199)"/>
+<text x="330" y="16" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#000">Gini 0.326</text>
+<text x="330" y="28" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#000">richest 234</text>
+<text x="330" y="39" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#000">top tenth holds 20.2%</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="213" viewBox="0 0 340 213">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="340" height="213" fill="#fff"/>
+<path d="M44 26L44 182M101 26L101 182M158 26L158 182M216 26L216 182M273 26L273 182M330 26L330 182M44 181L330 181M44 143L330 143M44 105L330 105M44 67L330 67M44 29L330 29" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M44 182L330 182M44 26L44 182" fill="none" stroke="#000" stroke-width="1"/>
+<text x="44" y="186" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="101" y="186" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">0.2</text>
+<text x="158" y="186" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">0.4</text>
+<text x="216" y="186" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">0.6</text>
+<text x="273" y="186" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">0.8</text>
+<text x="330" y="186" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#444">1</text>
+<text x="40" y="181" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">0.96</text>
+<text x="40" y="143" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">0.98</text>
+<text x="40" y="105" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">1</text>
+<text x="40" y="67" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">1.02</text>
+<text x="40" y="29" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="end" dominant-baseline="middle" fill="#444">1.04</text>
+<text x="187" y="204" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#000">lambda (share of manufacturing in region 1)</text>
+<text x="0" y="0" transform="translate(15 104) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="middle" dominant-baseline="middle" fill="#000">real wage ratio w1 / w2</text>
+<path d="M44 105L330 105" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="6 4"/>
+<path d="M44 167L45 165L46 163L46 161L47 159L48 157L48 155L49 153L50 151L51 149L51 147L52 146L53 144L53 142L54 140L55 139L56 137L56 135L57 133L58 132L58 130L59 128L60 127L61 125L61 124L62 122L63 120L63 119L64 117L65 116L66 114L66 113L67 111L68 110L68 108L69 107L70 106L71 104L71 103L72 101L73 100L73 99L74 97L75 96L76 95L76 93L77 92L78 91L78 90L79 88L80 87L81 86L81 85L82 84L83 83L83 81L84 80L85 79L86 78L86 77L87 76L88 75L88 74L89 73L90 72L91 71L91 70L92 69L93 68L93 67L94 66L95 65L96 64L96 63L97 62L98 62L98 61L99 60L100 59L101 58L102 57L103 56L103 55L104 55L105 54L106 53L107 52L108 51L109 50L110 50L111 49L112 48L113 48L113 47L114 47L115 46L116 46L116 45L117 45L118 44L119 44L120 43L121 43L122 43L123 42L124 42L125 42L126 41L127 41L128 41L129 41L130 41L131 41L132 41L133 41L134 41L135 41L136 41L137 41L138 42L139 42L140 42L141 42L141 43L142 43L143 43L143 44L144 44L145 45L146 45L147 46L148 46L148 47L149 47L150 48L151 49L152 50L153 51L154 52L155 53L156 53L156 54L157 55L158 56L158 57L159 58L160 58L161 59L161 60L162 61L163 62L163 63L164 64L165 65L166 66L166 67L167 69L168 70L168 71L169 72L170 73L171 74L171 76L172 77L173 78L173 79L174 81L175 82L176 83L176 84L177 86L178 87L178 88L179 90L180 91L181 93L181 94L182 95L183 97L183 98L184 99L185 101L186 102L186 104L187 105L188 106L188 108L189 109L190 111L191 112L191 113L192 115L193 116L193 117L194 119L195 120L196 121L196 123L197 124L198 125L198 127L199 128L200 129L201 130L201 132L202 133L203 134L203 135L204 136L205 138L206 139L206 140L207 141L208 142L208 143L209 144L210 145L211 146L211 147L212 148L213 149L213 150L214 151L215 151L216 152L216 153L217 154L218 155L219 156L220 157L221 157L221 158L222 159L223 159L223 160L224 160L225 161L226 161L226 162L227 162L228 163L229 164L230 164L231 164L231 165L232 165L233 165L233 166L234 166L235 166L236 166L237 167L238 167L239 167L240 167L241 167L242 167L243 167L244 167L245 167L246 167L247 167L248 167L249 166L250 166L251 166L252 166L253 165L254 165L255 164L256 164L257 163L258 163L259 162L260 162L261 161L262 160L263 160L263 159L264 159L265 158L266 158L266 157L267 157L268 156L268 155L269 155L270 154L271 153L272 152L273 151L274 150L275 149L276 148L276 147L277 147L278 146L278 145L279 144L280 143L281 142L281 141L282 141L283 140L283 139L284 138L285 137L286 136L286 135L287 134L288 133L288 132L289 131L290 129L291 128L291 127L292 126L293 125L293 124L294 123L295 121L296 120L296 119L297 118L298 117L298 115L299 114L300 113L301 111L301 110L302 109L303 107L303 106L304 105L305 103L306 102L306 100L307 99L308 97L308 96L309 94L310 93L311 91L311 90L312 88L313 86L313 85L314 83L315 81L316 80L316 78L317 76L318 74L318 73L319 71L320 69L321 67L321 65L322 64L323 62L323 60L324 58L325 56L326 54L326 52L327 50L328 48L328 46L329 44" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M40 24L48 21L48 27Z" fill="#666"/>
+<path d="M54 24L62 21L62 27Z" fill="#666"/>
+<path d="M77 24L69 21L69 27Z" fill="#666"/>
+<path d="M91 24L83 21L83 27Z" fill="#666"/>
+<path d="M105 24L97 21L97 27Z" fill="#666"/>
+<path d="M120 24L112 21L112 27Z" fill="#666"/>
+<path d="M134 24L126 21L126 27Z" fill="#666"/>
+<path d="M148 24L140 21L140 27Z" fill="#666"/>
+<path d="M162 24L154 21L154 27Z" fill="#666"/>
+<path d="M177 24L169 21L169 27Z" fill="#666"/>
+<path d="M183 24L191 21L191 27Z" fill="#666"/>
+<path d="M197 24L205 21L205 27Z" fill="#666"/>
+<path d="M212 24L220 21L220 27Z" fill="#666"/>
+<path d="M226 24L234 21L234 27Z" fill="#666"/>
+<path d="M240 24L248 21L248 27Z" fill="#666"/>
+<path d="M254 24L262 21L262 27Z" fill="#666"/>
+<path d="M269 24L277 21L277 27Z" fill="#666"/>
+<path d="M283 24L291 21L291 27Z" fill="#666"/>
+<path d="M297 24L305 21L305 27Z" fill="#666"/>
+<path d="M320 24L312 21L312 27Z" fill="#666"/>
+<path d="M334 24L326 21L326 27Z" fill="#666"/>
+<path d="M65 105a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" fill="#fff"/>
+<path d="M65 105a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M181 105a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" fill="#000"/>
+<path d="M298 105a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" fill="#fff"/>
+<path d="M298 105a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" fill="none" stroke="#000" stroke-width="2"/>
+<text x="49" y="150" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="start" dominant-baseline="middle" fill="#000">T = 2.25   e = 5</text>
+<text x="49" y="162" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="start" dominant-baseline="middle" fill="#000">3 interior equilibria, 1 stable</text>
+<text x="49" y="173" font-family="ui-monospace, Menlo, monospace" font-size="9" text-anchor="start" dominant-baseline="middle" fill="#000">plus the corners at 0 and 1</text>
+</svg>

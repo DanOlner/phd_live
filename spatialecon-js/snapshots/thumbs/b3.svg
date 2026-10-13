@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="340" height="340" fill="#fff"/>
+<rect x="83" y="27" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="83" y="27" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="79" y="28" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="79" y="28" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="80" y="30" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="80" y="30" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="79" y="30" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="79" y="30" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="81" y="32" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="81" y="32" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="78" y="30" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="78" y="30" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="82" y="30" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="82" y="30" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="78" y="31" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="78" y="31" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="81" y="28" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="81" y="28" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="81" y="26" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="81" y="26" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="81" y="32" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="81" y="32" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="72" y="28" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="72" y="28" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="80" y="29" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="80" y="29" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="79" y="31" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="79" y="31" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="78" y="27" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="78" y="27" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="76" y="23" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="76" y="23" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="77" y="30" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="77" y="30" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="80" y="31" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="80" y="31" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="76" y="26" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="76" y="26" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<rect x="82" y="28" width="2" height="2" fill="rgb(0,0,0)"/>
+<rect x="82" y="28" width="2" height="2" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M88 21L96 21L96 30L88 30L88 37L79 37L79 30L71 30L71 21L79 21L79 13L88 13Z" fill="#fff"/>
+<path d="M88 21L96 21L96 30L88 30L88 37L79 37L79 30L71 30L71 21L79 21L79 13L88 13Z" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M86 27L94 27L94 36L86 36L86 44L77 44L77 36L70 36L70 27L77 27L77 19L86 19Z" fill="#fff"/>
+<path d="M86 27L94 27L94 36L86 36L86 44L77 44L77 36L70 36L70 27L77 27L77 19L86 19Z" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M92 24L99 24L99 33L92 33L92 41L82 41L82 33L75 33L75 24L82 24L82 16L92 16Z" fill="#fff"/>
+<path d="M92 24L99 24L99 33L92 33L92 41L82 41L82 33L75 33L75 24L82 24L82 16L92 16Z" fill="none" stroke="#000" stroke-width="2"/>
+<path d="M89 19L97 19L97 28L89 28L89 35L80 35L80 28L72 28L72 19L80 19L80 11L89 11Z" fill="#fff"/>
+<path d="M89 19L97 19L97 28L89 28L89 35L80 35L80 28L72 28L72 19L80 19L80 11L89 11Z" fill="none" stroke="#000" stroke-width="2"/>
+</svg>

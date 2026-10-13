@@ -1,0 +1,78 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Intro
+\end_layout
+
+\begin_layout Standard
+In this document, I'm going to have another attempt at wrapping my noggin
+ around the core-periphery model and related ideas.
+ I want to get the intuition nailed, as well as pull out some of the gnarly
+ maths problems that continue to niggle at me.
+ So it might be in a slightly peculiar order.
+ As much as possible I'll try and frame the problems as questions.
+\end_layout
+
+\begin_layout Section
+Where did the externalities go? 
+\end_layout
+
+\begin_layout Standard
+The problem: pecuniary externalities are at the heart of the core model
+ - or so the theory goes.
+ But where are they? In the simplest of the final equations, much of the
+ earlier structure drops away through various arguments.
+ The place where I'd expect PEs to come from - increasing returns - is no
+ longer there.
+ Now, of course, Krugman himself says in the original paper, ``it is possible
+ to develop a very simple model of geographical concentration of manufacturing
+ based on the interaction of economies of scale with transportation costs.''
+ (increts p.484) So where did economies of scale go?
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

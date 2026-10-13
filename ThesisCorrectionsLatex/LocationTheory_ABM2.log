@@ -1,0 +1,3565 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.14)  13 MAR 2014 20:20
+entering extended mode
+**LocationTheory_ABM2.tex
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\c@ALC@unique=\count100
+\c@ALC@line=\count101
+\c@ALC@rem=\count102
+\c@ALC@depth=\count103
+\ALC@tlm=\skip46
+\algorithmicindent=\skip47
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\todonotes\todonotes.sty"
+Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+\XKV@depth=\count104
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks23
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box28
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen114
+\pgf@y=\dimen115
+\pgf@xa=\dimen116
+\pgf@ya=\dimen117
+\pgf@xb=\dimen118
+\pgf@yb=\dimen119
+\pgf@xc=\dimen120
+\pgf@yc=\dimen121
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count106
+\c@pgf@countb=\count107
+\c@pgf@countc=\count108
+\c@pgf@countd=\count109
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count110
+\pgfsyssoftpath@bigbuffer@items=\count111
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen122
+\pgfmath@count=\count112
+\pgfmath@box=\box29
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count113
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen123
+\pgf@picmaxx=\dimen124
+\pgf@picminy=\dimen125
+\pgf@picmaxy=\dimen126
+\pgf@pathminx=\dimen127
+\pgf@pathmaxx=\dimen128
+\pgf@pathminy=\dimen129
+\pgf@pathmaxy=\dimen130
+\pgf@xx=\dimen131
+\pgf@xy=\dimen132
+\pgf@yx=\dimen133
+\pgf@yy=\dimen134
+\pgf@zx=\dimen135
+\pgf@zy=\dimen136
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen137
+\pgf@path@lasty=\dimen138
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen139
+\pgf@shorten@start@additional=\dimen140
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count114
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen141
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen142
+\pgf@pt@y=\dimen143
+\pgf@pt@temp=\dimen144
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen145
+\pgf@sys@shading@range@num=\count115
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box33
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box34
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen146
+\pgf@nodesepend=\dimen147
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen148
+\pgffor@skip=\dimen149
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count116
+\pgfplotmarksize=\dimen150
+)
+\tikz@lastx=\dimen151
+\tikz@lasty=\dimen152
+\tikz@lastxsaved=\dimen153
+\tikz@lastysaved=\dimen154
+\tikzleveldistance=\dimen155
+\tikzsiblingdistance=\dimen156
+\tikz@figbox=\box35
+\tikz@tempbox=\box36
+\tikztreelevel=\count117
+\tikznumberofchildren=\count118
+\tikznumberofcurrentchild=\count119
+\tikz@fig@count=\count120
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count121
+\pgfmatrixcurrentcolumn=\count122
+\pgf@matrix@numberofcolumns=\count123
+)
+\tikz@expandcount=\count124
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count125
+\calc@Bcount=\count126
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count127
+\calc@Cskip=\skip50
+)
+\c@@todonotes@numberoftodonotes=\count128
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\pslatex\pslatex.sty"
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.sty"
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
+\FV@CodeLineNo=\count129
+\FV@InFile=\read2
+\FV@TabBox=\box37
+\c@FancyVerbLine=\count130
+\FV@StepNumber=\count131
+\FV@OutFile=\write4
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks32
+\verbatim@line=\toks33
+\verbatim@in@stream=\read3
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count132
+\LTcapwidth=\dimen159
+\LT@head=\box38
+\LT@firsthead=\box39
+\LT@foot=\box40
+\LT@lastfoot=\box41
+\LT@cols=\count133
+\LT@rows=\count134
+\c@LT@tables=\count135
+\c@LT@chunks=\count136
+\LT@p@ftn=\toks34
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen160
+\extrarowheight=\dimen161
+\NC@list=\toks35
+\extratabsurround=\skip55
+\backup@length=\skip56
+)
+
+! LaTeX Error: Option clash for package color.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \usepackage
+                {graphicx}
+The package color has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [pdftex]
+Adding the global options:
+  ,pdftex
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count137
+\rotFPtop=\skip57
+\rotFPbot=\skip58
+\rot@float@box=\box42
+\rot@mess@toks=\toks36
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen162
+\captionmargin@=\dimen163
+\captionwidth=\dimen164
+\caption@indent=\dimen165
+\caption@parindent=\dimen166
+\caption@hangindent=\dimen167
+)
+\c@ContinuedFloat=\count138
+Package caption Info: longtable package is loaded.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count139
+\sf@farskip=\skip59
+\sf@captopadj=\dimen168
+\sf@capskip=\skip60
+\sf@nearskip=\skip61
+\c@subfigure=\count140
+\c@subfigure@save=\count141
+\c@lofdepth=\count142
+\c@subtable=\count143
+\c@subtable@save=\count144
+\c@lotdepth=\count145
+\sf@top=\skip62
+\sf@bottom=\skip63
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty"
+Package: glossaries 2012/09/21 v3.03 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\mfirstuc.sty"
+Package: mfirstuc 2012/05/21 v1.06 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count146
+)
+\etb@tempcnta=\count147
+)
+\@glsmfirst=\toks37
+\@glsmrest=\toks38
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+\gls@level=\count148
+\@gls@tmpb=\toks39
+\gls@tmplen=\skip64
+\glswrite=\write5
+\glskeylisttok=\toks40
+\glslabeltok=\toks41
+\glsshorttok=\toks42
+\glslongtok=\toks43
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-hypernav.sty"
+Package: glossary-hypernav 2007/07/04 v1.01 (NLCT)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.sty"
+Package: glossary-list 2012/09/21 v3.03 (NLCT)
+\glslistdottedwidth=\skip65
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.sty"
+Package: glossary-long 2012/09/21 v3.03 (NLCT)
+\glsdescwidth=\skip66
+\glspagelistwidth=\skip67
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.sty"
+Package: glossary-super 2012/09/21 v3.03 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count149
+\ST@wd=\dimen169
+\ST@rightskip=\skip68
+\ST@leftskip=\skip69
+\ST@parfillskip=\skip70
+\ST@pageleft=\dimen170
+\ST@headht=\dimen171
+\ST@tailht=\dimen172
+\ST@pagesofar=\dimen173
+\ST@pboxht=\dimen174
+\ST@lineht=\dimen175
+\ST@stretchht=\dimen176
+\ST@prevht=\dimen177
+\ST@toadd=\dimen178
+\ST@dimen=\dimen179
+\ST@pbox=\box43
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty"
+Package: glossary-tree 2012/09/21 v3.03 (NLCT)
+\glstreeindent=\skip71
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip72
+\bibsep=\skip73
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count150
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip74
+\f@ncyO@elh=\skip75
+\f@ncyO@erh=\skip76
+\f@ncyO@olh=\skip77
+\f@ncyO@orh=\skip78
+\f@ncyO@elf=\skip79
+\f@ncyO@erf=\skip80
+\f@ncyO@olf=\skip81
+\f@ncyO@orf=\skip82
+)
+\@indexfile=\write6
+
+Writing index file LocationTheory_ABM2.idx
+\@input{Glossary_n_acronyms/Acronyms.aux}
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\Glossary_n_acronyms/Acronyms.tex)
+\glo@main@file=\write7
+Package glossaries Info: Writing glossary file LocationTheory_ABM2.glo on input line 148.
+\glo@acronym@file=\write8
+Package glossaries Info: Writing glossary file LocationTheory_ABM2.acn on input line 148.
+
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.aux
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\titlepage.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterIntro/IntroFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterEcon/Ch_EconFromWord.aux
+
+LaTeX Warning: Label `eq:totaldemand' multiply defined.
+
+) (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterABM/ABMfromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterFramework/Ch_FrameworkFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterTestingModels/TestingModelsFromWord.aux
+
+LaTeX Warning: Label `eq:optCDF' multiply defined.
+
+
+LaTeX Warning: Label `eq:optCDM' multiply defined.
+
+
+LaTeX Warning: Label `eq:CESsimpleForSpace' multiply defined.
+
+
+LaTeX Warning: Label `fig:densityviz' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:densityviz' multiply defined.
+
+) (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterConnectedModels/ConnectedModelsFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterConclusion/ConclusionFromWord.aux
+
+LaTeX Warning: Label `sec:deps' multiply defined.
+
+) (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\Appendices/appendixtop.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\DataReferences.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 154.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 154.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count151
+\scratchdimen=\dimen180
+\scratchbox=\box44
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen181
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks45
+) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\titlepage.tex
+[1
+
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 62.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd"
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 62.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptmcm.fd"
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 62.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxpsycm.fd"
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \vspace{2cm}\\
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3] [4
+
+
+]
+! Extra }, or forgotten \endgroup.
+l.117 \hspace*{4cm}Elbow}
+                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[5
+
+
+] [6
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
+ [7
+
+] [8
+
+
+]) [9
+
+] [10
+
+
+] (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.toc
+[1
+
+
+
+
+] [2]
+Overfull \hbox (11.27412pt too wide) in paragraph at lines 106--106
+ [][] []\OT1/ptm/m/n/10.95 Blind ver-sus ra-tio-nal choice: an il-lus-tra-tion of the prob-lem with economies 
+ []
+
+[3] [4])
+\tf@toc=\write9
+ [5] [6
+
+] (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.lof [7
+
+]
+Underfull \vbox (badness 7362) has occurred while \output is active []
+
+ [8]
+! Misplaced alignment tab character &.
+<argument> ...ces Two People, two regions. Wages &
+                                                   good cost $=1$. Density c...
+l.64 ...ance cost = $1$ in region 2.\relax }}{163}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...Three People, three regions. Wages &
+                                                   good cost $=1$. Density c...
+l.67 ...s indicate optimal choices. \relax }}{165}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Underfull \vbox (badness 4366) has occurred while \output is active []
+
+ [10])
+\tf@lof=\write10
+ [11] [12
+
+]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.lot)
+\tf@lot=\write11
+ [13
+
+] [14
+
+]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.gls [15
+
+
+
+])
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.acr [16]) [17
+
+
+] [18
+
+]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterIntro/IntroFromWord.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+[1
+
+
+] [2]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 51.
+ [3] [4] [5] [6]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 139.
+ [7] [8] [9] [10] [11] [12] [13] [14]) [15]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterEcon/Ch_EconFromWord.tex [16
+
+
+
+]
+Chapter 2.
+[17] [18] <ChapterEcon/figures/cobbdouglascontour.jpg, id=157, 401.5pt x 401.5pt>
+File: ChapterEcon/figures/cobbdouglascontour.jpg Graphic file (type jpg)
+
+<use ChapterEcon/figures/cobbdouglascontour.jpg>
+Package pdftex.def Info: ChapterEcon/figures/cobbdouglascontour.jpg used on input line 65.
+(pdftex.def)             Requested size: 290.78601pt x 290.8074pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+
+Underfull \vbox (badness 1552) has occurred while \output is active []
+
+ [19 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/cobbdouglascontour.jpg>] [20]
+<ChapterEcon/figures/CEStwogoodstradeoff2.jpg, id=164, 411.5375pt x 298.11375pt>
+File: ChapterEcon/figures/CEStwogoodstradeoff2.jpg Graphic file (type jpg)
+
+<use ChapterEcon/figures/CEStwogoodstradeoff2.jpg>
+Package pdftex.def Info: ChapterEcon/figures/CEStwogoodstradeoff2.jpg used on input line 107.
+(pdftex.def)             Requested size: 290.78601pt x 210.6433pt.
+ [21 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/CEStwogoodstradeoff2.jpg>] [22]
+! Too many }'s.
+l.175 \end{equation}}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+<ChapterEcon/figures/coremodelprodABM1edited.png, id=173, 622.325pt x 574.145pt>
+File: ChapterEcon/figures/coremodelprodABM1edited.png Graphic file (type png)
+
+<use ChapterEcon/figures/coremodelprodABM1edited.png>
+Package pdftex.def Info: ChapterEcon/figures/coremodelprodABM1edited.png used on input line 203.
+(pdftex.def)             Requested size: 311.5578pt x 287.43974pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.204   \hspace{0.2}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterEcon/figures/smoothIncRets1edited.png, id=175, 622.325pt x 571.13374pt>
+File: ChapterEcon/figures/smoothIncRets1edited.png Graphic file (type png)
+
+<use ChapterEcon/figures/smoothIncRets1edited.png>
+Package pdftex.def Info: ChapterEcon/figures/smoothIncRets1edited.png used on input line 205.
+(pdftex.def)             Requested size: 311.5578pt x 285.93219pt.
+
+
+LaTeX Warning: Float too large for page by 1.64902pt on input line 208.
+
+[23] [24 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/coremodelprodABM1edited.png>
+ <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/smoothIncRets1edited.png>]
+<ChapterEcon/figures/DMU_cobbdouglasedited.png, id=184, 436.63126pt x 436.63126pt>
+File: ChapterEcon/figures/DMU_cobbdouglasedited.png Graphic file (type png)
+
+<use ChapterEcon/figures/DMU_cobbdouglasedited.png>
+Package pdftex.def Info: ChapterEcon/figures/DMU_cobbdouglasedited.png used on input line 220.
+(pdftex.def)             Requested size: 249.24876pt x 249.24883pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25] [26 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/DMU_cobbdouglasedited.png>]
+[27] [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+! Extra }, or forgotten \endgroup.
+l.286 ...'' (\citealt{fujita_location_1999} p.376}
+                                                  )
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[30] [31] [32] [33] [34] [35]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [36] [37] [38] [39] [40] [41] [42]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterEcon/Tables/op_eqs_coremodel.tex) [43] [44]
+[45] <ChapterEcon/figures/integralCES.jpg, id=253, 401.5pt x 401.5pt>
+File: ChapterEcon/figures/integralCES.jpg Graphic file (type jpg)
+ <use ChapterEcon/figures/integralCES.jpg>
+Package pdftex.def Info: ChapterEcon/figures/integralCES.jpg used on input line 567.
+(pdftex.def)             Requested size: 290.78601pt x 290.8074pt.
+ [46]
+[47 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/integralCES.jpg>] [48] [49]
+Runaway argument?
+{coremodel; see section \ref {sec:extsinspace}.) As Fujita \emph {et \ETC.
+! Paragraph ended before \\@gls was complete.
+<to be read again> 
+                   \par 
+l.623 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (7.78625pt too wide) in paragraph at lines 630--631
+[]\OT1/ptm/m/n/10.95 Because firms are locked into one prod-uct, the re-la-tion to []love of va-ri-ety means that econom
+ies
+ []
+
+[50] [51]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.684 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
+[][]\OT1/ptm/m/n/9 Charles van Mar-rewijk pro-vides an anal-y-sis dis-cussing in-come and worker num-ber be-ing
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 740--740
+\OT1/ptm/m/n/9 set to $\OML/ptmcm/m/it/9 $ \OT1/ptm/m/n/9 on the web-site to ac-com-pany the Brak-man \OT1/ptm/m/it/9 e
+t al. \OT1/ptm/m/n/9 book. This can be found at:
+ []
+
+[54] <ChapterEcon/figures/CMT225.png, id=283, 745.28438pt x 539.76656pt>
+File: ChapterEcon/figures/CMT225.png Graphic file (type png)
+ <use ChapterEcon/figures/CMT225.png>
+Package pdftex.def Info: ChapterEcon/figures/CMT225.png used on input line 759.
+(pdftex.def)             Requested size: 394.63861pt x 285.81136pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.760   \hspace{0.1}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterEcon/figures/tomaHawk2.png, id=284, 745.28438pt x 539.76656pt>
+File: ChapterEcon/figures/tomaHawk2.png Graphic file (type png)
+ <use ChapterEcon/figures/tomaHawk2.png>
+Package pdftex.def Info: ChapterEcon/figures/tomaHawk2.png used on input line 761.
+(pdftex.def)             Requested size: 394.63861pt x 285.81136pt.
+
+
+LaTeX Warning: Float too large for page by 11.8998pt on input line 763.
+
+[55] [56 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/CMT225.png> <C:/Users/geodo/
+Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterEcon/figures/tomaHawk2.png>] [57] [58] [59] [60] [61]
+! Undefined control sequence.
+l.863 ...sport costs can be reduced simply by \emp
+                                                  {increasing} the cost of o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+[62] [63] [64] [65]
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+ [66] [67] [68]
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+ [69] [70]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ® in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ® in font ptmr7t!
+ [71]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ® in font ptmr7t!
+ [72]
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 1087.
+
+) [73] (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterABM/ABMfromWord.tex [74
+
+
+
+]
+Chapter 3.
+! Extra }, or forgotten \endgroup.
+l.11 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Overfull \hbox (12.57895pt too wide) in paragraph at lines 8--12
+| \OT1/ptm/m/it/12 Richard Feyn-man[] 
+ []
+
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   c
+l.18 ...0/03/11/not-a-random-walk/#comment-40731}}
+                                                  }
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ....com/2010/03/11/not-a-random-walk/##
+                                                  comment-40731\@finalstrut ...
+l.18 ...0/03/11/not-a-random-walk/#comment-40731}}
+                                                  }
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Extra }, or forgotten \endgroup.
+l.19 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[75] [76]
+! Undefined control sequence.
+l.52 ...ects as ``computational entities that \emp
+                                                  {encapsulate} some state, ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (3.15964pt too wide) in paragraph at lines 52--53
+\OT1/ptm/m/n/10.95 to per-form ac-tions, or \OT1/ptm/m/it/10.95 meth-ods\OT1/ptm/m/n/10.95 , on this state, and com-mu-n
+i-cate by mes-sage pass-ing'' (Wooldridge
+ []
+
+! Undefined control sequence.
+l.54 ... raise and lower gears: the rider may \emp
+                                                  {`request'} a gear change,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[77]
+
+! Package glossaries Error: Glossary entry `margrev' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...al economics ever since the \gls{margrev} 
+                                                  has been an attempt to cre...
+You need to define a glossary entry before you can use it.
+
+[78]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \vbox (badness 4713) has occurred while \output is active []
+
+ [79] [80]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [81]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [82]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [83] [84]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [85]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+
+Package natbib Warning: Citation `krugman_how_2008' on page 86 undefined on input line 175.
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+[86] [87] [88]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [89]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+! Undefined control sequence.
+l.254 ...monds can claim the argument is now `na\‚
+                                                  Äù{\i}ve'. Friedman makes ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+[90]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [91]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [92]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+! Undefined control sequence.
+l.315 ...t necessarily mean that agent models \emp
+                                                  {must} be discrete, or ind...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[93] [94] [95] [96]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [97]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+ [98]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [99]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [100]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ® in font ptmr7t!
+
+Overfull \hbox (2.61285pt too wide) in paragraph at lines 452--453
+[]\OT1/ptm/m/n/10.95 ``... try to come to grips with a spa-tial reg-u-lar-ity but that lack a con-vinc-ing economic-
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+[101]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [102]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [103]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [104]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [105]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [106]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [107] [108] [109]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [110]) [111]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterFramework/Ch_FrameworkFromWord.tex [112
+
+
+
+]
+Chapter 4.
+[113] [114] [115] [116]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font zptmcmr!
+Missing character: There is no Ä in font zptmcmr!
+Missing character: There is no ì in font zptmcmr!
+ [117] <ChapterFramework/figures/keybits/actorobj.jpg, id=487, 116.435pt x 39.14626pt>
+File: ChapterFramework/figures/keybits/actorobj.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/actorobj.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/actorobj.jpg used on input line 163.
+(pdftex.def)             Requested size: 50.7785pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/nonactorobj.jpg, id=488, 156.585pt x 39.14626pt>
+File: ChapterFramework/figures/keybits/nonactorobj.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/nonactorobj.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/nonactorobj.jpg used on input line 165.
+(pdftex.def)             Requested size: 68.28833pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/variable.jpg, id=489, 132.495pt x 40.15pt>
+File: ChapterFramework/figures/keybits/variable.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/variable.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/variable.jpg used on input line 167.
+(pdftex.def)             Requested size: 56.33691pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/objarray.jpg, id=490, 175.65625pt x 38.1425pt>
+File: ChapterFramework/figures/keybits/objarray.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/objarray.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/objarray.jpg used on input line 171.
+(pdftex.def)             Requested size: 78.62108pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/ref2obj.jpg, id=491, 184.69pt x 36.135pt>
+File: ChapterFramework/figures/keybits/ref2obj.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/ref2obj.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/ref2obj.jpg used on input line 173.
+(pdftex.def)             Requested size: 87.2552pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/interface.jpg, id=492, 92.345pt x 40.15pt>
+File: ChapterFramework/figures/keybits/interface.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/interface.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/interface.jpg used on input line 175.
+(pdftex.def)             Requested size: 39.26512pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/method.jpg, id=493, 82.3075pt x 37.13875pt>
+File: ChapterFramework/figures/keybits/method.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/method.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/method.jpg used on input line 178.
+(pdftex.def)             Requested size: 37.83553pt x 17.07164pt.
+
+<ChapterFramework/figures/keybits/logic.jpg, id=494, 58.2175pt x 37.13875pt>
+File: ChapterFramework/figures/keybits/logic.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/keybits/logic.jpg>
+Package pdftex.def Info: ChapterFramework/figures/keybits/logic.jpg used on input line 180.
+(pdftex.def)             Requested size: 26.7617pt x 17.07164pt.
+
+Overfull \hbox (46.67467pt too wide) in paragraph at lines 159--185
+ [] 
+ []
+
+[118] <ChapterFramework/figures/TimelineActions.jpeg, id=498, 666.49pt x 282.05376pt>
+File: ChapterFramework/figures/TimelineActions.jpeg Graphic file (type jpg)
+
+<use ChapterFramework/figures/TimelineActions.jpeg>
+Package pdftex.def Info: ChapterFramework/figures/TimelineActions.jpeg used on input line 194.
+(pdftex.def)             Requested size: 311.5578pt x 131.85085pt.
+ [119 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/keybits/actorobj.jpg> <C:/
+Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/keybits/nonactorobj.jpg> <C:/Users/g
+eodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/keybits/variable.jpg> <C:/Users/geodo/Dropb
+ox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/keybits/objarray.jpg> <C:/Users/geodo/Dropbox/Thesis2
+011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/keybits/ref2obj.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/Th
+esisCorrectionsLatex/ChapterFramework/figures/keybits/interface.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorre
+ctionsLatex/ChapterFramework/figures/keybits/method.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/
+ChapterFramework/figures/keybits/logic.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramew
+ork/figures/TimelineActions.jpeg>]
+<ChapterFramework/figures/PersonAction1.jpeg, id=502, 785.93625pt x 501.875pt>
+File: ChapterFramework/figures/PersonAction1.jpeg Graphic file (type jpg)
+
+<use ChapterFramework/figures/PersonAction1.jpeg>
+Package pdftex.def Info: ChapterFramework/figures/PersonAction1.jpeg used on input line 228.
+(pdftex.def)             Requested size: 394.63861pt x 252.00899pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[120] [121 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/PersonAction1.jpeg>]
+<ChapterFramework/figures/Bundle1border.png, id=509, 803.0pt x 803.0pt>
+File: ChapterFramework/figures/Bundle1border.png Graphic file (type png)
+
+<use ChapterFramework/figures/Bundle1border.png>
+Package pdftex.def Info: ChapterFramework/figures/Bundle1border.png used on input line 260.
+(pdftex.def)             Requested size: 249.24876pt x 249.246pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.261 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterFramework/figures/Bundle2border.png, id=510, 803.0pt x 803.0pt>
+File: ChapterFramework/figures/Bundle2border.png Graphic file (type png)
+
+<use ChapterFramework/figures/Bundle2border.png>
+Package pdftex.def Info: ChapterFramework/figures/Bundle2border.png used on input line 262.
+(pdftex.def)             Requested size: 249.24876pt x 249.246pt.
+ [122] [123 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/Bundle1border.png> <
+C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/Bundle2border.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 288.
+
+<ChapterFramework/figures/hillclimbExcelGoodCost.png, id=520, 391.4625pt x 229.45724pt>
+File: ChapterFramework/figures/hillclimbExcelGoodCost.png Graphic file (type png)
+
+<use ChapterFramework/figures/hillclimbExcelGoodCost.png>
+Package pdftex.def Info: ChapterFramework/figures/hillclimbExcelGoodCost.png used on input line 290.
+(pdftex.def)             Requested size: 324.01959pt x 189.93477pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.291 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterFramework/figures/hillclimbExcelMarginal.png, id=521, 391.4625pt x 229.45724pt>
+File: ChapterFramework/figures/hillclimbExcelMarginal.png Graphic file (type png)
+
+<use ChapterFramework/figures/hillclimbExcelMarginal.png>
+Package pdftex.def Info: ChapterFramework/figures/hillclimbExcelMarginal.png used on input line 292.
+(pdftex.def)             Requested size: 324.01959pt x 189.93477pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 300.
+
+<ChapterFramework/figures/PersonOpt2edit.png, id=522, 1161.33875pt x 460.72125pt>
+File: ChapterFramework/figures/PersonOpt2edit.png Graphic file (type png)
+
+<use ChapterFramework/figures/PersonOpt2edit.png>
+Package pdftex.def Info: ChapterFramework/figures/PersonOpt2edit.png used on input line 302.
+(pdftex.def)             Requested size: 415.4104pt x 164.79799pt.
+ [124] [125 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/hillclimbExcelGoodCo
+st.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/hillclimbExcelMarginal.p
+ng>]
+Overfull \hbox (3.93819pt too wide) in paragraph at lines 322--323
+[]\OT1/ptm/m/n/10.95 The Good prices and bud-get are used to di-rectly cal-cu-late op-ti-mal good amounts.
+ []
+
+[126 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/PersonOpt2edit.png>]
+[127]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 367.
+
+<ChapterFramework/Figures/FirmAct1.jpeg, id=538, 832.10875pt x 288.07625pt>
+File: ChapterFramework/Figures/FirmAct1.jpeg Graphic file (type jpg)
+
+<use ChapterFramework/Figures/FirmAct1.jpeg>
+Package pdftex.def Info: ChapterFramework/Figures/FirmAct1.jpeg used on input line 369.
+(pdftex.def)             Requested size: 353.10136pt x 122.24396pt.
+ [128 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/Figures/FirmAct1.jpeg>] <ChapterAB
+M/figures/simplemoneytest2.jpg, id=542, 691.58376pt x 819.06pt>
+File: ChapterABM/figures/simplemoneytest2.jpg Graphic file (type jpg)
+
+<use ChapterABM/figures/simplemoneytest2.jpg>
+Package pdftex.def Info: ChapterABM/figures/simplemoneytest2.jpg used on input line 400.
+(pdftex.def)             Requested size: 407.1004pt x 482.1414pt.
+ [129] [130 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterABM/figures/simplemoneytest2.jpg>] [13
+1]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 432.
+
+<ChapterABM/figures/PermuteGapHistogramPSD.jpg, id=553, 361.35pt x 230.0595pt>
+File: ChapterABM/figures/PermuteGapHistogramPSD.jpg Graphic file (type jpg)
+
+<use ChapterABM/figures/PermuteGapHistogramPSD.jpg>
+Package pdftex.def Info: ChapterABM/figures/PermuteGapHistogramPSD.jpg used on input line 434.
+(pdftex.def)             Requested size: 311.5578pt x 198.35982pt.
+ [132]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [133 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterABM/figures/PermuteGapHistogramPSD.jpg>] [13
+4] [135]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Overfull \hbox (0.66963pt too wide) in paragraph at lines 490--491
+[]\OT1/ptm/m/n/10.95 The smooth pro-duc-tion func-tion [], while lack-ing a tidy def-i-ni-tion for fixed and marginal
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+[136] [137]
+
+Package natbib Warning: Citation `heppenstall_hybrid_2005' on page 138 undefined on input line 538.
+
+[138]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [139]) [140]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterTestingModels/TestingModelsFromWord.tex
+Chapter 5.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+[141
+
+
+
+] [142] <ChapterTestingModels/Figures/CES2firm_rhochange1.jpg, id=589, 361.95226pt x 217.41225pt>
+File: ChapterTestingModels/Figures/CES2firm_rhochange1.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/CES2firm_rhochange1.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/CES2firm_rhochange1.jpg used on input line 64.
+(pdftex.def)             Requested size: 290.78601pt x 174.6698pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.65 \hspace{0.1}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/CES2firm_rhochange2.jpg, id=590, 361.95226pt x 217.41225pt>
+File: ChapterTestingModels/Figures/CES2firm_rhochange2.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/CES2firm_rhochange2.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/CES2firm_rhochange2.jpg used on input line 66.
+(pdftex.def)             Requested size: 290.78601pt x 174.6698pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.67 \hspace{0.1}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/CES_rho075_firmchange.jpg, id=591, 361.95226pt x 217.41225pt>
+File: ChapterTestingModels/Figures/CES_rho075_firmchange.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/CES_rho075_firmchange.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/CES_rho075_firmchange.jpg used on input line 68.
+(pdftex.def)             Requested size: 290.78601pt x 174.6698pt.
+ [143] [144 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CES2firm_rhochan
+ge1.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CES2firm_rhochange2
+.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CES_rho075_firmchange.
+jpg>]
+<ChapterTestingModels/Figures/CD_opt1edit2.png, id=598, 363.15675pt x 217.41225pt>
+File: ChapterTestingModels/Figures/CD_opt1edit2.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/CD_opt1edit2.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/CD_opt1edit2.png used on input line 104.
+(pdftex.def)             Requested size: 290.78601pt x 174.0992pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.105 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/CD_good2costedit.png, id=599, 382.42876pt x 211.992pt>
+File: ChapterTestingModels/Figures/CD_good2costedit.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/CD_good2costedit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/CD_good2costedit.png used on input line 106.
+(pdftex.def)             Requested size: 290.78601pt x 161.19968pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[145]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [146 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CD_opt1edit2.png> <C:/
+Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CD_good2costedit.png>] [147]
+<ChapterTestingModels/Figures/greedyites1.jpg, id=612, 437.83575pt x 239.6955pt>
+File: ChapterTestingModels/Figures/greedyites1.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/greedyites1.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/greedyites1.jpg used on input line 166.
+(pdftex.def)             Requested size: 332.32957pt x 181.9437pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.167   \hspace{0.1}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/greedyites2.jpg, id=613, 437.2335pt x 239.09325pt>
+File: ChapterTestingModels/Figures/greedyites2.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/greedyites2.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/greedyites2.jpg used on input line 168.
+(pdftex.def)             Requested size: 332.32957pt x 181.73099pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.169   \hspace{0.1}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/greedyites3.jpg, id=614, 436.63126pt x 238.491pt>
+File: ChapterTestingModels/Figures/greedyites3.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/greedyites3.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/greedyites3.jpg used on input line 170.
+(pdftex.def)             Requested size: 332.32957pt x 181.52068pt.
+ [148] [149 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/greedyites1.jpg>
+ <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/greedyites2.jpg> <C:/Users/
+geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/greedyites3.jpg>]
+<ChapterTestingModels/Figures/JK_modelday_160_CESTest1Person9Firms_Wed-May-22-12_32_36-BST-2013__MainViz.png, id=621, 12
+04.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/JK_modelday_160_CESTest1Person9Firms_Wed-May-22-12_32_36-BST-2013__MainViz.png Graphi
+c file (type png)
+
+<use ChapterTestingModels/Figures/JK_modelday_160_CESTest1Person9Firms_Wed-May-22-12_32_36-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JK_modelday_160_CESTest1Person9Firms_Wed-May-22-12_32_36-BST-2013_
+_MainViz.png used on input line 199.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.200   \hspace{0.1}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/JM_modelday_4386_CESTest1Person9Firms_Wed-May-22-12_34_17-BST-2013__rho0point8edit.png, id
+=622, 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/JM_modelday_4386_CESTest1Person9Firms_Wed-May-22-12_34_17-BST-2013__rho0point8edit.pn
+g Graphic file (type png)
+
+<use ChapterTestingModels/Figures/JM_modelday_4386_CESTest1Person9Firms_Wed-May-22-12_34_17-BST-2013__rho0point8edit.png
+>
+Package pdftex.def Info: ChapterTestingModels/Figures/JM_modelday_4386_CESTest1Person9Firms_Wed-May-22-12_34_17-BST-2013
+__rho0point8edit.png used on input line 201.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.202   \hspace{0.1}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/JN_modelday_9419_CESTest1Person9Firms_Wed-May-22-12_34_56-BST-2013__rho0point9edit.png, id
+=623, 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/JN_modelday_9419_CESTest1Person9Firms_Wed-May-22-12_34_56-BST-2013__rho0point9edit.pn
+g Graphic file (type png)
+
+<use ChapterTestingModels/Figures/JN_modelday_9419_CESTest1Person9Firms_Wed-May-22-12_34_56-BST-2013__rho0point9edit.png
+>
+Package pdftex.def Info: ChapterTestingModels/Figures/JN_modelday_9419_CESTest1Person9Firms_Wed-May-22-12_34_56-BST-2013
+__rho0point9edit.png used on input line 203.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.204     \hspace{0.1}
+                      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/JO_modelday_11994_CESTest1Person9Firms_Wed-May-22-12_35_15-BST-2013__rho1edit.png, id=624,
+ 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/JO_modelday_11994_CESTest1Person9Firms_Wed-May-22-12_35_15-BST-2013__rho1edit.png Gra
+phic file (type png)
+
+<use ChapterTestingModels/Figures/JO_modelday_11994_CESTest1Person9Firms_Wed-May-22-12_35_15-BST-2013__rho1edit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JO_modelday_11994_CESTest1Person9Firms_Wed-May-22-12_35_15-BST-201
+3__rho1edit.png used on input line 205.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+[150] [151 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/JK_modelday_160_C
+ESTest1Person9Firms_Wed-May-22-12_32_36-BST-2013__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrections
+Latex/ChapterTestingModels/Figures/JM_modelday_4386_CESTest1Person9Firms_Wed-May-22-12_34_17-BST-2013__rho0point8edit.pn
+g> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/JN_modelday_9419_CESTest1
+Person9Firms_Wed-May-22-12_34_56-BST-2013__rho0point9edit.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrections
+Latex/ChapterTestingModels/Figures/JO_modelday_11994_CESTest1Person9Firms_Wed-May-22-12_35_15-BST-2013__rho1edit.png>]
+<ChapterTestingModels/Figures/CES_space_changeRhoeditedit.png, id=635, 411.5375pt x 401.5pt>
+File: ChapterTestingModels/Figures/CES_space_changeRhoeditedit.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/CES_space_changeRhoeditedit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/CES_space_changeRhoeditedit.png used on input line 219.
+(pdftex.def)             Requested size: 290.78601pt x 283.69467pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.221 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[152] <ChapterTestingModels/Figures/CES_space_Rho_cchange1editedit.png, id=639, 411.5375pt x 401.5pt>
+File: ChapterTestingModels/Figures/CES_space_Rho_cchange1editedit.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/CES_space_Rho_cchange1editedit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/CES_space_Rho_cchange1editedit.png used on input line 243.
+(pdftex.def)             Requested size: 282.47603pt x 275.58946pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.244   \hspace{0.1}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/CES_space_Rho_cchange2editedit.png, id=640, 411.5375pt x 401.5pt>
+File: ChapterTestingModels/Figures/CES_space_Rho_cchange2editedit.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/CES_space_Rho_cchange2editedit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/CES_space_Rho_cchange2editedit.png used on input line 245.
+(pdftex.def)             Requested size: 282.47603pt x 275.58946pt.
+
+
+LaTeX Warning: Float too large for page by 3.45601pt on input line 247.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [153 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CES_space_changeRhoedi
+tedit.png>] [154 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CES_space_R
+ho_cchange1editedit.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/CES
+_space_Rho_cchange2editedit.png>]
+<ChapterFramework/figures/mnnd_blackhole_manyruns1.jpg, id=651, 363.759pt x 217.41225pt>
+File: ChapterFramework/figures/mnnd_blackhole_manyruns1.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/mnnd_blackhole_manyruns1.jpg>
+Package pdftex.def Info: ChapterFramework/figures/mnnd_blackhole_manyruns1.jpg used on input line 259.
+(pdftex.def)             Requested size: 290.78601pt x 173.80063pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.260   \hspace{0.2}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterFramework/figures/mnnd_blackhole_manyruns2.jpg, id=652, 363.759pt x 217.41225pt>
+File: ChapterFramework/figures/mnnd_blackhole_manyruns2.jpg Graphic file (type jpg)
+
+<use ChapterFramework/figures/mnnd_blackhole_manyruns2.jpg>
+Package pdftex.def Info: ChapterFramework/figures/mnnd_blackhole_manyruns2.jpg used on input line 261.
+(pdftex.def)             Requested size: 290.78601pt x 173.80063pt.
+ [155 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/mnnd_blackhole_manyruns1.j
+pg> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterFramework/figures/mnnd_blackhole_manyruns2.jpg
+>]
+<ChapterTestingModels/Figures/IB_CEUS1_Mon-Dec-03-15_55_58-GMT-2012__MainVizDensitycopy.png, id=656, 1179.40625pt x 1222
+.5675pt>
+File: ChapterTestingModels/Figures/IB_CEUS1_Mon-Dec-03-15_55_58-GMT-2012__MainVizDensitycopy.png Graphic file (type png)
+
+ <use ChapterTestingModels/Figures/IB_CEUS1_Mon-Dec-03-15_55_58-GMT-2012__MainVizDensitycopy.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/IB_CEUS1_Mon-Dec-03-15_55_58-GMT-2012__MainVizDensitycopy.png used
+ on input line 285.
+(pdftex.def)             Requested size: 249.24876pt x 258.36972pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.286 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/ID_CEUS1_Mon-Dec-03-15_57_17-GMT-2012__distanceToCentralFirm_vs_chosenDensityCostcopy.png,
+ id=657, 888.31876pt x 866.23625pt>
+File: ChapterTestingModels/Figures/ID_CEUS1_Mon-Dec-03-15_57_17-GMT-2012__distanceToCentralFirm_vs_chosenDensityCostcopy
+.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/ID_CEUS1_Mon-Dec-03-15_57_17-GMT-2012__distanceToCentralFirm_vs_chosenDensityCostcopy.
+png>
+Package pdftex.def Info: ChapterTestingModels/Figures/ID_CEUS1_Mon-Dec-03-15_57_17-GMT-2012__distanceToCentralFirm_vs_ch
+osenDensityCostcopy.png used on input line 287.
+(pdftex.def)             Requested size: 290.78601pt x 283.54575pt.
+
+<ChapterTestingModels/Figures/IF_CEUS1_Mon-Dec-03-15_57_42-GMT-2012__distanceToCentralFirm_vs_maxUtilitycopy.png, id=658
+, 888.31876pt x 866.23625pt>
+File: ChapterTestingModels/Figures/IF_CEUS1_Mon-Dec-03-15_57_42-GMT-2012__distanceToCentralFirm_vs_maxUtilitycopy.png Gr
+aphic file (type png)
+
+<use ChapterTestingModels/Figures/IF_CEUS1_Mon-Dec-03-15_57_42-GMT-2012__distanceToCentralFirm_vs_maxUtilitycopy.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/IF_CEUS1_Mon-Dec-03-15_57_42-GMT-2012__distanceToCentralFirm_vs_ma
+xUtilitycopy.png used on input line 299.
+(pdftex.def)             Requested size: 290.78601pt x 283.54575pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.301 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[156] [157 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/IB_CEUS1_Mon-Dec-
+03-15_55_58-GMT-2012__MainVizDensitycopy.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTest
+ingModels/Figures/ID_CEUS1_Mon-Dec-03-15_57_17-GMT-2012__distanceToCentralFirm_vs_chosenDensityCostcopy.png>]
+<ChapterTestingModels/Figures/SB_modelday_1397_CEUS1_Sat-Dec-15-17_24_49-GMT-2012__MainViz2.png, id=665, 1118.1775pt x 1
+127.21124pt>
+File: ChapterTestingModels/Figures/SB_modelday_1397_CEUS1_Sat-Dec-15-17_24_49-GMT-2012__MainViz2.png Graphic file (type 
+png)
+ <use ChapterTestingModels/Figures/SB_modelday_1397_CEUS1_Sat-Dec-15-17_24_49-GMT-2012__MainViz2.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/SB_modelday_1397_CEUS1_Sat-Dec-15-17_24_49-GMT-2012__MainViz2.png 
+used on input line 311.
+(pdftex.def)             Requested size: 249.24876pt x 251.2552pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.312 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/IC_CEUS1_Mon-Dec-03-15_57_00-GMT-2012__distanceToCentralFirm_vs_numPeopleInDensityCostRadi
+uscopy.png, id=666, 888.31876pt x 866.23625pt>
+File: ChapterTestingModels/Figures/IC_CEUS1_Mon-Dec-03-15_57_00-GMT-2012__distanceToCentralFirm_vs_numPeopleInDensityCos
+tRadiuscopy.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/IC_CEUS1_Mon-Dec-03-15_57_00-GMT-2012__distanceToCentralFirm_vs_numPeopleInDensityCost
+Radiuscopy.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/IC_CEUS1_Mon-Dec-03-15_57_00-GMT-2012__distanceToCentralFirm_vs_nu
+mPeopleInDensityCostRadiuscopy.png used on input line 313.
+(pdftex.def)             Requested size: 290.78601pt x 283.54575pt.
+
+
+LaTeX Warning: Float too large for page by 28.32791pt on input line 315.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 320.
+
+<ChapterTestingModels/Figures/distanceToCentralFirm_vs_wageOffer.jpg, id=667, 786.94pt x 764.8575pt>
+File: ChapterTestingModels/Figures/distanceToCentralFirm_vs_wageOffer.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/distanceToCentralFirm_vs_wageOffer.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/distanceToCentralFirm_vs_wageOffer.jpg used on input line 322.
+(pdftex.def)             Requested size: 290.78601pt x 282.61937pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.323 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/distanceToCentralFirm_vs_COMMUTECOST.jpg, id=668, 786.94pt x 764.8575pt>
+File: ChapterTestingModels/Figures/distanceToCentralFirm_vs_COMMUTECOST.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/distanceToCentralFirm_vs_COMMUTECOST.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/distanceToCentralFirm_vs_COMMUTECOST.jpg used on input line 324.
+(pdftex.def)             Requested size: 290.78601pt x 282.61937pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.325 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+LaTeX Warning: Float too large for page by 5.51582pt on input line 327.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 329.
+
+<ChapterTestingModels/Figures/distanceToCentralFirm_vs_goodCost.jpg, id=669, 803.0pt x 803.0pt>
+File: ChapterTestingModels/Figures/distanceToCentralFirm_vs_goodCost.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/distanceToCentralFirm_vs_goodCost.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/distanceToCentralFirm_vs_goodCost.jpg used on input line 331.
+(pdftex.def)             Requested size: 290.78601pt x 290.79517pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.332 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/distanceToCentralFirm_vs_deliveryCost.jpg, id=670, 786.94pt x 764.8575pt>
+File: ChapterTestingModels/Figures/distanceToCentralFirm_vs_deliveryCost.jpg Graphic file (type jpg)
+
+<use ChapterTestingModels/Figures/distanceToCentralFirm_vs_deliveryCost.jpg>
+Package pdftex.def Info: ChapterTestingModels/Figures/distanceToCentralFirm_vs_deliveryCost.jpg used on input line 333.
+(pdftex.def)             Requested size: 290.78601pt x 282.61937pt.
+
+
+LaTeX Warning: Float too large for page by 13.69162pt on input line 335.
+
+
+Underfull \vbox (badness 4168) has occurred while \output is active []
+
+ [158 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/IF_CEUS1_Mon-Dec-03-15
+_57_42-GMT-2012__distanceToCentralFirm_vs_maxUtilitycopy.png>] [159 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrec
+tionsLatex/ChapterTestingModels/Figures/SB_modelday_1397_CEUS1_Sat-Dec-15-17_24_49-GMT-2012__MainViz2.png> <C:/Users/geo
+do/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/IC_CEUS1_Mon-Dec-03-15_57_00-GMT-2012__di
+stanceToCentralFirm_vs_numPeopleInDensityCostRadiuscopy.png>] [160 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrect
+ionsLatex/ChapterTestingModels/Figures/distanceToCentralFirm_vs_wageOffer.jpg> <C:/Users/geodo/Dropbox/Thesis2011_2012/T
+hesisCorrectionsLatex/ChapterTestingModels/Figures/distanceToCentralFirm_vs_COMMUTECOST.jpg>] [161 <C:/Users/geodo/Dropb
+ox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/distanceToCentralFirm_vs_goodCost.jpg> <C:/Users/
+geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/distanceToCentralFirm_vs_deliveryCost.
+jpg>]
+<ChapterTestingModels/Figures/2regionDiscreteDeliveryCostB&W.png, id=684, 457.2282pt x 276.5532pt>
+File: ChapterTestingModels/Figures/2regionDiscreteDeliveryCostB&W.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/2regionDiscreteDeliveryCostB&W.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/2regionDiscreteDeliveryCostB&W.png used on input line 348.
+(pdftex.def)             Requested size: 373.86682pt x 226.13367pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.349 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/2regionDiscreteGoodCostB&W.png, id=685, 457.2282pt x 276.5532pt>
+File: ChapterTestingModels/Figures/2regionDiscreteGoodCostB&W.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/2regionDiscreteGoodCostB&W.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/2regionDiscreteGoodCostB&W.png used on input line 350.
+(pdftex.def)             Requested size: 373.86682pt x 226.13367pt.
+
+! Misplaced alignment tab character &.
+<argument> Two People, two regions. Wages &
+                                            good cost $=1$. Density cost if ...
+l.351 ....\label{fig:discretetworegioncomparison}}
+                                                  %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> Two People, two regions. Wages &
+                                            good cost $=1$. Density cost if ...
+l.351 ....\label{fig:discretetworegioncomparison}}
+                                                  %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[162] [163 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/2regionDiscreteDe
+liveryCostB&W.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/2regionDi
+screteGoodCostB&W.png>] <ChapterTestingModels/Figures/3regionDelCost3finalfinal.png, id=694, 1083.04625pt x 648.4225pt>
+File: ChapterTestingModels/Figures/3regionDelCost3finalfinal.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/3regionDelCost3finalfinal.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/3regionDelCost3finalfinal.png used on input line 370.
+(pdftex.def)             Requested size: 373.86682pt x 223.83463pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.371 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/3regionGoodCostFinal.png, id=695, 1075.01625pt x 649.42625pt>
+File: ChapterTestingModels/Figures/3regionGoodCostFinal.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/3regionGoodCostFinal.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/3regionGoodCostFinal.png used on input line 372.
+(pdftex.def)             Requested size: 373.86682pt x 225.85582pt.
+
+! Misplaced alignment tab character &.
+<argument> Three People, three regions. Wages &
+                                                good cost $=1$. Density cost...
+l.373 ...s. \label{fig:discrete3regioncomparison}}
+                                                  %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> Three People, three regions. Wages &
+                                                good cost $=1$. Density cost...
+l.373 ...s. \label{fig:discrete3regioncomparison}}
+                                                  %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[164] [165 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/3regionDelCost3fi
+nalfinal.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/3regionGoodCos
+tFinal.png>]
+<ChapterTestingModels/Figures/JG_CEUS1_Wed-Dec-05-11_09_26-GMT-2012__MainViz.png, id=703, 619.56468pt x 678.28406pt>
+File: ChapterTestingModels/Figures/JG_CEUS1_Wed-Dec-05-11_09_26-GMT-2012__MainViz.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/JG_CEUS1_Wed-Dec-05-11_09_26-GMT-2012__MainViz.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JG_CEUS1_Wed-Dec-05-11_09_26-GMT-2012__MainViz.png used on input l
+ine 392.
+(pdftex.def)             Requested size: 249.24876pt x 272.87163pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.393 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/JH_CEUS1_Wed-Dec-05-11_09_28-GMT-2012__distanceToCentralFirm_vs_maxUtility.png, id=704, 88
+8.31876pt x 866.23625pt>
+File: ChapterTestingModels/Figures/JH_CEUS1_Wed-Dec-05-11_09_28-GMT-2012__distanceToCentralFirm_vs_maxUtility.png Graphi
+c file (type png)
+
+<use ChapterTestingModels/Figures/JH_CEUS1_Wed-Dec-05-11_09_28-GMT-2012__distanceToCentralFirm_vs_maxUtility.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JH_CEUS1_Wed-Dec-05-11_09_28-GMT-2012__distanceToCentralFirm_vs_ma
+xUtility.png used on input line 394.
+(pdftex.def)             Requested size: 290.78601pt x 283.54575pt.
+
+<ChapterTestingModels/Figures/JK_CEUS1_Wed-Dec-05-11_23_18-GMT-2012__MainViz.png, id=705, 727.96968pt x 789.70032pt>
+File: ChapterTestingModels/Figures/JK_CEUS1_Wed-Dec-05-11_23_18-GMT-2012__MainViz.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/JK_CEUS1_Wed-Dec-05-11_23_18-GMT-2012__MainViz.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JK_CEUS1_Wed-Dec-05-11_23_18-GMT-2012__MainViz.png used on input l
+ine 400.
+(pdftex.def)             Requested size: 249.24876pt x 270.38638pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.401 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/JL_CEUS1_Wed-Dec-05-11_23_33-GMT-2012__distanceToCentralFirm_vs_maxUtility.png, id=706, 88
+8.31876pt x 866.23625pt>
+File: ChapterTestingModels/Figures/JL_CEUS1_Wed-Dec-05-11_23_33-GMT-2012__distanceToCentralFirm_vs_maxUtility.png Graphi
+c file (type png)
+
+<use ChapterTestingModels/Figures/JL_CEUS1_Wed-Dec-05-11_23_33-GMT-2012__distanceToCentralFirm_vs_maxUtility.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JL_CEUS1_Wed-Dec-05-11_23_33-GMT-2012__distanceToCentralFirm_vs_ma
+xUtility.png used on input line 402.
+(pdftex.def)             Requested size: 290.78601pt x 283.54575pt.
+
+<ChapterTestingModels/Figures/BothCESlowRho.png, id=707, 1533.73pt x 687.56876pt>
+File: ChapterTestingModels/Figures/BothCESlowRho.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/BothCESlowRho.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/BothCESlowRho.png used on input line 419.
+(pdftex.def)             Requested size: 285.60783pt x 128.0374pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.420 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterTestingModels/Figures/BothCEShighRho.png, id=708, 1533.73pt x 687.56876pt>
+File: ChapterTestingModels/Figures/BothCEShighRho.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/BothCEShighRho.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/BothCEShighRho.png used on input line 421.
+(pdftex.def)             Requested size: 285.60783pt x 128.0374pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.422 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/JS_CEUS1_Wed-Dec-05-19_21_46-GMT-2012__distanceToCentralFirm_vs_rho.png, id=709, 677.53125
+pt x 677.53125pt>
+File: ChapterTestingModels/Figures/JS_CEUS1_Wed-Dec-05-19_21_46-GMT-2012__distanceToCentralFirm_vs_rho.png Graphic file 
+(type png)
+
+<use ChapterTestingModels/Figures/JS_CEUS1_Wed-Dec-05-19_21_46-GMT-2012__distanceToCentralFirm_vs_rho.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/JS_CEUS1_Wed-Dec-05-19_21_46-GMT-2012__distanceToCentralFirm_vs_rh
+o.png used on input line 423.
+(pdftex.def)             Requested size: 282.47603pt x 282.48318pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.424 \hspace{0.2}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[166] [167 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/JG_CEUS1_Wed-Dec-
+05-11_09_26-GMT-2012__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/F
+igures/JH_CEUS1_Wed-Dec-05-11_09_28-GMT-2012__distanceToCentralFirm_vs_maxUtility.png (PNG copy)>] [168 <C:/Users/geodo/
+Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/JK_CEUS1_Wed-Dec-05-11_23_18-GMT-2012__MainV
+iz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/JL_CEUS1_Wed-Dec-05-
+11_23_33-GMT-2012__distanceToCentralFirm_vs_maxUtility.png (PNG copy)>] [169 <C:/Users/geodo/Dropbox/Thesis2011_2012/The
+sisCorrectionsLatex/ChapterTestingModels/Figures/BothCESlowRho.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrec
+tionsLatex/ChapterTestingModels/Figures/BothCEShighRho.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLat
+ex/ChapterTestingModels/Figures/JS_CEUS1_Wed-Dec-05-19_21_46-GMT-2012__distanceToCentralFirm_vs_rho.png>]
+<ChapterTestingModels/Figures/RH_modelday_1399_CEUS1_Fri-Jun-07-16_23_49-BST-2013__MainVizedit.png, id=725, 1481.535pt x
+ 1526.70375pt>
+File: ChapterTestingModels/Figures/RH_modelday_1399_CEUS1_Fri-Jun-07-16_23_49-BST-2013__MainVizedit.png Graphic file (ty
+pe png)
+ <use ChapterTestingModels/Figures/RH_modelday_1399_CEUS1_Fri-Jun-07-16_23_49-BST-2013__MainVizedit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/RH_modelday_1399_CEUS1_Fri-Jun-07-16_23_49-BST-2013__MainVizedit.p
+ng used on input line 450.
+(pdftex.def)             Requested size: 270.01422pt x 278.24257pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.451 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/RI_modelday_2197_CEUS1_Fri-Jun-07-16_24_42-BST-2013__distanceToCentralFirm_vs_maxUtility.p
+ng, id=726, 1606.0pt x 1606.0pt>
+File: ChapterTestingModels/Figures/RI_modelday_2197_CEUS1_Fri-Jun-07-16_24_42-BST-2013__distanceToCentralFirm_vs_maxUtil
+ity.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/RI_modelday_2197_CEUS1_Fri-Jun-07-16_24_42-BST-2013__distanceToCentralFirm_vs_maxUtili
+ty.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/RI_modelday_2197_CEUS1_Fri-Jun-07-16_24_42-BST-2013__distanceToCen
+tralFirm_vs_maxUtility.png used on input line 452.
+(pdftex.def)             Requested size: 290.78601pt x 290.78291pt.
+
+Underfull \vbox (badness 5954) has occurred while \output is active []
+
+ [170]
+<ChapterTestingModels/Figures/RM_modelday_2008_CEUS1_Fri-Jun-07-17_29_44-BST-2013__MainVizEdit.png, id=730, 1689.31125pt
+ x 1767.60374pt>
+File: ChapterTestingModels/Figures/RM_modelday_2008_CEUS1_Fri-Jun-07-17_29_44-BST-2013__MainVizEdit.png Graphic file (ty
+pe png)
+
+<use ChapterTestingModels/Figures/RM_modelday_2008_CEUS1_Fri-Jun-07-17_29_44-BST-2013__MainVizEdit.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/RM_modelday_2008_CEUS1_Fri-Jun-07-17_29_44-BST-2013__MainVizEdit.p
+ng used on input line 458.
+(pdftex.def)             Requested size: 270.01422pt x 282.5257pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.459 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/RO_modelday_2458_CEUS1_Fri-Jun-07-17_30_12-BST-2013__distanceToCentralFirm_vs_maxUtility.p
+ng, id=731, 1606.0pt x 1606.0pt>
+File: ChapterTestingModels/Figures/RO_modelday_2458_CEUS1_Fri-Jun-07-17_30_12-BST-2013__distanceToCentralFirm_vs_maxUtil
+ity.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/RO_modelday_2458_CEUS1_Fri-Jun-07-17_30_12-BST-2013__distanceToCentralFirm_vs_maxUtili
+ty.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/RO_modelday_2458_CEUS1_Fri-Jun-07-17_30_12-BST-2013__distanceToCen
+tralFirm_vs_maxUtility.png used on input line 460.
+(pdftex.def)             Requested size: 290.78601pt x 290.78291pt.
+
+! Misplaced alignment tab character &.
+l.470 ...tre. The visualisation of the agents' $R&
+                                                  2$ spatial position in sub...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.474 ...EqGraph2}). At this extreme, spatial \emp
+                                                  {utility} equilibrium no l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[171] [172 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/RH_modelday_1399_
+CEUS1_Fri-Jun-07-16_23_49-BST-2013__MainVizedit.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/Chap
+terTestingModels/Figures/RI_modelday_2197_CEUS1_Fri-Jun-07-16_24_42-BST-2013__distanceToCentralFirm_vs_maxUtility.png (P
+NG copy)>] [173 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/RM_modelday_
+2008_CEUS1_Fri-Jun-07-17_29_44-BST-2013__MainVizEdit.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex
+/ChapterTestingModels/Figures/RO_modelday_2458_CEUS1_Fri-Jun-07-17_30_12-BST-2013__distanceToCentralFirm_vs_maxUtility.p
+ng (PNG copy)>] [174]
+<ChapterTestingModels/Figures/MO_modelday_52242_Hotelling_Line_DMR_Sat-May-25-12_33_01-BST-2013__MainVizrho0point1del1.p
+ng, id=747, 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/MO_modelday_52242_Hotelling_Line_DMR_Sat-May-25-12_33_01-BST-2013__MainVizrho0point1d
+el1.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/MO_modelday_52242_Hotelling_Line_DMR_Sat-May-25-12_33_01-BST-2013__MainVizrho0point1de
+l1.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/MO_modelday_52242_Hotelling_Line_DMR_Sat-May-25-12_33_01-BST-2013_
+_MainVizrho0point1del1.png used on input line 521.
+(pdftex.def)             Requested size: 278.3242pt x 278.31572pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.522 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/MN_modelday_97098_Hotelling_Line_DMR_Sat-May-25-12_30_26-BST-2013__MainVizrho1del1.png, id
+=748, 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/MN_modelday_97098_Hotelling_Line_DMR_Sat-May-25-12_30_26-BST-2013__MainVizrho1del1.pn
+g Graphic file (type png)
+
+<use ChapterTestingModels/Figures/MN_modelday_97098_Hotelling_Line_DMR_Sat-May-25-12_30_26-BST-2013__MainVizrho1del1.png
+>
+Package pdftex.def Info: ChapterTestingModels/Figures/MN_modelday_97098_Hotelling_Line_DMR_Sat-May-25-12_30_26-BST-2013_
+_MainVizrho1del1.png used on input line 523.
+(pdftex.def)             Requested size: 278.3242pt x 278.31572pt.
+
+
+LaTeX Warning: Float too large for page by 9.08899pt on input line 525.
+
+
+<ChapterTestingModels/Figures/MP_modelday_88353_Hotelling_Line_DMR_Sat-May-25-12_38_12-BST-2013__MainVizrho0point1del20.
+png, id=749, 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/MP_modelday_88353_Hotelling_Line_DMR_Sat-May-25-12_38_12-BST-2013__MainVizrho0point1d
+el20.png Graphic file (type png)
+
+<use ChapterTestingModels/Figures/MP_modelday_88353_Hotelling_Line_DMR_Sat-May-25-12_38_12-BST-2013__MainVizrho0point1de
+l20.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/MP_modelday_88353_Hotelling_Line_DMR_Sat-May-25-12_38_12-BST-2013_
+_MainVizrho0point1del20.png used on input line 529.
+(pdftex.def)             Requested size: 278.3242pt x 278.31572pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.530 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/MQ_modelday_98111_Hotelling_Line_DMR_Sat-May-25-12_40_58-BST-2013__MainVizrho1del20.png, i
+d=750, 1204.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/MQ_modelday_98111_Hotelling_Line_DMR_Sat-May-25-12_40_58-BST-2013__MainVizrho1del20.p
+ng Graphic file (type png)
+
+<use ChapterTestingModels/Figures/MQ_modelday_98111_Hotelling_Line_DMR_Sat-May-25-12_40_58-BST-2013__MainVizrho1del20.pn
+g>
+Package pdftex.def Info: ChapterTestingModels/Figures/MQ_modelday_98111_Hotelling_Line_DMR_Sat-May-25-12_40_58-BST-2013_
+_MainVizrho1del20.png used on input line 531.
+(pdftex.def)             Requested size: 278.3242pt x 278.31572pt.
+
+
+LaTeX Warning: Float too large for page by 9.08899pt on input line 533.
+
+
+<ChapterTestingModels/Figures/MV_modelday_906_Hotelling_Line_DMR_Sat-May-25-12_49_57-BST-2013__MainViz.png, id=751, 1204
+.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/MV_modelday_906_Hotelling_Line_DMR_Sat-May-25-12_49_57-BST-2013__MainViz.png Graphic 
+file (type png)
+
+<use ChapterTestingModels/Figures/MV_modelday_906_Hotelling_Line_DMR_Sat-May-25-12_49_57-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/MV_modelday_906_Hotelling_Line_DMR_Sat-May-25-12_49_57-BST-2013__M
+ainViz.png used on input line 537.
+(pdftex.def)             Requested size: 290.78601pt x 290.7768pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.538 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterTestingModels/Figures/MR_modelday_106_Hotelling_Line_DMR_Sat-May-25-12_49_16-BST-2013__MainViz.png, id=752, 1204
+.5pt x 1204.5pt>
+File: ChapterTestingModels/Figures/MR_modelday_106_Hotelling_Line_DMR_Sat-May-25-12_49_16-BST-2013__MainViz.png Graphic 
+file (type png)
+
+<use ChapterTestingModels/Figures/MR_modelday_106_Hotelling_Line_DMR_Sat-May-25-12_49_16-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterTestingModels/Figures/MR_modelday_106_Hotelling_Line_DMR_Sat-May-25-12_49_16-BST-2013__M
+ainViz.png used on input line 539.
+(pdftex.def)             Requested size: 290.78601pt x 290.7768pt.
+ [175]
+[176 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/MO_modelday_52242_Hotel
+ling_Line_DMR_Sat-May-25-12_33_01-BST-2013__MainVizrho0point1del1.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCor
+rectionsLatex/ChapterTestingModels/Figures/MN_modelday_97098_Hotelling_Line_DMR_Sat-May-25-12_30_26-BST-2013__MainVizrho
+1del1.png>] [177 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/MP_modelday
+_88353_Hotelling_Line_DMR_Sat-May-25-12_38_12-BST-2013__MainVizrho0point1del20.png> <C:/Users/geodo/Dropbox/Thesis2011_2
+012/ThesisCorrectionsLatex/ChapterTestingModels/Figures/MQ_modelday_98111_Hotelling_Line_DMR_Sat-May-25-12_40_58-BST-201
+3__MainVizrho1del20.png>] [178 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterTestingModels/Figur
+es/MV_modelday_906_Hotelling_Line_DMR_Sat-May-25-12_49_57-BST-2013__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012
+/ThesisCorrectionsLatex/ChapterTestingModels/Figures/MR_modelday_106_Hotelling_Line_DMR_Sat-May-25-12_49_16-BST-2013__Ma
+inViz.png>] [179] <ChapterConnectedModels/Figures/FirmGame11.jpg, id=775, 361.95226pt x 217.41225pt>
+File: ChapterConnectedModels/Figures/FirmGame11.jpg Graphic file (type jpg)
+
+<use ChapterConnectedModels/Figures/FirmGame11.jpg>
+Package pdftex.def Info: ChapterConnectedModels/Figures/FirmGame11.jpg used on input line 577.
+(pdftex.def)             Requested size: 290.78601pt x 174.6698pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.578 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterConnectedModels/Figures/FirmGame12.jpg, id=776, 361.35pt x 217.41225pt>
+File: ChapterConnectedModels/Figures/FirmGame12.jpg Graphic file (type jpg)
+
+<use ChapterConnectedModels/Figures/FirmGame12.jpg>
+Package pdftex.def Info: ChapterConnectedModels/Figures/FirmGame12.jpg used on input line 579.
+(pdftex.def)             Requested size: 290.78601pt x 174.95842pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.580 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterConnectedModels/Figures/FirmGame13.jpg, id=777, 361.95226pt x 216.81pt>
+File: ChapterConnectedModels/Figures/FirmGame13.jpg Graphic file (type jpg)
+
+<use ChapterConnectedModels/Figures/FirmGame13.jpg>
+Package pdftex.def Info: ChapterConnectedModels/Figures/FirmGame13.jpg used on input line 581.
+(pdftex.def)             Requested size: 290.78601pt x 174.18596pt.
+ [180] [181 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/FirmGame11.jpg
+> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/FirmGame12.jpg> <C:/User
+s/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/FirmGame13.jpg>] [182]) [183]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterConnectedModels/ConnectedModelsFromWord.tex
+[184
+
+
+
+]
+Chapter 6.
+[185]
+! Undefined control sequence.
+l.21 ... model faces being stuck between this na\‚
+                                                  Äù{\i}ve approach to money...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+[186] [187] [188] [189]
+<ChapterConnectedModels/Figures/BT_modelday_3276_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__stock_vs_Time.pn
+g, id=810, 787.94376pt x 496.85625pt>
+File: ChapterConnectedModels/Figures/BT_modelday_3276_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__stock_vs_Ti
+me.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/BT_modelday_3276_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__stock_vs_Tim
+e.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/BT_modelday_3276_Transmission_singleFirm1_Wed-May-08-16_49_53-BS
+T-2013__stock_vs_Time.png used on input line 87.
+(pdftex.def)             Requested size: 373.86682pt x 235.75139pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.88 \hspace{0.1}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/BU_modelday_3344_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__goodCost_vs_Time
+.png, id=811, 787.94376pt x 496.85625pt>
+File: ChapterConnectedModels/Figures/BU_modelday_3344_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__goodCost_vs
+_Time.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/BU_modelday_3344_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__goodCost_vs_
+Time.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/BU_modelday_3344_Transmission_singleFirm1_Wed-May-08-16_49_53-BS
+T-2013__goodCost_vs_Time.png used on input line 89.
+(pdftex.def)             Requested size: 373.86682pt x 235.75139pt.
+
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [190] [191 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/BT_modelday_32
+76_Transmission_singleFirm1_Wed-May-08-16_49_53-BST-2013__stock_vs_Time.png (PNG copy)> <C:/Users/geodo/Dropbox/Thesis20
+11_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/BU_modelday_3344_Transmission_singleFirm1_Wed-May-08-16_49
+_53-BST-2013__goodCost_vs_Time.png (PNG copy)>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 101.
+
+
+<ChapterConnectedModels/Figures/DG_modelday_941_Transmission_singleFirm1_Tue-May-14-09_37_25-BST-2013__goodCost_vs_Time.
+png, id=818, 1189.44376pt x 565.11125pt>
+File: ChapterConnectedModels/Figures/DG_modelday_941_Transmission_singleFirm1_Tue-May-14-09_37_25-BST-2013__goodCost_vs_
+Time.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/DG_modelday_941_Transmission_singleFirm1_Tue-May-14-09_37_25-BST-2013__goodCost_vs_T
+ime.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/DG_modelday_941_Transmission_singleFirm1_Tue-May-14-09_37_25-BST
+-2013__goodCost_vs_Time.png used on input line 103.
+(pdftex.def)             Requested size: 373.86682pt x 177.62296pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.104 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/DH_modelday_533_Transmission_singleFirm1_Tue-May-14-09_39_47-BST-2013__goodCost_vs_Time.
+png, id=819, 1189.44376pt x 565.11125pt>
+File: ChapterConnectedModels/Figures/DH_modelday_533_Transmission_singleFirm1_Tue-May-14-09_39_47-BST-2013__goodCost_vs_
+Time.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/DH_modelday_533_Transmission_singleFirm1_Tue-May-14-09_39_47-BST-2013__goodCost_vs_T
+ime.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/DH_modelday_533_Transmission_singleFirm1_Tue-May-14-09_39_47-BST
+-2013__goodCost_vs_Time.png used on input line 105.
+(pdftex.def)             Requested size: 373.86682pt x 177.62296pt.
+
+<ChapterConnectedModels/Figures/DI_modelday_516_Transmission_singleFirm1_Tue-May-14-10_11_39-BST-2013__goodCost_vs_Time.
+png, id=820, 1189.44376pt x 565.11125pt>
+File: ChapterConnectedModels/Figures/DI_modelday_516_Transmission_singleFirm1_Tue-May-14-10_11_39-BST-2013__goodCost_vs_
+Time.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/DI_modelday_516_Transmission_singleFirm1_Tue-May-14-10_11_39-BST-2013__goodCost_vs_T
+ime.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/DI_modelday_516_Transmission_singleFirm1_Tue-May-14-10_11_39-BST
+-2013__goodCost_vs_Time.png used on input line 111.
+(pdftex.def)             Requested size: 373.86682pt x 177.62296pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.112 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/DN_modelday_943_Transmission_singleFirm1_Tue-May-14-11_44_10-BST-2013__currentContribute
+dTime_vs_goodCost.png, id=821, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/DN_modelday_943_Transmission_singleFirm1_Tue-May-14-11_44_10-BST-2013__currentContr
+ibutedTime_vs_goodCost.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/DN_modelday_943_Transmission_singleFirm1_Tue-May-14-11_44_10-BST-2013__currentContri
+butedTime_vs_goodCost.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/DN_modelday_943_Transmission_singleFirm1_Tue-May-14-11_44_10-BST
+-2013__currentContributedTime_vs_goodCost.png used on input line 113.
+(pdftex.def)             Requested size: 373.86682pt x 373.869pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 121.
+
+
+<ChapterConnectedModels/Figures/RV_modelday_279_EoS_LoV_noSpace_Fri-Jun-07-21_05_10-BST-2013__goodCost_vs_Time.png, id=8
+22, 1189.44376pt x 565.11125pt>
+File: ChapterConnectedModels/Figures/RV_modelday_279_EoS_LoV_noSpace_Fri-Jun-07-21_05_10-BST-2013__goodCost_vs_Time.png 
+Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/RV_modelday_279_EoS_LoV_noSpace_Fri-Jun-07-21_05_10-BST-2013__goodCost_vs_Time.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/RV_modelday_279_EoS_LoV_noSpace_Fri-Jun-07-21_05_10-BST-2013__go
+odCost_vs_Time.png used on input line 123.
+(pdftex.def)             Requested size: 373.86682pt x 177.62296pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.124 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/RW_modelday_359_EoS_LoV_noSpace_Fri-Jun-07-21_05_11-BST-2013__maxUtility_vs_Time.png, id
+=823, 1189.44376pt x 565.11125pt>
+File: ChapterConnectedModels/Figures/RW_modelday_359_EoS_LoV_noSpace_Fri-Jun-07-21_05_11-BST-2013__maxUtility_vs_Time.pn
+g Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/RW_modelday_359_EoS_LoV_noSpace_Fri-Jun-07-21_05_11-BST-2013__maxUtility_vs_Time.png
+>
+Package pdftex.def Info: ChapterConnectedModels/Figures/RW_modelday_359_EoS_LoV_noSpace_Fri-Jun-07-21_05_11-BST-2013__ma
+xUtility_vs_Time.png used on input line 125.
+(pdftex.def)             Requested size: 373.86682pt x 177.62296pt.
+
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+ [192] [193 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/DG_modelday_94
+1_Transmission_singleFirm1_Tue-May-14-09_37_25-BST-2013__goodCost_vs_Time.png (PNG copy)> <C:/Users/geodo/Dropbox/Thesis
+2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/DH_modelday_533_Transmission_singleFirm1_Tue-May-14-09_3
+9_47-BST-2013__goodCost_vs_Time.png (PNG copy)>]
+[194 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/DI_modelday_516_Trans
+mission_singleFirm1_Tue-May-14-10_11_39-BST-2013__goodCost_vs_Time.png (PNG copy)> <C:/Users/geodo/Dropbox/Thesis2011_20
+12/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/DN_modelday_943_Transmission_singleFirm1_Tue-May-14-11_44_10-BS
+T-2013__currentContributedTime_vs_goodCost.png (PNG copy)>] [195 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectio
+nsLatex/ChapterConnectedModels/Figures/RV_modelday_279_EoS_LoV_noSpace_Fri-Jun-07-21_05_10-BST-2013__goodCost_vs_Time.pn
+g (PNG copy)> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/RW_modelday_
+359_EoS_LoV_noSpace_Fri-Jun-07-21_05_11-BST-2013__maxUtility_vs_Time.png (PNG copy)>] [196]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [197]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 163.
+
+
+<ChapterConnectedModels/Figures/OV_modelday_112501_EoS_LoV_noSpace_Wed-Jun-05-18_03_48-BST-2013__EoS_Curve_vs_priceDiffF
+ollow.png, id=843, 891.33pt x 757.32938pt>
+File: ChapterConnectedModels/Figures/OV_modelday_112501_EoS_LoV_noSpace_Wed-Jun-05-18_03_48-BST-2013__EoS_Curve_vs_price
+DiffFollow.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/OV_modelday_112501_EoS_LoV_noSpace_Wed-Jun-05-18_03_48-BST-2013__EoS_Curve_vs_priceD
+iffFollow.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/OV_modelday_112501_EoS_LoV_noSpace_Wed-Jun-05-18_03_48-BST-2013_
+_EoS_Curve_vs_priceDiffFollow.png used on input line 165.
+(pdftex.def)             Requested size: 332.32957pt x 282.36844pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.167 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[198 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/OV_modelday_112501_Eo
+S_LoV_noSpace_Wed-Jun-05-18_03_48-BST-2013__EoS_Curve_vs_priceDiffFollow.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 173.
+
+
+<ChapterConnectedModels/Figures/PV_modelday_153280_EoS_LoV_noSpace_Wed-Jun-05-19_00_02-BST-2013__goodCost_vs_goodCost.pn
+g, id=848, 1188.44pt x 1009.7725pt>
+File: ChapterConnectedModels/Figures/PV_modelday_153280_EoS_LoV_noSpace_Wed-Jun-05-19_00_02-BST-2013__goodCost_vs_goodCo
+st.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/PV_modelday_153280_EoS_LoV_noSpace_Wed-Jun-05-19_00_02-BST-2013__goodCost_vs_goodCos
+t.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/PV_modelday_153280_EoS_LoV_noSpace_Wed-Jun-05-19_00_02-BST-2013_
+_goodCost_vs_goodCost.png used on input line 175.
+(pdftex.def)             Requested size: 332.32957pt x 282.36458pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.177 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[199 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/PV_modelday_153280_Eo
+S_LoV_noSpace_Wed-Jun-05-19_00_02-BST-2013__goodCost_vs_goodCost.png (PNG copy)>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 188.
+
+
+<ChapterConnectedModels/Figures/CS_modelday_1479445_Transmission_singleFirm1_Fri-May-10-16_05_52-BST-2013__markUp_vs_rho
+_NO_EOS.png, id=852, 1188.44pt x 1009.7725pt>
+File: ChapterConnectedModels/Figures/CS_modelday_1479445_Transmission_singleFirm1_Fri-May-10-16_05_52-BST-2013__markUp_v
+s_rho_NO_EOS.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/CS_modelday_1479445_Transmission_singleFirm1_Fri-May-10-16_05_52-BST-2013__markUp_vs
+_rho_NO_EOS.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/CS_modelday_1479445_Transmission_singleFirm1_Fri-May-10-16_05_52
+-BST-2013__markUp_vs_rho_NO_EOS.png used on input line 190.
+(pdftex.def)             Requested size: 332.32957pt x 282.36458pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.192 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Underfull \vbox (badness 4713) has occurred while \output is active []
+
+ [200] [201 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/CS_modelday_14
+79445_Transmission_singleFirm1_Fri-May-10-16_05_52-BST-2013__markUp_vs_rho_NO_EOS.png (PNG copy)>]
+<ChapterConnectedModels/Figures/FX_modelday_3375_EoS_LoV_noSpace_Fri-May-17-11_09_25-BST-2013__Output_per_unitTime_vs_Ti
+me.png, id=860, 1189.44376pt x 444.66125pt>
+File: ChapterConnectedModels/Figures/FX_modelday_3375_EoS_LoV_noSpace_Fri-May-17-11_09_25-BST-2013__Output_per_unitTime_
+vs_Time.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/FX_modelday_3375_EoS_LoV_noSpace_Fri-May-17-11_09_25-BST-2013__Output_per_unitTime_v
+s_Time.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/FX_modelday_3375_EoS_LoV_noSpace_Fri-May-17-11_09_25-BST-2013__O
+utput_per_unitTime_vs_Time.png used on input line 213.
+(pdftex.def)             Requested size: 353.10136pt x 132.0017pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.214 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/FY_modelday_3493_EoS_LoV_noSpace_Fri-May-17-11_09_27-BST-2013__stock_vs_Time.png, id=861
+, 1189.44376pt x 444.66125pt>
+File: ChapterConnectedModels/Figures/FY_modelday_3493_EoS_LoV_noSpace_Fri-May-17-11_09_27-BST-2013__stock_vs_Time.png Gr
+aphic file (type png)
+
+<use ChapterConnectedModels/Figures/FY_modelday_3493_EoS_LoV_noSpace_Fri-May-17-11_09_27-BST-2013__stock_vs_Time.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/FY_modelday_3493_EoS_LoV_noSpace_Fri-May-17-11_09_27-BST-2013__s
+tock_vs_Time.png used on input line 215.
+(pdftex.def)             Requested size: 353.10136pt x 132.0017pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.216 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/FZ_modelday_3566_EoS_LoV_noSpace_Fri-May-17-11_09_29-BST-2013__goodCost_vs_Time.png, id=
+862, 1189.44376pt x 444.66125pt>
+File: ChapterConnectedModels/Figures/FZ_modelday_3566_EoS_LoV_noSpace_Fri-May-17-11_09_29-BST-2013__goodCost_vs_Time.png
+ Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/FZ_modelday_3566_EoS_LoV_noSpace_Fri-May-17-11_09_29-BST-2013__goodCost_vs_Time.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/FZ_modelday_3566_EoS_LoV_noSpace_Fri-May-17-11_09_29-BST-2013__g
+oodCost_vs_Time.png used on input line 217.
+(pdftex.def)             Requested size: 353.10136pt x 132.0017pt.
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.218 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/GA_modelday_3655_EoS_LoV_noSpace_Fri-May-17-11_09_30-BST-2013__maxUtility_vs_Time.png, i
+d=863, 1189.44376pt x 444.66125pt>
+File: ChapterConnectedModels/Figures/GA_modelday_3655_EoS_LoV_noSpace_Fri-May-17-11_09_30-BST-2013__maxUtility_vs_Time.p
+ng Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/GA_modelday_3655_EoS_LoV_noSpace_Fri-May-17-11_09_30-BST-2013__maxUtility_vs_Time.pn
+g>
+Package pdftex.def Info: ChapterConnectedModels/Figures/GA_modelday_3655_EoS_LoV_noSpace_Fri-May-17-11_09_30-BST-2013__m
+axUtility_vs_Time.png used on input line 219.
+(pdftex.def)             Requested size: 353.10136pt x 132.0017pt.
+ [202] [203 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/FX_modelday_33
+75_EoS_LoV_noSpace_Fri-May-17-11_09_25-BST-2013__Output_per_unitTime_vs_Time.png (PNG copy)> <C:/Users/geodo/Dropbox/The
+sis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/FY_modelday_3493_EoS_LoV_noSpace_Fri-May-17-11_09_27-
+BST-2013__stock_vs_Time.png (PNG copy)> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedM
+odels/Figures/FZ_modelday_3566_EoS_LoV_noSpace_Fri-May-17-11_09_29-BST-2013__goodCost_vs_Time.png (PNG copy)> <C:/Users/
+geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/GA_modelday_3655_EoS_LoV_noSpace_Fri
+-May-17-11_09_30-BST-2013__maxUtility_vs_Time.png (PNG copy)>] [204] [205]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 268.
+
+<ChapterConnectedModels/Figures/TBM_convergingSpreadsheet.png, id=876, 365.2044pt x 217.7736pt>
+File: ChapterConnectedModels/Figures/TBM_convergingSpreadsheet.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/TBM_convergingSpreadsheet.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/TBM_convergingSpreadsheet.png used on input line 270.
+(pdftex.def)             Requested size: 353.10136pt x 210.56557pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.271 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterConnectedModels/Figures/TBM_spreadSheetSpreading.png, id=877, 365.2044pt x 217.7736pt>
+File: ChapterConnectedModels/Figures/TBM_spreadSheetSpreading.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/TBM_spreadSheetSpreading.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/TBM_spreadSheetSpreading.png used on input line 272.
+(pdftex.def)             Requested size: 353.10136pt x 210.56557pt.
+ [206] [207 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/TBM_converging
+Spreadsheet.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/TBM_sprea
+dSheetSpreading.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 309.
+
+
+<ChapterConnectedModels/Figures/HG_modelday_96878_TwoRegionTransmission_Mon-May-20-08_37_46-BST-2013__rho_vs_deliveryCos
+twText.png, id=887, 891.33pt x 757.32938pt>
+File: ChapterConnectedModels/Figures/HG_modelday_96878_TwoRegionTransmission_Mon-May-20-08_37_46-BST-2013__rho_vs_delive
+ryCostwText.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/HG_modelday_96878_TwoRegionTransmission_Mon-May-20-08_37_46-BST-2013__rho_vs_deliver
+yCostwText.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/HG_modelday_96878_TwoRegionTransmission_Mon-May-20-08_37_46-BST-
+2013__rho_vs_deliveryCostwText.png used on input line 311.
+(pdftex.def)             Requested size: 332.32957pt x 282.36844pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.313 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[208 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/HG_modelday_96878_Two
+RegionTransmission_Mon-May-20-08_37_46-BST-2013__rho_vs_deliveryCostwText.png>]
+<ChapterConnectedModels/Figures/JS_modelday_5066_TwoRegionTransmission_Wed-May-22-15_50_12-BST-2013__MainViz.png, id=892
+, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JS_modelday_5066_TwoRegionTransmission_Wed-May-22-15_50_12-BST-2013__MainViz.png Gr
+aphic file (type png)
+
+<use ChapterConnectedModels/Figures/JS_modelday_5066_TwoRegionTransmission_Wed-May-22-15_50_12-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JS_modelday_5066_TwoRegionTransmission_Wed-May-22-15_50_12-BST-2
+013__MainViz.png used on input line 326.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.327 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/JT_modelday_7931_TwoRegionTransmission_Wed-May-22-15_50_34-BST-2013__MainViz.png, id=893
+, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JT_modelday_7931_TwoRegionTransmission_Wed-May-22-15_50_34-BST-2013__MainViz.png Gr
+aphic file (type png)
+
+<use ChapterConnectedModels/Figures/JT_modelday_7931_TwoRegionTransmission_Wed-May-22-15_50_34-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JT_modelday_7931_TwoRegionTransmission_Wed-May-22-15_50_34-BST-2
+013__MainViz.png used on input line 328.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.329 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/JU_modelday_12623_TwoRegionTransmission_Wed-May-22-15_51_11-BST-2013__MainViz.png, id=89
+4, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JU_modelday_12623_TwoRegionTransmission_Wed-May-22-15_51_11-BST-2013__MainViz.png G
+raphic file (type png)
+
+<use ChapterConnectedModels/Figures/JU_modelday_12623_TwoRegionTransmission_Wed-May-22-15_51_11-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JU_modelday_12623_TwoRegionTransmission_Wed-May-22-15_51_11-BST-
+2013__MainViz.png used on input line 330.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.331 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/JV_modelday_17290_TwoRegionTransmission_Wed-May-22-15_51_49-BST-2013__MainViz.png, id=89
+5, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JV_modelday_17290_TwoRegionTransmission_Wed-May-22-15_51_49-BST-2013__MainViz.png G
+raphic file (type png)
+
+<use ChapterConnectedModels/Figures/JV_modelday_17290_TwoRegionTransmission_Wed-May-22-15_51_49-BST-2013__MainViz.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JV_modelday_17290_TwoRegionTransmission_Wed-May-22-15_51_49-BST-
+2013__MainViz.png used on input line 332.
+(pdftex.def)             Requested size: 203.55338pt x 203.54927pt.
+
+[209] [210 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/JS_modelday_506
+6_TwoRegionTransmission_Wed-May-22-15_50_12-BST-2013__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrect
+ionsLatex/ChapterConnectedModels/Figures/JT_modelday_7931_TwoRegionTransmission_Wed-May-22-15_50_34-BST-2013__MainViz.pn
+g> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/JU_modelday_12623_TwoRe
+gionTransmission_Wed-May-22-15_51_11-BST-2013__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLat
+ex/ChapterConnectedModels/Figures/JV_modelday_17290_TwoRegionTransmission_Wed-May-22-15_51_49-BST-2013__MainViz.png>]
+<ChapterConnectedModels/Figures/JY_modelday_948_1DLineManyAgentsTransmission_Wed-May-22-16_09_15-BST-2013__MainViz.png, 
+id=906, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JY_modelday_948_1DLineManyAgentsTransmission_Wed-May-22-16_09_15-BST-2013__MainViz.
+png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/JY_modelday_948_1DLineManyAgentsTransmission_Wed-May-22-16_09_15-BST-2013__MainViz.p
+ng>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JY_modelday_948_1DLineManyAgentsTransmission_Wed-May-22-16_09_15
+-BST-2013__MainViz.png used on input line 345.
+(pdftex.def)             Requested size: 249.24876pt x 249.23987pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.346 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/JW_modelday_1051_1DLineManyAgentsTransmission_Wed-May-22-16_06_33-BST-2013__MainViz.png,
+ id=907, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JW_modelday_1051_1DLineManyAgentsTransmission_Wed-May-22-16_06_33-BST-2013__MainViz
+.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/JW_modelday_1051_1DLineManyAgentsTransmission_Wed-May-22-16_06_33-BST-2013__MainViz.
+png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JW_modelday_1051_1DLineManyAgentsTransmission_Wed-May-22-16_06_3
+3-BST-2013__MainViz.png used on input line 347.
+(pdftex.def)             Requested size: 249.24876pt x 249.23987pt.
+
+<ChapterConnectedModels/Figures/JZ_modelday_1333_1DLineManyAgentsTransmission_Wed-May-22-16_12_29-BST-2013__MainViz.png,
+ id=908, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/JZ_modelday_1333_1DLineManyAgentsTransmission_Wed-May-22-16_12_29-BST-2013__MainViz
+.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/JZ_modelday_1333_1DLineManyAgentsTransmission_Wed-May-22-16_12_29-BST-2013__MainViz.
+png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/JZ_modelday_1333_1DLineManyAgentsTransmission_Wed-May-22-16_12_2
+9-BST-2013__MainViz.png used on input line 353.
+(pdftex.def)             Requested size: 249.24876pt x 249.23987pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.354 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+<ChapterConnectedModels/Figures/KA_modelday_1423_1DLineManyAgentsTransmission_Wed-May-22-16_14_52-BST-2013__MainViz.png,
+ id=909, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/KA_modelday_1423_1DLineManyAgentsTransmission_Wed-May-22-16_14_52-BST-2013__MainViz
+.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/KA_modelday_1423_1DLineManyAgentsTransmission_Wed-May-22-16_14_52-BST-2013__MainViz.
+png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/KA_modelday_1423_1DLineManyAgentsTransmission_Wed-May-22-16_14_5
+2-BST-2013__MainViz.png used on input line 355.
+(pdftex.def)             Requested size: 249.24876pt x 249.23987pt.
+ [211] [212 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/JY_modelday_94
+8_1DLineManyAgentsTransmission_Wed-May-22-16_09_15-BST-2013__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011_2012/Thesis
+CorrectionsLatex/ChapterConnectedModels/Figures/JW_modelday_1051_1DLineManyAgentsTransmission_Wed-May-22-16_06_33-BST-20
+13__MainViz.png>] [213 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/JZ_
+modelday_1333_1DLineManyAgentsTransmission_Wed-May-22-16_12_29-BST-2013__MainViz.png> <C:/Users/geodo/Dropbox/Thesis2011
+_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/KA_modelday_1423_1DLineManyAgentsTransmission_Wed-May-22-16_
+14_52-BST-2013__MainViz.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 372.
+
+
+<ChapterConnectedModels/Figures/VK_modelday_993_TransmissionPlusDensity1_Sat-Jun-08-16_33_48-BST-2013__distanceToCentral
+Firm_vs_productionLeveledit.png, id=924, 1204.5pt x 1204.5pt>
+File: ChapterConnectedModels/Figures/VK_modelday_993_TransmissionPlusDensity1_Sat-Jun-08-16_33_48-BST-2013__distanceToCe
+ntralFirm_vs_productionLeveledit.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/VK_modelday_993_TransmissionPlusDensity1_Sat-Jun-08-16_33_48-BST-2013__distanceToCen
+tralFirm_vs_productionLeveledit.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/VK_modelday_993_TransmissionPlusDensity1_Sat-Jun-08-16_33_48-BST
+-2013__distanceToCentralFirm_vs_productionLeveledit.png used on input line 374.
+(pdftex.def)             Requested size: 373.86682pt x 373.869pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.376 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 378.
+
+<ChapterConnectedModels/Figures/TBDensity1a.png, id=925, 1204.5pt x 640.3925pt>
+File: ChapterConnectedModels/Figures/TBDensity1a.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/TBDensity1a.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/TBDensity1a.png used on input line 380.
+(pdftex.def)             Requested size: 415.4104pt x 220.85747pt.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.381 \hspace{0.1}
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<ChapterConnectedModels/Figures/TBDensity2a.png, id=926, 1204.5pt x 640.3925pt>
+File: ChapterConnectedModels/Figures/TBDensity2a.png Graphic file (type png)
+
+<use ChapterConnectedModels/Figures/TBDensity2a.png>
+Package pdftex.def Info: ChapterConnectedModels/Figures/TBDensity2a.png used on input line 382.
+(pdftex.def)             Requested size: 415.4104pt x 220.85747pt.
+ [214 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/VK_modelday_993_Tran
+smissionPlusDensity1_Sat-Jun-08-16_33_48-BST-2013__distanceToCentralFirm_vs_productionLeveledit.png (PNG copy)>] [215 <C
+:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/TBDensity1a.png> <C:/Users/g
+eodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/ChapterConnectedModels/Figures/TBDensity2a.png>] [216]) [217]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterConclusion/ConclusionFromWord.tex [218
+
+
+
+]
+Chapter 7.
+[219] [220]
+! Undefined control sequence.
+l.56 ...oduction discussed, while computation \emp
+                                                  {has} radically altered th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[221]
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+ [222] [223] [224]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [225] [226] [227] [228]
+Underfull \vbox (badness 4713) has occurred while \output is active []
+
+ [229] [230]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [231] [232] [233]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [234] [235]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [236] [237]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [238]) [239]
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\Appendices/appendixtop.tex
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\Appendices/codeAppendix.tex [240
+
+
+
+]
+Appendix A.
+
+Overfull \hbox (7.03677pt too wide) in paragraph at lines 16--17
+[]\OT1/ptm/m/n/10.95 ``EoS[]vs[]LoV[]ExcelModel[]DanOlner2013web.xlsx'': the spread-sheet ver-sion of the `trans-
+ []
+
+
+Overfull \hbox (0.1432pt too wide) in paragraph at lines 29--30
+[]\OT1/ptm/m/n/10.95 Section A.3[] de-scribes the runnable mod-els in-cluded in the ``Frame-Work-Mod-el-Builds" folder
+ []
+
+[241] [242]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [243] [244]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [245] <Appendices/location1_UML.jpeg, id=1031, 1691.31876pt x 787.94376pt>
+File: Appendices/location1_UML.jpeg Graphic file (type jpg)
+
+<use Appendices/location1_UML.jpeg>
+Package pdftex.def Info: Appendices/location1_UML.jpeg used on input line 153.
+(pdftex.def)             Requested size: 648.72292pt x 302.2231pt.
+)) [246] [247 <C:/Users/geodo/Dropbox/Thesis2011_2012/ThesisCorrectionsLatex/Appendices/location1_UML.jpeg>] [248
+
+
+] (C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.bbl
+[249
+
+]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no § in font ptmr7t!
+ [250]
+Underfull \hbox (badness 1199) in paragraph at lines 191--194
+[]\OT1/ptm/m/n/10.95 Brimberg, J. (1995).  `The Fermat-Weber lo-ca-tion prob-lem re-vis-ited'.  \OT1/ptm/m/it/10.95 Math
+-e-mat-i-cal
+ []
+
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ® in font ptmr7t!
+
+Underfull \hbox (badness 5050) in paragraph at lines 239--244
+\OT1/ptm/m/n/10.95 of Cen-tral Plan-ning'. URL: http://the-idea-shop.com/article/97/the-socialist-economic-
+ []
+
+[251]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [252]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--407
+\OT1/ptm/m/n/10.95 economics/21569752-efforts-are-under-way-improve-macroeconomic-models-new-model-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--431
+[]\OT1/ptm/m/n/10.95 Ellerman, D. (2002).  `Jane Ja-cobs as a De-vel-op-ment Thinker'. URL:
+ []
+
+[253]
+Underfull \hbox (badness 1590) in paragraph at lines 462--466
+[]\OT1/ptm/m/n/10.95 Figueiredo, O., Guimaraes, P., Wood-ward, D. (2009).  `Lo-cal-iza-tion economies and
+ []
+
+[254] [255]
+Underfull \hbox (badness 10000) in paragraph at lines 689--693
+[]\OT1/ptm/m/n/10.95 Harford, T. (2007).  `Fre-quent Flier Food'. URL:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--693
+\OT1/ptm/m/n/10.95 http://www.forbes.com/2007/11/11/economics-food-local-forbeslife-food07-
+ []
+
+[256]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no § in font ptmr7t!
+
+Underfull \hbox (badness 1975) in paragraph at lines 787--792
+[]\OT1/ptm/m/n/10.95 Hummels, D. (2001).  `Time as a Trade Bar-rier'.  \OT1/ptm/m/it/10.95 Tech. rep.\OT1/ptm/m/n/10.95 
+, Cen-ter for Global
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 787--792
+\OT1/ptm/m/n/10.95 Trade Anal-y-sis, De-part-ment of Agri-cul-tural Eco-nomics, Pur-due Uni-ver-sity. URL:
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+[257]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \hbox (badness 6608) in paragraph at lines 897--900
+[]\OT1/ptm/m/n/10.95 Krugman, P. (1993).  `The Fall and Rise of De-vel-op-ment Eco-nomics'. URL:
+ []
+
+[258]
+Underfull \hbox (badness 10000) in paragraph at lines 922--926
+[]\OT1/ptm/m/n/10.95 Krugman, P. (2010a).  `Debt, Delever-ag-ing, and the Liq-uid-ity Trap'. URL:
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 928--931
+[]\OT1/ptm/m/n/10.95 Krugman, P. (2010b).  `The New Eco-nomic Ge-og-ra-phy, Now Middle-Aged'. URL:
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 984--988
+\OT1/ptm/m/n/10.95 Econ-omy?'.  \OT1/ptm/m/it/10.95 Work-ing Pa-per 14450\OT1/ptm/m/n/10.95 , Na-tional Bu-reau of Eco-n
+omic Re-search. URL:
+ []
+
+[259]
+Missing character: There is no Ô in font ptmr7t!
+Missing character: There is no ¨ in font ptmr7t!
+Missing character: There is no Ç in font ptmr7t!
+ [260]
+Underfull \hbox (badness 1527) in paragraph at lines 1098--1101
+[]\OT1/ptm/m/n/10.95 Murata, Y. (2002).  `Rural-urban in-ter-de-pen-dence and in-dus-tri-al-iza-tion'.  \OT1/ptm/m/it/10
+.95 Jour-nal of
+ []
+
+[261]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [262] [263]
+Underfull \hbox (badness 2142) in paragraph at lines 1413--1417
+[]\OT1/ptm/m/n/10.95 Suarez, M. (2003).  `Sci-en-tific rep-re-sen-ta-tion: against sim-i-lar-ity and iso-mor-phism'.
+ []
+
+
+Overfull \hbox (42.66557pt too wide) in paragraph at lines 1424--1427
+[]\OT1/ptm/m/n/10.95 Sun (1995).  `What Is a Class?'. URL: http://download.oracle.com/javase/tutorial/java/concepts/clas
+s.html 
+ []
+
+[264]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [265]) [266]
+No file DataReferences.tex.
+
+Package natbib Warning: There were undefined citations.
+
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\LocationTheory_ABM2.aux
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\titlepage.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterIntro/IntroFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterEcon/Ch_EconFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterABM/ABMfromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterFramework/Ch_FrameworkFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterTestingModels/TestingModelsFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterConnectedModels/ConnectedModelsFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\ChapterConclusion/ConclusionFromWord.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\Appendices/appendixtop.aux)
+(C:\Users\geodo\Dropbox\Thesis2011_2012\ThesisCorrectionsLatex\DataReferences.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 407 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 17828 strings out of 493921
+ 359267 string characters out of 3147281
+ 374782 words of memory out of 3000000
+ 20529 multiletter control sequences out of 15000+200000
+ 73723 words of font info for 150 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 63i,13n,92p,2119b,1045s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on LocationTheory_ABM2.pdf (294 pages, 10137167 bytes).
+PDF statistics:
+ 1142 PDF objects out of 1200 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 543 words of extra memory for PDF output out of 10000 (max. 10000000)
+

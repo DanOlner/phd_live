@@ -1,0 +1,284 @@
+%Main file adapted from Kirk Harland's thesis tex file. Cheers Kirk.
+
+\begin{sloppypar}
+	
+\begin{sloppypar}
+	
+\end{sloppypar}
+\end{sloppypar}
+\documentclass[a4paper,11pt,twoside,openright]{report}
+
+
+\hyphenpenalty 7000
+\exhyphenpenalty 7000
+
+%set the maths packages
+\usepackage{amssymb,amsmath}
+
+%\usepackage{hyperref}
+
+%for glossary...
+\usepackage{makeidx}
+
+\usepackage{algorithmic}
+
+%will show label names in output - useful before printing final draft
+%to help track labels and referencing
+%\usepackage{showkeys}
+
+%for a list of todos. See http://www.tex.ac.uk/CTAN/macros/latex/contrib/todonotes/todonotes.pdf
+\usepackage[colorinlistoftodos]{todonotes}
+
+%extra todo defs
+\newcommand{\fixref}[1]{\todo[inline,color=green!40]{#1}}
+\newcommand{\cmt}[1]{\todo[inline,color=red!40]{#1}}
+
+%set spacing for the document
+\usepackage{setspace}
+\onehalfspacing
+
+% Use standard Postscript fonts
+\usepackage{pslatex}
+
+%use the package for fancy verbatim environments
+\usepackage{fancyvrb}
+
+%Using mainly for multiline commenting, done with
+%\begin{comment} \end{comment}
+\usepackage{verbatim} 
+
+
+
+\usepackage{longtable}
+\usepackage{array}
+
+% Use graphicsx package for inserting graphics
+% Use color package to get coloured text
+\usepackage[pdftex]{color}
+\usepackage{graphicx}
+%\usepackage{subfigure}
+%are those two different?
+
+
+% this is the package that is responsible for being able to turn tables sideways and rotate graphics.
+\usepackage{rotating}
+
+%this package allows us to colour the tables
+%\usepackage{colortbl}
+
+%\usepackage{multirow}
+
+%for small bold captions in figures
+%ftp://ctan.tug.org/tex-archive/macros/latex/contrib/caption/caption-eng.pdf
+%\usepackage[small,bf]{caption}
+\usepackage[small]{caption}
+%needs loading after caption - or so it says here:
+%http://www.macfreek.nl/mindmaster/LaTeX_package_conflicts#Caption_and_Subfig
+%Yup, that worked. Got small captions.
+\usepackage{subfig}
+
+%manages acronyms in the text and ensures that they are all expanded at least once
+%\usepackage{acronym}
+
+%trying glossaries instead
+\usepackage[toc,acronym]{glossaries}
+
+%Make first glossary entries bold
+%\renewcommand{\glstextformat}[1]{\textbf{#1}}  
+%From http://latex-community.org/forum/viewtopic.php?f=5&t=11538&p=76278#p76278
+\renewcommand*{\glsdisplayfirst}[4]{\textbf{#1#4}}
+
+%helps format the bibliography
+\usepackage{natbib}
+
+%for maple plot output
+%\usepackage{maple2e}
+
+\newcommand{\hyper}[1]{\textcolor{blue}{#1}}
+%\newcommand{\todo}[1]{\textcolor{red}{#1}}
+\newcommand{\negnum}[1]{\textcolor{red}{#1}}
+\newcommand{\nn}[1]{\textcolor{red}{#1}}
+\newcommand{\ns}[1]{\textcolor{red}{\bf{#1}}}
+\newcommand{\s}[1]{\bf{#1}}
+
+%allows the definition of our own headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%add to the height of the header to allow for the extra line in the fancy header
+\addtolength{\headheight}{2.5pt}
+
+%set up the spacing of the page for the document
+%\addtolength{\evensidemargin}{-30pt}
+%\addtolength{\oddsidemargin}{30pt}
+
+\pdfpagewidth 21cm
+\pdfpageheight 29.7cm
+
+%\setlength\topmargin{0cm}
+\setlength\oddsidemargin{1.7cm}
+\setlength\evensidemargin{-0.3cm}
+\setlength\textwidth{14.6cm}
+\setlength\marginparwidth{0cm}
+\setlength\textheight{22.8cm}
+\setlength\headwidth {14.6cm}
+\setlength\voffset{-1cm}
+
+
+%sets up the chapter and section marks to follow the desired format to be displayed in the header of the pages.
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
+
+%For controlling start chapter number if I'm not printing them in order, so as not to confuse supervisors etc.
+%Note, the first printed chapter will be one above this number
+%\setcounter {chapter} {3} 
+
+%2: number subsections but not subsubsections
+\setcounter{secnumdepth}{2}
+
+%2: displays subsection but not subsubsections
+\setcounter{tocdepth}{2}
+
+\makeindex
+
+\include{Glossary_n_acronyms/Acronyms}
+
+%make the gloa
+%\makeglossary
+\makeglossaries
+
+
+%%%%
+%BEGIN DOCUMENT%%%%
+%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% LIST OF TODOS
+%%%%%%%%%%%%%%%
+%\listoftodos
+
+
+%sets the title page and ensures that there are no headers or footers on this page
+\thispagestyle{empty}
+\include{titlepage}
+%This is the title page for the user manual
+%\include{Appendix1/titlepage}
+
+% insert a blank page to ensure that the new section starts on the right. Also makes sure that the headings stay consistent.
+\cleardoublepage
+
+
+%ensures that the blank pages that follow a chapter that ends on an odd page is empty
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% insert a blank page to ensure that the new section starts on the right. Also makes sure that the headings stay consistent.
+\cleardoublepage
+
+%overrides the plain page style to show the page number in the center but otherwise appear blank
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+
+%set up the fancy style for the preamble section
+%clear the header and the footer
+\fancyhead{}
+\fancyfoot{}
+%set the page numbering to be in roman numerals
+\pagenumbering{roman}
+%enter the page number into the footer
+\fancyfoot[C]{\thepage}
+%set up the lines in the header and footer
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+%create the preamble - table of contents etc...
+%\addcontentsline{toc}{chapter}{Table of Contents} - surely doesn't need reference to itself
+\fancyhead[RO]{Table of Contents}
+\fancyhead[LE]{Table of Contents}
+\tableofcontents 
+% insert a blank page to ensure that the new section starts on the right. Also makes sure that the headings stay consistent.
+\cleardoublepage
+
+\fancyhead[RO]{List of Figures}
+\fancyhead[LE]{List of Figures}
+\listoffigures 
+\addcontentsline{toc}{chapter}{List of Figures}
+% insert a blank page to ensure that the new section starts on the right. Also makes sure that the headings stay consistent.
+\cleardoublepage
+
+\fancyhead[RO]{List of Tables}
+\fancyhead[LE]{List of Tables}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+% insert a blank page to ensure that the new section starts on the right. Also makes sure that the headings stay consistent.
+\cleardoublepage
+
+\fancyhead[RO]{Glossary of Terms}
+\fancyhead[LE]{Glossary of Terms}
+%\addcontentsline{toc}{chapter}{List of Acronyms}
+
+%this inserts a blank page to ensure that the first chapter opens on the right hand page
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%
+% PRINTGLOSSARIES
+%%%%%%%%%%%%%%%%%%%%%%
+\printglossaries
+
+\cleardoublepage
+
+%overrides the plain page style to show the page number in the right corner but otherwise appear blank for the rest of the 
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[RO]{\thepage}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+
+%create the fancy header/footer for the rest of the document
+\fancyhead{}
+\fancyhead[RO]{\rightmark}
+\fancyhead[LE]{\leftmark}
+\pagenumbering{arabic}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+
+%%creates the chapters
+
+\include{ChapterIntro/IntroFromWord}
+\include{ChapterEcon/Ch_EconFromWord}
+\include{ChapterABM/ABMfromWord}
+\include{ChapterFramework/Ch_FrameworkFromWord}
+\include{ChapterTestingModels/TestingModelsFromWord}
+\include{ChapterConnectedModels/ConnectedModelsFromWord}
+\include{ChapterConclusion/ConclusionFromWord}
+\include{Appendices/appendixtop}
+
+%\include{figureTesting}
+%\include{chunk}
+%\include{ChapterSpace/spaceFromWord}
+
+%this inserts a blank page to ensure that the first chapter opens on the right hand page
+\cleardoublepage
+
+%\cleardoublepage
+%\printglossary[type=acronym]
+
+%create the bibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+\fancyhead{}
+\fancyhead[RO]{Bibliography}
+\fancyhead[LE]{Bibliography}
+\bibliographystyle{Bibliography/ha}
+\bibliography{Bibliography/upgradebib,Bibliography/HomelessBits,Bibliography/geogecon, Bibliography/CEUS2012bib}
+\include{DataReferences}
+
+
+
+%Create the Appendicies
+%\appendix
+%create the fancy header for the appendix of the document
+%\fancyhead{}
+%\fancyhead[RO]{Appendix \thechapter}
+%\fancyhead[LE]{Appendix \thechapter}
+
+%Creates appendix A
+%\include{Appendix1/text}
+%\include{Appendix2/text}
+\end{document}

@@ -1,0 +1,64 @@
+{
+ "id": "c8-density",
+ "title": "Density cost against the settlement",
+ "model": [
+  "c1",
+  "c8"
+ ],
+ "kind": "settled",
+ "note": "One settled run per density cost, from C1's value of 10 up to C8's 500. The\ncorrelation between a Person's utility and their distance from the Firm is flat while the\nsettlement equalises and turns sharply negative as it disperses — because past the cutoff\nthere is no density left to give up, and a more distant Person is simply worse off.\n\nC1 and C8 are the same model at two points on this curve, and the curve has no kink in it.\n\nNote the flat one. Mean utility does not move across a fifty-fold rise in the density cost —\n0.898 at 10, 0.882 at 500. The People absorb all of it by moving apart: mean distance from\nthe Firm doubles instead. Nobody is made worse off by crowding because nobody stays crowded,\nwhich is what it means for this to be an equilibrium rather than a burden.",
+ "yScale": "linear",
+ "xLabel": "density cost",
+ "xs": [
+  10,
+  25,
+  50,
+  100,
+  200,
+  350,
+  500
+ ],
+ "yLabel": "correlation, utility, distance",
+ "series": [
+  {
+   "label": "corr(dist, utility)",
+   "values": [
+    -0.36388571708519174,
+    -0.494953382974357,
+    -0.6191492179458472,
+    -0.9619754274763944,
+    -0.9986652995792429,
+    -0.9986002273193619,
+    -0.997147409939167
+   ]
+  },
+  {
+   "label": "mean utility",
+   "values": [
+    0.8984827053056887,
+    0.8823189283604813,
+    0.8774731849663361,
+    0.8824507021617072,
+    0.8826148874757572,
+    0.8824809962498533,
+    0.8817951733711269
+   ],
+   "dash": true
+  },
+  {
+   "label": "mean distance",
+   "values": [
+    0.2687341826437186,
+    0.371652766565726,
+    0.45766751965385327,
+    0.5224188511427891,
+    0.5388152195157269,
+    0.5401096503661369,
+    0.5436556074237762
+   ],
+   "dash": true
+  }
+ ],
+ "generatedBy": "tools/sweep.mjs",
+ "points": 7
+}

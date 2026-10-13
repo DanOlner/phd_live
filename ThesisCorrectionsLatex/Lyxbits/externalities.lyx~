@@ -1,0 +1,297 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Scitovsky
+\end_layout
+
+\begin_layout Standard
+So, From Scitovsky's 'External Economies'.
+ He uses Meade's formulation; Meade talks about bees and orchards and blossom.
+ This takes us to the basic point of `direct interdependence among producers'
+ (p.144):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}=F(l_{1},c_{1},...;x_{2},l_{2,}c_{2},...)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which doesn't really help us understand those inter-relations but at least
+ says it's a function of the other firm's output.
+ Scitovsky reckons this - which is from Meade - is a 'rigorous definition'.
+ Hmm.
+ So it's a 'technological external economy' - the other firm can actually
+ have an impact on the production relations within the other firm.
+ The relevant passage from Brakman et al p.38: ``With pure (or technological)
+ external economies an increase in industry-wide output alters the technological
+ relationship between inputs and output for each individual firm.
+ It therefore has an impact on the firm's production function.'' Which is,
+ of couse, what we see in the definition above.
+ It's probably worth pointing out that the above definition is different
+ from firm one having paid for inputs from firm 2 - which would be keeping
+ things within the price system.
+ 
+\end_layout
+
+\begin_layout Standard
+I wonder how I'd describe backyard's interdependence? Anyhoo - as he points
+ out, 
+\begin_inset Formula $F()$
+\end_inset
+
+ is a production function, and it contains elements from firm 2 in it.
+ But note that when we get to Brakman, the emphasis is on how 
+\series bold
+`industry-wide' 
+\series default
+output affects that production function.
+ I'd want to see the above definition defined to reflect that; I wonder
+ how GE would want to describe that inter-relation? The above is more like
+ how one might conceive of it in ABM, actually.
+\end_layout
+
+\begin_layout Standard
+A quote: ``The examples of external economies given by Meade are somewhat
+ bucolic in nature, having to do with bees, orchards, and woods.
+ This, however, is no accident: it is not easy to find examples from industry.
+ Going through the many examples of external economies quoted in the literature,
+ I found only two that fit the above definition: the case in which a firm
+ benefits from the labor market created by the establishment of other firms
+ and that in which several firms use a resource which is free but limited
+ in supply.'' (p.145) Examples of the latter he gives are all commons-related:
+ production changes from oil-well drilling of others; fisherman in the same
+ waters; congestion problems on a public road.
+\end_layout
+
+\begin_layout Standard
+It's interesting that Scitovsky are saying they're so rare.
+ For him, most of the things people have claimed are externalities in the
+ literature are nothing of the sort.
+ 
+\end_layout
+
+\begin_layout Standard
+We then get onto pecuniary externalities, where the definition is pretty
+ similar.
+ ``External economies are invoked whenever the profits of one producer are
+ affected by the actions of other producers.'' (Scitovsky p.146)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{1}=G(x_{1,}l_{1},c_{1},...;x_{2},l_{2,}c_{2},...)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The key quote: ``This definition of external economies obviously includes
+ direct or nonmarket interdependence among producers, as discussed above
+ and defined by Meade.
+ It is much broader, however, than his definition, because, in addition
+ to direct interdependence among producers, it also includes interdependence
+ among producers through the market mechanism.
+ This latter type of interdependence may be called `pecuniary external economies
+' to distinguish it from the technological external economies of direct
+ interdependence.'' (ibid.)
+\end_layout
+
+\begin_layout Standard
+Scitovsky notes this looks like 'interdependence through the market mechanism'
+ and wonders why theorists at the time are claiming these externalities
+ cause problems for equilibria, when an equilibrium ``
+\emph on
+relies
+\emph default
+ on market interdependence to bring about an optimum situation.'' 
+\end_layout
+
+\begin_layout Standard
+He explains pecuniary externalities brilliantly.
+ So: a firm invests, and thus increases its efficiency.
+ Its product thus costs less, and demand for inputs goes up - so they cost
+ more.
+ The PEs here: the firms who benefit from those higher prices.
+ Also - though he doesn't mention it - of course, other firms relying on
+ those inputs will see their costs 
+\series bold
+rise
+\series default
+.
+ Later, here's Scitovsky pointing that out, p.149: ``Expansion in industry
+ A may also give rise to profits (i) in an industry that produces a factor
+ used in industry A, (ii) in an industry whose product is complementary
+ in use to the product of industry A, (iii) in an industry whose product
+ is a substitute for a factor used in industry A, or (iv) in an industry
+ whose product is consumed by persons whose incomes are raised by the expansion
+ of industry A-and this list does not include the cases in which the expansion
+ causes external 
+\emph on
+dis
+\emph default
+economies.''
+\end_layout
+
+\begin_layout Standard
+There's also consumers' surplus - but I don't think that's an externality.
+ (p.147.) This is Krugman's point, of course, though he doesn't refer back
+ to Scitovsky: ``In competitive general equilibrium, of course, pecuniary
+ externalities have no welfare significance and could not lead to the kind
+ of interesting dynamics we shall derive later.
+ Over the past decade, however, it has become a familiar point that in the
+ presence of imperfect competition and increasing returns, pecuniary externaliti
+es matter; for example, if one firm's actions affect the demand for the
+ product of another firm whose price exceeds marginal cost, this is as much
+ a 'real' externality as if one firm's research and development spills over
+ into the general knowledge pool.)'' (increts p.485)
+\end_layout
+
+\begin_layout Standard
+It would appear to be that the focus is on how these kinds of externalities
+ can be understood, given that they appear to imply problems with general
+ equilibrium.
+ Note Krugman's argument above: they can't have any welfare significance.
+ I don't know why not.
+\end_layout
+
+\begin_layout Standard
+Anyway, the reasons he is giving why they won't fit in - sounding familiar.
+ So, there's indivisibilities - which sound a lot like they could stem,
+ here, from increasing returns.
+ A firm can't match marginal cost to price; that would certainly be the
+ case if they can't control the scale of their production under increasing
+ returns.
+ So he points out ``in such a case one of the available alternatives will
+ still yield him a higher profit than all others; but this need no longer
+ be the one that is also the best from society's point of view.'' (p.147)
+ So, I think, e.g.
+ that would be monopolistic - a firm is able to get a markup price, using
+ monopoly power.
+ How one can tell that's not best from society's point of view, I don't
+ know.
+\end_layout
+
+\begin_layout Standard
+Note also that for Scitovsky, ``canals, roads, bridges, and railways - the
+ typical examples of indivisibilities in economics.'' (p.148) Though indivisibilit
+ies appears to mean something that 
+\begin_inset Quotes eld
+\end_inset
+
+has a minimum size below which it is unavailable.'' (Google it.) Thus tied
+ to economies of scale, in the form of fixed costs that must be met.
+ Oh ahah.
+ 
+\end_layout
+
+\begin_layout Standard
+``Profits are a sign of disequilibrium; and the magnitude of profits, under
+ free competition, may be regarded as a rough index of the degree of disequilibr
+ium.'' (p.148) Note: core model - equilibrium has to come about through the
+ entry and exit of firms driving profits to zero.
+ Or as Scitovsky puts it: ``Profits in a freely competitive industry lead
+ to investment in that industry; and the investment, in turn, tends to eliminate
+ the profits that have called it forth.
+ This far, then, investment tends to bring equilibrium nearer.'' That'd be
+ one of those stylised facts, wouldn't it!?
+\end_layout
+
+\begin_layout Standard
+He notes, though, that equilibrium might not be the outcome - as with the
+ externalities just discussed, making my products cheaper might input into
+ another firm, and thus make them more profitable - leading once again to
+ a disequilibrium.
+\end_layout
+
+\begin_layout Standard
+Oh god - he then seems to get into an argument that price signals are simply
+ not able to do the job of co-ordinating all the pecuniary externalities
+ that arise in an economy.
+ Well! Worth remembering: this is all argued in the context of general equilibri
+um theory's welfare theorems - which of course I don't presently understand.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Jacobs and external economies
+\end_layout
+
+\begin_layout Standard
+So, we know about `Jacobs externalities', though I still have to find a
+ mathematical example.
+ (Lucas?) I just thought it would be worth starting to think about here.
+ Compare with Scitovsky trying to work out what external economies are.
+\end_layout
+
+\begin_layout Standard
+Scitovsky thinks there's a `scarcity of technological external economies.'
+ Somewhere in my brain, there's a little voice going, 'eh? I'm wondering
+ how one would conceive of Jacobs' theories? Partly, I want to disagree
+ with attempts to use `Jacobs externalities' since they reduce it all to
+ some `diversity multiplier'.
+ On the other hand, if they're defined as 
+\emph on
+interdependencies...
+ 
+\emph default
+that firms' production functions depend on others.
+ Except of course, if those inputs have a price, they're not externalities.
+ I'm not convinced that then leads to a situation where the interdependencies
+ don't count - especially as there's a relationship to the distance those
+ inputs have to go.
+ (But isn't that distance internalised in the price?)
+\end_layout
+
+\end_body
+\end_document

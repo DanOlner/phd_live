@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="555" viewBox="0 0 900 555">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="0" y="0" width="900" height="529" fill="#fff"/>
+<path d="M108 37.03L108 461M299.25 37.03L299.25 461M490.5 37.03L490.5 461M681.75 37.03L681.75 461M873 37.03L873 461M108 431.76L873 431.76M108 320.45L873 320.45M108 209.14L873 209.14M108 97.83L873 97.83" fill="none" stroke="#e4e4e4" stroke-width="1"/>
+<path d="M108 431.76L873 431.76M108 37.03L108 461" fill="none" stroke="#000" stroke-width="1"/>
+<text x="108" y="465" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0</text>
+<text x="299.25" y="465" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">0.5</text>
+<text x="490.5" y="465" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">1</text>
+<text x="681.75" y="465" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">1.5</text>
+<text x="873" y="465" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#444">2</text>
+<text x="104" y="431.76" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">0</text>
+<text x="104" y="320.45" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">1.0e+5</text>
+<text x="104" y="209.14" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">2.0e+5</text>
+<text x="104" y="97.83" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="end" dominant-baseline="middle" fill="#444">3.0e+5</text>
+<text x="490.5" y="497" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">gap between one agent's consecutive actions, in days</text>
+<text x="0" y="0" transform="translate(60 249.02) rotate(-90)" font-family="ui-monospace, Menlo, monospace" font-size="15" text-anchor="middle" dominant-baseline="middle" fill="#000">agents</text>
+<rect x="108.89" y="425.58" width="10.97" height="35.42" fill="rgb(197,197,197)"/>
+<rect x="121.64" y="413.36" width="10.97" height="47.64" fill="rgb(190,190,190)"/>
+<rect x="134.39" y="400.98" width="10.97" height="60.02" fill="rgb(183,183,183)"/>
+<rect x="147.14" y="388.5" width="10.97" height="72.5" fill="rgb(176,176,176)"/>
+<rect x="159.89" y="376.13" width="10.97" height="84.87" fill="rgb(170,170,170)"/>
+<rect x="172.64" y="363.86" width="10.97" height="97.14" fill="rgb(163,163,163)"/>
+<rect x="185.39" y="351.53" width="10.97" height="109.47" fill="rgb(156,156,156)"/>
+<rect x="198.14" y="338.68" width="10.97" height="122.32" fill="rgb(149,149,149)"/>
+<rect x="210.89" y="326.8" width="10.97" height="134.2" fill="rgb(143,143,143)"/>
+<rect x="223.64" y="314.3" width="10.97" height="146.7" fill="rgb(136,136,136)"/>
+<rect x="236.39" y="303.01" width="10.97" height="157.99" fill="rgb(130,130,130)"/>
+<rect x="249.14" y="289.53" width="10.97" height="171.47" fill="rgb(122,122,122)"/>
+<rect x="261.89" y="276.5" width="10.97" height="184.5" fill="rgb(115,115,115)"/>
+<rect x="274.64" y="264.77" width="10.97" height="196.23" fill="rgb(109,109,109)"/>
+<rect x="287.39" y="252.6" width="10.97" height="208.4" fill="rgb(102,102,102)"/>
+<rect x="300.14" y="239.92" width="10.97" height="221.08" fill="rgb(95,95,95)"/>
+<rect x="312.89" y="228.78" width="10.97" height="232.22" fill="rgb(89,89,89)"/>
+<rect x="325.64" y="215.75" width="10.97" height="245.25" fill="rgb(82,82,82)"/>
+<rect x="338.39" y="203.11" width="10.97" height="257.89" fill="rgb(75,75,75)"/>
+<rect x="351.14" y="191.04" width="10.97" height="269.96" fill="rgb(68,68,68)"/>
+<rect x="363.89" y="178.49" width="10.97" height="282.51" fill="rgb(61,61,61)"/>
+<rect x="376.64" y="165.72" width="10.97" height="295.28" fill="rgb(54,54,54)"/>
+<rect x="389.39" y="154" width="10.97" height="307" fill="rgb(48,48,48)"/>
+<rect x="402.14" y="141.29" width="10.97" height="319.71" fill="rgb(41,41,41)"/>
+<rect x="414.89" y="128.52" width="10.97" height="332.48" fill="rgb(34,34,34)"/>
+<rect x="427.64" y="117.75" width="10.97" height="343.25" fill="rgb(28,28,28)"/>
+<rect x="440.39" y="105.55" width="10.97" height="355.45" fill="rgb(21,21,21)"/>
+<rect x="453.14" y="90.98" width="10.97" height="370.02" fill="rgb(14,14,14)"/>
+<rect x="465.89" y="79.39" width="10.97" height="381.61" fill="rgb(7,7,7)"/>
+<rect x="478.64" y="67.06" width="10.97" height="393.94" fill="rgb(0,0,0)"/>
+<rect x="491.39" y="66.27" width="10.97" height="394.73" fill="rgb(0,0,0)"/>
+<rect x="504.14" y="79.79" width="10.97" height="381.21" fill="rgb(7,7,7)"/>
+<rect x="516.89" y="92.44" width="10.97" height="368.56" fill="rgb(14,14,14)"/>
+<rect x="529.64" y="103.6" width="10.97" height="357.4" fill="rgb(20,20,20)"/>
+<rect x="542.39" y="117.01" width="10.97" height="343.99" fill="rgb(28,28,28)"/>
+<rect x="555.14" y="129.85" width="10.97" height="331.15" fill="rgb(35,35,35)"/>
+<rect x="567.89" y="140.13" width="10.97" height="320.87" fill="rgb(40,40,40)"/>
+<rect x="580.64" y="154.33" width="10.97" height="306.67" fill="rgb(48,48,48)"/>
+<rect x="593.39" y="165.67" width="10.97" height="295.33" fill="rgb(54,54,54)"/>
+<rect x="606.14" y="178.17" width="10.97" height="282.83" fill="rgb(61,61,61)"/>
+<rect x="618.89" y="191.62" width="10.97" height="269.38" fill="rgb(69,69,69)"/>
+<rect x="631.64" y="203.37" width="10.97" height="257.63" fill="rgb(75,75,75)"/>
+<rect x="644.39" y="215.53" width="10.97" height="245.47" fill="rgb(82,82,82)"/>
+<rect x="657.14" y="228.11" width="10.97" height="232.89" fill="rgb(89,89,89)"/>
+<rect x="669.89" y="239.95" width="10.97" height="221.05" fill="rgb(95,95,95)"/>
+<rect x="682.64" y="252.28" width="10.97" height="208.72" fill="rgb(102,102,102)"/>
+<rect x="695.39" y="265.78" width="10.97" height="195.22" fill="rgb(109,109,109)"/>
+<rect x="708.14" y="277.07" width="10.97" height="183.93" fill="rgb(115,115,115)"/>
+<rect x="720.89" y="289.13" width="10.97" height="171.87" fill="rgb(122,122,122)"/>
+<rect x="733.64" y="302.25" width="10.97" height="158.75" fill="rgb(129,129,129)"/>
+<rect x="746.39" y="314.06" width="10.97" height="146.94" fill="rgb(136,136,136)"/>
+<rect x="759.14" y="326.6" width="10.97" height="134.4" fill="rgb(142,142,142)"/>
+<rect x="771.89" y="339.07" width="10.97" height="121.93" fill="rgb(149,149,149)"/>
+<rect x="784.64" y="351.32" width="10.97" height="109.68" fill="rgb(156,156,156)"/>
+<rect x="797.39" y="363.72" width="10.97" height="97.28" fill="rgb(163,163,163)"/>
+<rect x="810.14" y="376.12" width="10.97" height="84.88" fill="rgb(170,170,170)"/>
+<rect x="822.89" y="388.91" width="10.97" height="72.09" fill="rgb(177,177,177)"/>
+<rect x="835.64" y="400.85" width="10.97" height="60.15" fill="rgb(183,183,183)"/>
+<rect x="848.39" y="413.67" width="10.97" height="47.33" fill="rgb(190,190,190)"/>
+<rect x="861.14" y="425.46" width="10.97" height="35.54" fill="rgb(197,197,197)"/>
+<path d="M490.5 37.03L490.5 461" fill="none" stroke="#000" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="490.5" y="37.03" font-family="ui-monospace, Menlo, monospace" font-size="20" text-anchor="middle" dominant-baseline="middle" fill="#000">one day</text>
+<text x="873" y="41.03" font-family="ui-monospace, Menlo, monospace" font-size="20" text-anchor="end" dominant-baseline="middle" fill="#000">9,990,000 gaps</text>
+<text x="873" y="67.03" font-family="ui-monospace, Menlo, monospace" font-size="20" text-anchor="end" dominant-baseline="middle" fill="#000">peak at 1.02 days</text>
+<text x="8" y="547" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#666">f2 · The permutation gap · §4.7.4 · day 1000</text>
+</svg>

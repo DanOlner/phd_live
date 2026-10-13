@@ -1,0 +1,115 @@
+\section{Outline of the core-periphery model \label{sec:core_outline}}
+
+Krugman's original \gls{coremodel} illustrates all the key principles of \gls{ge}. This section explains the model in depth, and raises a number of questions, to be addressed later on.\cmt{core model questions addressed 'later on', when?} After a brief overview of the model, the theoretical detail will be examined. There are a number of different outlines in the literature; here, terminology and choice of parameter names come from \citeauthor{brakman_new_2009}, but to begin with, whichever approach is simplest is used. Other versions are discussed in section \cmt{which section for discussion of other core model versions?}, as they each approach the problem from slightly different points of view. Krugman's original paper \citep{krugman_increasing_1991} is, of course, a key source - however, \citeauthor{brakman_new_2009} discuss hidden assumptions in much finer detail, and Brakman is also used by Fowler to build his agent version of the model, to be discussed in section \ref{sec:fowler}.
+
+The usual approach to describing the \gls{coremodel} is to follow the logical path of the mathematical argument, beginning at the micro level and building up towards the model's conclusions. While this is perfectly sensible mathematically, it is not a particularly good way to open the bonnet and get a clear view of the model engine. This section attacks the problem in reverse, starting with the three simulataneous equations toward the endpoint of the analytic argument. These equations are the `operational' elements - that is, they can be used to directly produce simulation code. In a sense, much of what precedes them is scaffold: once the `operational equations' are reached, much of that scaffold is no longer visible. Starting with the final structure, and then explaining how it is put together, gives an endpoint to aim for and makes clear what the mathematical argument is heading towards.
+
+As the \gls{coremodel} is explained, it will be appropriate to take detours into particular background components - especially the development of the \gls{monocomp} approach to imperfect competition and the use of the \gls{ces} function to describe 'love of variety' as a source of inter-regional trade.
+%mention which sections, when they're created.
+
+\cmt{What detours from the core model do I need to write up? So far: monocomp and the CES as a source of trade.}
+
+These three equations can be seen working...\cmt{what is my strategy for describing the location of models to be viewed? E.g. the core model 3 equations.}
+
+%questions: do they then come up with something else to simulate long-run equilibium, or am I right in thinking that it's just assumed based on an argument about equilibriating real wages? I'm not 100% sure. And what are the differences bet
+
+%Another question: I think it would be useful to have a couple of interludes: one one competition and monopcomp in particular, and one on Krugman's original trade model - the one that clearly shows how LoV can account for international trade.
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%Subsection: overview of core model
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Overview of the core model \label{sec:overview_coremodel}}
+
+Krugman's question for the \gls{coremodel} was mentioned in the introduction: ``why and when does manufacturing become concentrated in a few regions, leaving others relatively undeveloped?'' The model has two jobs in addressing this question. Firstly, as discussed in section \ref{sec:GE_context}, it must bring geography and micro-economics together in one framework. Secondly, it should do this with as few elements as possible; it must be as parsimonious as it can be. For the simplest version of the core model, those elements are:
+
+\begin{itemize}
+	\item Two regions
+	\item Two types of workers: manufacturing and agricultural
+		\begin{itemize}
+			\item Agricultural workers are immobile - they cannot move between regions. Production is linear - there are no economies of scale
+			\item Manufacturing workers \emph{can} move between regions, seeking the best wage. Manufacturing production does have economies of scale.
+		\end{itemize}	
+	\item Manufacturing firms, who can also move between regions. (As discussed below, however, firms are in reality assumed to be the mirror of workers, and vice versa: they don't make separate decisions as sectors.)
+\end{itemize}
+
+%\missingfigure{diagram of the core model. Something as detailed as brakman's? note: this is not the math diagram. That can go somewhere else.}
+
+There are only two factors that go into production: both of them are labour, but there is a split between manufacturing and agricultural labour. This split is given exogenously: workers cannot move between sectors.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%Subsection: starting on the maths
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The structure of the core model \label{sec:structure_coremodel}}
+
+As discussed above, three simultaneous `operational' equations for each region do the job of actually producing results in the core model. These will now be outlined for reference; note however that each element is discussed in more depth below. These versions can be found in \citeauthor{brakman_new_2009} pp.119.
+
+They are, for regions one and two:
+
+%Table with three eqs for each of the two regions.
+\input{ChapterEcon/Tables/op_eqs_coremodel.tex}  
+
+%note, these equations aren't numbered. I think I'll use the generic R region equations for numbered equations later./
+
+What are the parameters? First, the three main equations are:
+
+\begin{itemize}
+	\item $Y$: total income, from manufacturing and agricultural workers.
+	\item $I$: the price index - essentially, what the cost of manufactured goods is.
+	\item $W$: The nominal wage rate - see below. 
+\end{itemize}
+
+The four parameters used to find those values are:
+
+\begin{itemize}
+	\item $\delta$: the fraction of workers in the manufacturing sector, as well as the share of income spent on manufacturing. It is not obviously the case that these two values should be same; this is discussed below. Note in equations for total income ($Y_{1}$ and $Y_{2}$) the term $(\frac{1}{2})(1-\delta)$: this gives the number of agricultural workers in each region. Their total number is $1-\delta$ and it is assumed that they are split evenly between the two regions.
+	\item $\lambda$: the fraction of manufacturing workers in each region. Note that $\lambda_{1}+\lambda_{2}=1$.  This means that the total number of manufacturing workers in the two regions is $\lambda_{1}\delta$ and $\lambda_{2}\delta$. In the long-run, the number of workers in each region is to be determined by the model.\cmt{Is long-run $\lambda$ actually determined by the model, or assumed to be?} In the short run, it is given exogenously; see below.
+	\item $\epsilon$: elasticity of substitution - see section \ref{EoSinCore}.
+	\item $T$: transport costs between regions; the cost of goods is multiplied by this. If a good is being sold where it is produced, transport costs would be 1. This represents there being no internal costs for moving goods. T is defined by \citeauthor{brakman_new_2009} as ``the number of goods that need to be shipped to ensure that one unit arrives.'' (p.107) This use of `iceberg' transports is, again, discussed in more depth below.
+\end{itemize}
+
+Ultimately, the goal of the core model is to find out where mobile manufacturing labour ($\delta$) will go. Will it agglomerate in one region - for example, $\lambda_{1}=\delta$ and $\lambda_{2}=0$  - or spread across the regions in some way (perhaps evenly, where $\lambda_{1}$ and $\lambda_{2}$ both $=\delta/2$)? However, solutions for these operational equations do not supply this answer; instead, they find the short-run equilibrium: how real wages in each region differ, given exogenous values for $\lambda$, $\delta$, $\epsilon$ and $T$. From that point, an argument can be made that, if real wages differ between regions, workers will move to where the better wage is, until equilibrium is reached. In the brief outline above, the model description claimed that agricultural workers couldn't move between regions, but manufacturing workers could. In fact, the core model does not have that mobility built into its base structure. An argument is built on top of that base; this has a mathematical version, which will be covered below - but this is an important point about the mechanics of the core model that it helps to cover early on.
+
+Returning to the operational equations, much has yet to be explained - but some of the basic elements are worth describing here. Taking income first ($Y$): for each region, this is just the total population of manufacturing and agricultural workers multiplied by their wage. Except agricultural workers don't appear to have a wage. Why not? Agricultural output is linear: since labour is the only input, this means that food production is directly proportional to the number of workers. Food output from agricultural workers can therefore be used as the \gls{numeraire} in the \gls{coremodel}. This gives the convenient result that agricultural output \emph{is} the agricultural wage \emph{is} the number of agricultural workers.
+
+The price index $I$ and nominal wage rate $W$ are more complex, but note that each region's value is dependent on parameters from \emph{both} regions. It is here that geography makes itself present in the core model: transport costs ($T$) are incurred on all values from other regions. So, for example, the price index $I$ for region 1 - which, for now, can be considered as the price of manufactured goods - is a function of both the 'local' number of manufacturing workers and their wage, plus that of region two...
+
+%Looking at the equation, I actually think I'll just be confusing matters to go on here. The price index actually reflects what goods cost, and that's reflected in wage * number of workers, including and iceberg transport costs. The point here: a little of all goods is consumed, and the amount is controlled by the elasticity. The amount consumed from other regions is less, though, because of transport costs.
+
+\subsection{Actors and utility in the core model \label{sec:coremodel_util}}
+
+Having taken a look at the \gls{coremodel} 'engine' in a final, codeable working form, the components now need to be explained in detail. 
+
+
+
+%explanation of the CES function and its role, going back to Krugman's trade model as an example.
+%\input{ChapterEcon/CES_outline}
+
+
+
+
+%%%%%%%%%%%%%%%%
+% CUTTINZ
+%%%%%%%%%%%%%%%%
+\begin{comment}
+A simulation run using these equations is looking to find a point where regional \emph{nominal} wages stop changing. This is the short-run equilibrium. Nominal wages differ from \emph{real wages}; the latter is what can actually be bought with those wages, so this is actually their true value. In the long-run equilibrium, it is expected that workers will go where real wages are best.
+
+
+\begin{equation}
+Y_{r}=\delta\lambda_{r}W_{r}+\left(1-\delta\right)\phi_{r}\label{eq:income}\end{equation}
+
+\begin{equation}
+I_{r}=\left[\sum_{s=1}^{R}\lambda_{s}T_{rs}^{1-\epsilon}W_{s}^{1-\epsilon}\right]^{1/(1-\epsilon)}\label{eq:priceindex}\end{equation}
+
+
+\begin{equation}
+W_{r}=\left[\sum_{s=1}^{R}Y_{s}T_{sr}^{1-\epsilon}I_{s}^{\epsilon-1}\right]^{1/\epsilon}\label{eq:wagerate}\end{equation}
+
+Each region in the model has one set of these - so for the two-region model, there are six in total. Note that the definitions given here are actually for $R$ number of regions. They work for an arbitrary number; for most of this chapter, however, only the two region version of the model will be discussed. \cmt{``for most of this chapter, however, only the two region version of the model will be discussed'': true?}. 
+
+Simulation is used to find a solution to these equations: they are not analytically tractable (\citealt{brakman_new_2009} p.136). 
+
+\end{comment}
+
+

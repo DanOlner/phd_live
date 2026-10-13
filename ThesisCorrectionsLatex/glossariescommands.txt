@@ -1,0 +1,3 @@
+makeindex  -s "LocationTheory_ABM.ist" -t "LocationTheory_ABM.alg" -o "LocationTheory_ABM.acr" "LocationTheory_ABM.acn"
+
+makeindex  -s "LocationTheory_ABM.ist" -t "LocationTheory_ABM.glg" -o "LocationTheory_ABM.gls" "LocationTheory_ABM.glo"

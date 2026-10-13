@@ -1,0 +1,45 @@
+\section{Sorting micro from macro \label{sec:micromacro}}
+
+\gls{ge} theorists argue that the modelling approach's strength is built on solid micro-foundations. [quote from krugman 96 here?] What happens at the level of the whole economy (the `macro' level) flow from how agents' behaviour and interaction are theorised (the `micro' level). If \gls{ge} succeeds in this, there would appear to be little point in attempting an agent-based approach: this would just add complexity with no further insight, and possibly even a loss of clarity. This section will look at the first attempt to produce an \gls{abm} version of the core model, by Christopher Fowler, as a starting point for arguing that there is a point in disaggregating models of economic agents acting in space. 
+
+\gls{ge} models use the `\gls{repag}' approach: a single utility function stands in for the utility of each type of agent in each region. The use of this approach in economics generally has certainly been criticised; one the most prominent of these will be discussed shortly.
+
+But before that, some `devil's advocate' questions will be posed. A good place to start is with how \gls{ge} applies the need for solid micro-foundations to other modelling approaches. Fujita \emph{et al} (\citeyear{fujita_spatial_2001}), for example, discuss the `limitations of regional science', noting that ``the general sense of loose ends left hanging prevented it from becoming a well-integrated part of mainstream economics.'' (p.33) However, they also point out that it \emph{did} become a `toolbox for practical analysis' used to guide policy, despite its purported lack of a `rigorous framework'. Brakman \emph{et al} are equally happy to reject `macro' theories like market potential and gravity models on the same basis. These are theories, they argue, that -
+
+\begin{quote}
+``... try to come to grips with a spatial regularity but that lack a convincing economic-theoretical foundation. In contrast to (neoclassical) economic theory, there is a tendency to merely give a representation using, for example, simple equations, of the regularity without a connection to a model of the underlying individual behaviour by economic agents.'' (\citealt{brakman_new_2009}  p.48)
+\end{quote}
+
+Yet they acknowledge, for example, that a gravity equation can accurately capture the drop-off of trade flows between regions; one study of Germany they mention manages an r-squared value of 0.915. This sort of result explains why such models end up in planners' toolboxes. 
+
+\gls{ge}'s insistence on the need for micro-foundations reflects a perfectly understandable desire to explain why spatial systems produce the outcomes they do. But might it be possible that \gls{ge} has things backwards? To take an example from physics - as Flake notes:
+
+\begin{quote}
+``Collections of gas molecules behave in very predictable ways. Knowing only the temperature and pressure of a gas tells you enough about the whole ensemble of molecules that you can effectively ignore what the individual molecules are doing. Notice that the properties of temperature and pressure cannot be attributed to a single gas molecule but only to collections of molecules.'' (\citealt{flake_computational_1998} p.134)
+\end{quote}
+
+Flake's second point is known as the `fallacy of division': in \gls{ge}'s case, that a claim made about a representative agent should be true of all agents making up an economy. The parallel with gravity models is clear enough also: there is no \emph{a priori} reason to believe that the emergent `macro' result should share any qualities with `micro' economic agents. `Gravity flows' may be just as appropriate a description as temperature and pressure are for gases. Yet in \gls{ge}, the same mathematical description of agents' utility is held to apply across all levels, with no deleterious effect on the conclusions.
+
+%notice the crossover here with 'operational' vs 'scientific' models trying to work out how the world works. That book on planning, good for this. Should go in write-up on 'thought experiments' etc.
+
+Kirman...
+
+----
+
+So what can be gained from using agents? 
+
+Emergence: where properties at the macro level are different from those at the micro.
+Statistical: quickly find the most likely outcomes. 
+
+\subsection{Agents and large numbers \label{numbers}}
+
+Notey notey pastey pastey: many economic arguments analyse away any effects from having a small number of agents, such as the price-setting effects of firms if there are small numbers. So we often see, `assuming number of firms is large' - meaning large enough to ignore a particular effect we know would otherwise influence the model outcome. Now, with agents, there's kind of an implicit assumption that such effects should be accounted for. After all, isn't that the very reason for disaggregating the model in the first place? The answer is, it depends. Just because a number of agents are being used does not mean every effect should be considered. There may be good reasons for excluding them. Most obviously, the modeller may want to ignore some small number effect without having to actually increase agent numbers to do it, simply because of the computational expense. This is an entirely reasonable thing to do, if it can be shown that the smaller-number model is not affected in other ways the modeller hasn't accounted for.
+
+The central point: it is tempting to mistake an agent model for a direct isomorph of reality, and indeed many people argue that is what they should be (see section x)\cmt{broken section ref. Reminder: search for `section x'. Used a lot!}. But, in fact, it is still just a model, and it is still the responsibility of the modeller to know what is happening, why and to justify that. This means it isn't necessary - for example - to either represent an entire population as individual agents, or give up and use some other method instead like a gravity model, if it can be shown that the exact number matters less than the dynamics produced. Agent models of any number can be normalised just as analytic models can, with all the same caveats and checks involved in doing that.
+In the thesis, I'd probably need an example of this. E.g. the effect on prices being the most obvious. Under what circumstances could one ignore it?
+
+There's also the point of finding ways around it... 
+
+Stick in Andy's example and Brakman's analysis of when Firm numbers affect competition and why `assuming a large number' then allows other things. And why I'm arguing that's fine for ABM: say `assume a large number' does not mean you have to HAVE a large number. If you are interested in: stochastic results, interaction / emergence results, the number you need for that can be different from e.g. comparing to the Brakman example the number you need for being able to assume competition effects are small. 
+
+Which is different again to assuming that numbers exogenous to the model are large (implying you're only modelling one region in a much larger world, e.g. where fuel prices are set exogenously.)

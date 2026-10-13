@@ -1,0 +1,141 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Cobb Douglas function, $\delta $ is $0.5$. Contour lines show isoquants. Lighter colours are higher utility values.\relax }}{19}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Two-good CES function, $\rho =\frac {1}{2}$, constrained by $\delta $, $0<\delta <1$\relax }}{21}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Two ways to achieve increasing returns for a single input. (a) core model style production function; (b) `smooth increasing returns' function. Both show total, average and marginal output per unit of labour.\relax }}{24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {core model style}}}{24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {smooth}}}{24}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Total ($\sqrt {f}$) and marginal ($1/2\sqrt {f}$) utility for a $\delta =\frac {1}{2}$ Cobb Douglas utility function, holding $M$ constant at 1. \relax }}{26}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Continuous CES function, $0<\rho <1$, $1<n<2$; n is the number of varieties. Vertical axis shows utility.\relax }}{47}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Core model short-run equilibrium for $T=2.25$ showing real wage ratio between the two regions before migration; and long-run equilibria for $1 < T < 3.5$ showing the range of stable (black) and unstable (grey) equilibria. Double line in both crosses the same five equilibrium points for $T=2.25$. \relax }}{56}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Short-run equilibrium}}}{56}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Long-run equilibria `tomahawk'}}}{56}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Timeline sequence \relax }}{119}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Elements for the Person action\relax }}{121}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Bundle sampling and selection for two iterations, focusing on one Person (white triangle). Other People's density cost radii indicated in light circles. At time $t$, the Person finds a `best Bundle' having compared a set of Bundles including density cost and good prices through a CES function. \relax }}{123}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {time t}}}{123}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {time t+1}}}{123}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Utility-maximising hill-climbing algorithm, optimising a CES function with 16 goods over a thousand iterations, showing both randomised good costs converging on the utility-maximising level and the marginal utility gain for each step over 1000 iterations. \relax }}{125}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {16 initially randomised good costs converge on utility-maximising value}}}{125}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Marginal utility gain (change in utility between hill-climber iterations)}}}{125}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Optimisation of Bundles in a Person's action\relax }}{126}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A Firm's feedback mechanism: ``jiggle'' a random value, wait to see effect.\relax }}{128}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Zero-intelligence agents exchange finite money, beginning with equal amounts. Top left figure shows the distribution of money on the last model day: a few very wealthy agents emerge while most are in the lowest $0-50$ band. \relax }}{130}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Histogram: ten thousand agents over a thousand days, 24 bins, showing how many times on average agents have an action gap between zero and two days, when the order of actions is permuted randomly on each turn.\relax }}{133}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Testing CES function works correctly. 5.1a\hbox {} and 5.1b\hbox {} look at the same data: two goods, changing $\rho $. 5.1c\hbox {} keeps $\rho $ fixed at 0.75 and changes the good number. \relax }}{144}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 goods, $\rho $ varied}}}{144}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2 goods, $\rho $ varied, from $\rho =0.2$}}}{144}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\rho =0.75$, good number varied}}}{144}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Two Firms selling goods 1 and 2: Firm 1's price fixed, 2 attempting to optimise price. Actors with Cobb Douglas utility: changing price of one has no effect on demand for the other. \relax }}{146}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Optimal demand for good 1 (`opt1') and optimal demand for good 2 (`opt2'); Firm 2's optimal demand affected by its price changes. Firm 1's in unaffected: there are no elasticity effects.}}}{146}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Price changes of Firm 2, underpinning changes in demand for good 2 (`opt2') in the previous figure.}}}{146}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Hill-climber algorithm optimising 2 goods (5.3a\hbox {} and 5.3b\hbox {}) and 8 goods (5.3c\hbox {}). Optimum for one good is shown. 1000 optimisations for each iteration point, mean and one standard deviation. \relax }}{149}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {1 of 2 goods, zero to 2000 iterations}}}{149}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {1 of 2 goods from 1100 iterations}}}{149}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {1 of 8 goods, zero to 2000 iterations}}}{149}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Effect on demand of changing $\rho $ in the presence of distance costs. Ten Firms are spread along the x axis evenly in distances of zero to one from a single Person. The Person is at the left origin of the x axis. Good cost and wage are $=1$. No distance cost in first graph, so demand is even; for others, distance cost is $1$ and $\rho $ is varied. \relax }}{151}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No distance costs}}}{151}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\rho =0.8$}}}{151}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\rho =0.9$}}}{151}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\rho =1$}}}{151}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Demand levels for ten goods spaced between a distance of zero and one, for $0<\rho <1$. Distance cost is $1$. One Person, $p=1$ and $c=1$, five nearest and one most distant shown here. As $\rho \rightarrow 1$, the nearest good ends up getting the whole spend. \relax }}{153}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Impact of changing good space cost: one Person, ten Firms. In figure 5.6a\hbox {} the nearest Firm is at a distance of $0.1$ from the Person; in figure 5.6b\hbox {} the nearest Firm is at $0$. Firms are spaced between zero or $0.1$ and one, with the five nearest shown here. Value of $c$ (cost of moving good a unit of distance) on x axis. Note: demand axes have different values. 5.6b\hbox {} shows Firm at $d=0$ receiving all re-allocated demand as distance costs increase, unaffected by distance cost change. \relax }}{154}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nearest Firm at $d=0.1$}}}{154}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nearest Firm at $d=0$}}}{154}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Means and standard deviations of nearest neighbour distance, randomised starting locations, averaged from 20 model runs. \relax }}{155}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {People}}}{155}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Firms}}}{155}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Model run: 500 People; density cost $=10$; distance cost $=0.25$; no commute cost. Correlation shows datapoints for individual People. \relax }}{157}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {People in $R^2$ buying from central Firm. Larger/lighter squares indicate higher incurred density cost, rising towards the centre.}}}{157}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Incurred density cost vs distance to centre for individual People}}}{157}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Utility vs distance to central Firm: utility equilibriates. 500 People; density cost $=10$; distance cost $=0.25$; no commute cost. \relax }}{158}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Effect of density cost in a `monocentric' model run: 500 People; density cost $=10$; distance cost $=0.25$; no commute cost. People optimise in response to distance and Density cost. \relax }}{159}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {People in $R^2$ buying from central Firm. People (density cost radii shown) and Firm (white cross in centre). Random selection of People's density cost radii (thicker black circles) showing location of detected People entering into density cost calculation (small white circles).}}}{159}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Number of People in each Person's density cost radius vs each Person's distance to central Firm. For each Person, discrete number of People entering into density cost calculation is shown on y axis. This increases with proximity to centre.}}}{159}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Wage offer (`cost of money') and commute cost versus mean distance to centre; single datapoint shown: average for all People, taken at spatial equilibrium. Each is parameter-swept (positive in black, negative in grey) in increments of $0.005$. `Spatial equilibrium' is assumed when mean agent movement $<0.0001$ average over $10$ iterations. \relax }}{160}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{160}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{160}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Base good cost and distance cost versus mean distance to centre; single datapoint shown: average for all People, taken at spatial equilibrium. Each is parameter-swept (positive in black, negative in grey) in increments of $0.005$. `Spatial equilibrium' is assumed when mean agent movement $<0.0001$ average over $10$ iterations. \relax }}{161}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{161}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{161}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Two People, two regions. Wages & good cost $=1$. Density cost if two People in same region: 0.5, subtracted from wage. No distance cost in region 1, distance cost = $1$ in region 2.\relax }}{163}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {utility vs distance cost}}}{163}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {utility vs base good cost}}}{163}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Three People, three regions. Wages & good cost $=1$. Density cost if two People in same region: $1/3$; if three People are in the same region: $2/3$; subtracted from wage. No distance cost in region 1, distance cost = $1$ in region 2; = $2$ in region 3. Unbroken lines indicate optimal choices. \relax }}{165}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {utility vs distance cost}}}{165}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {utility vs base good cost}}}{165}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces People set with variable wage, a quarter each set to values shown in the key. This key is used in the visualisation and correlation. Wealthier buy proximity. \relax }}{167}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {People in $R^2$ buying from central Firm}}}{167}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility versus distance to centre for each Person.}}}{167}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces People set with variable commute cost, a quarter each set to values shown in the key. This key is used in the visualisation and correlation. Wealthier (paying less commute costs) buy distance.\relax }}{168}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {People in $R^2$ buying from central Firm}}}{168}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility versus distance to centre for each Person}}}{168}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Spatial effect of $\rho $: firm on right (small cross) has distance cost = $2$, the other = $4$. $\rho $ is parameter-swept (positive in black, negative in grey) in increments of $0.005$. Single datapoint shown: average for all People, taken at spatial equilibrium. `Spatial equilibrium' is assumed when mean agent movement $<0.0001$ average over $10$ iterations. \relax }}{169}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{169}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{169}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{169}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Density cost set to $100$: some People begin to prefer avoiding them altogether and locating on outskirts. People within settlement holding on to better locations before moving produces path-dependent morphology. Datapoint for each Person shown in graph. \relax }}{172}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$R^2$ space visualisation: density cost $=100$}}}{172}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility versus distance to centre for each Person}}}{172}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Density cost set to $500$: no Person finds incurring any density cost is better. Settlement fully spread; utility drops off for more distant agents. Datapoint for each Person shown in graph. \relax }}{173}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$R^2$ space visualisation: density cost $=500$}}}{173}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility versus distance to centre for each Person}}}{173}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Two Firms optimise position on an $R^1$ line of length one. Fifty People spread evenly along the line from $0$ to $1$. $\rho $ varied, distance cost fixed at $1$. Means taken over $10000$ timesteps for Firm position and People's demand. White arrows shows Firms' mean location; white bars show one standard deviation each side of this; thin black vertical `barcode' lines between Firm arrows show actual positions taken by Firm over previous $10000$ timesteps. \relax }}{176}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {High love of variety ($\rho =0.1$); distance cost $=1$}}}{176}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {High substitutability ($\rho =1$); distance cost $=1$}}}{176}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Two Firms optimise position on an $R^1$ line of length one. Fifty People spread evenly along the line from $0$ to $1$. $\rho $ varied, distance cost fixed at $20$. Means taken over $10000$ timesteps for Firm position and People's demand. White arrows shows Firms' mean location; white bars show one standard deviation each side of this; thin black vertical `barcode' lines between Firm arrows show actual positions taken by Firm over previous $10000$ timesteps. \relax }}{177}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {High love of variety ($\rho =0.1$); distance cost $=20$}}}{177}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {High substitutability ($\rho =1$); distance cost $=20$}}}{177}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Single time-point snapshot: two Firms optimise position on an $R^1$ line of length one. Fifty People spread evenly along the line from $0$ to $1$. $\rho $ varied, distance cost fixed at $20$. \relax }}{178}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {High love of variety ($\rho =0.1$); distance cost $=20$}}}{178}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {High substitutability ($\rho =1$); distance cost $=20$}}}{178}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Firms compete to reach centre of market. Number of days to success on vertical axis, value of $\rho $ on horizontal. Mean and S.D. for a hundred randomisations of each value point. Three different noise levels. Note for figure 5.23c\hbox {}, days to complete are an order of magnitude higher than for 5.23b\hbox {}. \relax }}{181}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$noise = 0$}}}{181}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$noise = 0.1$}}}{181}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$noise = 0.5$}}}{181}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Transmission belt model: a single Firm changing price to target zero stock. Vertical lines indicate where stock crosses the y axis. As stock hits zero, however, price is far from its equilibrium value and both stock and prices oscillate. \relax }}{191}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Stock}}}{191}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Good cost}}}{191}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Transmission belt model: targeting the first and second derivative of stock as well as zero stock itself, `damping' the oscillations and achieving equilibrium. Example of single Firm and Person and Fifty Firms and People. \relax }}{193}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Good cost for One Firm, one Person buying}}}{193}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Good costs for fifty Firms, fifty People buying}}}{193}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Two graphs from the same transmission belt model run: fifty Firms, fifty People at random locations in $R^2$; distance cost = $0.25$. \relax }}{194}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Good costs for fifty Firms, fifty People buying, distance cost = $0.25$, random locations in an $R^2$ plane of 1 unit distance to a side. Showing damping of oscillations over model time.}}}{194}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {From same model run, correlation of time contributed to each Firm versus their good cost at equilibrium, on day $600$ (very right of sub-figure 6.3a\hbox {}).}}}{194}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Transmission belt model, $20$ Firms, $100$ People, no distance costs. Firms are given randomised stock targeting magnitude response; result demonstrates People's utility equilibriates to a common value at each timestep, though it varies across model time. \relax }}{195}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Good cost, $20$ Firms}}}{195}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Utility, $100$ People}}}{195}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Two Firm / one person transmission belt model. Firm 0 has a markup of $0.1$. $\rho = 0.5$. The x axis shows `economies of scale' curve swept from $0$ to $1$. The y axis shows, for the externally affected Firm, the difference between the normal equilibrium price (without markup) at that production scale and the price it finds. Average over previous $500$ iterations is used as the value fluctuates at short timescales. \relax }}{198}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Two Firm / one person transmission belt model. Firm 0 varies markup between $0$ and $0.15$. $\rho = 0.5$, economies of scale curve $=0.5$. The Firm changing its markup (x axis) finds higher clearing prices, drives demand to Firm 1 (the dependent Firm), whose equilibrium price drops. \relax }}{199}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Two Firm / two person transmission belt model. The graph shows Firm zero's markup target correlated to $\rho $ , with datapoints taken when the Firm hits a `tipping point'; there are no economies of scale. \relax }}{201}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Two Firm / one Person transmission belt model moves between production regimes as $\rho $ crosses substitutability threshold. Black and grey identify the two Firms in the first three graphs. $750$ Model `days' shown after transition from $\rho =0.73$ to $\rho =0.8$. \relax }}{203}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Two Firms: output per unit of input time}}}{203}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Two Firms: stock levels}}}{203}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Two Firms: good cost}}}{203}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Person's utility}}}{203}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Spreadsheet output of Two Firm / One Person example. If $\rho > 0.75$ the symmetric equilibrium is not stable: a slight difference in price leads to feedback to one, higher efficiency Firm and one lower. Note: $60$ iterations are shown in (a) as convergence happens quickly. \relax }}{207}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\rho = 0.73$}}}{207}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\rho = 0.8$}}}{207}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Two region transmission belt model: one Person, one Firm per region, starting off in symmetric production. $\rho $ and distance costs start low. Each is raised in turn. When an efficient producer dominates through economies of scale as one is raised, the model shifts to raise the other until equilibrium moves back to symmetry again. A data point is taken at each shift as the parameter sweep threads through equilibria. \relax }}{208}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Two regions, two Firms in each region. Varying $\rho $ and distance costs determines production regime, which can vary within each region. Y-axis shows output per unit input: higher values indicate more efficient production scale. \relax }}{210}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\rho = 0.5$, distance cost $=0.1$}}}{210}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\rho = 0.77$, distance cost $=0.1$}}}{210}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\rho = 0.77$, distance cost $=0.35$}}}{210}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$\rho = 0.85$, distance cost $=0.55$}}}{210}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces $19$ People, $19$ Firms, spaced between $0$ and $1$ on a line. Distance cost determines transition between production regimes. Double black line across People's utility marks the mean utility value. Different scales used for Firm efficiency y-axis; the second figure marks the lower values used in the first. \relax }}{212}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Demand spread out: $\rho = 0.7$, distance cost $=4.75$. Firm y-axis scale to $0.4$. For People, double line marks utility mean.}}}{212}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Efficient producer emerges: $\rho = 0.7$, distance cost $=4.5$. Firm y-axis scale to $3.1$, with $0.4$ marked for comparison.}}}{212}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces $19$ People, $19$ Firms, spaced between $0$ and $1$ on a line. Two examples of different more-efficient production regimes emerging for differing values of $\rho $ and distance cost. \relax }}{213}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Two more-efficient producers: $\rho = 0.73$, distance cost $=8.5$. Firm y-axis scale to $2$.}}}{213}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Many more-efficient producers emerge: $\rho = 0.79$, distance cost $=45.5$. Firm y-axis scale to $0.4$}}}{213}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Two Firms fixed a distance of $1$ apart; a more-efficient producer emerges as $\rho \rightarrow 0.9$. Mean distance to Firm $0$ (thus mean distance from Firm $1$) vs Firm production ratio; arrows point in direction of change between model iterations. \relax }}{214}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Two Firms fixed a distance of $1$ apart; a more-efficient producer emerges as $\rho \rightarrow 0.9$. \relax }}{215}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$R^2$ space visualisation, $\rho =0.5$}}}{215}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$R^2$ space visualisation, $\rho =0.9$}}}{215}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Model framework UML overview \relax }}{247}

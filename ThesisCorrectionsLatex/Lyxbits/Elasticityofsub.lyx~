@@ -1,0 +1,66 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Two goods n shizzle
+\end_layout
+
+\begin_layout Standard
+What I want to do here: work out elasticity of substitution a little better
+ than I've done already.
+ So then.
+ OK, so several things I need to fix.
+ In my model, things need to have actual prices; EoSub isn't just 'technical',
+ there are money costs involved.
+ That means looking a little at what happens with that in the Cobb Douglas.
+ Yay diddly.
+\end_layout
+
+\begin_layout Standard
+Second, for space costs, I'll then need to separate out the effect that
+ a time-saving might have for labour who's moved closer versus some cost-change
+ that affects space-`buying'.
+ 
+\end_layout
+
+\end_body
+\end_document

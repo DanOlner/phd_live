@@ -1,0 +1,61 @@
+# Publish the models to GitHub Pages.
+#
+# The site is `spatialecon-js/` exactly as it sits in the repo: static files, no build step,
+# every path relative. So rather than moving it into `docs/` or onto a `gh-pages` branch, this
+# uploads that one folder as the Pages artifact and serves it as-is. Nothing else in the repo
+# — the thesis sources, the Java reference implementation, the planning documents — is
+# published.
+#
+# One-time setup on GitHub: Settings → Pages → Build and deployment → Source: "GitHub Actions".
+#
+# `data/sweeps/` and `snapshots/thumbs/` are committed output the pages fetch at runtime, so
+# they must be regenerated and committed locally (`npm run sweep`, `npm run thumbs`) before
+# pushing. This workflow deliberately does not rebuild them: the sweeps take minutes, and the
+# site is meant to be the files in the repo, nothing more.
+
+name: Deploy models to GitHub Pages
+
+on:
+  push:
+    # Both, because git with no `init.defaultBranch` set creates `master` while GitHub
+    # suggests `main`, and a workflow listening on the wrong one never runs and never says so.
+    branches: [main, master]
+    # Edits to the planning documents or the thesis sources don't redeploy the site.
+    paths:
+      - 'spatialecon-js/**'
+      - '.github/workflows/deploy-pages.yml'
+  # A "Run workflow" button on the Actions tab, for redeploying by hand.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time. A newer push queues behind a running deploy rather than cancelling
+# it part-way through.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v5
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site folder
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: spatialecon-js
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

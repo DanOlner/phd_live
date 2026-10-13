@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>spatialecon — model</title>
+<style>
+  :root { --ink: #111; --line: #d8d4cc; --paper: #faf9f7; --muted: #6b675f; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 15px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  header { padding: 1.4rem 1.5rem 0.8rem; max-width: 74rem; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 1.15rem; font-weight: 620; letter-spacing: -0.01em; }
+  header p { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.9rem; }
+  header a { color: inherit; }
+  .back { display: inline-block; margin-bottom: 0.5rem; font-size: 0.82rem; color: var(--muted); }
+  main { max-width: 74rem; margin: 0 auto; padding: 0 1.5rem 3rem; }
+
+  .se-root { display: grid; grid-template-columns: minmax(0, 1fr) 17rem; gap: 1.5rem; align-items: start; }
+
+  /* The aspect lives on each canvas rather than on the stage, because a model with a second
+     panel has two of them and one ratio cannot describe both. */
+  .se-stage { background: #fff; border: 1px solid var(--line); border-radius: 3px; }
+  .se-canvas { display: block; width: 100%; height: auto;
+               aspect-ratio: var(--stage-aspect, 1); touch-action: none; cursor: ew-resize; }
+  .se-canvas-aux { aspect-ratio: var(--aux-aspect, 1.35); cursor: default; }
+  .se-caption { border-top: 1px solid var(--line); padding: 0.45rem 0.7rem 0;
+                font-size: 0.76rem; color: var(--muted); }
+  .se-step { padding: 0.6rem 0.8rem; font-size: 0.86rem; line-height: 1.5; color: var(--ink);
+             min-height: 3.4rem; }
+  .se-step:empty { display: none; }
+
+  .se-panel { display: flex; flex-direction: column; gap: 0.9rem; }
+  .se-status {
+    white-space: pre-line; font: 12px/1.5 ui-monospace, "SF Mono", Menlo, monospace;
+    background: #fff; border: 1px solid var(--line); border-radius: 3px; padding: 0.6rem 0.7rem;
+  }
+  .se-controls { display: flex; flex-direction: column; gap: 0.7rem; }
+  .se-check { display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; cursor: pointer; }
+  .se-checkbox { accent-color: #333; margin: 0; }
+  .se-control { display: grid; grid-template-columns: 1fr auto; gap: 0.15rem 0.5rem; font-size: 0.82rem; }
+  .se-select { grid-column: 1 / -1; font: inherit; font-size: 0.8rem; padding: 0.15rem 0.3rem;
+               background: #fff; border: 1px solid var(--line); border-radius: 3px; }
+  .se-control-name { color: var(--muted); }
+  .se-control-value { font: 12px ui-monospace, Menlo, monospace; }
+  .se-slider, .se-speed { grid-column: 1 / -1; width: 100%; accent-color: #333; }
+  .se-buttons { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+  .se-button {
+    font: inherit; font-size: 0.8rem; padding: 0.35rem 0.7rem; cursor: pointer;
+    background: #fff; border: 1px solid var(--line); border-radius: 3px; color: inherit;
+  }
+  .se-button:hover { border-color: #a9a49a; }
+  .se-speed { flex: 1 1 100%; }
+  .se-hint { font-size: 0.75rem; color: var(--muted); }
+
+  details { margin-top: 1.1rem; border-top: 1px solid var(--line); padding-top: 0.8rem; }
+  summary { cursor: pointer; font-size: 0.88rem; font-weight: 560; }
+  summary .kind { color: var(--muted); font-weight: 400; }
+  details pre, details .prose {
+    white-space: pre-wrap; font: 13px/1.6 ui-monospace, Menlo, monospace;
+    color: #3a3630; margin: 0.7rem 0 0; max-width: 62rem;
+  }
+  details .prose { font: 15px/1.62 inherit; color: #322e29; }
+
+  .sweeps { margin-top: 2.4rem; }
+  .sweeps h2 { font-size: 1rem; font-weight: 620; margin: 0 0 0.2rem; }
+  .sweeps > p { margin: 0 0 1.2rem; color: var(--muted); font-size: 0.88rem; max-width: 46rem; }
+  .sweep { margin-bottom: 2rem; }
+  .sweep h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 0.5rem; }
+  .sweep canvas {
+    display: block; width: 100%; height: auto; aspect-ratio: 1.7;
+    background: #fff; border: 1px solid var(--line); border-radius: 3px;
+  }
+  .sweep.clickable canvas { cursor: crosshair; }
+  .sweep .prose { white-space: pre-wrap; margin: 0.7rem 0 0; max-width: 46rem;
+                  font-size: 0.9rem; color: #3a3630; }
+  .sweep .meta { margin-top: 0.5rem; font-size: 0.78rem; color: var(--muted); }
+  .sweep .meta a { color: inherit; }
+
+  /* Phones: one column, and the drag hint replaced — there is no right mouse button and no
+     hover, so the sliders are the only way in. */
+  @media (max-width: 46rem) {
+    .se-root { grid-template-columns: minmax(0, 1fr); }
+    main, header { padding-left: 1rem; padding-right: 1rem; }
+    .se-button { padding: 0.5rem 0.8rem; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">← all models</a>
+  <a class="back" href="methodology.html" style="margin-left:1rem">how these models are built</a>
+  <h1 id="title">…</h1>
+  <p id="subtitle"></p>
+</header>
+<main>
+  <div id="app"></div>
+  <div id="popouts"></div>
+  <div id="sweeps" class="sweeps"></div>
+</main>
+
+<script type="module">
+import { mount } from './src/view/chrome.js';
+import { chooseView } from './src/view/choose.js';
+import { sweepView, sweepsFor } from './src/view/sweep.js';
+import { contentFor } from './src/content.js';
+import { get, ids } from './src/scenario.js';
+import { World } from './src/world.js';
+import './src/scenarios/index.js';
+
+const wanted = new URLSearchParams(location.search).get('m') ?? 'c1';
+let scenario;
+try {
+  scenario = get(wanted);
+} catch (e) {
+  document.getElementById('title').textContent = `Unknown model "${wanted}"`;
+  document.getElementById('subtitle').textContent = `Try one of: ${ids().join(', ')}`;
+  throw e;
+}
+
+document.getElementById('title').textContent = scenario.title;
+document.getElementById('subtitle').innerHTML =
+  `${scenario.thesisRef} · <code>${scenario.id}</code>`;
+
+// A throwaway world, only to decide which view this model wants. Cheap: construction
+// places agents and builds an index, it does not run anything.
+const probe = new World(scenario.config());
+scenario.setUp?.(probe);
+const chosen = chooseView(scenario, probe);
+document.documentElement.style.setProperty('--stage-aspect', String(chosen.aspect));
+if (chosen.aux) {
+  document.documentElement.style.setProperty('--aux-aspect', String(chosen.aux.aspect));
+}
+
+const content = contentFor(scenario.id);
+
+const running = mount({
+  container: document.getElementById('app'),
+  scenario,
+  makeView: chosen.make,
+  shadeOptions: chosen.shadeOptions,
+  overlays: chosen.overlays,
+  aux: chosen.aux,
+  // Scenario-authored steps win; otherwise the narrative ones from content.js.
+  steps: scenario.steps ?? content.steps ?? [],
+  readout: (w) => {
+    const out = {};
+    if (w.firms.length > 0) {
+      const fm = (f) => w.firms.reduce((a, x) => a + f(x), 0) / w.firms.length;
+      out['price    '] = fm((f) => f.goodCost).toFixed(4);
+      if (w.firms.some((f) => f.contributedTime > 0)) {
+        out['stock    '] = fm((f) => f.stock).toExponential(1);
+        out['input    '] = fm((f) => f.contributedTime).toFixed(3);
+      }
+    }
+    const n = w.people.length;
+    if (n > 0) {
+      const pm = (f) => w.people.reduce((a, p) => a + f(p), 0) / n;
+      out['utility  '] = pm((p) => p.utility).toFixed(4);
+      if (w.config.densityCost > 0) out['density  '] = pm((p) => p.densityCost).toFixed(4);
+      if (w.config.peopleMobile) out['movement '] = w.meanPersonMovement().toExponential(1);
+    }
+    return out;
+  },
+});
+
+// --- pop-outs -------------------------------------------------------------------------
+
+const popouts = document.getElementById('popouts');
+
+/** @param {string} summary @param {string} kind @param {string} body @param {boolean} open */
+function panel(summary, kind, body, open, mono) {
+  if (!body) return;
+  const d = document.createElement('details');
+  if (open) d.open = true;
+  const s = document.createElement('summary');
+  s.innerHTML = `${summary} <span class="kind">${kind}</span>`;
+  const p = document.createElement(mono ? 'pre' : 'div');
+  if (!mono) p.className = 'prose';
+  p.textContent = body.trim();
+  d.append(s, p);
+  popouts.append(d);
+}
+
+panel('What to watch', 'this model, running', scenario.notes ?? '', true, true);
+panel('The economics', 'why this model exists', content.economics ?? '', false, false);
+panel('Under the hood', 'how it is actually built', content.hood ?? '', false, false);
+panel('What we found', 'where the rebuild adds to, or complicates, the thesis',
+      content.found ?? '', false, false);
+
+// --- precomputed sweeps ---------------------------------------------------------------
+
+const sweepHost = document.getElementById('sweeps');
+const sweeps = await sweepsFor(scenario.id);
+
+if (sweeps.length > 0) {
+  const h2 = document.createElement('h2');
+  h2.textContent = sweeps.length === 1 ? 'A parameter sweep' : 'Parameter sweeps';
+  const lede = document.createElement('p');
+  lede.textContent = 'Precomputed rather than re-run here — the point is to show what the '
+    + 'sweep found, and a settled run per point is minutes of work, not milliseconds. '
+    + 'Same chart code as the live model above.';
+  sweepHost.append(h2, lede);
+
+  // Which parameter a click can set, where the model does not drive it itself. Offering it
+  // on a model that ramps the same parameter would look responsive and do nothing.
+  const SEEDABLE = { 'c8-density': 'density', 'd1-distance': 'delivery' };
+
+  for (const sweep of sweeps) {
+    const section = document.createElement('div');
+    section.className = 'sweep';
+
+    const h3 = document.createElement('h3');
+    h3.textContent = sweep.title;
+
+    const canvas = document.createElement('canvas');
+    const note = document.createElement('div');
+    note.className = 'prose';
+    note.textContent = sweep.note.trim();
+
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    const kind = sweep.kind === 'trace'
+      ? `${sweep.points} samples from one run`
+      : `${sweep.points} settled runs`;
+    meta.innerHTML = `${kind} · generated by <code>tools/sweep.mjs</code> · `
+      + `<a href="data/sweeps/${sweep.id}.json">raw numbers</a>`;
+
+    section.append(h3, canvas, note, meta);
+    sweepHost.append(section);
+
+    const view = sweepView(canvas, sweep);
+    view.draw();
+    // Canvas backing size follows the CSS box, so a resize needs a repaint.
+    new ResizeObserver(() => view.draw()).observe(canvas);
+
+    const seedable = SEEDABLE[sweep.id];
+    const param = seedable ? running.parameters.find((p) => p.name === seedable) : null;
+    if (param) {
+      section.classList.add('clickable');
+      const hint = document.createElement('div');
+      hint.className = 'meta';
+      hint.textContent = `Click the chart to set ${param.label} on the model above, `
+        + 'and watch the settled model reorganise towards that point.';
+      section.insertBefore(hint, note);
+      canvas.addEventListener('click', (event) => {
+        const value = view.valueAt(event.clientX, event.clientY);
+        if (value === null) return;
+        running.setParameter(seedable, value);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  }
+}
+</script>
+</body>
+</html>

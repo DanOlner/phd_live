@@ -1,0 +1,53 @@
+{
+ "id": "c1-fringe",
+ "title": "The fringe thins with numbers",
+ "model": "c1",
+ "kind": "settled",
+ "note": "One settled run per population. The share of People beyond the equalising cutoff\nd*, where density has fallen to zero and there is nothing left to trade against distance.\n\nThey are not out of equilibrium — no move improves them. They are outside the range over\nwhich equalisation is possible, which is a finite-population effect and must therefore\nvanish with numbers. It does. The Java measured 43.2 / 20.4 / 7.2 / 1.9 per cent at\n125 / 250 / 500 / 1000 People, from an independent implementation.",
+ "yScale": "log",
+ "xLabel": "People",
+ "xs": [
+  125,
+  250,
+  500,
+  1000,
+  2000
+ ],
+ "yLabel": "per cent, distance, utility",
+ "series": [
+  {
+   "label": "fringe %",
+   "values": [
+    44,
+    20,
+    7.6,
+    2,
+    0.44999999999999996
+   ]
+  },
+  {
+   "label": "cutoff d*",
+   "values": [
+    0.2749957535263752,
+    0.3860294736372474,
+    0.4533087244950993,
+    0.4909965209587206,
+    0.512821445234481
+   ],
+   "dash": true
+  },
+  {
+   "label": "equalised U*",
+   "values": [
+    0.9356734440497314,
+    0.9119865755673728,
+    0.8982085562580228,
+    0.8906709193232898,
+    0.8863634532281311
+   ],
+   "dash": true
+  }
+ ],
+ "generatedBy": "tools/sweep.mjs",
+ "points": 5
+}
