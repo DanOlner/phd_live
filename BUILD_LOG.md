@@ -143,6 +143,63 @@ The median column tracks the Java to within a point at every population, from co
 
 ---
 
+## Stage 8 — the rest of the catalogue *(2 August 2026)*
+
+C3's four costs, C4, C5, C7, E2, E4, F1–F3 and G1 (`src/coremodel.js`); `view/distribution.js` and `view/coremodel.js` for the shapes no existing view could carry; two more sweeps, `c3-costs` and `g1-tomahawk`; and `methodology.html`, written rather than built, as decision 3 asked. Thirteen models, which completes the catalogue: 42 registered against its 24 entries, because several entries ship as families.
+
+**Over half the tail is not agent models, and they are `Scenario`s anyway.** C4 and C5 are closed forms, E4 is a difference equation, F1 and F2 demonstrate a process, F3 runs two populations of its own, and G1 is solved rather than simulated. Making each a `Scenario` costs a placeholder config and buys a page, controls, pop-outs and a catalogue card from the same machinery as everything else. None has a Java counterpart to diff against, so `test/catalogue.test.js` asserts the claim each model exists to make, in the thesis' own terms. That is tier 2 without the second implementation: "the more rational agent performs worse" becomes "the rational population's output stays at zero".
+
+**C3 and C7 are reconstructed, and everything they publish reproduces.** Both configs are lost (CODE_ANATOMY §4). Each is built on C1's population, space and density cost, on the grounds that each is C1 with one thing moved. C7's two distance costs come from a base of 2 with `rangeDelivery` on, which is what that flag exists for. All four of C3's signs come out as the thesis states, measured as mean distance from the centre over the rising pass:
+
+| Cost | Swept | Mean distance | Direction |
+|---|---|---|---|
+| wage | 0.05 → 1.5 | 0.550 → 0.238 | agglomerating |
+| base good cost | 0.05 → 2 | 0.268 → 0.313 | **dispersive** |
+| commute | 0 → 1 | 0.307 → 0.156 | agglomerating |
+| delivery | 0 → 1 | 0.733 → 0.181 | agglomerating |
+
+C7's core swap reproduces too. The population sits 0.37 nearer the cheap Firm at ρ = 0.99, is down to 0.10 by ρ = 0.52, and sits 0.49 nearer the dear one at ρ = 0.05. The return sweep crosses at about the same place, with modest hysteresis. Both models are flagged in-file as reconstructed. Reproducing the directions does not recover the configs, so they stay under *Still open*.
+
+**G1: the original's tomahawk has no blades.** The original finds equilibria by walking each short-run curve for sign changes in the real wage ratio minus one. The corners λ = 0 and λ = 1 are equilibria by construction rather than by crossing: with every worker already in one region there is nobody left to move. So the original cannot see them, and its long-run figure is drawn without the two stable branches that give it its name. The port adds them, applying the same stability test at the ends, and flags this as a deliberate departure. Two smaller choices go opposite ways:
+
+- **Kept:** the original reads region 2's income and price index on the first pass before assigning them, so Java's zero-initialised arrays supply zero. The fixed point does not depend on it, and tidying is how a port stops matching.
+- **Added:** an iteration cap, which the original lacks, because a frozen tab is a worse failure than a slightly wrong point.
+
+At the shipped T = 2.25 the port finds the five equilibria the thesis states: 0.092 unstable, 0.500 stable, 0.910 unstable, and the two stable corners. The break point is near T = 1.9 and the sustain point near 2.5. The tomahawk sweep is a scatter, not a curve: at one transport cost there may be one equilibrium or three, so there is no function to draw, and joining the points in order would invent branches.
+
+**F3: "drop α to 1 and it frees up" was wrong.** At α = 1 a lone worker produces (1 − 1)/1 = 0, which is no better than not working, so a population of correct reasoners still never starts. Only α = 0 breaks the deadlock. That sharpens the model's point rather than weakening it: the hole is the existence of the threshold, not its size, and any positive fixed labour requirement stops correct reasoners from ever starting. Corrected in the model's notes and pinned by a test that sets α = 1 and asserts zero output.
+
+**E2: an unfinished run read as an effect.** The coupling between one Firm's markup and the other's price *is* the economies of scale, so it should vanish at zero EoS curve. At 2,000 days it read 0.002, which is most of what the real coupling is worth. But at zero curve the equilibrium price is 1.0 and these runs start near 0.66, so they were still travelling. At 6,000 days the drag is 0.0000003, against 0.0026 at curve 0.5 and 0.0047 at curve 1. This is the same error as E1raw's "settles at 0.299": a sample read as a resting point. The test now runs 6,000 days and its comment says why.
+
+**E2's two endings depend on how the markup arrives.** The scenario both drives the markup (a slow ramp to 0.15) and exposes it as a slider. That needs a latch, or the ramp overwrites the slider the next day and the control appears to work while doing nothing. With the latch, the two paths reach the thesis' two endings:
+
+- **Left to ramp:** Firm 0 adapts as its target rises under it, and you get the squeeze. Its price climbs to 1.27, Firm 1's falls to 0.76, and utility slides from 2.5 to 2.1.
+- **Dropped straight onto 0.15:** you get the runaway. Firm 0's price reaches about five thousand and it sells nothing, Firm 1 becomes the sole producer at the one-Firm clearing price of 0.667, and utility falls to 1.50.
+
+**E4 does what E3 does, at the same threshold, with the agents taken away.** E4 is four pairs of numbers and one law of motion, with both Firms updated simultaneously from the same state so that turn order cannot be blamed. Starting from a perturbation of 0.002 and running 4,000 steps:
+
+- **ρ = 0.73:** the run decays back to symmetry, with asymmetry 5.5e-7 and both prices at 0.6667.
+- **ρ = 0.80:** asymmetry grows to 0.38 and holds. Prices settle at 0.527 and 0.907, and one Firm produces fifteen times the other.
+
+So the instability leads to a new pair of equilibria, not a runaway, and the threshold lies between 0.73 and 0.76. That agrees with the E3 sweep's first departure at 0.74. Convergence takes thousands of steps against the thesis' sixty, because the constant in the law of motion is a free choice and this one is smaller. It changes the speed and not the threshold.
+
+**F2's pyramid was first drawn as a ramp.** The model bins ten million gaps into counts as they happen. Handing those counts to the distribution view's `sorted` mode ranked them, which turned a pyramid centred on one day into a descending ramp: a picture of the opposite of the finding. A `bars` mode now plots already-binned values in the order given. Only 19% of gaps land within a tenth of a day of the mean, where a spike would put all of them.
+
+**F1 is still climbing at the thesis' horizon.** The Gini coefficient is 0.33 at the thesis' 200,000 exchanges. Run five times longer and it saturates at 0.48, close to the limit of the exponential distribution this process tends towards.
+
+---
+
+## Publishing *(13 October 2026)*
+
+The site went live at [danolner.github.io/phd_live](https://danolner.github.io/phd_live/), and a root `README.md` now points the repo at it. Four decisions:
+
+- **Pages serves `spatialecon-js/` as it sits.** `.github/workflows/deploy-pages.yml` uploads that one folder as the Pages artifact. There is no move into `docs/` and no `gh-pages` branch, and nothing else in the repo is published. Edits outside the folder do not trigger a redeploy.
+- **The workflow regenerates nothing.** The sweeps take minutes and the site is meant to be the committed files, so `npm run sweep` and `npm run thumbs` run locally before a push.
+- **It listens on both `main` and `master`.** Git with no `init.defaultBranch` creates `master` while GitHub suggests `main`. A workflow listening on the wrong branch never runs and never says so.
+- **Every path is relative and case-exact.** macOS forgives a case mismatch; Pages does not.
+
+---
+
 ## Corrections to the record
 
 Places where building something changed a claim in an existing document. Listed together because each is the kind of thing that gets silently re-derived otherwise.
@@ -164,16 +221,27 @@ Places where building something changed a claim in an existing document. Listed 
 
 ## Still open
 
-Unchanged by anything in stages 1–7, and none of it blocks stage 8:
+Not resolved by anything built so far, and none of it blocks the site:
 
 - **D2's ρ dependence.** The thesis reports low ρ making the DMR game harder under noise; both independent rebuilds show the opposite, each with a coherent mechanism for its own result. Noise amplitude, distance cost and noise character all ruled out. CODE_ANATOMY §7.12. It is on the site, in D2's *what we found* panel, because a rebuild that quietly reproduced everything would be less informative than one that does not.
 - **The commute round-trip factor of 2** (in the thesis equation, not the code) and **noise amplitude** (±half what the thesis text implies). Both switchable behind `Quirks`; neither has been shown to change a published result.
-- **C3 and C7 configs are lost.** Reconstructable from thesis text plus the `*Range` conventions, not recoverable exactly.
+- **C3 and C7 configs are lost.** They are reconstructed from the thesis text on C1's population and space, with the `*Range` conventions, and every published direction reproduces (stage 8). The exact configs are still not recoverable.
+
+Two content errors on the live site, found on 13 October 2026 while writing up stage 8. In both, a pop-out still carries a claim that stage 8 corrected everywhere else:
+
+- **F3's *under the hood* pop-out reverses the α correction.** `src/content.js` says "Drag alpha down to 1 and the rational population starts producing immediately." The model's notes and a passing test both say α = 1 still deadlocks and only α = 0 breaks it (stage 8). A visitor to the F3 page is shown both claims.
+- **E2's *what we found* table is measured on unsettled runs.** It gives the drag after 3,000 days, including −0.0003 at zero EoS curve. That is the same unfinished-run error stage 8 records. The scenario notes have the settled 6,000-day values (0.0000003, 0.0026, 0.0047), and the pop-out should match them.
 
 ---
 
 ## Where it stands
 
-Twenty-nine models — all 28 from groups A–E, plus F4 — every one with a view. 127 tests. Tier 1 exact on six deterministic models. The site has a catalogue with a still per model, per-model pop-outs in three kinds, walkthroughs that survive a reroll, and five precomputed sweeps rendered through the live charts' own code.
+**All eight stages of BUILD_PLANNER §8 are done, and the site is live.** There are forty-two models covering the whole catalogue and all seven groups, and every one has a view and a page. 142 tests pass, and tier 1 is exact on six deterministic models. The site has:
 
-**Stage 8 remains:** C3, C5, C7, E2, E4, C4, F1–F3, the Krugman Core Model (G1), and the methodology write-up.
+- a catalogue with a still per model;
+- per-model pop-outs in three kinds;
+- walkthroughs that survive a reroll;
+- seven precomputed sweeps rendered through the live charts' own code;
+- a methodology page carrying the §7.4 argument.
+
+What remains is the *Still open* list above.
