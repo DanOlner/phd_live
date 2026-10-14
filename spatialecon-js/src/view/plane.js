@@ -62,9 +62,12 @@ const GROUP_SHAPES = ['square', 'circle', 'triangle', 'pentagon'];
  * @param {boolean} [options.showBuyLines] the trades themselves — `buylines.js`
  * @param {boolean} [options.showEqualisingLine] C1's cutoff ring — `equalise.js`
  * @param {boolean} [options.showMeanPoint] the 2011 renderer's ring at the mean of every actor — H1
+ * @param {string[]} [options.firmFills] one fill per Firm, by index, in place of the white —
+ *   H1 tells its two Firms apart by the original's two glyphs, white and filled
  */
 export function planeView(canvas, options = {}) {
   const ctx = /** @type {CanvasRenderingContext2D} */ (canvas.getContext('2d'));
+  const firmFills = options.firmFills;
   let shadeBy = options.shadeBy ?? 'auto';
   let showDensityCircles = options.showDensityCircles ?? true;
   let colour = options.colour ?? false;
@@ -171,13 +174,14 @@ export function planeView(canvas, options = {}) {
 
       // 3. Firms: the 12-vertex plus glyph, white with a black outline so it stays legible
       //    against the darkest part of the ink. `FirmsDrawToSpace` has both a filled and a
-      //    white variant; the published figures use the white one.
+      //    white variant; the published figures use the white one. H1 uses both, one per
+      //    Firm, so its page can name them the white Firm and the black.
       world.firms.forEach((f, i) => {
         const x = s(f.position.x);
         const y = s(f.position.y);
         const size = s(0.018);
 
-        ctx.fillStyle = colour ? firmHue(i, world.firms.length) : '#fff';
+        ctx.fillStyle = firmFills?.[i] ?? (colour ? firmHue(i, world.firms.length) : '#fff');
         ctx.strokeStyle = '#000';
         ctx.lineWidth = Math.max(s(0.005), 1.5);
         plusGlyph(ctx, x, y, size);
@@ -193,7 +197,7 @@ export function planeView(canvas, options = {}) {
       if (showMeanPoint) drawMeanPoint(ctx, world, s, dpr);
 
       // 5. The von Thünen legend: shape, then the cost that defines the group.
-      if (useGroups) drawGroupLegend(ctx, world, px);
+      if (useGroups) drawGroupLegend(ctx, world, px, firmFills);
     },
   };
 }
@@ -218,15 +222,19 @@ function groupIndexOf(world, firm) {
 }
 
 /**
+ * Where each Firm has a fill of its own, its glyph goes beside its workforce's shape, so the
+ * legend says which Firm each group works for as well as what it is paid.
+ *
  * @param {CanvasRenderingContext2D} ctx @param {import('../world.js').World} world
- * @param {number} px model units -> device pixels
+ * @param {number} px model units -> device pixels @param {string[]} [firmFills]
  */
-function drawGroupLegend(ctx, world, px) {
+function drawGroupLegend(ctx, world, px, firmFills) {
   const variable = groupVariable(world);
   const size = 0.022 * px;
   const rowHeight = size * 2.4;
   const x = size * 2.2;
   let y = size * 2.4;
+  const textX = x + size * (firmFills ? 3 : 1.6);
 
   ctx.font = `${Math.round(size * 1.15)}px ui-monospace, Menlo, monospace`;
   ctx.textBaseline = 'middle';
@@ -241,8 +249,15 @@ function drawGroupLegend(ctx, world, px) {
     ctx.lineWidth = Math.max(0.004 * px, 0.5);
     groupShape(ctx, GROUP_SHAPES[i % GROUP_SHAPES.length], x, y, size);
 
+    if (firmFills) {
+      ctx.fillStyle = firmFills[i] ?? '#fff';
+      plusGlyph(ctx, x + size * 1.65, y, size * 0.22);
+      ctx.fill();
+      ctx.stroke();
+    }
+
     ctx.fillStyle = '#000';
-    ctx.fillText(`= ${round(variable.of(f))}`, x + size * 1.6, y);
+    ctx.fillText(`= ${round(variable.of(f))}`, textX, y);
     y += rowHeight;
   });
 }

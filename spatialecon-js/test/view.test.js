@@ -15,6 +15,7 @@ import { World } from '../src/world.js';
 import { planeView } from '../src/view/plane.js';
 import { lineView } from '../src/view/line.js';
 import { timeSeriesView } from '../src/view/timeseries.js';
+import { clippedPolyline, stripsView } from '../src/view/strips.js';
 import { correlateView } from '../src/view/correlate.js';
 import { chooseView } from '../src/view/choose.js';
 import { equalisingCutoff, equalisingLineApplies } from '../src/view/equalise.js';
@@ -31,12 +32,15 @@ import { e7 } from '../src/scenarios/e7.js';
 import { e8 } from '../src/scenarios/e8.js';
 import { monocentric } from '../src/scenarios/monocentric.js';
 import { c6, c6c } from '../src/scenarios/c6.js';
-import { h1 } from '../src/scenarios/h1.js';
+import { APART, h1, settlements } from '../src/scenarios/h1.js';
 import { assertEqual, assertTrue, report, suite, test } from './tiny.js';
 
 /** A 2-D context that records what was asked of it. */
 function fakeCanvas(size = 600) {
-  /** @type {{op: string, args: number[]}[]} */
+  /** The fills and strokes also note the style live at the time, which is how a test can tell
+   * a faint cloud line from a bold one, a shading band from the background, or a black Firm
+   * from a white one.
+   * @type {{op: string, args: number[], style?: string, width?: number}[]} */
   const calls = [];
   /** @param {string} op */
   const rec = (op) => (/** @type {number[]} */ ...args) => calls.push({ op, args });
@@ -47,9 +51,14 @@ function fakeCanvas(size = 600) {
   const labels = [];
   const ctx = {
     fillStyle: '', strokeStyle: '', lineWidth: 0, font: '', textBaseline: '', textAlign: '',
-    setTransform: rec('setTransform'), fillRect: rec('fillRect'), strokeRect: rec('strokeRect'),
+    setTransform: rec('setTransform'),
+    /** @param {number[]} args */
+    fillRect: (...args) => calls.push({ op: 'fillRect', args, style: ctx.fillStyle }),
+    strokeRect: rec('strokeRect'),
     beginPath: rec('beginPath'), closePath: rec('closePath'), moveTo: rec('moveTo'),
-    lineTo: rec('lineTo'), arc: rec('arc'), fill: rec('fill'), stroke: rec('stroke'),
+    lineTo: rec('lineTo'), arc: rec('arc'),
+    fill: () => calls.push({ op: 'fill', args: [], style: ctx.fillStyle }),
+    stroke: () => calls.push({ op: 'stroke', args: [], style: ctx.strokeStyle, width: ctx.lineWidth }),
     /** @param {string} t @param {number} x @param {number} y */
     fillText(t, x, y) { text.push(t); labels.push({ text: t, x, y }); },
     // Its argument is an array of dash lengths, not coordinates, so it is recorded as having
@@ -606,7 +615,7 @@ test('and it converges on what the algebra gives', () => {
     Math.abs(climbed[0] - exact[0]) < 0.01);
 });
 
-suite('H1 — the 2011 ring and the separation trace');
+suite('H1 — the 2011 ring, and the strips that say why');
 
 /** H1 a few days in, workforces tied. */
 function h1World(days = 20) {
@@ -648,19 +657,73 @@ test('and it is off unless asked for, and offered only on H1', () => {
   assertTrue('c6 does not', !(chooseView(c6, probe).overlays ?? []).some((o) => o.key === 'showMeanPoint'));
 });
 
-test('the second panel traces the separation against touching', () => {
-  // The rhythm of meeting and parting is the behaviour, and a single frame cannot show it.
+test('the second panel stacks what each side acts on over the separation it produces', () => {
+  // The plane shows where the settlements are; this shows why they move. The People's
+  // utility, the Firms' revenue and speed, and the separation, on one time axis.
   const w = new World(h1.config());
   h1.setUp?.(w);
   const aux = chooseView(h1, w).aux;
   assertTrue('h1 has a second panel', Boolean(aux));
   if (!aux) return;
-  const { canvas, text } = fakeCanvas();
-  const view = aux.make(canvas);
-  for (let d = 0; d < 60; d++) { w.timeline.nextDay(); view.draw(w); }
-  assertTrue(`the reference is labelled, got: ${text.join(' | ')}`,
-    text.some((t) => t.includes('touching')));
-  assertTrue('and the series with its latest value', text.some((t) => t.startsWith('separation ')));
+  const { canvas, calls, text } = fakeCanvas();
+  const view = /** @type {any} */ (aux.make(canvas));
+  for (let d = 0; d < 60; d++) { w.timeline.nextDay(); view.observe(w); }
+  view.draw(w);
+  for (const title of ['utility, circles', 'utility, squares', 'Firm revenue', 'how fast each Firm', 'separation']) {
+    assertTrue(`a strip titled "${title}...", got: ${text.join(' | ')}`, text.some((t) => t.startsWith(title)));
+  }
+  // The Firms by the names the plane gives them, and both dashed lines named for the Firm the
+  // circles bought at: two lines both labelled "from circles" read as one mislabelled.
+  for (const label of ['mean ', 'white Firm ', 'black Firm ', 'circles at white ', 'circles at black ', 'separation ']) {
+    assertTrue(`a label "${label}...", got: ${text.join(' | ')}`, text.some((t) => t.startsWith(label)));
+  }
+  // An index stands alone; "white Firm 0.004" is a name and a speed.
+  assertTrue('and no Firm by its index', !text.some((t) => /(^|\s)Firm [01](\s|$)/.test(t)));
+  assertTrue('the reference is labelled', text.includes('touching'));
+  assertEqual('one faint line per Person', w.people.length,
+    calls.filter((c) => c.op === 'stroke' && c.style === 'rgba(0,0,0,0.1)').length);
+  for (const c of calls) {
+    for (const a of c.args) assertTrue(`${c.op} received a non-finite argument: ${a}`, Number.isFinite(a));
+  }
+});
+
+test('and it shades the spells apart, as the separation measures them', () => {
+  // The bands are what let the eye line the strips up, so they have to be the model's own
+  // definition of apart, not the panel's.
+  const w = new World(h1.config());
+  h1.setUp?.(w);
+  const aux = chooseView(h1, w).aux;
+  if (!aux) return;
+  const { canvas, calls } = fakeCanvas();
+  const view = /** @type {any} */ (aux.make(canvas));
+  let apartDays = 0;
+  for (let d = 0; d < 300; d++) {
+    w.timeline.nextDay();
+    view.observe(w);
+    if (settlements(w).separation > APART) apartDays++;
+  }
+  view.draw(w);
+  const bands = calls.filter((c) => c.op === 'fillRect' && c.style === '#ececec').length;
+  assertTrue(`${apartDays} days apart should be shaded in all five strips, got ${bands} bands`,
+    apartDays === 0 ? bands === 0 : bands >= 5 && bands % 5 === 0);
+});
+
+test('the two Firms are the original\'s two glyphs, black and white, on H1 only', () => {
+  // So the page can call them the black Firm and the white. The circles' employer is the black
+  // one, in the plane and in the legend beside the circle; every other model's Firms stay white.
+  const w = h1World();
+  const { canvas, calls } = fakeCanvas(600);
+  const view = chooseView(h1, w).make(canvas);
+  view.draw(w);
+  const black = calls.filter((c) => c.op === 'fill' && c.style === '#000').length;
+  assertEqual('the black Firm, and its glyph in the legend', 2, black);
+
+  const probe = new World(c6.config());
+  c6.setUp?.(probe);
+  const other = fakeCanvas(600);
+  chooseView(c6, probe).make(other.canvas).draw(probe);
+  assertEqual('C6 draws no black Firm', 0,
+    other.calls.filter((c) => c.op === 'fill' && c.style === '#000').length);
 });
 
 test('the workforces get group shapes, and the legend names the wage', () => {
@@ -669,6 +732,151 @@ test('the workforces get group shapes, and the legend names the wage', () => {
   planeView(canvas).draw(h1World());
   assertTrue(`legend names the wage, got: ${text.join(' | ')}`, text.some((t) => t.includes('wage')));
   assertTrue('and shows both levels', ['1', '2'].every((v) => text.some((t) => t === `= ${v}`)));
+});
+
+suite('Stacked strips');
+
+/** All the strips ask of a World is its day; their getters supply the rest. @param {number} day */
+const onDay = (day) => /** @type {any} */ ({ day });
+
+/** The plot box of each strip, from the frame drawn round it.
+ * @param {{op: string, args: number[]}[]} calls */
+const frames = (calls) => calls.filter((c) => c.op === 'strokeRect')
+  .map((c) => ({ left: c.args[0], top: c.args[1], right: c.args[0] + c.args[2], bottom: c.args[1] + c.args[3] }));
+
+test('nothing is sampled before the first day has run', () => {
+  // The page draws once at day 0, before anyone has acted, when every utility is still zero.
+  // One zero in bounds that only grow would squash a utility strip for the rest of the run.
+  const { canvas, text } = fakeCanvas();
+  const view = stripsView(canvas, {
+    strips: [{ title: 'u', tracks: [{ label: 'mean', get: (w) => (w.day === 0 ? 0 : 2 + Math.sin(w.day)) }] }],
+  });
+  for (let d = 0; d <= 50; d++) view.draw(onDay(d));
+  assertTrue(`no zero on the scale, got: ${text.join(' | ')}`, !text.includes('0'));
+});
+
+test('the cloud does not set the scale: a straggler is cut off at its strip\'s edge', () => {
+  // A run starts from a random scatter. Let its stragglers set the bounds and they fix the
+  // scale for good, with everything after them flattened into a sliver.
+  const { canvas, calls, text } = fakeCanvas();
+  const view = stripsView(canvas, {
+    strips: [{
+      title: 'u',
+      cloud: (w) => [1, w.day === 5 ? -50 : 1.05, 0.98],
+      tracks: [{ label: 'mean', get: (w) => 1 + 0.05 * Math.sin(w.day / 3) }],
+    }],
+  });
+  for (let d = 1; d <= 40; d++) view.observe(onDay(d));
+  view.draw(onDay(40));
+  assertTrue(`the straggler is not on the scale: ${text.join(' | ')}`, !text.some((t) => t.includes('-50')));
+  const [box] = frames(calls);
+  const drawn = calls.filter((c) => c.op === 'moveTo' || c.op === 'lineTo');
+  assertTrue('every line stays inside the strip',
+    drawn.every((c) => c.args[1] >= box.top - 1e-9 && c.args[1] <= box.bottom + 1e-9));
+});
+
+test('a faint line leaving its strip is cut where it crosses the edge', () => {
+  /** @type {(string|number)[][]} */
+  const ops = [];
+  const ctx = {
+    /** @param {number} x @param {number} y */ moveTo: (x, y) => ops.push(['M', x, y]),
+    /** @param {number} x @param {number} y */ lineTo: (x, y) => ops.push(['L', x, y]),
+  };
+  // Out through the bottom edge at x = 5, back in at x = 15.
+  clippedPolyline(ctx, [0, 10, 20], [5, 15, 5], 0, 10);
+  assertEqual('cut at both crossings', JSON.stringify([['M', 0, 5], ['L', 5, 10], ['M', 15, 10], ['L', 20, 5]]),
+    JSON.stringify(ops));
+  ops.length = 0;
+  clippedPolyline(ctx, [0, 1, 2, 3], [1, NaN, 2, 3], 0, 10);
+  assertEqual('a missing value lifts the pen', JSON.stringify([['M', 2, 2], ['L', 3, 3]]), JSON.stringify(ops));
+});
+
+test('a long run costs what the canvas can show, not what the run holds', () => {
+  // The page redraws every frame, and a window of 1,500 days for a hundred agents is 150,000
+  // points. At most one cloud vertex every two pixels bounds it by the canvas instead.
+  const agents = 100;
+  const { canvas, calls } = fakeCanvas(600);
+  const view = stripsView(canvas, {
+    window: 1500,
+    strips: [{
+      title: 'u',
+      cloud: (w) => Array.from({ length: agents }, (_, a) => Math.sin(w.day / 50 + a)),
+      tracks: [{ label: 'mean', get: (w) => Math.sin(w.day / 50) }],
+    }],
+  });
+  for (let d = 1; d <= 3000; d++) view.observe(onDay(d));
+  view.draw(onDay(3000));
+  const vertices = calls.filter((c) => c.op === 'moveTo' || c.op === 'lineTo').length;
+  const device = canvas.width; // 600 css px at a devicePixelRatio of 2
+  const bound = agents * (device / 4 + 2) + 1500 + 10;
+  assertTrue(`${vertices} vertices drawn for a 1,500-day window, bound ${bound}`, vertices < bound);
+  assertTrue('and the cloud is actually drawn', vertices > agents * 50);
+});
+
+test('a frame with nothing new is not redrawn, and a resized one is', () => {
+  // The page calls every view every frame, paused or not.
+  const { canvas, calls } = fakeCanvas();
+  const view = stripsView(canvas, { strips: [{ title: 'u', tracks: [{ label: 'v', get: (w) => w.day }] }] });
+  for (let d = 1; d <= 10; d++) view.draw(onDay(d));
+  const before = calls.length;
+  view.draw(onDay(10));
+  assertEqual('the same day again draws nothing', before, calls.length);
+  canvas.clientWidth = 500;
+  view.draw(onDay(10));
+  assertTrue('a new size draws it again', calls.length > before);
+});
+
+test('the log strip puts 1 halfway between 0.1 and 10, where a log axis has it', () => {
+  // H1's separation runs from below 0.05 wrapped round to 9 apart. On a linear axis "touching",
+  // at 1, would sit in the bottom tenth.
+  const { canvas, calls } = fakeCanvas();
+  const view = stripsView(canvas, {
+    strips: [{
+      title: 's', log: true, reference: 1, referenceLabel: 'touching',
+      tracks: [{ label: 'separation', get: (w) => (w.day % 2 ? 0.1 : 10) }],
+    }],
+  });
+  for (let d = 1; d <= 20; d++) view.observe(onDay(d));
+  view.draw(onDay(20));
+  const [box] = frames(calls);
+  const middle = (box.top + box.bottom) / 2;
+  assertTrue('the reference line is drawn across the middle',
+    calls.some((c) => c.op === 'moveTo' && c.args[0] === box.left && Math.abs(c.args[1] - middle) < 1e-6));
+});
+
+test('a hollow line is a black edge with a white core inside it', () => {
+  // How the strips draw H1's white Firm: a white line on a white page has to be drawn by its
+  // edges, as the plane draws the white Firm's glyph.
+  const { canvas, calls } = fakeCanvas();
+  const view = stripsView(canvas, {
+    strips: [{ title: 'r', tracks: [{ label: 'white Firm', get: (w) => w.day, hollow: true }] }],
+  });
+  for (let d = 1; d <= 10; d++) view.observe(onDay(d));
+  view.draw(onDay(10));
+  const strokes = calls.filter((c) => c.op === 'stroke' && (c.style === '#fff' || c.style === 'rgb(0,0,0)'));
+  const edge = strokes.findIndex((c) => c.style === 'rgb(0,0,0)');
+  const core = strokes[edge + 1];
+  assertTrue('the edge comes first', edge >= 0);
+  assertTrue('then the white core, narrower', Boolean(core) && core.style === '#fff'
+    && (core.width ?? 0) < (strokes[edge].width ?? 0));
+});
+
+test('the spells the predicate marks are shaded behind every strip', () => {
+  const { canvas, calls } = fakeCanvas();
+  const view = stripsView(canvas, {
+    shade: (w) => w.day >= 20 && w.day < 40,
+    strips: [
+      { title: 'a', tracks: [{ label: 'a', get: (w) => w.day }] },
+      { title: 'b', tracks: [{ label: 'b', get: (w) => -w.day }] },
+    ],
+  });
+  for (let d = 1; d <= 60; d++) view.observe(onDay(d));
+  view.draw(onDay(60));
+  const bands = calls.filter((c) => c.op === 'fillRect' && c.style === '#ececec');
+  assertEqual('one band in each of the two strips', 2, bands.length);
+  const [box] = frames(calls);
+  const share = (bands[0].args[2]) / (box.right - box.left);
+  assertTrue(`covering a third of the run: ${share.toFixed(3)}`, Math.abs(share - 20 / 59) < 0.02);
 });
 
 suite('Plane view — edge cases');

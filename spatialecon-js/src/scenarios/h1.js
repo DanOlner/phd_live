@@ -12,18 +12,25 @@
  * Two Firms that grope for revenue, as in D1. Each has its own workforce, tied to it **for
  * work only** — C6's von Thünen tie applied to the labour channel and not to goods — so
  * everyone buys from both Firms and pays a density cost to live anywhere crowded. Firm 1 pays
- * twice Firm 0's wage. Three forces, each from an earlier model:
+ * twice Firm 0's wage; the page draws Firm 1 black and Firm 0 white, and calls them that
+ * (`FIRM_NAMES`). The People and the Firms want different things, and that is the model:
  *
- * - **Love of variety pulls the settlements together** (C7). Everyone wants some of both
- *   goods, and goods cost something to ship. The density cost pushes them apart (C1). ρ sets
- *   the balance.
- * - **The wage gap makes the pull one-sided.** The better-paid are the better customers, so
- *   Firm 0's crawl finds its revenue rising as it moves towards them, and its commuters follow
- *   it. That is the chase.
- * - **Meeting is C6.** Both workforces want the same central space and sort exactly as the
- *   von Thünen rings do: the better-paid take the core and the others wrap round them. Their
- *   crowding raises the better-paid's density cost, Firm 1's revenue falls, and its crawl
- *   breaks away. Nothing settles.
+ * - **Both workforces are better off with the two settlements together**, the better-paid
+ *   most of all. Love of variety, as in C7: both goods are then close and cheap to ship. It
+ *   holds although meeting crowds the better-paid — their density cost rises, by less than
+ *   variety repays.
+ * - **The Firms are fighting over the better-paid's custom.** The better-paid buy about half
+ *   their goods from each Firm when the two are together, and seven in ten from Firm 1 when
+ *   apart. So Firm 0's crawl finds its revenue rising as it closes in, and Firm 1's as it gets
+ *   away. Each workforce follows its Firm, being tied to it for work.
+ * - **The rhythm is D1's attribution problem.** A Firm reads any change in its revenue as the
+ *   verdict on its own last step. While Firm 0 closes in, Firm 1's revenue falls whatever
+ *   Firm 1 does, so its crawl undoes each step and it stays put. Once Firm 0 has arrived and
+ *   stops gaining, a step away finally pays, and Firm 1's crawl accelerates away for as long
+ *   as it keeps paying. Then it is Firm 0 whose revenue falls whatever it does, until the
+ *   breakaway runs out. Nothing settles.
+ *
+ * Meeting sorts as C6 does: the better-paid take the core and the others wrap round them.
  *
  * The defaults are the best fit found to the video: the share of time apart and engulfed, the
  * direction and strength of the chase, and the cloud scale, at about one model day per video
@@ -34,14 +41,40 @@ import { firmLocationCrawl, personBundle } from '../behaviour.js';
 import { PLANE, defineModel, parameter } from '../config.js';
 import { ces, smoothEoS } from '../econ.js';
 import { MEAN_SD } from '../record.js';
-import { randomly, twoPointsApart } from '../space.js';
+import { distance, randomly, twoPointsApart } from '../space.js';
 
 /** The video. */
 export const VIDEO = 'https://www.youtube.com/watch?v=bb2Q5iXxOV4';
 
+/**
+ * Separation above which the two settlements are clearly apart, and below which one is
+ * wrapped round the other. The thresholds the video's frames were scored at
+ * (GREEN_BLOB_RED_BLOB.md §1), so a run here and the frames there are counted the same way.
+ */
+export const APART = 1.5;
+export const ENGULFED = 0.35;
+
+/**
+ * What the page calls the two Firms, by index, and so how it draws them: Firm 0 as the
+ * original's white plus glyph, Firm 1 — the better-paid workforce's employer — as its filled
+ * one. A reader cannot see an index, so every chart, label and caption uses these instead,
+ * and the plane and the strips take them from here so the three cannot disagree.
+ */
+export const FIRM_NAMES = /** @type {const} */ (['white', 'black']);
+
 /** What the tie dial sets, and what it calls each setting. */
 const TIES = /** @type {const} */ (['work', 'goods', 'both']);
 const TIE_LABELS = ['work only (the reconstruction)', 'goods only (the runner-up)', 'both (as C6)'];
+
+/**
+ * The People tied to Firm `g`, in a fixed order — a chart drawing one line per Person needs
+ * the same Person in the same place every day.
+ * @param {import('../world.js').World} w @param {number} g
+ */
+export function workforce(w, g) {
+  const firm = w.firm(g);
+  return w.people.filter((p) => p.assignedFirm === firm);
+}
 
 /**
  * The two settlements: each workforce's centre, how spread out it is, and how far apart the
@@ -55,8 +88,8 @@ const TIE_LABELS = ['work only (the reconstruction)', 'goods only (the runner-up
  * @param {import('../world.js').World} w
  */
 export function settlements(w) {
-  const groups = w.firms.map((firm) => {
-    const members = w.people.filter((p) => p.assignedFirm === firm);
+  const groups = w.firms.map((_, g) => {
+    const members = workforce(w, g);
     const n = Math.max(members.length, 1);
     const x = members.reduce((a, p) => a + p.position.x, 0) / n;
     const y = members.reduce((a, p) => a + p.position.y, 0) / n;
@@ -77,6 +110,59 @@ export function settlements(w) {
   };
 }
 
+/**
+ * What each workforce bought from each Firm on the day just run, at the Firm's base price:
+ * `sales(w)[f][g]` is Firm f's takings from workforce g.
+ *
+ * Booked as `buy` books revenue — quantity times base price, the delivery cost melting away
+ * as iceberg — so each row sums to the revenue the Firm's crawl compares against yesterday's.
+ * A Person with nowhere affordable bought nothing, and their record of the last purchase is a
+ * previous day's, so they are skipped.
+ *
+ * @param {import('../world.js').World} w
+ */
+export function sales(w) {
+  const out = w.firms.map(() => w.firms.map(() => 0));
+  for (const p of w.people) {
+    if (!p.assignedFirm || p.utility <= 0) continue;
+    const g = w.firms.indexOf(p.assignedFirm);
+    p.lastSellers.forEach((firm, i) => {
+      const q = p.lastQuantities[i] ?? 0;
+      if (q > 0) out[w.firms.indexOf(firm)][g] += q * firm.goodCost;
+    });
+  }
+  return out;
+}
+
+/** How many days a Firm's speed is measured over. */
+const SPEED_DAYS = 5;
+
+/**
+ * Each run's recent Firm positions, oldest first: where every Firm stood at the start of each
+ * of the last few days. Kept by the day-start hook `setUp` installs.
+ * @type {WeakMap<import('../world.js').World, import('../space.js').Pt[][]>}
+ */
+const trails = new WeakMap();
+
+/**
+ * How fast Firm `g` has moved over the last five days: net distance per day.
+ *
+ * Net is the point. The crawl moves its Firm every day, and when a step fails it puts the
+ * Firm back and tries another direction — so a Firm whose revenue keeps falling steps out and
+ * back on the spot, and its net movement is close to nothing. A Firm on a run of successes
+ * accelerates, the crawl adding a little to the step each day it pays, and its speed climbs
+ * with it. Measured from the run's own record rather than a chart's, because the page samples
+ * its charts once a frame, several days apart at speed, and the CSV must read what the chart
+ * reads.
+ *
+ * @param {import('../world.js').World} w @param {number} g
+ */
+export function firmSpeed(w, g) {
+  const trail = trails.get(w);
+  if (!trail || trail.length === 0) return 0;
+  return distance(w.space, trail[0][g], w.firm(g).position) / trail.length;
+}
+
 /** @type {import('../scenario.js').Scenario} */
 export const h1 = {
   id: 'h1',
@@ -91,17 +177,27 @@ export const h1 = {
 ${VIDEO}
 
 160 People in two workforces of 80, each tied to its own Firm for WORK only. Everyone buys
-from both Firms. Squares work for Firm 0 at wage 1; circles for Firm 1 at wage 2. Both Firms
-crawl for revenue, as in D1.
+from both Firms. Squares work for the white Firm at wage 1; circles for the black Firm at
+wage 2. Both Firms crawl for revenue, as in D1.
 
 Watch the circles: they are the video's red blob, and the squares are its green one. The
 squares' Firm courts the circles -- they are the richer customers -- and its commuters follow
 it in. When the two meet, the circles take the centre and the squares wrap round them, which
-is C6's sorting. That crowding cuts the circles' budgets and their Firm's revenue, and its
-crawl breaks away. Then it starts again.
+is C6's sorting. Then the circles' Firm breaks away, and they go with it.
 
-The lower panel is how far apart the two settlements are, in units of their own size: 1 is
-touching, well below 1 is one wrapped round the other.
+The strips below say why. Grey bands are the spells apart; the white Firm's lines are white,
+edged in black.
+  utility     each Person faint, each workforce's mean bold, on its own scale. Both are
+              lower apart than together, the circles' most: the People would rather stay
+              together, and the better-paid most of all.
+  revenue     the only thing either Firm can see. The white Firm's is higher together, the
+              black Firm's apart. Dashed, what the circles bought at each: the custom the
+              two are fighting over. The rest of each Firm's revenue is the squares'.
+  speed       how fast each Firm is moving. The black Firm sits still while the white closes
+              in -- its revenue is falling whatever it does, so its crawl undoes every step
+              -- then bolts once the white Firm stops gaining.
+  separation  how far apart the settlements are, in units of their own size, on a log scale:
+              1 is touching, well below 1 is one wrapped round the other.
 
 The pair wanders, and the space has walls, as the original's did. Sooner or later a breakaway
 runs into one, and from then on the chase works along the edge. The video is 33 seconds from
@@ -149,10 +245,22 @@ circle from the video. It is not an agent: it is the mean position of every acto
       firmsMobile: true,
     }),
 
-  /** Round-robin, as `ActorMaker` did and as C6 does: half to each Firm. */
+  /**
+   * Round-robin, as `ActorMaker` did and as C6 does: half to each Firm. And the record of
+   * where the Firms have been, for `firmSpeed`. A day-start hook draws no random numbers, so
+   * keeping it changes nothing about the run.
+   */
   setUp(w) {
     const n = w.firms.length;
     w.people.forEach((p, i) => { p.assignedFirm = w.firm(i % n); });
+
+    /** @type {import('../space.js').Pt[][]} */
+    const trail = [];
+    trails.set(w, trail);
+    w.timeline.onDayStart(() => {
+      trail.push(w.firms.map((f) => ({ x: f.position.x, y: f.position.y })));
+      if (trail.length > SPEED_DAYS) trail.shift();
+    });
   },
 
   record(r, w) {
@@ -165,12 +273,20 @@ circle from the video. It is not an agent: it is the mean position of every acto
       r.global(`utility_group${g}`, () => settlements(w).groups[g].utility);
       r.global(`firm${g}_x`, () => w.firm(g).position.x);
       r.global(`firm${g}_y`, () => w.firm(g).position.y);
+      // What each Firm acts on, and why it moves: the day's revenue as its crawl banked it,
+      // who that revenue came from, and how fast the crawl has been carrying it.
+      r.global(`revenue_firm${g}`, () => w.firm(g).revenueLastTurn);
+      for (let k = 0; k < w.firms.length; k++) {
+        r.global(`sales_firm${g}_group${k}`, () => sales(w)[g][k]);
+      }
+      r.global(`speed_firm${g}`, () => firmSpeed(w, g));
     }
     r.aggregate('utility', w.people, (p) => p.utility, MEAN_SD);
     r.global('rho', () => /** @type {any} */ (w.config.utility).rho);
     r.perActor('group', w.people, (p) => (p.assignedFirm ? p.assignedFirm.id : -1));
     r.perActor('personX', w.people, (p) => p.position.x);
     r.perActor('personY', w.people, (p) => p.position.y);
+    r.perActor('personUtility', w.people, (p) => p.utility);
   },
 
   // The first two are on the drag, left and right. rho is capped at 0.99, as everywhere in the
@@ -184,7 +300,7 @@ circle from the video. It is not an agent: it is the mean position of every acto
         get: () => u.rho, set: (v) => { u.rho = v; },
       }),
       parameter({
-        name: 'wageGap', label: 'wage gap (Firm 1 / Firm 0)', min: 1, max: 3,
+        name: 'wageGap', label: 'wage gap (black Firm / white)', min: 1, max: 3,
         get: () => 1 + w.config.rangeStep, set: (v) => w.setRangeStep(v - 1),
       }),
       parameter({

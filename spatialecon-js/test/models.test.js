@@ -19,7 +19,7 @@ import { c1 } from '../src/scenarios/c1.js';
 import { c6, c6c } from '../src/scenarios/c6.js';
 import { d1a, d1b, d1c, d1d } from '../src/scenarios/d1.js';
 import { playBatch, playGame } from '../src/scenarios/d2.js';
-import { h1, settlements } from '../src/scenarios/h1.js';
+import { APART, ENGULFED, firmSpeed, h1, sales, settlements } from '../src/scenarios/h1.js';
 import { monocentric } from '../src/scenarios/monocentric.js';
 import { at } from '../src/space.js';
 import { assertClose, assertTrue, report, suite, test } from './tiny.js';
@@ -268,6 +268,10 @@ test('OPEN: rho does NOT reverse the difficulty, against §5.5.2', () => {
  * The chased workforce is whichever leads on utility most of the run — the video's red blob.
  * Windows below come from eight seeds at these settings, with a few points to spare.
  *
+ * And what drives it (GREEN_BLOB_RED_BLOB.md §4): each workforce's utility and each Firm's
+ * revenue apart against together, where the circles shop, and how fast each Firm moves —
+ * and whether its revenue rose — in the run-up to each engulfment and at each parting.
+ *
  * @param {(c: import('../src/config.js').ModelConfig) => void} [tweak] @param {number} [days]
  */
 function scoreChase(tweak, days = 2000) {
@@ -278,7 +282,13 @@ function scoreChase(tweak, days = 2000) {
   const frames = [];
   for (let d = 0; d < days; d++) {
     w.timeline.nextDay();
-    frames.push({ s: settlements(w), firms: w.firms.map((f) => ({ x: f.position.x, y: f.position.y })) });
+    frames.push({
+      s: settlements(w),
+      firms: w.firms.map((f) => ({ x: f.position.x, y: f.position.y })),
+      revenue: w.firms.map((f) => f.revenueLastTurn),
+      sales: sales(w),
+      speed: w.firms.map((_, g) => firmSpeed(w, g)),
+    });
   }
   const scored = frames.slice(400); // the settlements forming
   const k = 4;
@@ -321,10 +331,59 @@ function scoreChase(tweak, days = 2000) {
       state = st;
     }
   }
+
+  // What drives it. The circles are workforce 1, and Firm 1 their employer.
+  /** @param {number[]} v */
+  const average = (v) => v.reduce((a, x) => a + x, 0) / v.length;
+  const together = scored.filter((f) => f.s.separation < 1);
+  const apart = scored.filter((f) => f.s.separation > APART);
+  /** @param {(f: typeof scored[number]) => number} get */
+  const apartOverTogether = (get) => average(apart.map(get)) / average(together.map(get));
+  /** Share of the circles' purchases made at Firm 1. @param {typeof scored[number]} f */
+  const atFirm1 = (f) => f.sales[1][1] / (f.sales[0][1] + f.sales[1][1]);
+
+  // Onsets, with hysteresis: wrapped round from outside, parted past touching from inside.
+  /** @type {number[]} */
+  const meetings = [];
+  /** @type {number[]} */
+  const partings = [];
+  let wrapped = scored[0].s.separation < ENGULFED;
+  for (let t = 1; t < scored.length; t++) {
+    const sep = scored[t].s.separation;
+    if (!wrapped && sep < ENGULFED) { meetings.push(t); wrapped = true; }
+    else if (wrapped && sep > 1) { partings.push(t); wrapped = false; }
+  }
+  /** Mean of `get` over the days `from` to `to` either side of every onset.
+   * @param {number[]} onsets @param {number} from @param {number} to @param {(t: number) => number} get */
+  const around = (onsets, from, to, get) => {
+    const v = [];
+    for (const t of onsets) {
+      if (t + from < 1 || t + to >= scored.length) continue;
+      for (let j = t + from; j <= t + to; j++) v.push(get(j));
+    }
+    return v.length > 0 ? average(v) : NaN;
+  };
+  /** @param {number} f */
+  const speed = (f) => (/** @type {number} */ t) => scored[t].speed[f];
+  /** Whether Firm f's revenue rose on day t: the crawl's whole verdict. @param {number} f */
+  const rose = (f) => (/** @type {number} */ t) => (scored[t].revenue[f] > scored[t - 1].revenue[f] ? 1 : 0);
+
   return {
     lead: lead / n, away: away / n, toward: toward / n,
     firmAway: hiMoves ? firmAway / hiMoves : 0, firmToward: loMoves ? firmToward / loMoves : 0,
     far: far / n, engulfed: engulfed / n, changes,
+    utilityApart: [0, 1].map((g) => apartOverTogether((f) => f.s.groups[g].utility)),
+    revenueApart: [0, 1].map((g) => apartOverTogether((f) => f.revenue[g])),
+    circlesAtFirm1: { together: average(together.map(atFirm1)), apart: average(apart.map(atFirm1)) },
+    runUp: {
+      f0: around(meetings, -20, -1, speed(0)), f1: around(meetings, -20, -1, speed(1)),
+      f1Rose: around(meetings, -10, -1, rose(1)),
+    },
+    breakaway: {
+      f1: around(partings, 0, 9, speed(1)),
+      f1Rose: around(partings, -5, 5, rose(1)), f0Rose: around(partings, 0, 5, rose(0)),
+    },
+    meetings: meetings.length,
   };
 }
 
@@ -394,6 +453,83 @@ test('rho is the dial: merged below the video, parted above it', () => {
     tight.far < 0.15 && tight.engulfed > 0.1);
   const loose = scoreChase((c) => { /** @type {any} */ (c.utility).rho = 0.8; });
   assertTrue(`rho 0.8: parted most of the time (${pct(loose.far)})`, loose.far > 0.75);
+});
+
+test('the People would rather stay together, the better-paid included', () => {
+  // Mean utility on days apart over days together. Eight seeds: circles 0.82–0.94, squares
+  // 0.87–0.99. Meeting does crowd the circles, and their density cost rises, by less than
+  // having both Firms close repays. So it is not the People who pull the two apart.
+  const r = baseline();
+  const [squares, circles] = r.utilityApart;
+  assertTrue(`circles worse off apart: ${circles.toFixed(3)} of their utility together`, circles < 0.97);
+  assertTrue(`and squares: ${squares.toFixed(3)}`, squares < 1);
+});
+
+test('the Firms want opposite things, and the circles\' custom is what they want', () => {
+  // Eight seeds: Firm 1 earns 6–14% more apart, Firm 0 12–28% less. Together the circles buy
+  // 51% of their goods from Firm 1, in every seed; apart, 64–82%.
+  const r = baseline();
+  const [firm0, firm1] = r.revenueApart;
+  assertTrue(`Firm 1 earns more apart: ${firm1.toFixed(3)} of its revenue together`, firm1 > 1.03);
+  assertTrue(`Firm 0 earns less: ${firm0.toFixed(3)}`, firm0 < 0.92);
+  const { together, apart } = r.circlesAtFirm1;
+  assertTrue(`together the circles split their custom: ${pct(together)} at Firm 1`,
+    Math.abs(together - 0.5) < 0.05);
+  assertTrue(`apart, most of it goes to Firm 1: ${pct(apart)}`, apart > together + 0.08);
+});
+
+test('the rhythm is each crawl reading its rival\'s moves as the verdict on its own', () => {
+  // D1's attribution problem. While Firm 0 closes in, Firm 1's revenue falls whatever Firm 1
+  // does, so its crawl undoes each step: it hardly moves, and Firm 0 arrives. Once Firm 0 stops
+  // gaining, a step away pays at last and Firm 1 bolts, and then Firm 0's revenue is the one
+  // falling regardless. Eight seeds: in the 20 days before an engulfment Firm 1 moves 0.0025–
+  // 0.0042 a day against Firm 0's 0.009–0.021, its revenue rising on 9–33% of days; at a
+  // parting it moves five to eleven times as fast, its revenue rising on 80–100% of days,
+  // and Firm 0's on 0–30%.
+  const r = baseline();
+  assertTrue(`some meetings to measure: ${r.meetings}`, r.meetings >= 3);
+  assertTrue(`Firm 1 near-still in the run-up (${r.runUp.f1.toFixed(4)} a day) while Firm 0 closes in (${r.runUp.f0.toFixed(4)})`,
+    r.runUp.f0 > 2 * r.runUp.f1);
+  assertTrue(`its revenue falling most days: rose on ${pct(r.runUp.f1Rose)}`, r.runUp.f1Rose < 0.42);
+  assertTrue(`then it bolts: ${r.breakaway.f1.toFixed(4)} a day, ${(r.breakaway.f1 / r.runUp.f1).toFixed(1)} times its run-up speed`,
+    r.breakaway.f1 > 3 * r.runUp.f1);
+  assertTrue(`its revenue rising nearly every day: ${pct(r.breakaway.f1Rose)}`, r.breakaway.f1Rose > 0.7);
+  assertTrue(`and Firm 0's falling: rose on ${pct(r.breakaway.f0Rose)}`, r.breakaway.f0Rose < 0.4);
+});
+
+test('each Firm\'s takings by workforce add up to the revenue its crawl reads', () => {
+  // `sales` is booked from what each Person bought; the crawl reads the revenue `buy` banked.
+  // If the two disagree, the dashed lines on the revenue strip are measuring something else.
+  const w = new World(h1.config());
+  h1.setUp?.(w);
+  for (let d = 0; d < 30; d++) {
+    w.timeline.nextDay();
+    const m = sales(w);
+    w.firms.forEach((firm, f) => {
+      assertClose(`day ${w.day}, Firm ${f}`, firm.revenueLastTurn, m[f][0] + m[f][1], 1e-9);
+    });
+  }
+});
+
+test('keeping the record of where the Firms have been changes nothing about the run', () => {
+  // `firmSpeed` reads a trail kept by a day-start hook. It must draw no random numbers and
+  // touch no agent, or the default run — the catalogue still, the walkthrough, every window
+  // above — would quietly become a different run.
+  const withTrail = new World(h1.config());
+  h1.setUp?.(withTrail);
+  const without = new World(h1.config());
+  without.people.forEach((p, i) => { p.assignedFirm = without.firm(i % without.firms.length); });
+  for (let d = 0; d < 150; d++) {
+    withTrail.timeline.nextDay();
+    without.timeline.nextDay();
+  }
+  const same = [...withTrail.people, ...withTrail.firms].every((a, i) => {
+    const b = [...without.people, ...without.firms][i];
+    return a.position.x === b.position.x && a.position.y === b.position.y;
+  });
+  assertTrue('every actor in the same place after 150 days', same);
+  assertTrue(`and the trail measures something: Firm 0 at ${firmSpeed(withTrail, 0)}`,
+    firmSpeed(withTrail, 0) > 0);
 });
 
 // --- the Bundle cycle itself ---------------------------------------------------------

@@ -227,6 +227,41 @@ Not reproduced: the pace. The model cycles about half as often as the video. →
 
 ---
 
+## Stage 10 — H1's strips, and the mechanism they corrected *(14 October 2026)*
+
+Dan asked for H1's page to show what drives the chase: each Person's utility, faintly, with each workforce's mean, and each Firm's output. Measuring those before drawing them showed that stage 9's account of the mechanism was wrong.
+
+**The finding: the People would stay together, and the Firms part them.** Stage 9 had Firm 1 fleeing the crowding. The squares wrap round the circles, the circles' density cost rises, their budgets and so Firm 1's revenue fall, and its crawl breaks away. Measured over eight seeds, comparing days together with days apart:
+
+- Both workforces' utility is lower apart: the circles' by 6–18%, the squares' by 1–13%. The crowding is real, but love of variety outweighs it.
+- Firm 1 earns 6–14% more apart, and Firm 0 12–28% less. Together, the circles buy 51% of their goods from Firm 1 in every seed; apart, 64–82%. Firm 1's whole gain is in where they shop. Parting adds about 3.5% to their budgets, but being far from Firm 0 costs them more in delivery, and in all they buy less.
+
+**The rhythm is D1's attribution problem.** While Firm 0 closes in, Firm 1's revenue falls whatever Firm 1 does, so its crawl undoes each step. In the 20 days before an engulfment it moves 0.0025–0.0042 a day against Firm 0's 0.009–0.021, and its revenue rises on 9–33% of days. Once Firm 0 stops gaining, a step away pays, and Firm 1 bolts at five to eleven times its run-up speed, its revenue rising on 80–100% of days. Firm 0's revenue then rises on only 0–30% of days, so it is stuck in turn until the burst runs out. The thesis' argument about what a groping Firm cannot know turns out to be what makes the 2011 video cycle. → GREEN_BLOB_RED_BLOB.md §4.
+
+**A stacked-strips view, `src/view/strips.js`.** It shows five strips on one time axis: utility for each workforce, Firm revenue, Firm speed and separation, with the spells apart shaded through all of them. The decisions:
+
+- **One canvas.** Separate charts each size their own label margin, so their time axes stop lining up.
+- **Each workforce's utility on its own scale.** The circles' is about twice the squares', and within a workforce everyone gets nearly the same. On a shared axis the squares' swings flatten and the faint lines vanish under the means.
+- **"Output" is revenue.** Stock is unlimited and the base price is 1, so the goods a Firm sells and its revenue are the same number, and revenue is all its crawl reads. Dashed lines split it by buyer.
+- **Speed from a trail kept in `setUp`.** A day-start hook records the Firms' positions, rather than the view keeping its own history, because the page samples its charts once a frame, several days apart at speed, and the CSV must read what the chart reads. The hook draws no random numbers. The catalogue still regenerates byte-identical, and a test checks every actor's position is bit-identical with and without the hook.
+- **Separation on a log axis.** "Touching" at 1 and engulfed below 0.35 are the values that matter, and a spell apart reaches 9.
+- **Bounds from the bold lines only, and no sample at day 0.** Before the first day every utility is zero, and in the first few days stragglers from the random start sit far below the cycle. Either would set grow-only bounds for good. The cloud is clipped instead, by hand rather than with `ctx.clip()`, so the recording contexts used by the tests and `tools/snapshot.mjs` draw what the page draws.
+- **Cloud drawing cost bounded by the canvas.** At most one cloud vertex every two pixels, chosen by its place in the whole run so the same samples are kept as the window scrolls and the lines do not shimmer. Nothing is redrawn when nothing has changed. A view with an `observe()` is sampled daily by the snapshot tool and drawn once.
+
+**Two errors caught on the way:**
+
+- **A walkthrough claim that held only on average.** The first draft of the captions said both workforces' utility rises as the two close in and falls when they part. Checked event by event over four seeds, the circles' utility does both: it rose before 38 of 43 engulfments and fell after 37 of 43 partings. The squares' utility moved that way only about half the time. The captions now say it of the circles alone. A caption has to hold whenever it fires.
+- **A decomposition that mixed two effects.** The first figure given to Dan put seven-eighths of Firm 1's gain from the circles on where they shop and one-eighth on crowding. That compared budgets against revenue per unit of budget, which mixes the shift in custom with delivery costs. Split instead into the circles' share of purchases times their total purchases, the shift is more than the whole gain.
+
+**Then, from Dan's first look: Firms by fill, and labels that say which Firm.**
+
+- **A labelling error.** Both dashed lines on the revenue strip were labelled "from circles". Both were meant to be the circles' purchases, one at each Firm: together the circles split their custom, apart most of it goes to their own Firm. But nothing said which Firm, so the pair read as one line mislabelled. They are now "circles at black" and "circles at white". The squares' part is the gap between each Firm's solid line and its dashed one, so it needs no line of its own.
+- **The two Firms are now the black Firm and the white Firm.** `FirmsDrawToSpace` had a white plus glyph and a filled one, and the published figures use only the white. H1 uses both: Firm 1, the circles' employer, is filled black, and Firm 0 stays white. The legend puts each Firm's glyph beside its workforce's shape. A reader cannot see an index, so the page never uses one. The names come from one constant, `FIRM_NAMES` in `h1.js`, which the plane and the strips both read, so they cannot drift apart. In the strips, the white Firm's lines are drawn hollow, a white core inside a black edge, because a white line on a white page has to be drawn by its edges. Every other model's Firms stay white.
+
+Tests: 154 → 169. There are five new model claims, and ten view tests, two of them replacing one for the old separation panel.
+
+---
+
 ## Corrections to the record
 
 Places where building something changed a claim in an existing document. Listed together because each is the kind of thing that gets silently re-derived otherwise.
@@ -243,6 +278,7 @@ Places where building something changed a claim in an existing document. Listed 
 | The tomahawk's blades | not drawn — the original detects crossings only | corner equilibria computed and added | this log, stage 8 |
 | F3's threshold | "drop α to 1 and it frees up" | α = 1 still deadlocks; only 0 breaks it | this log, stage 8 |
 | E2's EoS coupling at zero curve | 0.002 at 2,000 days | 0.0000003 once settled | this log, stage 8 |
+| Why H1's settlements part | Firm 1 flees the crowding: the squares' density cost on the circles cuts its revenue | Firm 1 flees the competition: together the circles split their custom between the Firms; both workforces are better off together | GREEN_BLOB_RED_BLOB.md §4; the H1 page |
 
 ---
 
@@ -264,7 +300,7 @@ Two content errors on the live site, found on 13 October 2026 while writing up s
 
 ## Where it stands
 
-**All eight stages of BUILD_PLANNER §8 are done, and the site is live.** There are forty-two models covering the whole catalogue and all seven groups, plus one curiosity in group H, and every one has a view and a page. 154 tests pass, and tier 1 is exact on six deterministic models. The site has:
+**All eight stages of BUILD_PLANNER §8 are done, and the site is live.** There are forty-two models covering the whole catalogue and all seven groups, plus one curiosity in group H, and every one has a view and a page. 169 tests pass, and tier 1 is exact on six deterministic models. The site has:
 
 - a catalogue with a still per model;
 - per-model pop-outs in three kinds;

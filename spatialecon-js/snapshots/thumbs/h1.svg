@@ -323,13 +323,17 @@
 <path d="M155 183a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" fill="none" stroke="#000" stroke-width="1"/>
 <path d="M161 170L165 170L165 174L161 174L161 178L156 178L156 174L152 174L152 170L156 170L156 166L161 166Z" fill="#fff"/>
 <path d="M161 170L165 170L165 174L161 174L161 178L156 178L156 174L152 174L152 170L156 170L156 166L161 166Z" fill="none" stroke="#000" stroke-width="2"/>
-<path d="M158 172L162 172L162 176L158 176L158 180L153 180L153 176L149 176L149 172L153 172L153 168L158 168Z" fill="#fff"/>
+<path d="M158 172L162 172L162 176L158 176L158 180L153 180L153 176L149 176L149 172L153 172L153 168L158 168Z" fill="#000"/>
 <path d="M158 172L162 172L162 176L158 176L158 180L153 180L153 176L149 176L149 172L153 172L153 168L158 168Z" fill="none" stroke="#000" stroke-width="2"/>
 <text x="4" y="9" font-family="ui-monospace, Menlo, monospace" font-size="4" text-anchor="start" dominant-baseline="middle" fill="#000">wage:</text>
 <rect x="6" y="16" width="4" height="4" fill="rgb(220,220,220)"/>
 <rect x="6" y="16" width="4" height="4" fill="none" stroke="#000" stroke-width="1"/>
-<text x="14" y="18" font-family="ui-monospace, Menlo, monospace" font-size="4" text-anchor="start" dominant-baseline="middle" fill="#000">= 1</text>
+<path d="M15 17L16 17L16 19L15 19L15 20L14 20L14 19L13 19L13 17L14 17L14 16L15 16Z" fill="#fff"/>
+<path d="M15 17L16 17L16 19L15 19L15 20L14 20L14 19L13 19L13 17L14 17L14 16L15 16Z" fill="none" stroke="#000" stroke-width="1"/>
+<text x="19" y="18" font-family="ui-monospace, Menlo, monospace" font-size="4" text-anchor="start" dominant-baseline="middle" fill="#000">= 1</text>
 <path d="M6 27a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" fill="rgb(190,190,190)"/>
 <path d="M6 27a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" fill="none" stroke="#000" stroke-width="1"/>
-<text x="14" y="27" font-family="ui-monospace, Menlo, monospace" font-size="4" text-anchor="start" dominant-baseline="middle" fill="#000">= 2</text>
+<path d="M15 26L16 26L16 28L15 28L15 29L14 29L14 28L13 28L13 26L14 26L14 25L15 25Z" fill="#000"/>
+<path d="M15 26L16 26L16 28L15 28L15 29L14 29L14 28L13 28L13 26L14 26L14 25L15 25Z" fill="none" stroke="#000" stroke-width="1"/>
+<text x="19" y="27" font-family="ui-monospace, Menlo, monospace" font-size="4" text-anchor="start" dominant-baseline="middle" fill="#000">= 2</text>
 </svg>

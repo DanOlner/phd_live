@@ -16,7 +16,7 @@ No install, no build step, no dependencies.
 
 ```sh
 python3 -m http.server 8000           # then open localhost:8000 — the models, live
-npm test                              # 154 assertions, ~5min
+npm test                              # 169 assertions, ~5min
 node tools/run.mjs --list             # what models exist
 node tools/run.mjs --info c1          # one model's setup
 node tools/run.mjs c1 --out data      # run headless, write CSV
@@ -68,7 +68,8 @@ src/
   view/
     plane.js     People and Firms in 2-D               (B3 C1 C2 C6 C8 E8 H1)
     line.js      mirrored profiles either side of a rule  (D1 D2 E7)
-    timeseries.js  auto-scaling series vs a deduced value (E1 E3 E5 E6; H1's 2nd panel)
+    timeseries.js  auto-scaling series vs a deduced value (E1 E3 E5 E6)
+    strips.js    stacked series on one time axis, with a per-agent cloud  (H1, 2nd panel)
     curve.js     a quantity against a swept parameter    (A1 A2 A3 A4)
     correlate.js two quantities against each other, joined in time order (E8)
     sampler.js   one Person's decision, drawn                       (F4)
@@ -131,7 +132,7 @@ the evidence this split is the right one — none of those claims depended on th
 ## Status
 
 **All eight stages done.** Forty-two models — the whole catalogue, all seven groups — plus
-one curiosity, and 154 tests pass. Every model has a view, pop-outs in three kinds, and a
+one curiosity, and 169 tests pass. Every model has a view, pop-outs in three kinds, and a
 place in the index.
 
 Seven precomputed sweeps, rendered through the same chart code as the live models; two of

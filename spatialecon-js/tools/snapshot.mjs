@@ -240,14 +240,17 @@ for (const key of (arg('--overlays', '') ?? '').split(',').map((k) => k.trim()).
 
 // Accumulating views (the time series, the curve, the arrow scatter) build their picture
 // from being drawn as the run goes, so they are drawn every day rather than once at the end.
-// The plane holds no history and only needs the final frame.
+// The plane holds no history and only needs the final frame. A view that can take its sample
+// without drawing (H1's strips) is only asked to, and drawn once below.
 const accumulates = typeof (/** @type {any} */ (view).reset) === 'function';
+const observe = /** @type {any} */ (view).observe;
 
 process.stdout.write(`${id}: running ${days} days`);
 for (let d = 0; d < days; d++) {
   scenario.beforeDay?.(world, d);
   world.timeline.nextDay();
-  if (accumulates) view.draw(world);
+  if (typeof observe === 'function') observe(world);
+  else if (accumulates) view.draw(world);
 }
 console.log(` — done`);
 view.draw(world);

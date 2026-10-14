@@ -37,7 +37,7 @@ Good places to start:
 
 **2. A Java reference implementation** ([`spatialecon-java/`](spatialecon-java/)). This is a clean rebuild of 28 models as self-describing scenarios, with 55 tests that pin a dozen thesis claims to numbers. It turned the thesis from prose plus an unreliable source tree into a verified specification, so the port that followed was a translation of something known. It is not published.
 
-**3. The JavaScript site** ([`spatialecon-js/`](spatialecon-js/)). It covers all 42 models and the curiosity, has no dependencies and no build step, and is plain ES modules drawing to Canvas 2D in the original's monochrome visual style. It has 154 tests, seven precomputed parameter sweeps, step-through walkthroughs and the methodology page. It is published to GitHub Pages directly from that folder.
+**3. The JavaScript site** ([`spatialecon-js/`](spatialecon-js/)). It covers all 42 models and the curiosity, has no dependencies and no build step, and is plain ES modules drawing to Canvas 2D in the original's monochrome visual style. It has 169 tests, seven precomputed parameter sweeps, step-through walkthroughs and the methodology page. It is published to GitHub Pages directly from that folder.
 
 **Verification** works in two tiers. The deterministic economics agrees with the Java reference to six significant figures. The two implementations deliberately use different random generators, so everything stochastic is checked against the published claim within a window rather than against a trace. For example, symmetry between two Firms breaks at ρ = 0.766 here and at 0.764 in the Java, and transmission-belt clearing prices match values worked out by hand to five decimal places.
 
@@ -47,7 +47,7 @@ Good places to start:
 - **One result still does not reproduce.** The thesis reports that strong love of variety makes the Firms' location game harder under noise. Both rebuilds show the opposite, and each has a coherent mechanism for its own result. It is on the site, in D2's notes.
 - **The undamped transmission belt never settles**, which corrects an earlier record. It is an undamped oscillator, and showing that is the point of the variant.
 - **Two scenario configs (C3 and C7) are lost.** Both are reconstructed from the thesis text, and every published direction they show reproduces.
-- **A 2011 video, reconstructed as H1.** In "Green blob red blob", one settlement chases another, smothers it and is shaken off, over and over. Its red and green turn out to be utility rank, not two cities. The setup that reproduces it is two Firms that crawl for revenue, each with a workforce tied to it for work only, and one paying double. It is scored against statistics measured on the video's own frames.
+- **A 2011 video, reconstructed as H1.** In "Green blob red blob", one settlement chases another, smothers it and is shaken off, over and over. Its red and green turn out to be utility rank, not two cities. The setup that reproduces it is two Firms that crawl for revenue, each with a workforce tied to it for work only, and one paying double. It is scored against statistics measured on the video's own frames. Charting what each side acts on showed the chase is the Firms' doing. Both workforces are better off together, but the better-paid Firm earns more apart, and its crawl cannot tell its rival's moves from its own: the thesis' own argument about groping Firms.
 
 The full list is the "Corrections to the record" table in [BUILD_LOG.md](BUILD_LOG.md).
 

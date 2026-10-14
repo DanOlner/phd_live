@@ -35,7 +35,7 @@
  * `d1`, `e6` reads `e5`), and a model with no entry simply shows its own `notes`.
  */
 
-import { settlements } from './scenarios/h1.js';
+import { APART, ENGULFED, settlements } from './scenarios/h1.js';
 
 /**
  * @typedef {object} Entry
@@ -922,21 +922,37 @@ other People are standing right now — which is the entire coordinating mechani
     economics: `Not a model from the thesis. A run recorded as a video in August 2011, while the
 framework was being built, and reconstructed here from the frames. Two Firms that grope for
 revenue as in D1, each with its own workforce tied to it — but for work only. Everyone buys
-from both, and pays a density cost to live anywhere crowded. Firm 1 pays twice Firm 0's wage.
+from both, and pays a density cost to live anywhere crowded. The black Firm pays twice the
+white Firm's wage.
 
-Every force in it comes from an earlier model. Love of variety pulls the two settlements
-together, as in C7: everyone wants some of both goods, and goods cost something to ship. The
-density cost pushes them apart, as in C1. And the wage gap makes the pull one-sided. The
-better-paid are the better customers, so Firm 0's crawl finds its revenue rising as it moves
-towards them, and its commuters follow it.
+The People and the Firms want different things, and the chase is what that looks like.
 
-When the two meet they sort exactly as C6 does: the better-paid take the centre and the others
-wrap round them. That crowding is what drives them apart again. It raises the better-paid's
-density cost, Firm 1's revenue falls, and its crawl breaks away. A von Thünen ring forms and is
-broken, over and over, and nothing settles.
+Both workforces are better off with the two settlements together, the better-paid most of
+all. That is love of variety, as in C7: everyone wants some of both goods, and goods cost
+something to ship, so living near both Firms is worth having. Meeting crowds the better-paid,
+and the density cost they pay goes up, but by less than having both Firms close repays.
+
+The Firms are fighting over the better-paid's custom. With the two settlements together, the
+circles buy half their goods from each Firm; apart, about seven in ten from the black Firm,
+which is next to them. So the white Firm's crawl finds its revenue rising as it closes in, the
+black Firm's finds its own rising as it gets away, and each workforce follows its Firm, being
+tied to it for work.
+When the two meet they sort exactly as C6 does: the better-paid take the centre and the
+others wrap round them.
+
+The rhythm comes from how little a Firm knows: D1's attribution problem. A Firm reads any
+change in its revenue as the verdict on its own last step. While the white Firm closes in, the
+black Firm's revenue falls whatever the black Firm does, so its crawl undoes every step and it
+stays where it is. Once the white Firm has arrived and stops gaining, a step away finally
+pays, and the black Firm's crawl accelerates away for as long as moving keeps paying — taking
+its workforce with it, away from where they would rather be. Then it is the white Firm's
+revenue that falls whatever it does, until the breakaway runs out and the chase starts again.
+Nothing settles.
 
 The video's own caption: "Green blob likes red blob. A lot. In a slightly smothering way. Red
-blob is far from sure about this." The circles are the red blob, the squares the green.`,
+blob is far from sure about this." The circles are the red blob and the squares the green, so
+the black Firm is the red blob's. It is the black Firm that is far from sure. Its People would
+stay.`,
     hood: `The video was drawn by a renderer the thesis never used, and almost nothing in it
 means what it appears to.
 
@@ -955,6 +971,22 @@ Here the workforces are shapes and greys, the site's rule for identity: colour m
 never measures. Set "shade People by" to utility for the video's encoding in grey, and turn on
 the 2011 ring to see the mean point.
 
+The two Firms are the original's two glyphs. `+"`FirmsDrawToSpace`"+` had a white plus and a
+filled one, and the published figures use only the white. Here the circles' employer gets the
+filled one, so the page can call them the black Firm and the white, and in the strips the
+white Firm's lines are white, edged in black.
+
+The strips under the plane read what each side acts on. A Person acts on utility, so there is
+a faint line per Person and each workforce's mean in bold, one strip per workforce: the
+circles' utility is about twice the squares', and on a shared axis the squares' swings would
+flatten. A Firm acts on nothing but its revenue, banked each day by its crawl, and that is also
+the goods it sold, stock being unlimited and the base price 1. The dashed lines are what the
+circles bought at each Firm, both of them the circles' — the custom being fought over — and
+the rest of each Firm's revenue, between its solid line and its dashed one, is the squares'.
+The speed is each Firm's net movement over five days, kept by a day-start hook that
+draws no random numbers, so recording it changes nothing about the run. Net, because a crawl
+whose steps keep failing still moves every day, out and back, and gets nowhere.
+
 Two engine additions make the model possible. `+"`config.tie`"+` says which channels an assigned
 Firm closes: both, as in C6; work only, here; goods only, the runner-up. The 2013 snapshot
 could not express a work-only tie from a properties file — any tie flag switched on
@@ -969,6 +1001,25 @@ apart 35%, engulfed 11%, 20 changes of state; green 1.3 times as spread out as r
 at its defaults, over six seeds: a chase of 58–70% each way, far apart 18–36%, engulfed 6–15%,
 16–27 changes, at about one model day per video frame. What it does not reproduce is the pace.
 It cycles about half as often as the video.
+
+What drives it, over eight seeds, comparing the days together with the days apart. Both
+workforces are worse off apart: the circles' utility is 6–18% lower, the squares' 1–13%, and
+the circles' falls at most partings where the squares' falls at about half. The black Firm
+earns 6–14% more apart and the white Firm 12–28% less. Together the circles buy 51% of their
+goods from the black Firm, in every seed; apart, 64–82%. The black Firm's whole gain is in
+where the circles shop. Parting does spare them the crowding, which adds about 3.5% to their
+budgets, but being far from the white Firm costs them more than that in delivery, and in all
+they buy less.
+
+That corrects what this page said when H1 was first built: that the squares' crowding cut
+the circles' budgets, and so the black Firm's revenue, and that this was why it broke away.
+The crowding is real, but it is outweighed. It is not the People who part the settlements. The
+black Firm does, and its workforce pays for it.
+
+The rhythm is D1's attribution problem, and the speed strip shows it. In the 20 days before an
+engulfment the black Firm moves 0.0025–0.0042 a day against the white Firm's 0.009–0.021, its
+revenue rising on 9–33% of days. At a parting it moves five to eleven times as fast, its
+revenue rising on 80–100% of days, while the white Firm's rises on 0–30%.
 
 Take away any one ingredient and the chase stops. Equal wages: no leader and no chase. Firms
 fixed: nothing moves. Both channels tied: the settlements repel. A wage premium attached to the
@@ -993,30 +1044,35 @@ breakaways to avoid it stops the settlements ever coming apart.`,
       {
         when: () => true,
         caption: `Two workforces, each tied to its own Firm for work and free to buy from both:
-squares work for Firm 0 at wage 1, circles for Firm 1 at wage 2. Both Firms crawl for revenue,
-knowing nothing but whether it rose.`,
+squares work for the white Firm at wage 1, circles for the black Firm at wage 2. Both Firms
+crawl for revenue, knowing nothing but whether it rose.`,
       },
       {
-        when: (w) => hasRun(w) && settlements(w).separation > 1.5,
+        when: (w) => hasRun(w) && settlements(w).separation > APART,
         caption: `Two settlements, one round each Firm. The circles are better off — the video's
-red blob — so they are also the better customers, for both Firms.`,
+red blob — so they are also the better customers, for both Firms. The strips below are what
+each side acts on: utility for the People, revenue for the Firms.`,
       },
       {
-        when: (w) => settlements(w).separation < 0.35,
-        caption: `Caught. Firm 0 crawled towards the richer customers and its commuters came with
-it. The circles hold the centre and the squares wrap round them: C6's sorting, the better-paid
-buying proximity.`,
+        when: (w) => settlements(w).separation < ENGULFED,
+        caption: `Caught. The white Firm crawled towards the richer customers and its commuters
+came with it; the circles hold the centre and the squares wrap round them, C6's sorting. The
+circles' utility rose as the two closed in, crowding and all, and the black Firm's revenue
+fell, the circles now splitting their custom. The black Firm barely moved meanwhile: its
+revenue was falling whatever it did.`,
       },
       {
-        when: (w) => settlements(w).separation > 1.5,
-        caption: `And away. The squares' crowding raised the circles' density cost, Firm 1's
-revenue fell, and its crawl broke out, accelerating for as long as moving paid.`,
+        when: (w) => settlements(w).separation > APART,
+        caption: `And away. Once the white Firm stopped gaining, a step away finally paid for the
+black Firm, and its crawl accelerated for as long as moving kept paying: the black spike on
+the speed strip. Its workforce went with it, and the circles' utility fell. They would rather
+have stayed.`,
       },
       {
-        when: (w) => settlements(w).separation < 0.35,
-        caption: `Caught again. There is no end state: a von Thünen ring forms and breaks for as
-long as the run lasts. Try the dials. With rho above 0.65 they part for good; with a wage gap
-of 1 the chase stops.`,
+        when: (w) => settlements(w).separation < ENGULFED,
+        caption: `Caught again. There is no end state: the People would rather be together, and
+neither Firm can leave it at that. Try the dials. With rho above 0.65 they part for good; with
+a wage gap of 1 the chase stops.`,
       },
     ],
   },

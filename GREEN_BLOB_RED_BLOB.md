@@ -9,10 +9,11 @@
 - **Red and green are not two kinds of agent. They are utility rank.** The 2011 renderer coloured every Person on a min–max ramp, red for the highest utility in the population that frame and green for the lowest. The two settlements show as two solid colours because one workforce is better off than the other throughout.
 - **The white ring is nobody.** It marks the mean position of all actors, which is why it always sits in the gap between the settlements, and why it vanishes whenever they overlap.
 - **The best reconstruction:** two mobile Firms (the DMR crawl), each with its own workforce tied to it **for work only**. Everyone buys from both Firms (CES, ρ ≈ 0.6), mobile People pay a density cost, and the red Firm pays about twice the wage. This is the von Thünen tie applied to the labour channel and not to goods.
-- **Why green likes red:** red's People are richer, so they are the better customers. Green's Firm finds its revenue rising as it moves toward them, and green's commuters follow their Firm. **Why red is far from sure:** green's crowding raises the density cost red's People pay, their budgets shrink, red's Firm loses revenue, and its crawl breaks away and accelerates. **The smothering:** when the two meet, they sort exactly as C6 does. The better-paid take the centre ("the wealthy buy proximity") and the others wrap round them.
+- **Why green likes red:** red's People are richer, so they are the better customers. Green's Firm finds its revenue rising as it moves toward them, and green's commuters follow their Firm. **Why red is far from sure:** it is red's *Firm* that is unsure, not red's People. Both workforces are better off with the settlements together, red's most of all. But together red's People split their custom evenly between the two Firms, and apart they buy most of it from their own, so red's Firm earns more apart. Its crawl breaks away and accelerates, and its commuters go with it. **The smothering:** when the two meet, they sort exactly as C6 does. The better-paid take the centre ("the wealthy buy proximity") and the others wrap round them.
+- **The rhythm is the thesis' own attribution problem (D1).** While green's Firm closes in, red's Firm's revenue falls whatever it does, so its crawl undoes every step and it stays put. Once green's Firm stops gaining, a step away finally pays, and red's Firm bolts. Then green's Firm is stuck the same way until the breakaway runs out.
 - **The re-run reproduces the video's statistics closely, not exactly:** the chase in the right direction at about the right strength, the right share of time apart and engulfed, and the right cloud scale at about one model day per video frame. It cycles about half as often as the video.
 
-That matches your recollection ("workers/commuters locked to each central firm", "green city gains, red loses") on every point except one: the colours never denoted the cities.
+That matches your recollection ("workers/commuters locked to each central firm", "green city gains, red loses") on every point but two. The colours never denoted the cities. And "green gains, red loses" is true of the Firms' revenue, not of the People's utility.
 
 ## 1. What the video shows
 
@@ -76,16 +77,17 @@ So by mid-August every ingredient existed: per-channel tie flags (`vonThunenWage
 | Costs | commute 1, delivery 0.75, density cost 5 | fitted to separation and cloud scale |
 | People count | 160 used; immaterial to shape | the density divisor makes cloud size head-count-free (tested on the runner-up wiring: 60, 160 and 300 People all give rms ≈ 0.035 W) |
 
-**The mechanism, step by step:**
+**The mechanism, step by step.** Revised on 14 October 2026, once the site could chart each side's utility and revenue. The first version had red's Firm fleeing the crowding (BUILD_LOG, stage 10). Figures are over eight seeds, comparing days together (separation below 1) with days apart (above 1.5).
 
 1. **The tie keeps two workforces apart.** Commuting anchors each workforce to its own Firm, and nobody can change employer, so the two settlements cannot merge into one labour market.
-2. **Love of variety pulls them together.** Everyone wants some of both goods, and delivery is costly, so each settlement is drawn toward the other's Firm. The density cost pushes them apart. ρ sets the balance.
-3. **The wage gap makes it one-sided.** Red's People are richer. That makes them (a) the better customers and (b) better able to afford density: a higher wage shrinks the density cost in proportion, the C6 result.
-4. **Green's Firm courts red's custom.** Revenue is quantity times base price from every buyer, and the rich buyers are red. Green's Firm's crawl finds revenue rising toward red, so it keeps going and accelerates, and green's commuters follow it. Measured over 3 seeds, green's Firm steps toward red in 66–69% of its moves, and its workforce's movement tracks it.
-5. **Red's Firm flees the crowd.** When green wraps round, red's People pay more density cost, their budgets drop and red's revenue falls. Its crawl reverses and re-randomises until some direction raises revenue, usually away from green, then accelerates (`adjustStep`). That is the breakout burst, and red's commuters follow. Red's Firm steps away from green in 57–60% of its moves.
-6. **Meeting is C6.** With both Firms close, both workforces want the same central space. The better-paid take the core and the rest form the ring: von Thünen sorting, briefly, until step 5 breaks it.
+2. **Love of variety makes being together worth it, to both.** Everyone wants some of both goods, and delivery is costly, so living near both Firms pays. Both workforces' utility is lower apart: red's by 6–18%, green's by 1–13%. The density cost keeps each settlement spread out (C1) and makes meeting cost red's People something, but less than cheap access to both goods gives back.
+3. **The wage gap makes red's People the prize.** They are richer, so they are the better customers. Together they split their custom evenly, buying 51% of their goods from their own Firm in every seed. Apart, 64–82% goes to their own Firm, the one next to them.
+4. **Green's Firm courts red's custom.** Revenue is quantity times base price from every buyer, and the rich buyers are red. Green's Firm's crawl finds revenue rising toward red (it earns 12–28% less apart), so it keeps going and accelerates, and green's commuters follow it. It steps toward red in 58–67% of its moves.
+5. **Red's Firm flees the competition, not the crowd.** It earns 6–14% more apart, and that gain is all in where red's People shop. Parting does spare them the crowding, which adds about 3.5% to their budgets, but being far from green's Firm costs them more than that in delivery, and in all they buy less. Red's Firm steps away from green in 53–63% of its moves, and its commuters go with it, away from where they would rather be.
+6. **The rhythm is D1's attribution problem.** A Firm reads any change in its revenue as the verdict on its own last step. While green's Firm closes in, red's revenue falls whatever red's Firm does, so its crawl undoes each step. In the 20 days before an engulfment it moves 0.0025–0.0042 a day against green's Firm's 0.009–0.021, its revenue rising on 9–33% of days. Once green's Firm has arrived and stops gaining, a step away finally pays, and the crawl accelerates (`adjustStep`) for as long as it keeps paying. That is the breakout burst: five to eleven times the run-up speed, red's revenue rising on 80–100% of days. Green's Firm is now the one whose revenue falls whatever it does (rising on 0–30% of days), and it stays put until the burst runs out.
+7. **Meeting is C6.** With both Firms close, both workforces want the same central space. The better-paid take the core and the rest form the ring: von Thünen sorting, briefly, until step 6 breaks it.
 
-Your summary holds up as economics. Green gains, because its Firm wins red's custom and its People get red's good cheaply. Red loses, because its People pay green's crowding cost and its Firm loses the revenue.
+Your summary holds up, with a twist. Green gains and red loses, but it is the Firms that gain and lose revenue, not the People utility. The People would stay together. Red's Firm is the one "far from sure about this", and its workforce pays for its doubts.
 
 ## 5. The test
 
@@ -145,12 +147,32 @@ The page also now draws `boolean` and `choice` dials as a checkbox and a select 
 
 ρ and the wage gap are on the left and right drag.
 
-**View.** The plane view with the workforces as group shapes and greys: squares at wage 1, circles at wage 2. This follows BUILD_PLANNER §4.2, and "shade People by: utility" gives the 2011 encoding in grey. There are two additions:
+**View.** The plane view with the workforces as group shapes and greys: squares at wage 1, circles at wage 2. This follows BUILD_PLANNER §4.2, and "shade People by: utility" gives the 2011 encoding in grey.
+
+The two Firms are the original's two glyphs. `FirmsDrawToSpace` had a white plus and a filled one, and the published figures use only the white. Firm 1, the circles' employer and red's Firm in the video, is filled black, and Firm 0 stays white. The legend shows each Firm's glyph beside its workforce's shape. The page calls them the black Firm and the white Firm, never by index. In the strips, the white Firm's lines are drawn hollow, white edged in black.
+
+There are two additions:
 
 - an optional **2011 ring** overlay, the mean of all actors, offered on `h1` only;
-- a second panel tracing the **separation** against "touching", in a rolling 1,500-day window.
+- a second panel of **stacked strips** on one time axis (`src/view/strips.js`), in a rolling 1,500-day window, with the spells apart shaded through all of them.
 
-**Pop-outs and walkthrough.** There is an economics panel, an under-the-hood panel and a what-we-found panel, all in `src/content.js`, plus a five-step walkthrough keyed to separation: set-up, apart, caught, away, caught again. All five fire by day 544 on the default seed.
+The strips, top to bottom:
+
+- **Utility**, one strip per workforce, each on its own scale: a faint line per Person and the workforce mean in bold. Circles' utility is about twice squares', and everyone in a workforce gets nearly the same, so on a shared axis the squares' swings flatten and the faint lines vanish under the means. The faint lines fan out at a breakaway, when a Firm moves faster than its workforce can follow.
+- **Firm revenue**, which is also goods sold (unlimited stock, base price 1) and the only thing a crawl reads. Two dashed lines show what the circles bought at each Firm, labelled "circles at black" and "circles at white". Both are the circles' purchases: their custom is the prize. The squares' part of each Firm's revenue is the gap between its solid line and its dashed one.
+- **Firm speed**: net movement over five days, from a trail kept by a day-start hook in `setUp`. It draws no random numbers, and a test checks the run is unchanged with it.
+- **Separation**, on a log axis against "touching".
+
+The strips are scaled by their bold lines only, so the first days' stragglers from the random start run off the strip rather than fixing its scale. The view also takes no sample at day 0, when every utility is still zero.
+
+**Pop-outs and walkthrough.** There is an economics panel, an under-the-hood panel and a what-we-found panel, all in `src/content.js`, plus a five-step walkthrough keyed to separation: set-up, apart, caught, away, caught again. All five fire by day 544 on the default seed. The captions point at the strips. Their claims were checked event by event over four seeds, because a caption has to hold whenever it fires, not just on average:
+
+- Firm 1 is slower than Firm 0 in the run-up to 42 of 43 engulfments.
+- Its revenue fell over the 60 days before 39 of them.
+- The circles' utility rose over the same 60 days before 38.
+- The circles' utility fell after 37 of 43 partings.
+
+The squares' utility moves the same way on average but only about half the time at any one event, so no caption claims it.
 
 **Tests.** These are tier 2, with windows set from eight seeds at 2,000 days (the first 400 discarded):
 
@@ -165,8 +187,13 @@ The page also now draws `boolean` and `choice` dials as a checkbox and a select 
 | Both channels tied | far apart > 90%, chase 40–60% | 99–100%, 47–54% |
 | Goods tied (the runner-up) | toward > 70%, never apart or engulfed | 74–77%, 0% |
 | ρ 0.45 / ρ 0.8 | far < 15% and engulfed > 10% / far > 75% | 1–6% and 11–28% / 82–100% |
+| Both workforces better off together (utility apart / together) | circles < 0.97, squares < 1 | 0.82–0.94 / 0.87–0.99 |
+| Firm 1's revenue apart / together, and Firm 0's | > 1.03 / < 0.92 | 1.06–1.14 / 0.72–0.88 |
+| Circles' purchases made at Firm 1, together / apart | within 5 points of half / 8 points more | 51% / 64–82% |
+| Run-up to an engulfment: Firm 0's speed over Firm 1's; days Firm 1's revenue rose | > 2× / < 42% | 2.5–8.5× / 9–33% |
+| At a parting: Firm 1's speed over its run-up speed; days its revenue rose; days Firm 0's rose | > 3× / > 70% / < 40% | 5–11× / 80–100% / 0–30% |
 
-There are also engine tests for the tie channels and the ranging step, view tests for the ring, the panel and the legend, and the site's walkthrough-reachability check.
+There are also engine tests for the tie channels and the ranging step. Two model tests check that each Firm's takings by workforce sum to the revenue its crawl reads, and that keeping the speed trail leaves the run unchanged. View tests cover the ring, the legend, the black and white Firms (on H1 only), the strips panel and its labels, and the strips view itself, including its hollow lines: no day-0 sample, stragglers clipped rather than setting the scale, drawing cost bounded by the canvas, the log axis and the shading. The site's walkthrough-reachability check also applies.
 
 **The catalogue still** is day 2,555 of the default run, chosen as `defaultDays` because that frame is a mid-field engulfment. Nothing settles, so any run length is arbitrary.
 

@@ -21,7 +21,7 @@ import { SUBJECT_ID, lastDecision } from '../scenarios/f4.js';
 import { currentWealth } from '../scenarios/f1.js';
 import { binCentre, gapHistogram } from '../scenarios/f2.js';
 import { coreParams } from '../scenarios/g1.js';
-import { settlements } from '../scenarios/h1.js';
+import { APART, FIRM_NAMES, firmSpeed, sales, settlements, workforce } from '../scenarios/h1.js';
 import { LINE, POINT, TWO_REGION } from '../space.js';
 import { coreModelView } from './coremodel.js';
 import { correlateView } from './correlate.js';
@@ -33,6 +33,7 @@ import { optimiserView } from './optimiser.js';
 import { planeView } from './plane.js';
 import { profilesFor } from './profiles.js';
 import { samplerView } from './sampler.js';
+import { stripsView } from './strips.js';
 import { timeSeriesView } from './timeseries.js';
 
 /** @typedef {import('./timeseries.js').Track} Track */
@@ -420,8 +421,15 @@ export function chooseView(scenario, world) {
   const planeCurve = PLANE_CURVES[scenario.id];
   const readPlane = planeCurve ? declared(scenario) : null;
 
+  // H1's two Firms are told apart by the original's two glyphs, white and filled, so its page
+  // can call them the white Firm and the black and its charts can match. Every other model
+  // draws its Firms white, as the published figures do.
+  const firmFills = scenario.id === 'h1'
+    ? FIRM_NAMES.map((name) => (name === 'black' ? '#000' : '#fff'))
+    : undefined;
+
   return {
-    make: (/** @type {HTMLCanvasElement} */ c) => planeView(c),
+    make: (/** @type {HTMLCanvasElement} */ c) => planeView(c, { firmFills }),
     aspect: 1,
     shadeOptions: ['auto', 'density', 'utility', 'neighbours', 'group'],
     overlays,
@@ -438,6 +446,11 @@ export function chooseView(scenario, world) {
     } : undefined),
   };
 }
+
+/** H1's Firms by the name the page gives them. @param {number} g */
+const h1Firm = (g) => `${FIRM_NAMES[g]} Firm`;
+/** The white Firm's lines are drawn hollow, as the plane draws its glyph. @param {number} g */
+const h1Hollow = (g) => FIRM_NAMES[g] === 'white';
 
 /**
  * Second panels. A model earns one when its result is a *relationship* between two things the
@@ -464,17 +477,67 @@ const AUX = {
     }),
   },
 
-  // H1: the plane shows where the two settlements are at one moment; the rhythm of meeting
-  // and parting, which is the whole behaviour, needs a time axis. A rolling window, because
-  // the run never ends and the cycle is what matters, not its history.
+  // H1: the plane shows where the two settlements are at one moment. What it cannot show is
+  // why they keep meeting and parting, which takes a time axis and the quantities each side
+  // acts on: the People's utility, and the Firms' revenue — the only thing a Firm can see —
+  // with the speed its crawl moves at, over the separation they all produce. One panel, so
+  // a breakaway lines up as one event in every strip. A rolling window, because the run
+  // never ends and the cycle is what matters, not its history.
   h1: {
-    title: 'how far apart the two settlements are, in units of their own size',
-    aspect: 2.2,
-    make: (c) => timeSeriesView(c, {
-      tracks: [{ label: 'separation', get: (w) => settlements(w).separation }],
+    title: 'Why they meet and part: the same days in every strip. Grey bands are the spells apart.',
+    aspect: 1.55,
+    make: (c) => stripsView(c, {
       window: 1500,
-      reference: 1,
-      referenceLabel: 'touching',
+      shade: (w) => settlements(w).separation > APART,
+      strips: [
+        // One strip per workforce, each on its own scale. The circles' utility is about
+        // twice the squares', and everyone in a workforce gets nearly the same as the rest
+        // of it, so on a shared axis the squares' swings flatten and the faint lines vanish
+        // under the means.
+        {
+          title: `utility, circles (${h1Firm(1)}, wage 2): each Person faint, mean bold`,
+          cloud: (w) => workforce(w, 1).map((p) => p.utility),
+          tracks: [{ label: 'mean', get: (w) => settlements(w).groups[1].utility }],
+        },
+        {
+          title: `utility, squares (${h1Firm(0)}, wage 1), on their own scale`,
+          cloud: (w) => workforce(w, 0).map((p) => p.utility),
+          tracks: [{ label: 'mean', get: (w) => settlements(w).groups[0].utility }],
+        },
+        // Revenue is the goods sold, too: stock is unlimited and the base price is 1. The
+        // dashed lines are both the circles' purchases, one at each Firm: together they split
+        // their custom evenly, apart most of it goes to their own. The squares' part of each
+        // Firm's revenue is the gap between its solid line and its dashed one. The white
+        // Firm's lines go first, so the black ones cross over them.
+        {
+          title: 'Firm revenue (= goods sold); dashed, what the circles bought',
+          weight: 1.25,
+          tracks: [
+            { label: h1Firm(0), get: (w) => w.firm(0).revenueLastTurn, hollow: h1Hollow(0) },
+            { label: h1Firm(1), get: (w) => w.firm(1).revenueLastTurn, hollow: h1Hollow(1) },
+            { label: `circles at ${FIRM_NAMES[0]}`, get: (w) => sales(w)[0][1], dash: true, hollow: h1Hollow(0) },
+            { label: `circles at ${FIRM_NAMES[1]}`, get: (w) => sales(w)[1][1], dash: true, hollow: h1Hollow(1) },
+          ],
+        },
+        {
+          title: 'how fast each Firm is moving (net, over five days)',
+          weight: 0.8,
+          includeZero: true,
+          tracks: [
+            { label: h1Firm(0), get: (w) => firmSpeed(w, 0), hollow: h1Hollow(0) },
+            { label: h1Firm(1), get: (w) => firmSpeed(w, 1), hollow: h1Hollow(1) },
+          ],
+        },
+        // Log, because touching (1) and engulfed (below 0.35) are the values that matter and
+        // a spell apart reaches 9: on a linear axis both would sit in the bottom few pixels.
+        {
+          title: 'separation, in units of their own size (log scale)',
+          log: true,
+          reference: 1,
+          referenceLabel: 'touching',
+          tracks: [{ label: 'separation', get: (w) => settlements(w).separation }],
+        },
+      ],
     }),
   },
 };
